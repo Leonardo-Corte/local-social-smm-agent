@@ -1,44 +1,17 @@
-# Draft post
+**Concrete Brief:**
 
-Request: Create a short approval-gated Instagram draft for a test event.
+Create an animated GIF for Instagram featuring UP's house surrounded by colorful balloons that appear to be dancing or floating upwards. The animation should emphasize a playful and uplifting tone while adhering to UP’s brand guidelines.
 
-## Draft Direction
-Create a concise, premium, proof-aware artifact for Out Of Office. Keep all claims conservative and leave missing facts as approval blockers.
+- **Visual Design**: Use vibrant colors and a lively animation style where the balloons dance around the house.
+- **Tagline Placement**: Place "L'AI che mette le ali alla tua giornata" at the end of the GIF in a prominent, clear position.
+- **Caption Text**: Include the caption text: "L'AI che mette le ali alla tua giornata 🛫✨".
+- **Hashtags**: Utilize hashtags such as #InnovazioneSenzaSottoscrizioni and #AIperPiccoleImprese.
 
-## Prior Agent Notes
-# copywriter Fallback Handoff
+**Approval Blockers:**
+1. Ensure that the visual elements adhere strictly to UP’s brand guidelines.
+2. Confirm that the tagline communicates the unique value of UP's AI effectively without making unsupported claims.
+3. Validate that the overall tone aligns with our target audience expectations.
 
-Status: fallback_template
+---
 
-The local model step did not complete in time, so this structured fallback keeps the team chain usable.
-
-## Observed Facts
-- User request: Create a short approval-gated Instagram draft for a test event.
-- Intent: post
-- Previous handoffs are available and should be preserved.
-
-## Assumptions
-- The final artifact must stay draft-only and require human approval.
-- Missing facts should become approval blockers, not invented claims.
-
-## Draft/Recommendation For This Step
-Draft the requested social content or message. Adapt format and tone to the platform; keep it specific, premium, and proof-aware.
-
-Use the previous handoff context below and keep the artifact concise, proof-aware, and specific:
-
-No previous handoffs.
-
-## Approval Blockers
-- Confirm event details before publishing.
-- Confirm ticket inclusions before mentioning food/drinks.
-- Confirm any attendance, venue, guest, or partnership claim before use.
-
-## Agent Handoff
-The next agent should keep the request focused, avoid invented numbers or status claims, and verify the final draft against content policy.
-
-Fallback reason: This operation was aborted
-
-
-## Approval Blockers
-- Confirm event details before publishing.
-- Confirm claims and asset usage before approval.
+No additional comments or automated instructions should be included in the final artifact draft. The content is intended for human review and approval before publishing.

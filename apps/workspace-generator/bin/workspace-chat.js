@@ -310,6 +310,33 @@ async function generateImageFromChat({ workspaceRoot, input, preset = "square" }
   return result;
 }
 
+function extractImagePromptFromBrief(creativeBrief, originalRequest) {
+  const lines = [];
+
+  // Extract top idea execution steps
+  const topIdeaMatch = creativeBrief.match(/TOP IDEA:\s*(.+)\n[\s\S]*?Come si esegue:([\s\S]*?)(?=\n\*\*TOP IDEA|\n###|$)/i);
+  if (topIdeaMatch) {
+    const title = topIdeaMatch[1].trim();
+    const steps = topIdeaMatch[2].trim().split("\n").slice(0, 3).map(s => s.replace(/^\d+\.\s*/, "").trim()).filter(Boolean);
+    lines.push(title, ...steps);
+  }
+
+  // Extract "Concept Centrale"
+  const conceptMatch = creativeBrief.match(/Concept Centrale[*:\s]+([\s\S]*?)(?=\n\*\*|$)/i);
+  if (conceptMatch) lines.push(conceptMatch[1].trim().slice(0, 200));
+
+  // Extract visual elements
+  const visualMatch = creativeBrief.match(/Elementi Visivi[^:]*:([\s\S]*?)(?=\n\*\*|$)/i);
+  if (visualMatch) lines.push(visualMatch[1].trim().slice(0, 150));
+
+  const clean = (s) => s.replace(/\*+/g, "").replace(/\n[-•]\s*/g, ", ").replace(/\s+/g, " ").trim();
+  const basePrompt = lines.filter(Boolean).map(clean).join(", ").slice(0, 600);
+
+  return basePrompt
+    ? `${basePrompt}, Instagram post, vibrant colors, photorealistic, high quality, 4K, no text overlay`
+    : `${originalRequest}, Instagram post, vibrant colors, photorealistic, high quality, 4K`;
+}
+
 function summarizeMegaRun(result) {
   const lines = [
     `Team creativo completato — ${result.agents.length} agenti, 3 round di brainstorming`,
@@ -318,15 +345,33 @@ function summarizeMegaRun(result) {
     `Intent rilevato: ${result.intent}`,
     `Messaggi in creative room: ${result.room.messages.length}`,
     `  Round 1 (Diverge): ${result.room.getMessages({ round: 1 }).length} contributi`,
-    `  Round 2 (React): ${result.room.getMessages({ round: 2 }).length} reazioni`,
+    `  Round 2 (React + Dialogue): ${result.room.getMessages({ round: 2 }).length} messaggi`,
     `  Round 3 (Converge): brief creativo sintetizzato`,
-    ``,
-    `Esecuzione: ${result.executionResult?.result?.status || "completata"}`,
-    ``,
-    `Leggi il brainstorming completo:`,
-    `  mega-runs/${result.runId}/creative-room.md`,
-    `  mega-runs/${result.runId}/creative-brief.md`,
+    ``
   ];
+
+  if (result.promptEngineerResult) {
+    const pe = result.promptEngineerResult;
+    lines.push(`Prompt Engineer — stile: ${pe.styleTag || "n/a"}${pe.fallback ? " (fallback)" : ""}`);
+    lines.push(`  Prompt: ${(pe.imagePrompt || "").slice(0, 100)}...`);
+    lines.push(``);
+  }
+
+  if (result.generatedImages && result.generatedImages.length > 0) {
+    lines.push(`Immagini generate (${result.generatedImages.length}):`);
+    for (const img of result.generatedImages) {
+      if (img.desktopPath) lines.push(`  [${img.type}] Desktop: ${img.desktopPath}`);
+      else lines.push(`  [${img.type}] ${img.outputPath}`);
+    }
+    lines.push(``);
+  }
+
+  lines.push(`Esecuzione: ${result.executionResult?.result?.status || "completata"}`);
+  lines.push(``);
+  lines.push(`File:`);
+  lines.push(`  mega-runs/${result.runId}/creative-room.md`);
+  lines.push(`  mega-runs/${result.runId}/creative-brief.md`);
+  if (result.promptEngineerResult) lines.push(`  mega-runs/${result.runId}/prompt-engineer.md`);
   if (result.executionResult?.result?.target) {
     lines.push(`  ${result.executionResult.result.target} (draft — approvazione umana richiesta)`);
   }
@@ -767,7 +812,7 @@ async function main() {
             timeoutMs: 240000,
             apply: true,
             onProgress: ({ phase, message }) => {
-              const icons = { planning: "📋", brainstorm: "💡", execution: "⚙️" };
+              const icons = { planning: "📋", brainstorm: "💡", "prompt-engineer": "🎨", execution: "⚙️" };
               console.log(`  ${icons[phase] || "•"} [${phase}] ${message}`);
             }
           });

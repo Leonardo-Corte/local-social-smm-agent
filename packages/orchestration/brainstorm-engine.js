@@ -1,17 +1,17 @@
 const { runOllamaGenerate } = require("../local-runtime/model-client");
 
-function divergePrompt({ agent, agentDef, request, taskPlan, roomContext }) {
+function divergePrompt({ agent, agentDef, request, taskPlan, roomContext, reflectionsContext }) {
   return `Sei ${agent.label} in una stanza creativa con il tuo team di marketing.
 
 ## La richiesta del cliente
 ${request}
 
 ## Il tuo ruolo nel team
-${agentDef.slice(0, 1500)}
+${agentDef.slice(0, 1200)}
 
 ## Task assegnati a te
 ${taskPlan.tasksByAgent[agent.id]?.join("\n") || "Contribuisci dal tuo punto di vista."}
-
+${reflectionsContext ? `\n${reflectionsContext}\n` : ""}
 ## Round 1 — DIVERGE (butta fuori idee, nessun filtro)
 Questo è il momento della creatività pura. Non autofiltrarti.
 Genera esattamente 3-5 idee originali dal tuo punto di vista specifico.
@@ -102,7 +102,7 @@ function extractQuestion(output) {
   return match ? match[1].trim() : null;
 }
 
-async function runDivergeRound({ agents, agentDefs, request, taskPlan, room, model, timeoutMs, onProgress }) {
+async function runDivergeRound({ agents, agentDefs, request, taskPlan, room, model, timeoutMs, onProgress, reflectionsContext }) {
   room.round = 1;
   const results = [];
 
@@ -110,7 +110,7 @@ async function runDivergeRound({ agents, agentDefs, request, taskPlan, room, mod
     if (onProgress) onProgress({ phase: "diverge", agent: agent.id });
     const agentDef = agentDefs[agent.id] || "";
     const roomContext = room.getRoomContext();
-    const prompt = divergePrompt({ agent, agentDef, request, taskPlan, roomContext });
+    const prompt = divergePrompt({ agent, agentDef, request, taskPlan, roomContext, reflectionsContext });
 
     let output = "";
     try {
@@ -171,12 +171,88 @@ async function runConvergeRound({ request, room, taskPlan, model, timeoutMs, onP
   return synthesis;
 }
 
-async function runBrainstorm({ agents, agentDefs, request, taskPlan, room, model, timeoutMs = 240000, onProgress }) {
-  const divergeResults = await runDivergeRound({ agents, agentDefs, request, taskPlan, room, model, timeoutMs, onProgress });
-  const reactResults = await runReactRound({ agents, agentDefs, request, room, model, timeoutMs, onProgress });
-  const synthesis = await runConvergeRound({ request, room, taskPlan, model, timeoutMs, onProgress });
-
-  return { divergeResults, reactResults, synthesis, roomSummary: room.getRoundSummary(1) };
+// Parse @mentions from a message and return list of agent IDs mentioned
+function extractMentions(text, knownAgentIds) {
+  const mentions = new Set();
+  const regex = /@([\w-]+)/g;
+  let m;
+  while ((m = regex.exec(text)) !== null) {
+    const id = m[1].toLowerCase();
+    if (knownAgentIds.includes(id)) mentions.add(id);
+  }
+  return [...mentions];
 }
 
-module.exports = { runBrainstorm, runDivergeRound, runReactRound, runConvergeRound };
+// Round 2.5 — Direct dialogue: agents who were @mentioned respond directly to their caller
+async function runDirectDialogueRound({ agents, agentDefs, request, room, model, timeoutMs, onProgress }) {
+  room.round = 2;
+  const agentIds = agents.map(a => a.id);
+  const reactMessages = room.getMessages({ round: 2 });
+  const results = [];
+
+  // Build map: addressedAgent -> [{from, content}]
+  const pendingReplies = {};
+  for (const msg of reactMessages) {
+    const mentions = extractMentions(msg.content, agentIds);
+    for (const mentionedId of mentions) {
+      if (mentionedId === msg.from) continue; // skip self-mentions
+      if (!pendingReplies[mentionedId]) pendingReplies[mentionedId] = [];
+      pendingReplies[mentionedId].push({ from: msg.from, snippet: msg.content.slice(0, 400) });
+    }
+  }
+
+  for (const agent of agents) {
+    const pending = pendingReplies[agent.id];
+    if (!pending || pending.length === 0) continue;
+
+    if (onProgress) onProgress({ phase: "dialogue", agent: agent.id });
+
+    const agentDef = agentDefs[agent.id] || "";
+    const callers = pending.map(p => `${p.from} ti ha citato:\n${p.snippet}`).join("\n\n---\n\n");
+
+    const prompt = `Sei ${agent.label} nella stanza creativa del team.
+
+## Richiesta originale
+${request}
+
+## Il tuo ruolo
+${agentDef.slice(0, 600)}
+
+## Colleghi che ti hanno citato direttamente
+${callers}
+
+## Il tuo compito — RISPOSTA DIRETTA
+Rispondi brevemente ai colleghi che ti hanno citato. Sii diretto e costruttivo.
+Per ogni collega che ti ha citato:
+RISPOSTA [@collega]: [la tua risposta concreta — max 3 righe]
+
+Poi aggiungi, se hai qualcosa di nuovo:
+AGGIUNTA: [insight o dettaglio che emerge da questo scambio]`;
+
+    let output = "";
+    try {
+      output = await runOllamaGenerate({ model, prompt, timeoutMs: Math.min(timeoutMs, 60000) });
+    } catch (err) {
+      output = `[${agent.id} non disponibile per risposta diretta]`;
+    }
+
+    room.post({ from: agent.id, to: "all", type: "reaction", content: output, round: 2 });
+    results.push({ agent: agent.id, raw: output });
+  }
+
+  return results;
+}
+
+async function runBrainstorm({ agents, agentDefs, request, taskPlan, room, model, timeoutMs = 240000, onProgress, reflectionsContext }) {
+  const divergeResults = await runDivergeRound({ agents, agentDefs, request, taskPlan, room, model, timeoutMs, onProgress, reflectionsContext });
+  const reactResults = await runReactRound({ agents, agentDefs, request, room, model, timeoutMs, onProgress });
+
+  // Direct dialogue: agents respond to @mentions from the react round
+  const dialogueResults = await runDirectDialogueRound({ agents, agentDefs, request, room, model, timeoutMs, onProgress });
+
+  const synthesis = await runConvergeRound({ request, room, taskPlan, model, timeoutMs, onProgress });
+
+  return { divergeResults, reactResults, dialogueResults, synthesis, roomSummary: room.getRoundSummary(1) };
+}
+
+module.exports = { runBrainstorm, runDivergeRound, runReactRound, runConvergeRound, runDirectDialogueRound };

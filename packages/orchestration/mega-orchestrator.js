@@ -7,6 +7,9 @@ const { auditContentPolicy } = require("../review-loop/content-policy");
 const { CreativeRoom } = require("./creative-room");
 const { runBrainstorm } = require("./brainstorm-engine");
 const { runAdaptiveTeamOrchestration } = require("./adaptive-orchestrator");
+const { runPromptEngineer } = require("./prompt-engineer");
+const { generateImage } = require("../image-workflow/pollinations-adapter");
+const { buildReflectionsPrompt, updateReflections } = require("../memory/agent-reflections");
 
 const BRAINSTORM_AGENTS = [
   { id: "brand-strategist",    label: "Brand Strategist",    focus: "posizionamento, voce, promise" },
@@ -157,6 +160,10 @@ async function runMegaOrchestration({
   // ── Creative room ──────────────────────────────────────────────────────────
   const room = new CreativeRoom({ runId, workspaceRoot, agents });
 
+  // ── Reflections — inject team memory into brainstorm ──────────────────────
+  const reflectionsContext = buildReflectionsPrompt(workspaceRoot, { intent });
+  if (reflectionsContext && onProgress) onProgress({ phase: "brainstorm", message: "Memoria del team caricata — iniettata nel brainstorm" });
+
   // ── Brainstorm ─────────────────────────────────────────────────────────────
   if (onProgress) onProgress({ phase: "brainstorm", message: "Apertura creative room..." });
 
@@ -168,8 +175,14 @@ async function runMegaOrchestration({
     room,
     model,
     timeoutMs,
+    reflectionsContext,
     onProgress: ({ phase, agent: agentId }) => {
-      const labels = { diverge: "Round 1 — idee", react: "Round 2 — reazioni", converge: "Round 3 — sintesi" };
+      const labels = {
+        diverge: "Round 1 — idee",
+        react: "Round 2 — reazioni",
+        dialogue: "Round 2.5 — dialogo diretto",
+        converge: "Round 3 — sintesi"
+      };
       if (onProgress) onProgress({ phase: "brainstorm", message: `${labels[phase] || phase}: ${agentId}` });
     }
   });
@@ -180,8 +193,61 @@ async function runMegaOrchestration({
   writeText(path.join(megaRoot, "creative-brief.md"), `# Creative Brief\n\n${creativeBrief}`);
   if (onProgress) onProgress({ phase: "brainstorm", message: "Brainstorm completato — brief creativo pronto" });
 
+  // ── Update reflections — learn from this run ───────────────────────────────
+  updateReflections({ workspaceRoot, request, creativeBrief, synthesis: brainstormResult.synthesis, intent, model, timeoutMs })
+    .then(r => { if (r.added > 0 && onProgress) onProgress({ phase: "memory", message: `+${r.added} regole apprese (totale: ${r.total})` }); })
+    .catch(() => {}); // non-blocking
+
+  // ── Prompt Engineer ────────────────────────────────────────────────────────
+  const VISUAL_INTENTS = ["post", "image", "carousel", "campaign", "default"];
+  let promptEngineerResult = null;
+  let generatedImages = [];
+
+  if (VISUAL_INTENTS.includes(intent)) {
+    if (onProgress) onProgress({ phase: "prompt-engineer", message: "Prompt Engineer — ottimizzazione prompt per generazione visiva" });
+    try {
+      promptEngineerResult = await runPromptEngineer({
+        creativeBrief,
+        request,
+        intent,
+        model,
+        timeoutMs,
+        onProgress
+      });
+      writeText(path.join(megaRoot, "prompt-engineer.md"),
+        `# Prompt Engineer Output\n\n## IMAGE_PROMPT\n${promptEngineerResult.imagePrompt}\n\n## COVER_PROMPT\n${promptEngineerResult.coverPrompt}\n\n## RATIONALE\n${promptEngineerResult.rationale}\n\n## STYLE_TAG\n${promptEngineerResult.styleTag}\n\n## Raw Output\n${promptEngineerResult.raw}`
+      );
+
+      if (onProgress) onProgress({ phase: "prompt-engineer", message: `Generando immagini (stile: ${promptEngineerResult.styleTag})...` });
+
+      const [squareResult, coverResult] = await Promise.allSettled([
+        generateImage(promptEngineerResult.imagePrompt, {
+          preset: "square",
+          workspaceRoot,
+          saveToDesktop: true
+        }),
+        generateImage(promptEngineerResult.coverPrompt || promptEngineerResult.imagePrompt, {
+          preset: "cover",
+          workspaceRoot,
+          saveToDesktop: true
+        })
+      ]);
+
+      if (squareResult.status === "fulfilled") {
+        generatedImages.push({ type: "square", ...squareResult.value });
+        if (onProgress) onProgress({ phase: "prompt-engineer", message: `Immagine quadrata generata — ${(squareResult.value.sizeBytes / 1024).toFixed(0)} KB` });
+      }
+      if (coverResult.status === "fulfilled") {
+        generatedImages.push({ type: "cover", ...coverResult.value });
+        if (onProgress) onProgress({ phase: "prompt-engineer", message: `Cover verticale generata — ${(coverResult.value.sizeBytes / 1024).toFixed(0)} KB` });
+      }
+    } catch (err) {
+      if (onProgress) onProgress({ phase: "prompt-engineer", message: `Errore: ${err.message}` });
+    }
+  }
+
   // ── Execution ──────────────────────────────────────────────────────────────
-  if (onProgress) onProgress({ phase: "execution", message: "Fase di esecuzione — produzione deliverable" });
+  if (onProgress) onProgress({ phase: "execution", message: "Fase di esecuzione — produzione copy e deliverable" });
 
   let executionResult = null;
   try {
@@ -206,12 +272,14 @@ async function runMegaOrchestration({
       agents: agents.map((a) => a.id),
       brainstormMessages: room.messages.length,
       creativeBriefLength: creativeBrief.length,
+      generatedImages: generatedImages.map((i) => ({ type: i.type, path: i.outputPath, desktopPath: i.desktopPath })),
+      promptStyle: promptEngineerResult?.styleTag || null,
       executionStatus: executionResult?.result?.status || "skipped"
     }
   });
 
   writeText(path.join(megaRoot, "run-summary.md"), buildSummaryMarkdown({
-    runId, request, intent, agents, taskPlan, room, brainstormResult, executionResult
+    runId, request, intent, agents, taskPlan, room, brainstormResult, promptEngineerResult, generatedImages, executionResult
   }));
 
   return {
@@ -223,12 +291,14 @@ async function runMegaOrchestration({
     room,
     creativeBrief,
     brainstormResult,
+    promptEngineerResult,
+    generatedImages,
     executionResult,
     artifact
   };
 }
 
-function buildSummaryMarkdown({ runId, request, intent, agents, taskPlan, room, brainstormResult, executionResult }) {
+function buildSummaryMarkdown({ runId, request, intent, agents, taskPlan, room, brainstormResult, promptEngineerResult, generatedImages, executionResult }) {
   const lines = [
     `# Mega Orchestration — ${runId}`,
     ``,
@@ -240,19 +310,39 @@ function buildSummaryMarkdown({ runId, request, intent, agents, taskPlan, room, 
     ``,
     `## Brainstorm`,
     `- Round 1 (Diverge): ${room.getMessages({ round: 1 }).length} messaggi`,
-    `- Round 2 (React): ${room.getMessages({ round: 2 }).length} messaggi`,
+    `- Round 2 (React + Dialogue): ${room.getMessages({ round: 2 }).length} messaggi`,
     `- Round 3 (Converge): sintesi creata`,
-    ``,
-    `## Execution`,
-    executionResult ? `Status: ${executionResult.result?.status || "completato"}` : "Saltata",
-    ``,
-    `## File generati`,
-    `- task-plan.md`,
-    `- creative-room.md`,
-    `- creative-room.json`,
-    `- creative-brief.md`,
-    `- run-summary.md`
+    ``
   ];
+
+  if (promptEngineerResult) {
+    lines.push(`## Prompt Engineer`);
+    lines.push(`- Stile: ${promptEngineerResult.styleTag || "n/a"}`);
+    lines.push(`- Fallback: ${promptEngineerResult.fallback ? "sì" : "no"}`);
+    lines.push(`- IMAGE_PROMPT: ${(promptEngineerResult.imagePrompt || "").slice(0, 120)}...`);
+    lines.push(``);
+  }
+
+  if (generatedImages && generatedImages.length > 0) {
+    lines.push(`## Immagini Generate`);
+    for (const img of generatedImages) {
+      lines.push(`- [${img.type}] ${img.outputPath}`);
+      if (img.desktopPath) lines.push(`  Desktop: ${img.desktopPath}`);
+    }
+    lines.push(``);
+  }
+
+  lines.push(`## Execution`);
+  lines.push(executionResult ? `Status: ${executionResult.result?.status || "completato"}` : "Saltata");
+  lines.push(``);
+  lines.push(`## File generati`);
+  lines.push(`- task-plan.md`);
+  lines.push(`- creative-room.md`);
+  lines.push(`- creative-room.json`);
+  lines.push(`- creative-brief.md`);
+  if (promptEngineerResult) lines.push(`- prompt-engineer.md`);
+  lines.push(`- run-summary.md`);
+
   return lines.join("\n");
 }
 

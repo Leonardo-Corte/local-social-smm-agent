@@ -10,3 +10,11 @@ vendor/*/node_modules/
 .omx/tmux-hook.json
 workspaces/generated-projects/*/secrets/
 workspaces/generated-projects/*/.cache/
+workspaces/generated-projects/*/team-runs/
+workspaces/generated-projects/*/workflow-runs/
+workspaces/generated-projects/*/mega-runs/
+workspaces/generated-projects/*/chat-runs/
+workspaces/generated-projects/*/review/orchestrator-backups/
+workspaces/generated-projects/*/creative/images/*.png
+workspaces/generated-projects/*/creative/images/*.jpg
+workspaces/generated-projects/*/research/live-trend-report.json
