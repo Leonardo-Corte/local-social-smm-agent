@@ -38,6 +38,7 @@ const {
   importLocalAsset
 } = require("../../../packages/workspace-runner/safe-ingestion");
 const { generateImage } = require("../../../packages/image-workflow/pollinations-adapter");
+const { runMegaOrchestration } = require("../../../packages/orchestration/mega-orchestrator");
 
 const root = path.resolve(__dirname, "../../..");
 
@@ -189,6 +190,8 @@ Comandi chat:
   /help                         mostra questi comandi
   /agents                       lista agenti disponibili
   /agent <id>                   cambia agente attivo
+  /team <brief>                 mega-orchestrator: brainstorming a 3 round + esecuzione
+  /brainstorm <brief>          alias di /team
   /generate <prompt>            genera un'immagine con Pollinations.ai (zero API key)
   /img <prompt>                 alias di /generate
   /attach <path>                allega un file al contesto della chat
@@ -305,6 +308,29 @@ async function generateImageFromChat({ workspaceRoot, input, preset = "square" }
   console.log(`  Prompt: ${prompt.slice(0, 120)}`);
   const result = await generateImage(prompt, { preset, workspaceRoot, saveToDesktop: true });
   return result;
+}
+
+function summarizeMegaRun(result) {
+  const lines = [
+    `Team creativo completato — ${result.agents.length} agenti, 3 round di brainstorming`,
+    ``,
+    `Run: mega-runs/${result.runId}/`,
+    `Intent rilevato: ${result.intent}`,
+    `Messaggi in creative room: ${result.room.messages.length}`,
+    `  Round 1 (Diverge): ${result.room.getMessages({ round: 1 }).length} contributi`,
+    `  Round 2 (React): ${result.room.getMessages({ round: 2 }).length} reazioni`,
+    `  Round 3 (Converge): brief creativo sintetizzato`,
+    ``,
+    `Esecuzione: ${result.executionResult?.result?.status || "completata"}`,
+    ``,
+    `Leggi il brainstorming completo:`,
+    `  mega-runs/${result.runId}/creative-room.md`,
+    `  mega-runs/${result.runId}/creative-brief.md`,
+  ];
+  if (result.executionResult?.result?.target) {
+    lines.push(`  ${result.executionResult.result.target} (draft — approvazione umana richiesta)`);
+  }
+  return lines.join("\n");
 }
 
 async function runCreativeFromChat({ workspace, workspaceRoot, input, model }) {
@@ -724,6 +750,36 @@ async function main() {
         const teamRun = await runAgentTeam({ workspace, input: request, intent, model });
         console.log(`\n${summarizeTeamRun(teamRun)}\n`);
         appendText(transcriptPath, `\n## Agent Team Run\n\nRequest: ${request}\n\n${summarizeTeamRun(teamRun)}\n`);
+        rl.prompt();
+        return;
+      }
+      if (input.startsWith("/team ") || input.startsWith("/brainstorm ")) {
+        const prefix = input.startsWith("/team ") ? "/team " : "/brainstorm ";
+        const request = input.slice(prefix.length).trim();
+        processing = true;
+        console.log("\n  Mega-orchestrator avviato — brainstorming creativo del team\n");
+        try {
+          const result = await runMegaOrchestration({
+            root,
+            workspace,
+            request,
+            model,
+            timeoutMs: 240000,
+            apply: true,
+            onProgress: ({ phase, message }) => {
+              const icons = { planning: "📋", brainstorm: "💡", execution: "⚙️" };
+              console.log(`  ${icons[phase] || "•"} [${phase}] ${message}`);
+            }
+          });
+          const msg = summarizeMegaRun(result);
+          console.log(`\n${msg}\n`);
+          appendText(transcriptPath, `\n## Mega Orchestration\n\n${msg}\n`);
+          history.push({ role: "user", content: input });
+          history.push({ role: "assistant", content: msg });
+        } catch (err) {
+          console.log(`  Errore mega-orchestrator: ${err.message}`);
+        }
+        processing = false;
         rl.prompt();
         return;
       }
