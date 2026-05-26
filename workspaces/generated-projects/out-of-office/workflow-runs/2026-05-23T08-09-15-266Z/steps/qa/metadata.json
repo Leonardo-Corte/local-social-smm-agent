@@ -1,0 +1,14 @@
+{
+  "id": "qa",
+  "agentId": "critic-qa",
+  "status": "saved_prompt_packet",
+  "backend": "prompt-packet",
+  "model": "qwen2.5:14b",
+  "inputs": [
+    "review/workspace-quality-rubric.json",
+    "simulation/persona-report.md",
+    "review/qa-recap.md",
+    "drafts/posts.md"
+  ],
+  "generatedAt": "2026-05-23T08:09:15.319Z"
+}

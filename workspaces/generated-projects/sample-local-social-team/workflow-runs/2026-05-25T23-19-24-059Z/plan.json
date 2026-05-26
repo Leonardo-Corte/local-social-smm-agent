@@ -1,0 +1,50 @@
+{
+  "version": "0.1.0",
+  "workspace": "sample-local-social-team",
+  "runId": "2026-05-25T23-19-24-059Z",
+  "mode": "dry-run-prompt-packets",
+  "steps": [
+    {
+      "id": "strategy",
+      "agentId": "brand-strategist",
+      "task": "Turn the brief and research into sharper positioning, voice rules, and content-pillar improvements.",
+      "inputs": [
+        "project-brief.json",
+        "operations/current-request.md",
+        "operations/agent-operating-contracts.md",
+        "research/trend-report.md",
+        "strategy/content-pillars.md"
+      ]
+    },
+    {
+      "id": "video",
+      "agentId": "reel-shorts-producer",
+      "task": "Review reel scripts for first-three-second strength, visual beats, editability, and missing assets.",
+      "inputs": [
+        "operations/current-request.md",
+        "calendar/30-day-calendar.md",
+        "drafts/reels.md"
+      ]
+    },
+    {
+      "id": "qa",
+      "agentId": "critic-qa",
+      "task": "Run a final adversarial QA pass. Decide what is not good enough for human approval and convert it into regeneration tasks.",
+      "inputs": [
+        "operations/current-request.md",
+        "review/workspace-quality-rubric.json",
+        "simulation/persona-report.md",
+        "review/qa-recap.md",
+        "drafts/posts.md"
+      ]
+    }
+  ],
+  "selectedStepIds": [
+    "strategy",
+    "video",
+    "capcut",
+    "qa"
+  ],
+  "maxSteps": null,
+  "timeoutMs": 120000
+}

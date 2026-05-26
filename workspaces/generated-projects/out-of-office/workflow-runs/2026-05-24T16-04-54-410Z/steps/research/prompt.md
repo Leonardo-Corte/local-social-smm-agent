@@ -1,0 +1,898 @@
+# Local Agent Task Packet
+
+You are running inside a no-paid-API, human-approved IG/FB content workspace.
+
+## Agent
+# Market Researcher
+
+## Mission
+Research trends, competitors, creators, formats, objections, hashtags, and content gaps.
+
+## Project Context
+- Project: Out Of Office
+- Niche: allora la nichia è corporate people che vogliono connnetersi con altre perople in corporte o anceh in generle gente a cui piace fare networking tutte perosne solo a new york city
+- Target: tuute le perone corporate peoole, perosne a cui pioace fare netwokl di livello, i locali ci devono chiamere per fare gli venti nei loro locali anceh capito perche noi priu o meno portio 200 perosne di livello nel locale che fanno netwiking magiano e beevnono e espendono la voce ...
+- 30-day goal: che la pagina instagram crecse orgnicamnte, e che la gente si sicrive alla ocmneuity e partecipa ai nostrin eventi costantemnte
+- Tone: fallo tu in base al nostro business coemè
+
+## Inputs
+- project brief
+- source registry
+
+## Outputs
+- trend-report.md
+- competitor-map.md
+- content-opportunities.md
+
+## Allowed Tools
+- trend-intel
+- browser-research
+
+## Quality Checks
+- sources are cited
+- source risk is labeled
+- claims are separated from inference
+
+## Escalation Rules
+- Do not use high-risk sources without explicit review.
+
+
+## Project Brief
+```json
+{
+  "projectName": "Out Of Office",
+  "niche": "allora la nichia è corporate people che vogliono connnetersi con altre perople in corporte o anceh in generle gente a cui piace fare networking tutte perosne solo a new york city",
+  "targetAudience": "tuute le perone corporate peoole, perosne a cui pioace fare netwokl di livello, i locali ci devono chiamere per fare gli venti nei loro locali anceh capito perche noi priu o meno portio 200 perosne di livello nel locale che fanno netwiking magiano e beevnono e espendono la voce ...",
+  "primaryGoal30Days": "che la pagina instagram crecse orgnicamnte, e che la gente si sicrive alla ocmneuity e partecipa ai nostrin eventi costantemnte",
+  "offer": "tiket del evento nel qule è compero cibo e drink",
+  "tone": "fallo tu in base al nostro business coemè",
+  "platforms": [
+    "intagram",
+    "facebook",
+    "linkedin"
+  ],
+  "constraints": [
+    "human approval required before publishing",
+    "no automatic DM/comment/like/follow automation",
+    "do not invent attendance numbers, guest identities, partnerships, pricing, or event claims"
+  ],
+  "availableAssets": [
+    "ho vari video della serata anceh foto"
+  ],
+  "approvalPolicy": "leonardo cri o ludo",
+  "createdAt": "2026-05-23T22:04:30.342Z"
+}
+
+```
+
+## Business Profile
+# Business Profile
+
+Project: Out Of Office
+
+## Clean Positioning
+Out Of Office creates premium, social networking experiences in New York City for corporate professionals and ambitious people who want real-life connections without a stiff conference atmosphere.
+
+## Business Type
+Curated networking and social events brand
+
+## Audiences
+- Primary audience: Corporate professionals in New York City who want high-quality networking in a more relaxed, social environment.
+- Secondary audience: Professionals, founders, operators, creatives, finance/tech workers, and newcomers who want to meet interesting people in person.
+- Venue buyer: Hospitality venues in New York that want qualified event traffic, food and drink spend, and a polished audience.
+
+## Offer
+Ticketed networking events where admission includes the event experience and may include food and drinks when confirmed for that event.
+
+## Value Proposition
+A curated room of interesting people, food, drinks, and social energy designed to make networking feel easier, more enjoyable, and more memorable.
+
+## 30-Day Goals
+- Grow Instagram organically.
+- Increase community signups.
+- Drive repeat attendance to events.
+- Make venues understand why hosting Out Of Office can be valuable.
+
+## Platforms
+- instagram
+- facebook
+- linkedin
+
+## Brand Tone
+- premium
+- social
+- confident
+- warm
+- New York energy
+
+## Proof And Claims To Verify
+- Past event videos and photos exist.
+- The business claims it can bring around 200 people to venues; verify per event before using as a public claim.
+- Food and drinks are included or bundled in some ticket offers; verify exact details before publishing.
+
+## Approval Owners
+leonardo cri o ludo
+
+## Publishing Rules
+- Do not publish automatically.
+- Do not automate DMs, comments, likes, or follows.
+- Do not invent attendance numbers, guest identities, partnerships, pricing, food/drink inclusions, or venue claims.
+- Use 'around 200 people' only after human confirmation for the specific event/context.
+- All final content must be approved by Leonardo, Cri/Cristian, or Ludo.
+
+## Open Questions The Agent Should Ask Proactively
+- What is the exact next event date, venue, and Luma/ticket link?
+- What exactly is included in each ticket for the next event?
+- Which public claims are confirmed: attendance, venue results, guest quality, food/drink package?
+- Which Instagram/Facebook/LinkedIn handles should be tagged?
+- What competitors or references should the system watch besides Post Office Roma?
+
+## Agent Behavior
+- First, infer and clean obvious spelling or wording issues from the interview.
+- Ask the human only when a missing detail changes facts, claims, pricing, event logistics, or publishing approval.
+- If content is too generic, proactively rewrite it with the business profile above.
+- If an asset is uploaded, extract what can be safely observed and separate observed facts from assumptions.
+- Never tell the human to fix messy wording when the intent is clear; normalize it and continue.
+
+
+## Model Routing Context
+# Model Routing Report
+
+Profile: Apple Silicon Pro/Max
+
+Policy: software-only no-cost; quality depends on local hardware and installed backends
+
+## Detected Signals
+- platform:darwin
+- arch:arm64
+- memoryGb:18
+
+## Local Backend Probes
+| Backend | Available | Command |
+| --- | --- | --- |
+| Ollama | yes | ollama-api |
+| MLX LM | no | - |
+| llama.cpp | no | - |
+| vLLM | no | - |
+| ComfyUI | no | - |
+| NVIDIA SMI | no | - |
+
+## Text Models
+
+### Frontier local reasoning/copy tier
+- Role: strategy, critique, long-form copy, persona simulation
+- Candidate tier: quantized 14B-32B+ open-weight instruct/reasoning model
+- Backend fit: ollama:available, mlx:missing, llama.cpp:missing, vllm:missing
+- License posture: audit exact checkpoint before download
+- Notes: Use for strategist, critic, copywriter, and persona-simulation passes when RAM/VRAM allows.
+
+### Fast local operator tier
+- Role: summaries, extraction, task routing, checklist generation
+- Candidate tier: quantized 3B-9B instruct model
+- Backend fit: ollama:available, mlx:missing, llama.cpp:missing
+- License posture: audit exact checkpoint before download
+- Notes: Use for repeatable low-cost internal tasks so the strongest model is reserved for high-leverage thinking.
+
+## Image Models
+
+### Text-heavy social graphics tier
+- Role: IG carousel covers, ad-like static visuals, quote cards
+- Candidate tier: local workflow optimized for readable text and brand-safe compositions
+- Backend fit: comfyui:missing
+- License posture: audit exact image model and workflow licenses
+- Notes: Prefer for carousels and graphics where legible text matters. Keep human approval before publishing.
+
+### General local image tier
+- Role: mood boards, backgrounds, concept art, visual variants
+- Candidate tier: memory-aware local diffusion or image model workflow
+- Backend fit: comfyui:missing
+- License posture: audit exact image model and workflow licenses
+- Notes: Use for optional image ideation. If ComfyUI is missing, generate precise briefs instead of blocking the workspace.
+
+## Orchestration
+
+### Local sequential agent batch
+- Role: multi-agent workflow execution
+- Candidate tier: single active model call at a time with cached context
+- Backend fit: ollama:available, llama.cpp:missing, mlx:missing
+- License posture: project code is no-cost; backend/model licenses audited separately
+- Notes: Best default for laptops. Agents run in sequence and persist outputs to files.
+
+## Human Decisions Required
+- Download exact local model weights only after checking their license and hardware fit.
+- Do not configure paid API fallbacks in generated workspaces.
+- Keep image/video generation optional when hardware is too small.
+
+
+## Publishing Policy
+```json
+{
+  "version": "0.1.0",
+  "mode": "human-approved",
+  "defaults": {
+    "allowAutomaticPublish": false,
+    "allowDmAutomation": false,
+    "allowCommentAutomation": false,
+    "allowLikeFollowAutomation": false,
+    "allowCaptchaBypass": false,
+    "allowCredentialStorage": false
+  },
+  "approvalStates": [
+    "draft",
+    "self_reviewed",
+    "needs_human_review",
+    "approved",
+    "rejected",
+    "published"
+  ],
+  "requiredBeforePublish": [
+    "human approval",
+    "platform checklist complete",
+    "asset availability confirmed",
+    "claims reviewed",
+    "account permission confirmed"
+  ],
+  "experimentalModulesDefault": "disabled"
+}
+
+```
+
+## Task
+Review the trend report and source registry. Produce research gaps, source-risk notes, and concrete trend-research tasks.
+
+## Target Artifact
+research/trend-report.md
+
+## Inputs
+## Input: project-brief.json
+
+{
+  "projectName": "Out Of Office",
+  "niche": "allora la nichia è corporate people che vogliono connnetersi con altre perople in corporte o anceh in generle gente a cui piace fare networking tutte perosne solo a new york city",
+  "targetAudience": "tuute le perone corporate peoole, perosne a cui pioace fare netwokl di livello, i locali ci devono chiamere per fare gli venti nei loro locali anceh capito perche noi priu o meno portio 200 perosne di livello nel locale che fanno netwiking magiano e beevnono e espendono la voce ...",
+  "primaryGoal30Days": "che la pagina instagram crecse orgnicamnte, e che la gente si sicrive alla ocmneuity e partecipa ai nostrin eventi costantemnte",
+  "offer": "tiket del evento nel qule è compero cibo e drink",
+  "tone": "fallo tu in base al nostro business coemè",
+  "platforms": [
+    "intagram",
+    "facebook",
+    "linkedin"
+  ],
+  "constraints": [
+    "human approval required before publishing",
+    "no automatic DM/comment/like/follow automation",
+    "do not invent attendance numbers, guest identities, partnerships, pricing, or event claims"
+  ],
+  "availableAssets": [
+    "ho vari video della serata anceh foto"
+  ],
+  "approvalPolicy": "leonardo cri o ludo",
+  "createdAt": "2026-05-23T22:04:30.342Z"
+}
+
+
+## Input: business/business.md
+
+# Business Profile
+
+Project: Out Of Office
+
+## Clean Positioning
+Out Of Office creates premium, social networking experiences in New York City for corporate professionals and ambitious people who want real-life connections without a stiff conference atmosphere.
+
+## Business Type
+Curated networking and social events brand
+
+## Audiences
+- Primary audience: Corporate professionals in New York City who want high-quality networking in a more relaxed, social environment.
+- Secondary audience: Professionals, founders, operators, creatives, finance/tech workers, and newcomers who want to meet interesting people in person.
+- Venue buyer: Hospitality venues in New York that want qualified event traffic, food and drink spend, and a polished audience.
+
+## Offer
+Ticketed networking events where admission includes the event experience and may include food and drinks when confirmed for that event.
+
+## Value Proposition
+A curated room of interesting people, food, drinks, and social energy designed to make networking feel easier, more enjoyable, and more memorable.
+
+## 30-Day Goals
+- Grow Instagram organically.
+- Increase community signups.
+- Drive repeat attendance to events.
+- Make venues understand why hosting Out Of Office can be valuable.
+
+## Platforms
+- instagram
+- facebook
+- linkedin
+
+## Brand Tone
+- premium
+- social
+- confident
+- warm
+- New York energy
+
+## Proof And Claims To Verify
+- Past event videos and photos exist.
+- The business claims it can bring around 200 people to venues; verify per event before using as a public claim.
+- Food and drinks are included or bundled in some ticket offers; verify exact details before publishing.
+
+## Approval Owners
+leonardo cri o ludo
+
+## Publishing Rules
+- Do not publish automatically.
+- Do not automate DMs, comments, likes, or follows.
+- Do not invent attendance numbers, guest identities, partnerships, pricing, food/drink inclusions, or venue claims.
+- Use 'around 200 people' only after human confirmation for the specific event/context.
+- All final content must be approved by Leonardo, Cri/Cristian, or Ludo.
+
+## Open Questions The Agent Should Ask Proactively
+- What is the exact next event date, venue, and Luma/ticket link?
+- What exactly is included in each ticket for the next event?
+- Which public claims are confirmed: attendance, venue results, guest quality, food/drink package?
+- Which Instagram/Facebook/LinkedIn handles should be tagged?
+- What competitors or references should the system watch besides Post Office Roma?
+
+## Agent Behavior
+- First, infer and clean obvious spelling or wording issues from the interview.
+- Ask the human only when a missing detail changes facts, claims, pricing, event logistics, or publishing approval.
+- If content is too generic, proactively rewrite it with the business profile above.
+- If an asset is uploaded, extract what can be safely observed and separate observed facts from assumptions.
+- Never tell the human to fix messy wording when the intent is clear; normalize it and continue.
+
+
+## Input: sources/source-registry.md
+
+# Source Registry
+
+| Source | Risk | Method | Allowed Use | Refresh |
+| --- | --- | --- | --- | --- |
+| Google Trends | low | manual export or browser-assisted public research | trend direction and topic discovery | weekly |
+| YouTube public search/trending | medium | browser-assisted public research with rate limits | format, hook, title, and topic benchmarking | weekly |
+| Reddit public communities | medium | public browsing, RSS where available, or official API if configured | pain points, language mining, objections | weekly |
+| TikTok Creative Center | medium | manual/browser-assisted research | creative inspiration and trend patterns | weekly |
+| Instagram public manual review | high | human/manual or explicitly approved browser review only | competitor and format observation | manual |
+| Facebook public manual review | high | human/manual or explicitly approved browser review only | page and group topic observation without automated collection | manual |
+| User-provided documents and exports | low | local file import | brand context, audience research, performance review | on upload |
+
+
+## Input: research/trend-report.md
+
+# Trend Research Plan
+
+Generated at: 2026-05-24T15:54:52.037Z
+
+Project: Out Of Office
+Niche: allora la nichia è corporate people che vogliono connnetersi con altre perople in corporte o anceh in generle gente a cui piace fare networking tutte perosne solo a new york city
+Target: tuute le perone corporate peoole, perosne a cui pioace fare netwokl di livello, i locali ci devono chiamere per fare gli venti nei loro locali anceh capito perche noi priu o meno portio 200 perosne di livello nel locale che fanno netwiking magiano e beevnono e espendono la voce ...
+Mode: planned-local-first
+
+## Source Risk Summary
+- Low risk: google-trends, user-provided-assets
+- Medium risk: youtube-trending-and-search, reddit-public, tiktok-creative-center
+- High risk / manual only: instagram-public-review, facebook-public-review
+
+## Guardrails
+- Cite every source before using a claim.
+- Separate observed facts from strategic inference.
+- Do not automate restricted Meta surfaces.
+- Use high-risk sources only through human/manual review unless explicitly approved.
+
+## Query Seeds
+- NYC networking events trend
+- NYC networking events content ideas
+- NYC networking events problems objections
+- NYC networking events instagram reel hooks
+- NYC networking events facebook community questions
+- NYC corporate networking trend
+- NYC corporate networking content ideas
+- NYC corporate networking problems objections
+- NYC corporate networking instagram reel hooks
+- NYC corporate networking facebook community questions
+- NYC professional networking trend
+- NYC professional networking content ideas
+- NYC professional networking problems objections
+- NYC professional networking instagram reel hooks
+- NYC professional networking facebook community questions
+- NYC business networking events trend
+- NYC business networking events content ideas
+- NYC business networking events problems objections
+- NYC business networking events instagram reel hooks
+- NYC business networking events facebook community questions
+- NYC founder networking events trend
+- NYC founder networking events content ideas
+- NYC founder networking events problems objections
+- NYC founder networking events instagram reel hooks
+- NYC founder networking events facebook community questions
+- NYC after work networking trend
+- NYC after work networking content ideas
+- NYC after work networking problems objections
+- NYC after work networking instagram reel hooks
+- NYC after work networking facebook community questions
+
+## Research Tasks
+### research-task-01
+- Query: NYC networking events trend
+- Objective: Find audience pain language and objections.
+- Suggested sources: google-trends, youtube-trending-and-search, reddit-public, tiktok-creative-center, user-provided-assets
+- Evidence required: yes
+- Status: pending
+- google-trends: https://trends.google.com/trends/explore?q=NYC%20networking%20events%20trend
+- youtube-trending-and-search: https://www.youtube.com/results?search_query=NYC%20networking%20events%20trend
+- reddit-public: https://www.reddit.com/search/?q=NYC%20networking%20events%20trend
+
+### research-task-02
+- Query: NYC networking events content ideas
+- Objective: Find format, hook, and creative patterns.
+- Suggested sources: google-trends, youtube-trending-and-search, reddit-public, tiktok-creative-center, user-provided-assets
+- Evidence required: yes
+- Status: pending
+- google-trends: https://trends.google.com/trends/explore?q=NYC%20networking%20events%20content%20ideas
+- youtube-trending-and-search: https://www.youtube.com/results?search_query=NYC%20networking%20events%20content%20ideas
+- reddit-public: https://www.reddit.com/search/?q=NYC%20networking%20events%20content%20ideas
+
+### research-task-03
+- Query: NYC networking events problems objections
+- Objective: Find content gaps and positioning opportunities.
+- Suggested sources: google-trends, youtube-trending-and-search, reddit-public, tiktok-creative-center, user-provided-assets
+- Evidence required: yes
+- Status: pending
+- google-trends: https://trends.google.com/trends/explore?q=NYC%20networking%20events%20problems%20objections
+- youtube-trending-and-search: https://www.youtube.com/results?search_query=NYC%20networking%20events%20problems%20objections
+- reddit-public: https://www.reddit.com/search/?q=NYC%20networking%20events%20problems%20objections
+
+### research-task-04
+- Query: NYC networking events instagram reel hooks
+- Objective: Find audience pain language and objections.
+- Suggested sources: google-trends, youtube-trending-and-search, reddit-public, tiktok-creative-center, user-provided-assets
+- Evidence required: yes
+- Status: pending
+- google-trends: https://trends.google.com/trends/explore?q=NYC%20networking%20events%20instagram%20reel%20hooks
+- youtube-trending-and-search: https://www.youtube.com/results?search_query=NYC%20networking%20events%20instagram%20reel%20hooks
+- reddit-public: https://www.reddit.com/search/?q=NYC%20networking%20events%20instagram%20reel%20hooks
+
+### research-task-05
+- Query: NYC networking events facebook community questions
+- Objective: Find format, hook, and creative patterns.
+- Suggested sources: google-trends, youtube-trending-and-search, reddit-public, tiktok-creative-center, user-provided-assets
+- Evidence required: yes
+- Status: pending
+- google-trends: https://trends.google.com/trends/explore?q=NYC%20networking%20events%20facebook%20community%20questions
+- youtube-trending-and-search: https://www.youtube.com/results?search_query=NYC%20networking%20events%20facebook%20community%20questions
+- reddit-public: https://www.reddit.com/search/?q=NYC%20networking%20events%20facebook%20community%20questions
+
+### research-task-06
+- Query: NYC corporate networking trend
+- Objective: Find content gaps and positioning opportunities.
+- Suggested sources: google-trends, youtube-trending-and-search, reddit-public, tiktok-creative-center, user-provided-assets
+- Evidence required: yes
+- Status: pending
+- google-trends: https://trends.google.com/trends/explore?q=NYC%20corporate%20networking%20trend
+- youtube-trending-and-search: https://www.youtube.com/results?search_query=NYC%20corporate%20networking%20trend
+- reddit-public: https://www.reddit.com/search/?q=NYC%20corporate%20networking%20trend
+
+### research-task-07
+- Query: NYC corporate networking content ideas
+- Objective: Find audience pain language and objections.
+- Suggested sources: google-trends, youtube-trending-and-search, reddit-public, tiktok-creative-center, user-provided-assets
+- Evidence required: yes
+- Status: pending
+- google-trends: https://trends.google.com/trends/explore?q=NYC%20corporate%20networking%20content%20ideas
+- youtube-trending-and-search: https://www.youtube.com/results?search_query=NYC%20corporate%20networking%20content%20ideas
+- reddit-public: https://www.reddit.com/search/?q=NYC%20corporate%20networking%20content%20ideas
+
+### research-task-08
+- Query: NYC corporate networking problems objections
+- Objective: Find format, hook, and creative patterns.
+- Suggested sources: google-trends, youtube-trending-and-search, reddit-public, tiktok-creative-center, user-provided-assets
+- Evidence required: yes
+- Status: pending
+- google-trends: https://trends.google.com/trends/explore?q=NYC%20corporate%20networking%20problems%20objections
+- youtube-trending-and-search: https://www.youtube.com/results?search_query=NYC%20corporate%20networking%20problems%20objections
+- reddit-public: https://www.reddit.com/search/?q=NYC%20corporate%20networking%20problems%20objections
+
+### research-task-09
+- Query: NYC corporate networking instagram reel hooks
+- Objective: Find content gaps and positioning opportunities.
+- Suggested sources: google-trends, youtube-trending-and-search, reddit-public, tiktok-creative-center, user-provided-assets
+- Evidence required: yes
+- Status: pending
+- google-trends: https://trends.google.com/trends/explore?q=NYC%20corporate%20networking%20instagram%20reel%20hooks
+- youtube-trending-and-search: https://www.youtube.com/results?search_query=NYC%20corporate%20networking%20instagram%20reel%20hooks
+- reddit-public: https://www.reddit.com/search/?q=NYC%20corporate%20networking%20instagram%20reel%20hooks
+
+### research-task-10
+- Query: NYC corporate networking facebook community questions
+- Objective: Find audience pain language and objections.
+- Suggested sources: google-trends, youtube-trending-and-search, reddit-public, tiktok-creative-center, user-provided-assets
+- Evidence required: yes
+- Status: pending
+- google-trends: https://trends.google.com/trends/explore?q=NYC%20corporate%20networking%20facebook%20community%20questions
+- youtube-trending-and-search: https://www.youtube.com/results?search_query=NYC%20corporate%20networking%20facebook%20community%20questions
+- reddit-public: https://www.reddit.com/search/?q=NYC%20corporate%20networking%20facebook%20community%20questions
+
+### research-task-11
+- Query: NYC professional networking trend
+- Objective: Find format, hook, and creative patterns.
+- Suggested sources: google-trends, youtube-trending-and-search, reddit-public, tiktok-creative-center, user-provided-assets
+- Evidence required: yes
+- Status: pending
+- google-trends: https://trends.google.com/trends/explore?q=NYC%20professional%20networking%20trend
+- youtube-trending-and-search: https://www.youtube.com/results?search_query=NYC%20professional%20networking%20trend
+- reddit-public: https://www.reddit.com/search/?q=NYC%20professional%20networking%20trend
+
+### research-task-12
+- Query: NYC professional networking content ideas
+- Objective: Find content gaps and positioning opportunities.
+- Suggested sources: google-trends, youtube-trending-and-search, reddit-public, tiktok-creative-center, user-provided-assets
+- Evidence required: yes
+- Status: pending
+- google-trends: https://trends.google.com/trends/explore?q=NYC%20professional%20networking%20content%20ideas
+- youtube-trending-and-search: https://www.youtube.com/results?search_query=NYC%20professional%20networking%20content%20ideas
+- reddit-public: https://www.reddit.com/search/?q=NYC%20professional%20networking%20content%20ideas
+
+### research-task-13
+- Query: NYC professional networking problems objections
+- Objective: Find audience pain language and objections.
+- Suggested sources: google-trends, youtube-trending-and-search, reddit-public, tiktok-creative-center, user-provided-assets
+- Evidence required: yes
+- Status: pending
+- google-trends: https://trends.google.com/trends/explore?q=NYC%20professional%20networking%20problems%20objections
+- youtube-trending-and-search: https://www.youtube.com/results?search_query=NYC%20professional%20networking%20problems%20objections
+- reddit-public: https://www.reddit.com/search/?q=NYC%20professional%20networking%20problems%20objections
+
+### research-task-14
+- Query: NYC professional networking instagram reel hooks
+- Objective: Find format, hook, and creative patterns.
+- Suggested sources: google-trends, youtube-trending-and-search, reddit-public, tiktok-creative-center, user-provided-assets
+- Evidence required: yes
+- Status: pending
+- google-trends: https://trends.google.com/trends/explore?q=NYC%20professional%20networking%20instagram%20reel%20hooks
+- youtube-trending-and-search: https://www.youtube.com/results?search_query=NYC%20professional%20networking%20instagram%20reel%20hooks
+- reddit-public: https://www.reddit.com/search/?q=NYC%20professional%20networking%20instagram%20reel%20hooks
+
+### research-task-15
+- Query: NYC professional networking facebook community questions
+- Objective: Find content gaps and positioning opportunities.
+- Suggested sources: google-trends, youtube-trending-and-search, reddit-public, tiktok-creative-center, user-provided-assets
+- Evidence required: yes
+- Status: pending
+- google-trends: https://trends.google.com/trends/explore?q=NYC%20professional%20networking%20facebook%20community%20questions
+- youtube-trending-and-search: https://www.youtube.com/results?search_query=NYC%20professional%20networking%20facebook%20community%20questions
+- reddit-public: https://www.reddit.com/search/?q=NYC%20professional%20networking%20facebook%20community%20questions
+
+### research-task-16
+- Query: NYC business networking events trend
+- Objective: Find audience pain language and objections.
+- Suggested sources: google-trends, youtube-trending-and-search, reddit-public, tiktok-creative-center, user-provided-assets
+- Evidence required: yes
+- Status: pending
+- google-trends: https://trends.google.com/trends/explore?q=NYC%20business%20networking%20events%20trend
+- youtube-trending-and-search: https://www.youtube.com/results?search_query=NYC%20business%20networking%20events%20trend
+- reddit-public: https://www.reddit.com/search/?q=NYC%20business%20networking%20events%20trend
+
+### research-task-17
+- Query: NYC business networking events content ideas
+- Objective: Find format, hook, and creative patterns.
+- Suggested sources: google-trends, youtube-trending-and-search, reddit-public, tiktok-creative-center, user-provided-assets
+- Evidence required: yes
+- Status: pending
+- google-trends: https://trends.google.com/trends/explore?q=NYC%20business%20networking%20events%20content%20ideas
+- youtube-trending-and-search: https://www.youtube.com/results?search_query=NYC%20business%20networking%20events%20content%20ideas
+- reddit-public: https://www.reddit.com/search/?q=NYC%20business%20networking%20events%20content%20ideas
+
+### research-task-18
+- Query: NYC business networking events problems objections
+- Objective: Find content gaps and positioning opportunities.
+- Suggested sources: google-trends, youtube-trending-and-search, reddit-public, tiktok-creative-center, user-provided-assets
+- Evidence required: yes
+- Status: pending
+- google-trends: https://trends.google.com/trends/explore?q=NYC%20business%20networking%20events%20problems%20objections
+- youtube-trending-and-search: https://www.youtube.com/results?search_query=NYC%20business%20networking%20events%20problems%20objections
+- reddit-public: https://www.reddit.com/search/?q=NYC%20business%20networking%20events%20problems%20objections
+
+### research-task-19
+- Query: NYC business networking events instagram reel hooks
+- Objective: Find audience pain language and objections.
+- Suggested sources: google-trends, youtube-trending-and-search, reddit-public, tiktok-creative-center, user-provided-assets
+- Evidence required: yes
+- Status: pending
+- google-trends: https://trends.google.com/trends/explore?q=NYC%20business%20networking%20events%20instagram%20reel%20hooks
+- youtube-trending-and-search: https://www.youtube.com/results?search_query=NYC%20business%20networking%20events%20instagram%20reel%20hooks
+- reddit-public: https://www.reddit.com/search/?q=NYC%20business%20networking%20events%20instagram%20reel%20hooks
+
+### research-task-20
+- Query: NYC business networking events facebook community questions
+- Objective: Find format, hook, and creative patterns.
+- Suggested sources: google-trends, youtube-trending-and-search, reddit-public, tiktok-creative-center, user-provided-assets
+- Evidence required: yes
+- Status: pending
+- google-trends: https://trends.google.com/trends/explore?q=NYC%20business%20networking%20events%20facebook%20community%20questions
+- youtube-trending-and-search: https://www.youtube.com/results?search_query=NYC%20business%20networking%20events%20facebook%20community%20questions
+- reddit-public: https://www.reddit.com/search/?q=NYC%20business%20networking%20events%20facebook%20community%20questions
+
+### research-task-21
+- Query: NYC founder networking events trend
+- Objective: Find content gaps and positioning opportunities.
+- Suggested sources: google-trends, youtube-trending-and-search, reddit-public, tiktok-creative-center, user-provided-assets
+- Evidence required: yes
+- Status: pending
+- google-trends: https://trends.google.com/trends/explore?q=NYC%20founder%20networking%20events%20trend
+- youtube-trending-and-search: https://www.youtube.com/results?search_query=NYC%20founder%20networking%20events%20trend
+- reddit-public: https://www.reddit.com/search/?q=NYC%20founder%20networking%20events%20trend
+
+### research-task-22
+- Query: NYC founder networking events content ideas
+- Objective: Find audience pain language and objections.
+- Suggested sources: google-trends, youtube-trending-and-search, reddit-public, tiktok-creative-center, user-provided-assets
+- Evidence required: yes
+- Status: pending
+- google-trends: https://trends.google.com/trends/explore?q=NYC%20founder%20networking%20events%20content%20ideas
+- youtube-trending-and-search: https://www.youtube.com/results?search_query=NYC%20founder%20networking%20events%20content%20ideas
+- reddit-public: https://www.reddit.com/search/?q=NYC%20founder%20networking%20events%20content%20ideas
+
+### research-task-23
+- Query: NYC founder networking events problems objections
+- Objective: Find format, hook, and creative patterns.
+- Suggested sources: google-trends, youtube-trending-and-search, reddit-public, tiktok-creative-center, user-provided-assets
+- Evidence required: yes
+- Status: pending
+- google-trends: https://trends.google.com/trends/explore?q=NYC%20founder%20networking%20events%20problems%20objections
+- youtube-trending-and-search: https://www.youtube.com/results?search_query=NYC%20founder%20networking%20events%20problems%20objections
+- reddit-public: https://www.reddit.com/search/?q=NYC%20founder%20networking%20events%20problems%20objections
+
+### research-task-24
+- Query: NYC founder networking events instagram reel hooks
+- Objective: Find content gaps and positioning opportunities.
+- Suggested sources: google-trends, youtube-trending-and-search, reddit-public, tiktok-creative-center, user-provided-assets
+- Evidence required: yes
+- Status: pending
+- google-trends: https://trends.google.com/trends/explore?q=NYC%20founder%20networking%20events%20instagram%20reel%20hooks
+- youtube-trending-and-search: https://www.youtube.com/results?search_query=NYC%20founder%20networking%20events%20instagram%20reel%20hooks
+- reddit-public: https://www.reddit.com/search/?q=NYC%20founder%20networking%20events%20instagram%20reel%20hooks
+
+### research-task-25
+- Query: NYC founder networking events facebook community questions
+- Objective: Find audience pain language and objections.
+- Suggested sources: google-trends, youtube-trending-and-search, reddit-public, tiktok-creative-center, user-provided-assets
+- Evidence required: yes
+- Status: pending
+- google-trends: https://trends.google.com/trends/explore?q=NYC%20founder%20networking%20events%20facebook%20community%20questions
+- youtube-trending-and-search: https://www.youtube.com/results?search_query=NYC%20founder%20networking%20events%20facebook%20community%20questions
+- reddit-public: https://www.reddit.com/search/?q=NYC%20founder%20networking%20events%20facebook%20community%20questions
+
+### research-task-26
+- Query: NYC after work networking trend
+- Objective: Find format, hook, and creative patterns.
+- Suggested sources: google-trends, youtube-trending-and-search, reddit-public, tiktok-creative-center, user-provided-assets
+- Evidence required: yes
+- Status: pending
+- google-trends: https://trends.google.com/trends/explore?q=NYC%20after%20work%20networking%20trend
+- youtube-trending-and-search: https://www.youtube.com/results?search_query=NYC%20after%20work%20networking%20trend
+- reddit-public: https://www.reddit.com/search/?q=NYC%20after%20work%20networking%20trend
+
+### research-task-27
+- Query: NYC after work networking content ideas
+- Objective: Find content gaps and positioning opportunities.
+- Suggested sources: google-trends, youtube-trending-and-search, reddit-public, tiktok-creative-center, user-provided-assets
+- Evidence required: yes
+- Status: pending
+- google-trends: https://trends.google.com/trends/explore?q=NYC%20after%20work%20networking%20content%20ideas
+- youtube-trending-and-search: https://www.youtube.com/results?search_query=NYC%20after%20work%20networking%20content%20ideas
+- reddit-public: https://www.reddit.com/search/?q=NYC%20after%20work%20networking%20content%20ideas
+
+### research-task-28
+- Query: NYC after work networking problems objections
+- Objective: Find audience pain language and objections.
+- Suggested sources: google-trends, youtube-trending-and-search, reddit-public, tiktok-creative-center, user-provided-assets
+- Evidence required: yes
+- Status: pending
+- google-trends: https://trends.google.com/trends/explore?q=NYC%20after%20work%20networking%20problems%20objections
+- youtube-trending-and-search: https://www.youtube.com/results?search_query=NYC%20after%20work%20networking%20problems%20objections
+- reddit-public: https://www.reddit.com/search/?q=NYC%20after%20work%20networking%20problems%20objections
+
+### research-task-29
+- Query: NYC after work networking instagram reel hooks
+- Objective: Find format, hook, and creative patterns.
+- Suggested sources: google-trends, youtube-trending-and-search, reddit-public, tiktok-creative-center, user-provided-assets
+- Evidence required: yes
+- Status: pending
+- google-trends: https://trends.google.com/trends/explore?q=NYC%20after%20work%20networking%20instagram%20reel%20hooks
+- youtube-trending-and-search: https://www.youtube.com/results?search_query=NYC%20after%20work%20networking%20instagram%20reel%20hooks
+- reddit-public: https://www.reddit.com/search/?q=NYC%20after%20work%20networking%20instagram%20reel%20hooks
+
+### research-task-30
+- Query: NYC after work networking facebook community questions
+- Objective: Find content gaps and positioning opportunities.
+- Suggested sources: google-trends, youtube-trending-and-search, reddit-public, tiktok-creative-center, user-provided-assets
+- Evidence required: yes
+- Status: pending
+- google-trends: https://trends.google.com/trends/explore?q=NYC%20after%20work%20networking%20facebook%20community%20questions
+- youtube-trending-and-search: https://www.youtube.com/results?search_query=NYC%20after%20work%20networking%20facebook%20community%20questions
+- reddit-public: https://www.reddit.com/search/?q=NYC%20after%20work%20networking%20facebook%20community%20questions
+
+
+
+## Input: research/live-trend-report.md
+
+# Live Trend Research Report
+
+Generated at: 2026-05-24T15:55:02.498Z
+
+Mode: live-public-sources
+
+## Guardrails
+- Public sources only; no login, no account automation, no DM/comment/like/follow actions.
+- Use collected items as directional trend intelligence, not proof.
+- Cite source URLs and collection dates.
+- Separate observation from inference.
+
+## Trend Items
+### 1. https://luma.com/ishmpmbi?tk=zzHho4
+- Source: project-link:luma
+- Query: luma
+- Risk: low
+- Confidence: medium
+- Relevance score: -
+- Collected: 2026-05-24T15:54:52.044Z
+- URL: https://luma.com/ishmpmbi?tk=zzHho4
+- Observation: User-provided source. Review manually and use as high-context project evidence.
+- Inference: Use as directional audience/context signal only; validate before turning into claims.
+
+### 2. NameSummit - A Digital Branding Event in NYC
+- Source: reddit-public
+- Query: NYC networking events trend
+- Risk: medium
+- Confidence: low
+- Relevance score: 3
+- Collected: 2026-05-24T15:54:52.656Z
+- URL: https://www.reddit.com/r/Entrepreneur/comments/6px0ox/namesummit_a_digital_branding_event_in_nyc/
+- Observation: Hello fellow Redditors,
+
+I am an event coordinator for NameSummit, a Digital branding and Marketing event taking place in NYC on August 7th and 8th. I am extending a personal invitation to the Reddit community for this event. 
+
+I am excited
+- Inference: Use as directional audience/context signal only; validate before turning into claims.
+
+### 3. https://www.youtube.com/results?search_query=NYC%20networking%20events%20trend
+- Source: youtube-trending-and-search
+- Query: NYC networking events trend
+- Risk: medium
+- Confidence: low
+- Relevance score: 0
+- Collected: 2026-05-24T15:54:55.948Z
+- URL: https://www.youtube.com/results?search_query=NYC%20networking%20events%20trend
+- Observation: Public page snapshot collected; manual review recommended.
+- Inference: Use as directional audience/context signal only; validate before turning into claims.
+
+### 4. Building a Real-Time Platform for Bars &amp; Events - NYC Cofounder Wanted
+- Source: reddit-public
+- Query: NYC networking events content ideas
+- Risk: medium
+- Confidence: medium
+- Relevance score: 4
+- Collected: 2026-05-24T15:54:57.895Z
+- URL: https://www.reddit.com/r/cofounderhunt/comments/1reikwi/building_a_realtime_platform_for_bars_events_nyc/
+- Observation: **A real-time customer acquisition platform , activating demand through time-sensitive drink specials and events.**
+
+The platform is a real-time nightlife platform that gives users line of sight on live drink specials they can act on immedi
+- Inference: Use as directional audience/context signal only; validate before turning into claims.
+
+### 5. Which dress for an evening work event in NYC?
+- Source: reddit-public
+- Query: NYC networking events content ideas
+- Risk: medium
+- Confidence: medium
+- Relevance score: 3
+- Collected: 2026-05-24T15:54:57.895Z
+- URL: https://www.reddit.com/r/OUTFITS/comments/1t2ztqz/which_dress_for_an_evening_work_event_in_nyc/
+- Observation: ⭐️Edit⭐️ Thanks for the responses everyone! I will be going with the first one, and feel very confident in doing so given all the feedback. For those who asked, the first dress is from Aritzia, but it’s at least 5 years old and no longer on
+- Inference: Use as directional audience/context signal only; validate before turning into claims.
+
+### 6. https://www.youtube.com/results?search_query=NYC%20networking%20events%20content%20ideas
+- Source: youtube-trending-and-search
+- Query: NYC networking events content ideas
+- Risk: medium
+- Confidence: low
+- Relevance score: 0
+- Collected: 2026-05-24T15:55:01.297Z
+- URL: https://www.youtube.com/results?search_query=NYC%20networking%20events%20content%20ideas
+- Observation: Public page snapshot collected; manual review recommended.
+- Inference: Use as directional audience/context signal only; validate before turning into claims.
+
+
+## Collection Failures
+- google-trends / NYC networking events trend / https://trends.google.com/trends/explore?q=NYC%20networking%20events%20trend / 429
+- google-trends / NYC networking events content ideas / https://trends.google.com/trends/explore?q=NYC%20networking%20events%20content%20ideas / 429
+
+
+## Input: research/trend-items.json
+
+[
+  {
+    "source": "project-link:luma",
+    "query": "luma",
+    "title": "https://luma.com/ishmpmbi?tk=zzHho4",
+    "excerpt": "User-provided source. Review manually and use as high-context project evidence.",
+    "url": "https://luma.com/ishmpmbi?tk=zzHho4",
+    "collectedAt": "2026-05-24T15:54:52.044Z",
+    "risk": "low",
+    "confidence": "medium",
+    "observationType": "user-provided-source"
+  },
+  {
+    "source": "reddit-public",
+    "query": "NYC networking events trend",
+    "title": "NameSummit - A Digital Branding Event in NYC",
+    "excerpt": "Hello fellow Redditors,\n\nI am an event coordinator for NameSummit, a Digital branding and Marketing event taking place in NYC on August 7th and 8th. I am extending a personal invitation to the Reddit community for this event. \n\nI am excited",
+    "url": "https://www.reddit.com/r/Entrepreneur/comments/6px0ox/namesummit_a_digital_branding_event_in_nyc/",
+    "collectedAt": "2026-05-24T15:54:52.656Z",
+    "risk": "medium",
+    "confidence": "low",
+    "relevanceScore": 3,
+    "observationType": "public-discussion"
+  },
+  {
+    "source": "youtube-trending-and-search",
+    "query": "NYC networking events trend",
+    "title": "https://www.youtube.com/results?search_query=NYC%20networking%20events%20trend",
+    "excerpt": "Public page snapshot collected; manual review recommended.",
+    "url": "https://www.youtube.com/results?search_query=NYC%20networking%20events%20trend",
+    "collectedAt": "2026-05-24T15:54:55.948Z",
+    "risk": "medium",
+    "confidence": "low",
+    "relevanceScore": 0,
+    "observationType": "public-page"
+  },
+  {
+    "source": "reddit-public",
+    "query": "NYC networking events content ideas",
+    "title": "Building a Real-Time Platform for Bars &amp; Events - NYC Cofounder Wanted",
+    "excerpt": "**A real-time customer acquisition platform , activating demand through time-sensitive drink specials and events.**\n\nThe platform is a real-time nightlife platform that gives users line of sight on live drink specials they can act on immedi",
+    "url": "https://www.reddit.com/r/cofounderhunt/comments/1reikwi/building_a_realtime_platform_for_bars_events_nyc/",
+    "collectedAt": "2026-05-24T15:54:57.895Z",
+    "risk": "medium",
+    "confidence": "medium",
+    "relevanceScore": 4,
+    "observationType": "public-discussion"
+  },
+  {
+    "source": "reddit-public",
+    "query": "NYC networking events content ideas",
+    "title": "Which dress for an evening work event in NYC?",
+    "excerpt": "⭐️Edit⭐️ Thanks for the responses everyone! I will be going with the first one, and feel very confident in doing so given all the feedback. For those who asked, the first dress is from Aritzia, but it’s at least 5 years old and no longer on",
+    "url": "https://www.reddit.com/r/OUTFITS/comments/1t2ztqz/which_dress_for_an_evening_work_event_in_nyc/",
+    "collectedAt": "2026-05-24T15:54:57.895Z",
+    "risk": "medium",
+    "confidence": "medium",
+    "relevanceScore": 3,
+    "observationType": "public-discussion"
+  },
+  {
+    "source": "youtube-trending-and-search",
+    "query": "NYC networking events content ideas",
+    "title": "https://www.youtube.com/results?search_query=NYC%20networking%20events%20content%20ideas",
+    "excerpt": "Public page snapshot collected; manual review recommended.",
+    "url": "https://www.youtube.com/results?search_query=NYC%20networking%20events%20content%20ideas",
+    "collectedAt": "2026-05-24T15:55:01.297Z",
+    "risk": "medium",
+    "confidence": "low",
+    "relevanceScore": 0,
+    "observationType": "public-page"
+  }
+]
+
+
+## Output Contract
+- Be specific to this workspace.
+- Clean obvious messy wording from user input yourself; do not ask the human to correct typos when intent is clear.
+- Ask proactive follow-up questions only for factual gaps that affect claims, event logistics, pricing, tickets, approvals, or publishing safety.
+- Flag assumptions and risks.
+- Do not invent product claims, free trials, signups, discounts, testimonials, case studies, or CTAs that are not present in the brief.
+- Prefer practical, proof-aware language over aggressive sales language.
+- Do not recommend DM/comment/like/follow automation.
+- Do not mark anything ready to publish without explicit human approval.
+- Include a section named "Recommended Fixes" with concrete bullets.
+- If and only if you are proposing a full replacement for the target artifact, include a section named "Proposed Artifact" containing one fenced code block with the complete replacement content.
+- End with concrete next regeneration or approval steps.

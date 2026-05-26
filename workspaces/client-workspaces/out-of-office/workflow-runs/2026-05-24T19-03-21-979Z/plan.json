@@ -1,0 +1,53 @@
+{
+  "version": "0.1.0",
+  "workspace": "out-of-office",
+  "runId": "2026-05-24T19-03-21-979Z",
+  "mode": "dry-run-prompt-packets",
+  "steps": [
+    {
+      "id": "strategy",
+      "agentId": "brand-strategist",
+      "task": "Turn the brief and research into sharper positioning, voice rules, and content-pillar improvements.",
+      "inputs": [
+        "project-brief.json",
+        "business/business.md",
+        "operations/current-request.md",
+        "operations/agent-operating-contracts.md",
+        "research/trend-report.md",
+        "research/live-trend-report.md",
+        "strategy/content-pillars.md"
+      ]
+    },
+    {
+      "id": "copy",
+      "agentId": "copywriter",
+      "task": "Review only drafts/posts.md. Improve clarity, specificity, proof-awareness, and CTA quality without inventing offers, free trials, signups, discounts, testimonials, or claims not present in the brief. Propose a complete replacement only for drafts/posts.md. Do not include carousel or reel content in the Proposed Artifact.",
+      "inputs": [
+        "business/business.md",
+        "operations/current-request.md",
+        "calendar/30-day-calendar.md",
+        "drafts/posts.md"
+      ]
+    },
+    {
+      "id": "qa",
+      "agentId": "critic-qa",
+      "task": "Run a final adversarial QA pass. Decide what is not good enough for human approval and convert it into regeneration tasks.",
+      "inputs": [
+        "business/business.md",
+        "operations/current-request.md",
+        "review/workspace-quality-rubric.json",
+        "simulation/persona-report.md",
+        "review/qa-recap.md",
+        "drafts/posts.md"
+      ]
+    }
+  ],
+  "selectedStepIds": [
+    "strategy",
+    "copy",
+    "qa"
+  ],
+  "maxSteps": null,
+  "timeoutMs": 60000
+}

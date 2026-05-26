@@ -1,0 +1,12 @@
+{
+  "id": "calendar",
+  "agentId": "content-planner",
+  "status": "completed",
+  "backend": "ollama",
+  "model": "qwen2.5:14b",
+  "inputs": [
+    "strategy/content-pillars.md",
+    "calendar/30-day-calendar.md"
+  ],
+  "generatedAt": "2026-05-23T00:04:34.380Z"
+}

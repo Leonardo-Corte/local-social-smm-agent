@@ -1,0 +1,65 @@
+{
+  "version": "0.1.0",
+  "workspace": "out-of-office",
+  "runId": "2026-05-24T19-08-44-870Z",
+  "generatedAt": "2026-05-24T19:08:44.959Z",
+  "mode": "dry-run-prompt-packets",
+  "status": "needs-human-review",
+  "automaticPublishEnabled": false,
+  "requiredHumanApproval": true,
+  "steps": [
+    {
+      "id": "strategy",
+      "agentId": "brand-strategist",
+      "status": "saved_prompt_packet",
+      "backend": "prompt-packet",
+      "model": "qwen2.5:14b",
+      "inputs": [
+        "project-brief.json",
+        "business/business.md",
+        "operations/current-request.md",
+        "operations/agent-operating-contracts.md",
+        "research/trend-report.md",
+        "research/live-trend-report.md",
+        "strategy/content-pillars.md"
+      ],
+      "generatedAt": "2026-05-24T19:08:44.955Z"
+    },
+    {
+      "id": "copy",
+      "agentId": "copywriter",
+      "status": "saved_prompt_packet",
+      "backend": "prompt-packet",
+      "model": "qwen2.5:14b",
+      "inputs": [
+        "business/business.md",
+        "operations/current-request.md",
+        "calendar/30-day-calendar.md",
+        "drafts/posts.md"
+      ],
+      "generatedAt": "2026-05-24T19:08:44.957Z"
+    },
+    {
+      "id": "qa",
+      "agentId": "critic-qa",
+      "status": "saved_prompt_packet",
+      "backend": "prompt-packet",
+      "model": "qwen2.5:14b",
+      "inputs": [
+        "business/business.md",
+        "operations/current-request.md",
+        "review/workspace-quality-rubric.json",
+        "simulation/persona-report.md",
+        "review/qa-recap.md",
+        "drafts/posts.md"
+      ],
+      "generatedAt": "2026-05-24T19:08:44.959Z"
+    }
+  ],
+  "humanReviewRequired": [
+    "Review generated step outputs and approve only specific artifacts.",
+    "Run regeneration tasks before treating drafts as client-ready.",
+    "Use official/manual publishing paths only after approval."
+  ],
+  "regenerationTaskCount": 3
+}

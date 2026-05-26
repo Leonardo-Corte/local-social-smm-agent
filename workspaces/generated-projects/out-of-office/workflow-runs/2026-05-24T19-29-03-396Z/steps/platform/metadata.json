@@ -1,0 +1,18 @@
+{
+  "id": "platform",
+  "agentId": "platform-strategist",
+  "status": "saved_prompt_packet",
+  "backend": "prompt-packet",
+  "model": "qwen2.5:14b",
+  "inputs": [
+    "project-brief.json",
+    "business/business.md",
+    "platforms/platform-playbooks.md",
+    "operations/current-request.md",
+    "sources/source-registry.md",
+    "research/trend-report.md",
+    "research/live-trend-report.md",
+    "drafts/platform-adaptations.md"
+  ],
+  "generatedAt": "2026-05-24T19:29:03.409Z"
+}

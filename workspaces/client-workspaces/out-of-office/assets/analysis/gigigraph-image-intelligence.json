@@ -1,0 +1,35 @@
+{
+  "version": "0.1.0",
+  "generatedAt": "2026-05-24T19:40:54.550Z",
+  "workspaceRoot": "/Users/corte/Documents/Codex/2026-05-22/fammi-un-deep-interwie-per-questo/workspaces/generated-projects/out-of-office",
+  "asset": {
+    "kind": "image",
+    "absolutePath": "/Users/corte/Documents/Codex/2026-05-22/fammi-un-deep-interwie-per-questo/workspaces/generated-projects/out-of-office/assets/raw/gigigraph.png",
+    "relativePath": "assets/raw/gigigraph.png",
+    "originalPath": "/Users/corte/Desktop/gigigraph.png",
+    "sha256": "5da3e61e87628816ccda4dda063783445c61c383515e6b727abb379ad9771bc9"
+  },
+  "metadata": {
+    "available": true,
+    "width": 1183,
+    "height": 879,
+    "format": "png",
+    "dpiWidth": 96,
+    "dpiHeight": 96
+  },
+  "fileDescription": "PNG image data, 1183 x 879, 8-bit/color RGBA, non-interlaced",
+  "vision": {
+    "status": "missing-vision-model",
+    "model": null,
+    "summary": "",
+    "notes": [
+      "No local Ollama vision model was detected.",
+      "Install a local vision model such as llava, llama3.2-vision, qwen2.5vl, or moondream to enable visual scene understanding."
+    ]
+  },
+  "fitNotes": [
+    "Horizontal image: likely needs crop or layout adaptation for Instagram/Reels; can work for LinkedIn/Facebook.",
+    "Do not infer identities, attendance numbers, partnerships, or ticket details from the image alone.",
+    "If the image contains text, verify legibility manually before publishing."
+  ]
+}

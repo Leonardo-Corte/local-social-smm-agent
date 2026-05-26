@@ -1,0 +1,14 @@
+{
+  "id": "publishing",
+  "agentId": "publishing-operator",
+  "status": "saved_prompt_packet",
+  "backend": "prompt-packet",
+  "model": null,
+  "inputs": [
+    "publishing/publishing-checklist.md",
+    "drafts/posts.md",
+    "drafts/carousels.md",
+    "drafts/reels.md"
+  ],
+  "generatedAt": "2026-05-22T19:24:56.365Z"
+}

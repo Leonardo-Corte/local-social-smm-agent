@@ -1,0 +1,87 @@
+{
+  "version": "0.1.0",
+  "workspace": "out-of-office",
+  "runId": "2026-05-23T20-18-29-023Z",
+  "mode": "dry-run-prompt-packets",
+  "steps": [
+    {
+      "id": "intake",
+      "agentId": "intake-strategist",
+      "task": "Review the project brief and identify missing context, contradictions, and personalization tasks before content work starts.",
+      "inputs": [
+        "project-brief.json",
+        "memory/preferences.json",
+        "memory/user-feedback.md"
+      ]
+    },
+    {
+      "id": "research",
+      "agentId": "market-researcher",
+      "task": "Review the trend report and source registry. Produce research gaps, source-risk notes, and concrete trend-research tasks.",
+      "inputs": [
+        "project-brief.json",
+        "sources/source-registry.md",
+        "research/trend-report.md"
+      ]
+    },
+    {
+      "id": "strategy",
+      "agentId": "brand-strategist",
+      "task": "Turn the brief and research into sharper positioning, voice rules, and content-pillar improvements.",
+      "inputs": [
+        "project-brief.json",
+        "research/trend-report.md",
+        "strategy/content-pillars.md"
+      ]
+    },
+    {
+      "id": "copy",
+      "agentId": "copywriter",
+      "task": "Review only drafts/posts.md. Improve clarity, specificity, proof-awareness, and CTA quality without inventing offers, free trials, signups, discounts, testimonials, or claims not present in the brief. Propose a complete replacement only for drafts/posts.md. Do not include carousel or reel content in the Proposed Artifact.",
+      "inputs": [
+        "calendar/30-day-calendar.md",
+        "drafts/posts.md"
+      ]
+    },
+    {
+      "id": "video",
+      "agentId": "reel-shorts-producer",
+      "task": "Review reel scripts for first-three-second strength, visual beats, editability, and missing assets.",
+      "inputs": [
+        "calendar/30-day-calendar.md",
+        "drafts/reels.md"
+      ]
+    },
+    {
+      "id": "persona",
+      "agentId": "persona-simulator",
+      "task": "Use the existing persona report and drafts to identify likely objections, drop-off points, and content improvements.",
+      "inputs": [
+        "simulation/persona-report.md",
+        "drafts/posts.md"
+      ]
+    },
+    {
+      "id": "qa",
+      "agentId": "critic-qa",
+      "task": "Run a final adversarial QA pass. Decide what is not good enough for human approval and convert it into regeneration tasks.",
+      "inputs": [
+        "review/workspace-quality-rubric.json",
+        "simulation/persona-report.md",
+        "review/qa-recap.md",
+        "drafts/posts.md"
+      ]
+    }
+  ],
+  "selectedStepIds": [
+    "intake",
+    "research",
+    "strategy",
+    "copy",
+    "video",
+    "persona",
+    "qa"
+  ],
+  "maxSteps": null,
+  "timeoutMs": 180000
+}

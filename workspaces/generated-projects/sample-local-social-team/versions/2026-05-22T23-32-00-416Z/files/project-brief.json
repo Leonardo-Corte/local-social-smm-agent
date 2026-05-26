@@ -1,0 +1,25 @@
+{
+  "projectName": "Sample Local Social Team",
+  "niche": "local-first AI tools for creators and small businesses",
+  "targetAudience": "solo creators, small agencies, and founders who want professional social content without recurring SaaS costs",
+  "primaryGoal30Days": "validate positioning and publish consistently with human-approved drafts",
+  "offer": "a local-first AI social media workspace factory",
+  "tone": "sharp, useful, practical, slightly bold",
+  "platforms": [
+    "instagram",
+    "facebook"
+  ],
+  "constraints": [
+    "no paid model APIs required",
+    "human approval before publishing",
+    "no spam automation",
+    "local-first generation"
+  ],
+  "availableAssets": [
+    "project notes",
+    "repo scouting",
+    "founder point of view"
+  ],
+  "approvalPolicy": "human-approved",
+  "createdAt": "2026-05-22T18:47:32.518Z"
+}

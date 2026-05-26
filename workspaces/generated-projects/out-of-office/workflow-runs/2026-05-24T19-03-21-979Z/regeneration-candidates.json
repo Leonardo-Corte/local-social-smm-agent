@@ -1,0 +1,46 @@
+{
+  "tasks": [
+    {
+      "id": "workflow-prompt-packet-strategy-strategy-content-pillars-md-execute-brand-strategist-step-with-a-local-model-and-review-the-resulting-output",
+      "createdAt": "2026-05-24T19:03:22.100Z",
+      "source": "workflow-runner",
+      "workflowRun": "workflow-runs/2026-05-24T19-03-21-979Z",
+      "stepId": "strategy",
+      "agentId": "brand-strategist",
+      "artifact": "workflow-runs/2026-05-24T19-03-21-979Z/steps/strategy/prompt.md",
+      "feedback": "Execute brand-strategist step with a local model and review the resulting output before changing strategy/content-pillars.md.",
+      "target": "strategy/content-pillars.md",
+      "status": "pending_model_execution",
+      "priority": 3,
+      "action": "execute_agent_step"
+    },
+    {
+      "id": "workflow-prompt-packet-copy-drafts-posts-md-execute-copywriter-step-with-a-local-model-and-review-the-resulting-output-before-changing-draft",
+      "createdAt": "2026-05-24T19:03:22.100Z",
+      "source": "workflow-runner",
+      "workflowRun": "workflow-runs/2026-05-24T19-03-21-979Z",
+      "stepId": "copy",
+      "agentId": "copywriter",
+      "artifact": "workflow-runs/2026-05-24T19-03-21-979Z/steps/copy/prompt.md",
+      "feedback": "Execute copywriter step with a local model and review the resulting output before changing drafts/posts.md.",
+      "target": "drafts/posts.md",
+      "status": "pending_model_execution",
+      "priority": 3,
+      "action": "execute_agent_step"
+    },
+    {
+      "id": "workflow-prompt-packet-qa-review-qa-recap-md-execute-critic-qa-step-with-a-local-model-and-review-the-resulting-output-before-changing-revie",
+      "createdAt": "2026-05-24T19:03:22.100Z",
+      "source": "workflow-runner",
+      "workflowRun": "workflow-runs/2026-05-24T19-03-21-979Z",
+      "stepId": "qa",
+      "agentId": "critic-qa",
+      "artifact": "workflow-runs/2026-05-24T19-03-21-979Z/steps/qa/prompt.md",
+      "feedback": "Execute critic-qa step with a local model and review the resulting output before changing review/qa-recap.md.",
+      "target": "review/qa-recap.md",
+      "status": "pending_model_execution",
+      "priority": 3,
+      "action": "execute_agent_step"
+    }
+  ]
+}

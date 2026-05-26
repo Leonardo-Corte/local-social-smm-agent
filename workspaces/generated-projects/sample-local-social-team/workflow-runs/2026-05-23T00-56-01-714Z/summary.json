@@ -1,0 +1,30 @@
+{
+  "version": "0.1.0",
+  "workspace": "sample-local-social-team",
+  "runId": "2026-05-23T00-56-01-714Z",
+  "generatedAt": "2026-05-23T00:57:04.310Z",
+  "mode": "local-model-execution",
+  "status": "needs-human-review",
+  "automaticPublishEnabled": false,
+  "requiredHumanApproval": true,
+  "steps": [
+    {
+      "id": "copy",
+      "agentId": "copywriter",
+      "status": "completed",
+      "backend": "ollama",
+      "model": "qwen2.5:14b",
+      "inputs": [
+        "calendar/30-day-calendar.md",
+        "drafts/posts.md"
+      ],
+      "generatedAt": "2026-05-23T00:56:01.757Z"
+    }
+  ],
+  "humanReviewRequired": [
+    "Review generated step outputs and approve only specific artifacts.",
+    "Run regeneration tasks before treating drafts as client-ready.",
+    "Use official/manual publishing paths only after approval."
+  ],
+  "regenerationTaskCount": 0
+}

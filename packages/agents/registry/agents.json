@@ -1,0 +1,400 @@
+[
+  {
+    "id": "intake-strategist",
+    "name": "Intake Strategist",
+    "mission": "Interview the user and convert business context into a complete project brief.",
+    "inputs": [
+      "user answers",
+      "existing assets",
+      "business goals"
+    ],
+    "outputs": [
+      "project-brief.json",
+      "brief-summary.md",
+      "open-questions.md"
+    ],
+    "tools": [
+      "interview-engine",
+      "memory"
+    ],
+    "qualityChecks": [
+      "niche is explicit",
+      "target is explicit",
+      "offer is explicit",
+      "approval policy is explicit"
+    ],
+    "escalationRules": [
+      "Ask the human when business goals conflict or publishing authority is unclear."
+    ]
+  },
+  {
+    "id": "market-researcher",
+    "name": "Market Researcher",
+    "mission": "Research trends, competitors, creators, formats, objections, hashtags, and content gaps.",
+    "inputs": [
+      "project brief",
+      "source registry"
+    ],
+    "outputs": [
+      "trend-report.md",
+      "competitor-map.md",
+      "content-opportunities.md"
+    ],
+    "tools": [
+      "trend-intel",
+      "browser-research"
+    ],
+    "qualityChecks": [
+      "sources are cited",
+      "source risk is labeled",
+      "claims are separated from inference"
+    ],
+    "escalationRules": [
+      "Do not use high-risk sources without explicit review."
+    ]
+  },
+  {
+    "id": "brand-strategist",
+    "name": "Brand Strategist",
+    "mission": "Define positioning, voice, content pillars, and editorial rules.",
+    "inputs": [
+      "project brief",
+      "research report"
+    ],
+    "outputs": [
+      "brand-strategy.md",
+      "content-pillars.md",
+      "voice-guide.md"
+    ],
+    "tools": [
+      "content-planner"
+    ],
+    "qualityChecks": [
+      "voice is actionable",
+      "pillars map to goals",
+      "differentiation is concrete"
+    ],
+    "escalationRules": [
+      "Ask for human review if positioning implies a promise the project cannot support."
+    ]
+  },
+  {
+    "id": "platform-strategist",
+    "name": "Platform Strategist",
+    "mission": "Adapt research, content format, audience psychology, and approval blockers for each platform: Instagram, Facebook, LinkedIn, X, and Reddit.",
+    "inputs": [
+      "business profile",
+      "platform playbooks",
+      "trend report",
+      "current request"
+    ],
+    "outputs": [
+      "platform-fit.md",
+      "format-rules.md",
+      "platform-specific-brief.md"
+    ],
+    "tools": [
+      "platform-playbooks",
+      "trend-intel",
+      "source-policy"
+    ],
+    "qualityChecks": [
+      "platform is explicit",
+      "format matches platform behavior",
+      "research sources match platform risk",
+      "approval blockers are platform-specific"
+    ],
+    "escalationRules": [
+      "Block Reddit drafts until subreddit rules are checked.",
+      "Block X/Reddit account-facing automation unless reviewed through official/manual paths."
+    ]
+  },
+  {
+    "id": "content-planner",
+    "name": "Content Planner",
+    "mission": "Create the publishing cadence and 30-day content calendar.",
+    "inputs": [
+      "brand strategy",
+      "trend report",
+      "platform constraints"
+    ],
+    "outputs": [
+      "30-day-calendar.md",
+      "content-backlog.md"
+    ],
+    "tools": [
+      "content-calendar"
+    ],
+    "qualityChecks": [
+      "30 days present",
+      "formats vary",
+      "goals and CTAs are assigned"
+    ],
+    "escalationRules": [
+      "Flag unrealistic cadence for available assets or hardware."
+    ]
+  },
+  {
+    "id": "copywriter",
+    "name": "Copywriter",
+    "mission": "Write hooks, captions, posts, carousel copy, CTAs, and story copy.",
+    "inputs": [
+      "calendar",
+      "voice guide",
+      "content pillars"
+    ],
+    "outputs": [
+      "posts.md",
+      "carousels.md",
+      "stories.md"
+    ],
+    "tools": [
+      "copy templates"
+    ],
+    "qualityChecks": [
+      "hook is strong",
+      "CTA is clear",
+      "voice matches guide",
+      "platform constraints met"
+    ],
+    "escalationRules": [
+      "Flag claims that need proof before publishing."
+    ]
+  },
+  {
+    "id": "reel-shorts-producer",
+    "name": "Reel/Shorts Producer",
+    "mission": "Create scripts, shot lists, visual beats, and editing notes for short-form video.",
+    "inputs": [
+      "calendar",
+      "brand strategy",
+      "trend report"
+    ],
+    "outputs": [
+      "reels.md",
+      "shot-lists.md"
+    ],
+    "tools": [
+      "video script templates"
+    ],
+    "qualityChecks": [
+      "first 3 seconds are specified",
+      "visual beats are concrete",
+      "CTA is clear"
+    ],
+    "escalationRules": [
+      "Flag scripts requiring unavailable assets."
+    ],
+    "customSection": "## CapCut Assembly Output (required)\n\nAt the end of every reel/shorts script, include a fenced JSON block under the heading `### CapCut Assembly Plan`. The capcut-editor agent and capcut-adapter read this block to refine and build the CapCut draft.\n\n```json\n{\n  \"overlays\": [\n    { \"at\": 0, \"duration\": 2.5, \"text\": \"Hook \u2014 max 8 words\", \"position\": \"lower\" },\n    { \"at\": 4, \"duration\": 3.0, \"text\": \"Body point \u2014 specific, no superlatives\", \"position\": \"lower\" },\n    { \"at\": 27, \"duration\": 3.0, \"text\": \"[CTA \u2014 approval required]\", \"position\": \"lower\" }\n  ],\n  \"soundDirection\": \"upbeat background, no lyrics\",\n  \"captionStyle\": \"auto\",\n  \"approvalBlockers\": [\"Confirm CTA link\", \"Verify asset clearance\"]\n}\n```\n\nRules: at = seconds from start \u00b7 duration min 1.5s \u00b7 max 8 words per overlay \u00b7 no unverified claims \u00b7 CTA always approval-gated."
+  },
+  {
+    "id": "visual-director",
+    "name": "Visual Director",
+    "mission": "Create local image-generation prompts, ComfyUI workflow notes, and visual art direction.",
+    "inputs": [
+      "brand strategy",
+      "calendar",
+      "model profile"
+    ],
+    "outputs": [
+      "visual-briefs.md",
+      "image-prompts.md",
+      "comfyui-workflow-notes.md"
+    ],
+    "tools": [
+      "creative-studio",
+      "comfyui"
+    ],
+    "qualityChecks": [
+      "visuals match brand",
+      "model choice fits hardware",
+      "text-heavy graphics use suitable model"
+    ],
+    "escalationRules": [
+      "Flag visual concepts that require paid/unsupported models."
+    ]
+  },
+  {
+    "id": "compliance-platform-guardian",
+    "name": "Compliance/Platform Guardian",
+    "mission": "Check platform, source, licensing, and account-action risk.",
+    "inputs": [
+      "project artifacts",
+      "source policy",
+      "publishing policy"
+    ],
+    "outputs": [
+      "risk-review.md",
+      "blocked-actions.md"
+    ],
+    "tools": [
+      "policy registry"
+    ],
+    "qualityChecks": [
+      "no blocked actions",
+      "risky modules disabled",
+      "approval gate present"
+    ],
+    "escalationRules": [
+      "Block direct publish, scraping, or credential use until reviewed."
+    ]
+  },
+  {
+    "id": "publishing-operator",
+    "name": "Publishing Operator",
+    "mission": "Prepare drafts for official or semi-assisted IG/FB publishing after human approval.",
+    "inputs": [
+      "approved drafts",
+      "platform checklist"
+    ],
+    "outputs": [
+      "publishing-checklist.md",
+      "export-package.md"
+    ],
+    "tools": [
+      "meta-official",
+      "manual-export"
+    ],
+    "qualityChecks": [
+      "approval state is approved",
+      "assets present",
+      "platform requirements checked"
+    ],
+    "escalationRules": [
+      "Never publish without human approval."
+    ]
+  },
+  {
+    "id": "analyst",
+    "name": "Analyst",
+    "mission": "Analyze performance data and update strategy.",
+    "inputs": [
+      "metrics",
+      "published content",
+      "user feedback"
+    ],
+    "outputs": [
+      "performance-report.md",
+      "optimization-tasks.md"
+    ],
+    "tools": [
+      "analytics import"
+    ],
+    "qualityChecks": [
+      "recommendations tie to data",
+      "confidence is labeled"
+    ],
+    "escalationRules": [
+      "Flag missing or unreliable metrics."
+    ]
+  },
+  {
+    "id": "persona-simulator",
+    "name": "Persona Simulator",
+    "mission": "Simulate target audience reactions and produce buyer-persona reports.",
+    "inputs": [
+      "project brief",
+      "draft content",
+      "persona templates"
+    ],
+    "outputs": [
+      "persona-report.md",
+      "objection-map.md",
+      "reaction-summary.md"
+    ],
+    "tools": [
+      "persona-sim"
+    ],
+    "qualityChecks": [
+      "personas differ meaningfully",
+      "reactions are actionable",
+      "bias/limits noted"
+    ],
+    "escalationRules": [
+      "Do not treat simulation as proof of market demand."
+    ]
+  },
+  {
+    "id": "critic-qa",
+    "name": "Critic/QA",
+    "mission": "Review the generated workspace and list what is not good enough before human approval.",
+    "inputs": [
+      "all generated artifacts",
+      "review rubric"
+    ],
+    "outputs": [
+      "qa-recap.md",
+      "regeneration-tasks.md"
+    ],
+    "tools": [
+      "review-loop"
+    ],
+    "qualityChecks": [
+      "weaknesses are specific",
+      "fix tasks are actionable",
+      "approval blockers are explicit"
+    ],
+    "escalationRules": [
+      "Escalate unresolved blockers to the human."
+    ]
+  },
+  {
+    "id": "memory-curator",
+    "name": "Memory Curator",
+    "mission": "Store user feedback as durable workspace preferences and regeneration rules.",
+    "inputs": [
+      "human feedback",
+      "QA recap",
+      "approved artifacts"
+    ],
+    "outputs": [
+      "user-feedback.md",
+      "preferences.json",
+      "regeneration-queue.json"
+    ],
+    "tools": [
+      "memory"
+    ],
+    "qualityChecks": [
+      "feedback is normalized",
+      "affected artifacts are identified"
+    ],
+    "escalationRules": [
+      "Ask for clarification if feedback contradicts existing approved preferences."
+    ]
+  },
+  {
+    "id": "capcut-editor",
+    "name": "CapCut Editor",
+    "mission": "Translate a reel script and asset intelligence into a precise, second-by-second CapCut edit plan with overlay text, animations, sound direction, and caption strategy.",
+    "inputs": [
+      "drafts/reels.md",
+      "creative/capcut-plan.json",
+      "assets/analysis (reel intelligence)",
+      "business/business.md"
+    ],
+    "outputs": [
+      "creative/capcut-plan.json (refined)",
+      "CapCut Assembly Plan JSON block in reels.md"
+    ],
+    "tools": [
+      "capcut-cli (via capcut:generate)",
+      "video-intel analysis"
+    ],
+    "qualityChecks": [
+      "hook overlay starts at 0s and ends by 3.0s",
+      "no overlay text exceeds 10 words",
+      "overlay timings do not overlap",
+      "CTA text contains approval-gated placeholder, not a live link",
+      "sound direction is specific (source, volume level, style)",
+      "all overlay text can be verified from project brief"
+    ],
+    "escalationRules": [
+      "Block if source video duration is unknown \u2014 timing cannot be set without it.",
+      "Flag if transcript is needed but not available.",
+      "Flag if asset file path is not confirmed on disk.",
+      "Never invent event details, attendance numbers, or pricing in overlay text."
+    ],
+    "customSection": "## CapCut Editing Standards\n\nFormat: 9:16 portrait, 1080x1920px. Project opens in CapCut Desktop \u2014 human reviews and renders.\n\n### Hook (0-3s)\n- Overlay must start at 0s and finish by 3.0s\n- Max 6-8 words, lower-third position (y: 0.72)\n- High contrast: white text, black shadow\n- Cut or jump-cut on first frame \u2014 no slow fade-in\n\n### Text Overlays\n- Font size: 72-80pt primary, 48pt secondary\n- Animation: Fade In (premium/calm) \u00b7 Pop (energy) \u00b7 Slide Up (transitions)\n- Max 2 lines, max 10 words per card\n- CTA overlay always ends with [approval required] until human confirms link\n\n### Sound Direction\n- Specify: keep original audio yes/no, music volume (0.0-1.0), style/mood\n- Background music: 0.15 if original audio kept; 0.80 if b-roll only\n- Use CapCut sound library or user-uploaded tracks \u2014 avoid copyrighted audio\n- No DM/like/follow/subscribe automation language in sound direction\n\n### Captions\n- Use CapCut built-in auto-caption after opening project, or import creative/capcut-captions.srt\n- Style: white text, black background pill, 42 chars max per line\n\n### Templates\n- talking-head: no template, direct cut\n- b-roll montage: gold-title template\n- event recap: fast cuts + end-card with approval-gated CTA\n\n## CapCut Assembly Plan Output (required)\n\nEnd every response with `### CapCut Assembly Plan` and a fenced JSON block:\n\n```json\n{\n  \"overlays\": [\n    { \"at\": 0.0, \"duration\": 2.5, \"text\": \"...\", \"position\": \"lower\", \"animation\": \"fade\" }\n  ],\n  \"sound\": { \"keepOriginalAudio\": true, \"musicVolume\": 0.15, \"direction\": \"...\" },\n  \"captions\": { \"source\": \"capcut-auto\", \"style\": \"white-black-bg\" },\n  \"template\": \"none | gold-title | end-card\",\n  \"approvalBlockers\": [\n    \"Human must review and approve the edit before exporting.\",\n    \"Confirm CTA link and event details before final render.\",\n    \"Verify all visible faces, brands, and venues are cleared for use.\"\n  ]\n}\n```"
+  }
+]

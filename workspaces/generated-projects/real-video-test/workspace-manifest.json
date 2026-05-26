@@ -1,0 +1,14 @@
+{
+  "generatorVersion": "0.1.0",
+  "workspaceSlug": "real-video-test",
+  "projectName": "Real Video Test",
+  "generatedAt": "2026-05-23T01:16:08.770Z",
+  "modelProfile": "apple-silicon-pro",
+  "approvalMode": "human-approved",
+  "automaticPublishEnabled": false,
+  "riskyAutomationEnabled": false,
+  "requiredHumanApproval": true,
+  "agentCount": 13,
+  "lastWorkflowRun": "workflow-runs/2026-05-23T01-18-01-084Z",
+  "lastWorkflowStatus": "needs-human-review"
+}

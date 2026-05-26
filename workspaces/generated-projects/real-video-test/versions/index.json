@@ -1,0 +1,31 @@
+{
+  "snapshots": [
+    {
+      "snapshotId": "2026-05-23T01-16-35-944Z",
+      "createdAt": "2026-05-23T01:16:35.949Z",
+      "reason": "initial-real-video-import",
+      "workspace": "real-video-test",
+      "projectName": "Real Video Test",
+      "lastWorkflowStatus": null,
+      "qualityStatus": "ready_for_human_review",
+      "qualityScore": 92,
+      "copiedFiles": [
+        "project-brief.json",
+        "workspace-manifest.json",
+        "strategy/content-pillars.md",
+        "calendar/30-day-calendar.md",
+        "drafts/posts.md",
+        "drafts/carousels.md",
+        "drafts/reels.md",
+        "creative/visual-briefs.md",
+        "simulation/persona-report.md",
+        "review/qa-recap.md",
+        "review/quality-gate.md",
+        "publishing/export-package.md",
+        "client-report/report.md",
+        "memory/preferences.json",
+        "memory/regeneration-queue.json"
+      ]
+    }
+  ]
+}

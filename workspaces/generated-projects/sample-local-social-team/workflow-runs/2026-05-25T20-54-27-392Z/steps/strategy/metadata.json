@@ -1,0 +1,13 @@
+{
+  "id": "strategy",
+  "agentId": "brand-strategist",
+  "status": "saved_prompt_packet",
+  "backend": "prompt-packet",
+  "model": "qwen2.5-coder:14b",
+  "inputs": [
+    "project-brief.json",
+    "research/trend-report.md",
+    "strategy/content-pillars.md"
+  ],
+  "generatedAt": "2026-05-25T20:54:27.448Z"
+}

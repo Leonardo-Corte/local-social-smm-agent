@@ -1,0 +1,13 @@
+{
+  "id": "strategy",
+  "agentId": "brand-strategist",
+  "status": "completed",
+  "backend": "ollama",
+  "model": "qwen2.5:14b",
+  "inputs": [
+    "project-brief.json",
+    "research/trend-report.md",
+    "strategy/content-pillars.md"
+  ],
+  "generatedAt": "2026-05-23T00:41:49.355Z"
+}

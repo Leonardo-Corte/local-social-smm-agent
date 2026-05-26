@@ -1,0 +1,370 @@
+[
+  {
+    "name": ".all-contributorsrc",
+    "path": ".all-contributorsrc",
+    "sha": "5e3bb1d5c3ddd4334f341f2bd4031c382b673299",
+    "size": 3475,
+    "url": "https://api.github.com/repos/idiap/sdialog/contents/.all-contributorsrc?ref=main",
+    "html_url": "https://github.com/idiap/sdialog/blob/main/.all-contributorsrc",
+    "git_url": "https://api.github.com/repos/idiap/sdialog/git/blobs/5e3bb1d5c3ddd4334f341f2bd4031c382b673299",
+    "download_url": "https://raw.githubusercontent.com/idiap/sdialog/main/.all-contributorsrc",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/idiap/sdialog/contents/.all-contributorsrc?ref=main",
+      "git": "https://api.github.com/repos/idiap/sdialog/git/blobs/5e3bb1d5c3ddd4334f341f2bd4031c382b673299",
+      "html": "https://github.com/idiap/sdialog/blob/main/.all-contributorsrc"
+    }
+  },
+  {
+    "name": ".flake8",
+    "path": ".flake8",
+    "sha": "17bb5ada161b591935aff3367a3b4f2019cf1948",
+    "size": 85,
+    "url": "https://api.github.com/repos/idiap/sdialog/contents/.flake8?ref=main",
+    "html_url": "https://github.com/idiap/sdialog/blob/main/.flake8",
+    "git_url": "https://api.github.com/repos/idiap/sdialog/git/blobs/17bb5ada161b591935aff3367a3b4f2019cf1948",
+    "download_url": "https://raw.githubusercontent.com/idiap/sdialog/main/.flake8",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/idiap/sdialog/contents/.flake8?ref=main",
+      "git": "https://api.github.com/repos/idiap/sdialog/git/blobs/17bb5ada161b591935aff3367a3b4f2019cf1948",
+      "html": "https://github.com/idiap/sdialog/blob/main/.flake8"
+    }
+  },
+  {
+    "name": ".gitattributes",
+    "path": ".gitattributes",
+    "sha": "89170cc42bb96b2d642bf7f33cf8b1ac3675047b",
+    "size": 129,
+    "url": "https://api.github.com/repos/idiap/sdialog/contents/.gitattributes?ref=main",
+    "html_url": "https://github.com/idiap/sdialog/blob/main/.gitattributes",
+    "git_url": "https://api.github.com/repos/idiap/sdialog/git/blobs/89170cc42bb96b2d642bf7f33cf8b1ac3675047b",
+    "download_url": "https://raw.githubusercontent.com/idiap/sdialog/main/.gitattributes",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/idiap/sdialog/contents/.gitattributes?ref=main",
+      "git": "https://api.github.com/repos/idiap/sdialog/git/blobs/89170cc42bb96b2d642bf7f33cf8b1ac3675047b",
+      "html": "https://github.com/idiap/sdialog/blob/main/.gitattributes"
+    }
+  },
+  {
+    "name": ".github",
+    "path": ".github",
+    "sha": "eaa1a69d8a1f3cd07db735d5e46b186ed00bfd69",
+    "size": 0,
+    "url": "https://api.github.com/repos/idiap/sdialog/contents/.github?ref=main",
+    "html_url": "https://github.com/idiap/sdialog/tree/main/.github",
+    "git_url": "https://api.github.com/repos/idiap/sdialog/git/trees/eaa1a69d8a1f3cd07db735d5e46b186ed00bfd69",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/idiap/sdialog/contents/.github?ref=main",
+      "git": "https://api.github.com/repos/idiap/sdialog/git/trees/eaa1a69d8a1f3cd07db735d5e46b186ed00bfd69",
+      "html": "https://github.com/idiap/sdialog/tree/main/.github"
+    }
+  },
+  {
+    "name": ".gitignore",
+    "path": ".gitignore",
+    "sha": "79120d5bd8ed1c857393fca2e3e0cc957a7d3c0f",
+    "size": 1187,
+    "url": "https://api.github.com/repos/idiap/sdialog/contents/.gitignore?ref=main",
+    "html_url": "https://github.com/idiap/sdialog/blob/main/.gitignore",
+    "git_url": "https://api.github.com/repos/idiap/sdialog/git/blobs/79120d5bd8ed1c857393fca2e3e0cc957a7d3c0f",
+    "download_url": "https://raw.githubusercontent.com/idiap/sdialog/main/.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/idiap/sdialog/contents/.gitignore?ref=main",
+      "git": "https://api.github.com/repos/idiap/sdialog/git/blobs/79120d5bd8ed1c857393fca2e3e0cc957a7d3c0f",
+      "html": "https://github.com/idiap/sdialog/blob/main/.gitignore"
+    }
+  },
+  {
+    "name": ".pre-commit-config.yaml",
+    "path": ".pre-commit-config.yaml",
+    "sha": "4c6b9797be0b73dfb0bf600b103fa0c2d1c1928c",
+    "size": 441,
+    "url": "https://api.github.com/repos/idiap/sdialog/contents/.pre-commit-config.yaml?ref=main",
+    "html_url": "https://github.com/idiap/sdialog/blob/main/.pre-commit-config.yaml",
+    "git_url": "https://api.github.com/repos/idiap/sdialog/git/blobs/4c6b9797be0b73dfb0bf600b103fa0c2d1c1928c",
+    "download_url": "https://raw.githubusercontent.com/idiap/sdialog/main/.pre-commit-config.yaml",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/idiap/sdialog/contents/.pre-commit-config.yaml?ref=main",
+      "git": "https://api.github.com/repos/idiap/sdialog/git/blobs/4c6b9797be0b73dfb0bf600b103fa0c2d1c1928c",
+      "html": "https://github.com/idiap/sdialog/blob/main/.pre-commit-config.yaml"
+    }
+  },
+  {
+    "name": "AGENTS.md",
+    "path": "AGENTS.md",
+    "sha": "d742c39ddc383e1a48880e811ac9011f25bb6c76",
+    "size": 13908,
+    "url": "https://api.github.com/repos/idiap/sdialog/contents/AGENTS.md?ref=main",
+    "html_url": "https://github.com/idiap/sdialog/blob/main/AGENTS.md",
+    "git_url": "https://api.github.com/repos/idiap/sdialog/git/blobs/d742c39ddc383e1a48880e811ac9011f25bb6c76",
+    "download_url": "https://raw.githubusercontent.com/idiap/sdialog/main/AGENTS.md",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/idiap/sdialog/contents/AGENTS.md?ref=main",
+      "git": "https://api.github.com/repos/idiap/sdialog/git/blobs/d742c39ddc383e1a48880e811ac9011f25bb6c76",
+      "html": "https://github.com/idiap/sdialog/blob/main/AGENTS.md"
+    }
+  },
+  {
+    "name": "CHANGELOG.md",
+    "path": "CHANGELOG.md",
+    "sha": "26fe6cfe6230e75f8cb2dadd8b3c782cc2d2df09",
+    "size": 10573,
+    "url": "https://api.github.com/repos/idiap/sdialog/contents/CHANGELOG.md?ref=main",
+    "html_url": "https://github.com/idiap/sdialog/blob/main/CHANGELOG.md",
+    "git_url": "https://api.github.com/repos/idiap/sdialog/git/blobs/26fe6cfe6230e75f8cb2dadd8b3c782cc2d2df09",
+    "download_url": "https://raw.githubusercontent.com/idiap/sdialog/main/CHANGELOG.md",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/idiap/sdialog/contents/CHANGELOG.md?ref=main",
+      "git": "https://api.github.com/repos/idiap/sdialog/git/blobs/26fe6cfe6230e75f8cb2dadd8b3c782cc2d2df09",
+      "html": "https://github.com/idiap/sdialog/blob/main/CHANGELOG.md"
+    }
+  },
+  {
+    "name": "CONTRIBUTING.md",
+    "path": "CONTRIBUTING.md",
+    "sha": "b4bf05b39537c62ccd834f7ba38a05f8aab2bc29",
+    "size": 3499,
+    "url": "https://api.github.com/repos/idiap/sdialog/contents/CONTRIBUTING.md?ref=main",
+    "html_url": "https://github.com/idiap/sdialog/blob/main/CONTRIBUTING.md",
+    "git_url": "https://api.github.com/repos/idiap/sdialog/git/blobs/b4bf05b39537c62ccd834f7ba38a05f8aab2bc29",
+    "download_url": "https://raw.githubusercontent.com/idiap/sdialog/main/CONTRIBUTING.md",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/idiap/sdialog/contents/CONTRIBUTING.md?ref=main",
+      "git": "https://api.github.com/repos/idiap/sdialog/git/blobs/b4bf05b39537c62ccd834f7ba38a05f8aab2bc29",
+      "html": "https://github.com/idiap/sdialog/blob/main/CONTRIBUTING.md"
+    }
+  },
+  {
+    "name": "LICENSE",
+    "path": "LICENSE",
+    "sha": "5b5128d66cc05a6bb753acc202e687aabfa58431",
+    "size": 1080,
+    "url": "https://api.github.com/repos/idiap/sdialog/contents/LICENSE?ref=main",
+    "html_url": "https://github.com/idiap/sdialog/blob/main/LICENSE",
+    "git_url": "https://api.github.com/repos/idiap/sdialog/git/blobs/5b5128d66cc05a6bb753acc202e687aabfa58431",
+    "download_url": "https://raw.githubusercontent.com/idiap/sdialog/main/LICENSE",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/idiap/sdialog/contents/LICENSE?ref=main",
+      "git": "https://api.github.com/repos/idiap/sdialog/git/blobs/5b5128d66cc05a6bb753acc202e687aabfa58431",
+      "html": "https://github.com/idiap/sdialog/blob/main/LICENSE"
+    }
+  },
+  {
+    "name": "Makefile",
+    "path": "Makefile",
+    "sha": "38062006b21ee063717b87983a4adc5638714f55",
+    "size": 2929,
+    "url": "https://api.github.com/repos/idiap/sdialog/contents/Makefile?ref=main",
+    "html_url": "https://github.com/idiap/sdialog/blob/main/Makefile",
+    "git_url": "https://api.github.com/repos/idiap/sdialog/git/blobs/38062006b21ee063717b87983a4adc5638714f55",
+    "download_url": "https://raw.githubusercontent.com/idiap/sdialog/main/Makefile",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/idiap/sdialog/contents/Makefile?ref=main",
+      "git": "https://api.github.com/repos/idiap/sdialog/git/blobs/38062006b21ee063717b87983a4adc5638714f55",
+      "html": "https://github.com/idiap/sdialog/blob/main/Makefile"
+    }
+  },
+  {
+    "name": "README.md",
+    "path": "README.md",
+    "sha": "683c561d2dda35218d17ace50f2d2557a126121e",
+    "size": 24842,
+    "url": "https://api.github.com/repos/idiap/sdialog/contents/README.md?ref=main",
+    "html_url": "https://github.com/idiap/sdialog/blob/main/README.md",
+    "git_url": "https://api.github.com/repos/idiap/sdialog/git/blobs/683c561d2dda35218d17ace50f2d2557a126121e",
+    "download_url": "https://raw.githubusercontent.com/idiap/sdialog/main/README.md",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/idiap/sdialog/contents/README.md?ref=main",
+      "git": "https://api.github.com/repos/idiap/sdialog/git/blobs/683c561d2dda35218d17ace50f2d2557a126121e",
+      "html": "https://github.com/idiap/sdialog/blob/main/README.md"
+    }
+  },
+  {
+    "name": "demo.md",
+    "path": "demo.md",
+    "sha": "d29fe0655c3ac56e063e3d6f394cd3a4a0c213b8",
+    "size": 1386,
+    "url": "https://api.github.com/repos/idiap/sdialog/contents/demo.md?ref=main",
+    "html_url": "https://github.com/idiap/sdialog/blob/main/demo.md",
+    "git_url": "https://api.github.com/repos/idiap/sdialog/git/blobs/d29fe0655c3ac56e063e3d6f394cd3a4a0c213b8",
+    "download_url": "https://raw.githubusercontent.com/idiap/sdialog/main/demo.md",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/idiap/sdialog/contents/demo.md?ref=main",
+      "git": "https://api.github.com/repos/idiap/sdialog/git/blobs/d29fe0655c3ac56e063e3d6f394cd3a4a0c213b8",
+      "html": "https://github.com/idiap/sdialog/blob/main/demo.md"
+    }
+  },
+  {
+    "name": "docs",
+    "path": "docs",
+    "sha": "ed1edfa445deb9b76a36661b8095985ac8822b28",
+    "size": 0,
+    "url": "https://api.github.com/repos/idiap/sdialog/contents/docs?ref=main",
+    "html_url": "https://github.com/idiap/sdialog/tree/main/docs",
+    "git_url": "https://api.github.com/repos/idiap/sdialog/git/trees/ed1edfa445deb9b76a36661b8095985ac8822b28",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/idiap/sdialog/contents/docs?ref=main",
+      "git": "https://api.github.com/repos/idiap/sdialog/git/trees/ed1edfa445deb9b76a36661b8095985ac8822b28",
+      "html": "https://github.com/idiap/sdialog/tree/main/docs"
+    }
+  },
+  {
+    "name": "eacl_poster.pdf",
+    "path": "eacl_poster.pdf",
+    "sha": "d37a0ef81d6f73729f0b927586fc2dd14b9c3e99",
+    "size": 1610694,
+    "url": "https://api.github.com/repos/idiap/sdialog/contents/eacl_poster.pdf?ref=main",
+    "html_url": "https://github.com/idiap/sdialog/blob/main/eacl_poster.pdf",
+    "git_url": "https://api.github.com/repos/idiap/sdialog/git/blobs/d37a0ef81d6f73729f0b927586fc2dd14b9c3e99",
+    "download_url": "https://raw.githubusercontent.com/idiap/sdialog/main/eacl_poster.pdf",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/idiap/sdialog/contents/eacl_poster.pdf?ref=main",
+      "git": "https://api.github.com/repos/idiap/sdialog/git/blobs/d37a0ef81d6f73729f0b927586fc2dd14b9c3e99",
+      "html": "https://github.com/idiap/sdialog/blob/main/eacl_poster.pdf"
+    }
+  },
+  {
+    "name": "pyproject.toml",
+    "path": "pyproject.toml",
+    "sha": "420f77f0c6c739b6b836111c76462a5069013554",
+    "size": 1838,
+    "url": "https://api.github.com/repos/idiap/sdialog/contents/pyproject.toml?ref=main",
+    "html_url": "https://github.com/idiap/sdialog/blob/main/pyproject.toml",
+    "git_url": "https://api.github.com/repos/idiap/sdialog/git/blobs/420f77f0c6c739b6b836111c76462a5069013554",
+    "download_url": "https://raw.githubusercontent.com/idiap/sdialog/main/pyproject.toml",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/idiap/sdialog/contents/pyproject.toml?ref=main",
+      "git": "https://api.github.com/repos/idiap/sdialog/git/blobs/420f77f0c6c739b6b836111c76462a5069013554",
+      "html": "https://github.com/idiap/sdialog/blob/main/pyproject.toml"
+    }
+  },
+  {
+    "name": "readthedocs.yml",
+    "path": "readthedocs.yml",
+    "sha": "57d92424e8991d8e609cc1f4753a171deb813065",
+    "size": 536,
+    "url": "https://api.github.com/repos/idiap/sdialog/contents/readthedocs.yml?ref=main",
+    "html_url": "https://github.com/idiap/sdialog/blob/main/readthedocs.yml",
+    "git_url": "https://api.github.com/repos/idiap/sdialog/git/blobs/57d92424e8991d8e609cc1f4753a171deb813065",
+    "download_url": "https://raw.githubusercontent.com/idiap/sdialog/main/readthedocs.yml",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/idiap/sdialog/contents/readthedocs.yml?ref=main",
+      "git": "https://api.github.com/repos/idiap/sdialog/git/blobs/57d92424e8991d8e609cc1f4753a171deb813065",
+      "html": "https://github.com/idiap/sdialog/blob/main/readthedocs.yml"
+    }
+  },
+  {
+    "name": "requirements-audio-test.txt",
+    "path": "requirements-audio-test.txt",
+    "sha": "792e1d870f732747b25b3a699fdf6cb2bf11dee9",
+    "size": 90,
+    "url": "https://api.github.com/repos/idiap/sdialog/contents/requirements-audio-test.txt?ref=main",
+    "html_url": "https://github.com/idiap/sdialog/blob/main/requirements-audio-test.txt",
+    "git_url": "https://api.github.com/repos/idiap/sdialog/git/blobs/792e1d870f732747b25b3a699fdf6cb2bf11dee9",
+    "download_url": "https://raw.githubusercontent.com/idiap/sdialog/main/requirements-audio-test.txt",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/idiap/sdialog/contents/requirements-audio-test.txt?ref=main",
+      "git": "https://api.github.com/repos/idiap/sdialog/git/blobs/792e1d870f732747b25b3a699fdf6cb2bf11dee9",
+      "html": "https://github.com/idiap/sdialog/blob/main/requirements-audio-test.txt"
+    }
+  },
+  {
+    "name": "requirements-audio.txt",
+    "path": "requirements-audio.txt",
+    "sha": "0b584f0eb12470eac70f151a20eb4eaa9ae967ba",
+    "size": 129,
+    "url": "https://api.github.com/repos/idiap/sdialog/contents/requirements-audio.txt?ref=main",
+    "html_url": "https://github.com/idiap/sdialog/blob/main/requirements-audio.txt",
+    "git_url": "https://api.github.com/repos/idiap/sdialog/git/blobs/0b584f0eb12470eac70f151a20eb4eaa9ae967ba",
+    "download_url": "https://raw.githubusercontent.com/idiap/sdialog/main/requirements-audio.txt",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/idiap/sdialog/contents/requirements-audio.txt?ref=main",
+      "git": "https://api.github.com/repos/idiap/sdialog/git/blobs/0b584f0eb12470eac70f151a20eb4eaa9ae967ba",
+      "html": "https://github.com/idiap/sdialog/blob/main/requirements-audio.txt"
+    }
+  },
+  {
+    "name": "requirements.txt",
+    "path": "requirements.txt",
+    "sha": "55ea5824c6b080e1843e9ae291f95fe90cd622e3",
+    "size": 944,
+    "url": "https://api.github.com/repos/idiap/sdialog/contents/requirements.txt?ref=main",
+    "html_url": "https://github.com/idiap/sdialog/blob/main/requirements.txt",
+    "git_url": "https://api.github.com/repos/idiap/sdialog/git/blobs/55ea5824c6b080e1843e9ae291f95fe90cd622e3",
+    "download_url": "https://raw.githubusercontent.com/idiap/sdialog/main/requirements.txt",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/idiap/sdialog/contents/requirements.txt?ref=main",
+      "git": "https://api.github.com/repos/idiap/sdialog/git/blobs/55ea5824c6b080e1843e9ae291f95fe90cd622e3",
+      "html": "https://github.com/idiap/sdialog/blob/main/requirements.txt"
+    }
+  },
+  {
+    "name": "src",
+    "path": "src",
+    "sha": "90606e1444846587bf634b56477f0588fda28447",
+    "size": 0,
+    "url": "https://api.github.com/repos/idiap/sdialog/contents/src?ref=main",
+    "html_url": "https://github.com/idiap/sdialog/tree/main/src",
+    "git_url": "https://api.github.com/repos/idiap/sdialog/git/trees/90606e1444846587bf634b56477f0588fda28447",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/idiap/sdialog/contents/src?ref=main",
+      "git": "https://api.github.com/repos/idiap/sdialog/git/trees/90606e1444846587bf634b56477f0588fda28447",
+      "html": "https://github.com/idiap/sdialog/tree/main/src"
+    }
+  },
+  {
+    "name": "tests",
+    "path": "tests",
+    "sha": "4a830a4f42d835292d46adcfa5011fbbe091749d",
+    "size": 0,
+    "url": "https://api.github.com/repos/idiap/sdialog/contents/tests?ref=main",
+    "html_url": "https://github.com/idiap/sdialog/tree/main/tests",
+    "git_url": "https://api.github.com/repos/idiap/sdialog/git/trees/4a830a4f42d835292d46adcfa5011fbbe091749d",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/idiap/sdialog/contents/tests?ref=main",
+      "git": "https://api.github.com/repos/idiap/sdialog/git/trees/4a830a4f42d835292d46adcfa5011fbbe091749d",
+      "html": "https://github.com/idiap/sdialog/tree/main/tests"
+    }
+  },
+  {
+    "name": "tutorials",
+    "path": "tutorials",
+    "sha": "f65ab7c86256058cd3f2a516fb360f79716d8088",
+    "size": 0,
+    "url": "https://api.github.com/repos/idiap/sdialog/contents/tutorials?ref=main",
+    "html_url": "https://github.com/idiap/sdialog/tree/main/tutorials",
+    "git_url": "https://api.github.com/repos/idiap/sdialog/git/trees/f65ab7c86256058cd3f2a516fb360f79716d8088",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/idiap/sdialog/contents/tutorials?ref=main",
+      "git": "https://api.github.com/repos/idiap/sdialog/git/trees/f65ab7c86256058cd3f2a516fb360f79716d8088",
+      "html": "https://github.com/idiap/sdialog/tree/main/tutorials"
+    }
+  }
+]

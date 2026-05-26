@@ -1,0 +1,12 @@
+{
+  "generatorVersion": "0.1.0",
+  "workspaceSlug": "out-of-office",
+  "projectName": "Out Of Office",
+  "generatedAt": "2026-05-23T08:08:01.932Z",
+  "modelProfile": "apple-silicon-pro",
+  "approvalMode": "human-approved",
+  "automaticPublishEnabled": false,
+  "riskyAutomationEnabled": false,
+  "requiredHumanApproval": true,
+  "agentCount": 13
+}

@@ -1,0 +1,23 @@
+{
+  "version": "0.1.0",
+  "workspace": "sample-local-social-team",
+  "runId": "2026-05-25T20-54-35-606Z",
+  "mode": "dry-run-prompt-packets",
+  "steps": [
+    {
+      "id": "intake",
+      "agentId": "intake-strategist",
+      "task": "Review the project brief and identify missing context, contradictions, and personalization tasks before content work starts.",
+      "inputs": [
+        "project-brief.json",
+        "memory/preferences.json",
+        "memory/user-feedback.md"
+      ]
+    }
+  ],
+  "selectedStepIds": [
+    "intake"
+  ],
+  "maxSteps": 1,
+  "timeoutMs": 180000
+}

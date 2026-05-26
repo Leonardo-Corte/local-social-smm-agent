@@ -1,0 +1,36 @@
+# 30-Day Content Calendar
+
+Goal: turn one real event video into a repeatable Instagram/Facebook content system with human-approved captions, reel angles, and follow-up posts
+
+| Day | Pillar | Format | Topic | Status |
+| --- | --- | --- | --- | --- |
+| 1 | Problem awareness | Reel | premium hospitality events, cocktail bars, and social dining experiences angle 1 | Draft then human review |
+| 2 | Proof/credibility | Carousel | premium hospitality events, cocktail bars, and social dining experiences angle 2 | Draft then human review |
+| 3 | Education | Static post | premium hospitality events, cocktail bars, and social dining experiences angle 3 | Draft then human review |
+| 4 | Behind the scenes | Story sequence | premium hospitality events, cocktail bars, and social dining experiences angle 4 | Draft then human review |
+| 5 | Offer/CTA | Facebook post | premium hospitality events, cocktail bars, and social dining experiences angle 5 | Draft then human review |
+| 6 | Problem awareness | Reel | premium hospitality events, cocktail bars, and social dining experiences angle 6 | Draft then human review |
+| 7 | Proof/credibility | Carousel | premium hospitality events, cocktail bars, and social dining experiences angle 7 | Draft then human review |
+| 8 | Education | Static post | premium hospitality events, cocktail bars, and social dining experiences angle 8 | Draft then human review |
+| 9 | Behind the scenes | Story sequence | premium hospitality events, cocktail bars, and social dining experiences angle 9 | Draft then human review |
+| 10 | Offer/CTA | Facebook post | premium hospitality events, cocktail bars, and social dining experiences angle 10 | Draft then human review |
+| 11 | Problem awareness | Reel | premium hospitality events, cocktail bars, and social dining experiences angle 11 | Draft then human review |
+| 12 | Proof/credibility | Carousel | premium hospitality events, cocktail bars, and social dining experiences angle 12 | Draft then human review |
+| 13 | Education | Static post | premium hospitality events, cocktail bars, and social dining experiences angle 13 | Draft then human review |
+| 14 | Behind the scenes | Story sequence | premium hospitality events, cocktail bars, and social dining experiences angle 14 | Draft then human review |
+| 15 | Offer/CTA | Facebook post | premium hospitality events, cocktail bars, and social dining experiences angle 15 | Draft then human review |
+| 16 | Problem awareness | Reel | premium hospitality events, cocktail bars, and social dining experiences angle 16 | Draft then human review |
+| 17 | Proof/credibility | Carousel | premium hospitality events, cocktail bars, and social dining experiences angle 17 | Draft then human review |
+| 18 | Education | Static post | premium hospitality events, cocktail bars, and social dining experiences angle 18 | Draft then human review |
+| 19 | Behind the scenes | Story sequence | premium hospitality events, cocktail bars, and social dining experiences angle 19 | Draft then human review |
+| 20 | Offer/CTA | Facebook post | premium hospitality events, cocktail bars, and social dining experiences angle 20 | Draft then human review |
+| 21 | Problem awareness | Reel | premium hospitality events, cocktail bars, and social dining experiences angle 21 | Draft then human review |
+| 22 | Proof/credibility | Carousel | premium hospitality events, cocktail bars, and social dining experiences angle 22 | Draft then human review |
+| 23 | Education | Static post | premium hospitality events, cocktail bars, and social dining experiences angle 23 | Draft then human review |
+| 24 | Behind the scenes | Story sequence | premium hospitality events, cocktail bars, and social dining experiences angle 24 | Draft then human review |
+| 25 | Offer/CTA | Facebook post | premium hospitality events, cocktail bars, and social dining experiences angle 25 | Draft then human review |
+| 26 | Problem awareness | Reel | premium hospitality events, cocktail bars, and social dining experiences angle 26 | Draft then human review |
+| 27 | Proof/credibility | Carousel | premium hospitality events, cocktail bars, and social dining experiences angle 27 | Draft then human review |
+| 28 | Education | Static post | premium hospitality events, cocktail bars, and social dining experiences angle 28 | Draft then human review |
+| 29 | Behind the scenes | Story sequence | premium hospitality events, cocktail bars, and social dining experiences angle 29 | Draft then human review |
+| 30 | Offer/CTA | Facebook post | premium hospitality events, cocktail bars, and social dining experiences angle 30 | Draft then human review |

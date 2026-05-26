@@ -1,0 +1,992 @@
+{
+  "generatedAt": "2026-05-23T08:19:59.201Z",
+  "projectName": "Out Of Office E2E Test",
+  "niche": "premium after-work networking events for corporate professionals and ambitious people seeking real connections in New York City",
+  "targetAudience": "corporate professionals, founders, operators, creatives, consultants, finance and tech workers, and socially ambitious newcomers in New York who want high-quality networking without a stiff conference vibe",
+  "researchMode": "planned-local-first",
+  "sourceSummary": {
+    "lowRisk": [
+      "google-trends",
+      "user-provided-assets"
+    ],
+    "mediumRisk": [
+      "youtube-trending-and-search",
+      "reddit-public",
+      "tiktok-creative-center"
+    ],
+    "highRiskManualOnly": [
+      "instagram-public-review",
+      "facebook-public-review"
+    ]
+  },
+  "queries": [
+    "premium after-work networking events for corporate professionals and ambitious people seeking real connections in New York City trend",
+    "premium after-work networking events for corporate professionals and ambitious people seeking real connections in New York City content ideas",
+    "premium after-work networking events for corporate professionals and ambitious people seeking real connections in New York City problems objections",
+    "premium after-work networking events for corporate professionals and ambitious people seeking real connections in New York City instagram reel hooks",
+    "premium after-work networking events for corporate professionals and ambitious people seeking real connections in New York City facebook community questions",
+    "fun trend",
+    "fun content ideas",
+    "fun problems objections",
+    "fun instagram reel hooks",
+    "fun facebook community questions",
+    "curated networking events in New York where interesting people meet through a social hospitality experience trend",
+    "curated networking events in New York where interesting people meet through a social hospitality experience content ideas",
+    "curated networking events in New York where interesting people meet through a social hospitality experience problems objections",
+    "curated networking events in New York where interesting people meet through a social hospitality experience instagram reel hooks",
+    "curated networking events in New York where interesting people meet through a social hospitality experience facebook community questions",
+    "sell event tickets and grow the community around the Out Of Office brand trend",
+    "sell event tickets and grow the community around the Out Of Office brand content ideas",
+    "sell event tickets and grow the community around the Out Of Office brand problems objections",
+    "sell event tickets and grow the community around the Out Of Office brand instagram reel hooks",
+    "sell event tickets and grow the community around the Out Of Office brand facebook community questions",
+    "corporate professionals trend",
+    "corporate professionals content ideas",
+    "corporate professionals problems objections",
+    "corporate professionals instagram reel hooks",
+    "corporate professionals facebook community questions",
+    "founders trend",
+    "founders content ideas",
+    "founders problems objections",
+    "founders instagram reel hooks",
+    "founders facebook community questions"
+  ],
+  "tasks": [
+    {
+      "id": "research-task-01",
+      "query": "premium after-work networking events for corporate professionals and ambitious people seeking real connections in New York City trend",
+      "objective": "Find audience pain language and objections.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=premium%20after-work%20networking%20events%20for%20corporate%20professionals%20and%20ambitious%20people%20seeking%20real%20connections%20in%20New%20York%20City%20trend",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=premium%20after-work%20networking%20events%20for%20corporate%20professionals%20and%20ambitious%20people%20seeking%20real%20connections%20in%20New%20York%20City%20trend",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=premium%20after-work%20networking%20events%20for%20corporate%20professionals%20and%20ambitious%20people%20seeking%20real%20connections%20in%20New%20York%20City%20trend",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-02",
+      "query": "premium after-work networking events for corporate professionals and ambitious people seeking real connections in New York City content ideas",
+      "objective": "Find format, hook, and creative patterns.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=premium%20after-work%20networking%20events%20for%20corporate%20professionals%20and%20ambitious%20people%20seeking%20real%20connections%20in%20New%20York%20City%20content%20ideas",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=premium%20after-work%20networking%20events%20for%20corporate%20professionals%20and%20ambitious%20people%20seeking%20real%20connections%20in%20New%20York%20City%20content%20ideas",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=premium%20after-work%20networking%20events%20for%20corporate%20professionals%20and%20ambitious%20people%20seeking%20real%20connections%20in%20New%20York%20City%20content%20ideas",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-03",
+      "query": "premium after-work networking events for corporate professionals and ambitious people seeking real connections in New York City problems objections",
+      "objective": "Find content gaps and positioning opportunities.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=premium%20after-work%20networking%20events%20for%20corporate%20professionals%20and%20ambitious%20people%20seeking%20real%20connections%20in%20New%20York%20City%20problems%20objections",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=premium%20after-work%20networking%20events%20for%20corporate%20professionals%20and%20ambitious%20people%20seeking%20real%20connections%20in%20New%20York%20City%20problems%20objections",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=premium%20after-work%20networking%20events%20for%20corporate%20professionals%20and%20ambitious%20people%20seeking%20real%20connections%20in%20New%20York%20City%20problems%20objections",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-04",
+      "query": "premium after-work networking events for corporate professionals and ambitious people seeking real connections in New York City instagram reel hooks",
+      "objective": "Find audience pain language and objections.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=premium%20after-work%20networking%20events%20for%20corporate%20professionals%20and%20ambitious%20people%20seeking%20real%20connections%20in%20New%20York%20City%20instagram%20reel%20hooks",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=premium%20after-work%20networking%20events%20for%20corporate%20professionals%20and%20ambitious%20people%20seeking%20real%20connections%20in%20New%20York%20City%20instagram%20reel%20hooks",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=premium%20after-work%20networking%20events%20for%20corporate%20professionals%20and%20ambitious%20people%20seeking%20real%20connections%20in%20New%20York%20City%20instagram%20reel%20hooks",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-05",
+      "query": "premium after-work networking events for corporate professionals and ambitious people seeking real connections in New York City facebook community questions",
+      "objective": "Find format, hook, and creative patterns.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=premium%20after-work%20networking%20events%20for%20corporate%20professionals%20and%20ambitious%20people%20seeking%20real%20connections%20in%20New%20York%20City%20facebook%20community%20questions",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=premium%20after-work%20networking%20events%20for%20corporate%20professionals%20and%20ambitious%20people%20seeking%20real%20connections%20in%20New%20York%20City%20facebook%20community%20questions",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=premium%20after-work%20networking%20events%20for%20corporate%20professionals%20and%20ambitious%20people%20seeking%20real%20connections%20in%20New%20York%20City%20facebook%20community%20questions",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-06",
+      "query": "fun trend",
+      "objective": "Find content gaps and positioning opportunities.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=fun%20trend",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=fun%20trend",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=fun%20trend",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-07",
+      "query": "fun content ideas",
+      "objective": "Find audience pain language and objections.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=fun%20content%20ideas",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=fun%20content%20ideas",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=fun%20content%20ideas",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-08",
+      "query": "fun problems objections",
+      "objective": "Find format, hook, and creative patterns.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=fun%20problems%20objections",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=fun%20problems%20objections",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=fun%20problems%20objections",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-09",
+      "query": "fun instagram reel hooks",
+      "objective": "Find content gaps and positioning opportunities.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=fun%20instagram%20reel%20hooks",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=fun%20instagram%20reel%20hooks",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=fun%20instagram%20reel%20hooks",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-10",
+      "query": "fun facebook community questions",
+      "objective": "Find audience pain language and objections.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=fun%20facebook%20community%20questions",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=fun%20facebook%20community%20questions",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=fun%20facebook%20community%20questions",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-11",
+      "query": "curated networking events in New York where interesting people meet through a social hospitality experience trend",
+      "objective": "Find format, hook, and creative patterns.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=curated%20networking%20events%20in%20New%20York%20where%20interesting%20people%20meet%20through%20a%20social%20hospitality%20experience%20trend",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=curated%20networking%20events%20in%20New%20York%20where%20interesting%20people%20meet%20through%20a%20social%20hospitality%20experience%20trend",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=curated%20networking%20events%20in%20New%20York%20where%20interesting%20people%20meet%20through%20a%20social%20hospitality%20experience%20trend",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-12",
+      "query": "curated networking events in New York where interesting people meet through a social hospitality experience content ideas",
+      "objective": "Find content gaps and positioning opportunities.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=curated%20networking%20events%20in%20New%20York%20where%20interesting%20people%20meet%20through%20a%20social%20hospitality%20experience%20content%20ideas",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=curated%20networking%20events%20in%20New%20York%20where%20interesting%20people%20meet%20through%20a%20social%20hospitality%20experience%20content%20ideas",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=curated%20networking%20events%20in%20New%20York%20where%20interesting%20people%20meet%20through%20a%20social%20hospitality%20experience%20content%20ideas",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-13",
+      "query": "curated networking events in New York where interesting people meet through a social hospitality experience problems objections",
+      "objective": "Find audience pain language and objections.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=curated%20networking%20events%20in%20New%20York%20where%20interesting%20people%20meet%20through%20a%20social%20hospitality%20experience%20problems%20objections",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=curated%20networking%20events%20in%20New%20York%20where%20interesting%20people%20meet%20through%20a%20social%20hospitality%20experience%20problems%20objections",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=curated%20networking%20events%20in%20New%20York%20where%20interesting%20people%20meet%20through%20a%20social%20hospitality%20experience%20problems%20objections",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-14",
+      "query": "curated networking events in New York where interesting people meet through a social hospitality experience instagram reel hooks",
+      "objective": "Find format, hook, and creative patterns.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=curated%20networking%20events%20in%20New%20York%20where%20interesting%20people%20meet%20through%20a%20social%20hospitality%20experience%20instagram%20reel%20hooks",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=curated%20networking%20events%20in%20New%20York%20where%20interesting%20people%20meet%20through%20a%20social%20hospitality%20experience%20instagram%20reel%20hooks",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=curated%20networking%20events%20in%20New%20York%20where%20interesting%20people%20meet%20through%20a%20social%20hospitality%20experience%20instagram%20reel%20hooks",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-15",
+      "query": "curated networking events in New York where interesting people meet through a social hospitality experience facebook community questions",
+      "objective": "Find content gaps and positioning opportunities.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=curated%20networking%20events%20in%20New%20York%20where%20interesting%20people%20meet%20through%20a%20social%20hospitality%20experience%20facebook%20community%20questions",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=curated%20networking%20events%20in%20New%20York%20where%20interesting%20people%20meet%20through%20a%20social%20hospitality%20experience%20facebook%20community%20questions",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=curated%20networking%20events%20in%20New%20York%20where%20interesting%20people%20meet%20through%20a%20social%20hospitality%20experience%20facebook%20community%20questions",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-16",
+      "query": "sell event tickets and grow the community around the Out Of Office brand trend",
+      "objective": "Find audience pain language and objections.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=sell%20event%20tickets%20and%20grow%20the%20community%20around%20the%20Out%20Of%20Office%20brand%20trend",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=sell%20event%20tickets%20and%20grow%20the%20community%20around%20the%20Out%20Of%20Office%20brand%20trend",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=sell%20event%20tickets%20and%20grow%20the%20community%20around%20the%20Out%20Of%20Office%20brand%20trend",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-17",
+      "query": "sell event tickets and grow the community around the Out Of Office brand content ideas",
+      "objective": "Find format, hook, and creative patterns.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=sell%20event%20tickets%20and%20grow%20the%20community%20around%20the%20Out%20Of%20Office%20brand%20content%20ideas",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=sell%20event%20tickets%20and%20grow%20the%20community%20around%20the%20Out%20Of%20Office%20brand%20content%20ideas",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=sell%20event%20tickets%20and%20grow%20the%20community%20around%20the%20Out%20Of%20Office%20brand%20content%20ideas",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-18",
+      "query": "sell event tickets and grow the community around the Out Of Office brand problems objections",
+      "objective": "Find content gaps and positioning opportunities.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=sell%20event%20tickets%20and%20grow%20the%20community%20around%20the%20Out%20Of%20Office%20brand%20problems%20objections",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=sell%20event%20tickets%20and%20grow%20the%20community%20around%20the%20Out%20Of%20Office%20brand%20problems%20objections",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=sell%20event%20tickets%20and%20grow%20the%20community%20around%20the%20Out%20Of%20Office%20brand%20problems%20objections",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-19",
+      "query": "sell event tickets and grow the community around the Out Of Office brand instagram reel hooks",
+      "objective": "Find audience pain language and objections.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=sell%20event%20tickets%20and%20grow%20the%20community%20around%20the%20Out%20Of%20Office%20brand%20instagram%20reel%20hooks",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=sell%20event%20tickets%20and%20grow%20the%20community%20around%20the%20Out%20Of%20Office%20brand%20instagram%20reel%20hooks",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=sell%20event%20tickets%20and%20grow%20the%20community%20around%20the%20Out%20Of%20Office%20brand%20instagram%20reel%20hooks",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-20",
+      "query": "sell event tickets and grow the community around the Out Of Office brand facebook community questions",
+      "objective": "Find format, hook, and creative patterns.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=sell%20event%20tickets%20and%20grow%20the%20community%20around%20the%20Out%20Of%20Office%20brand%20facebook%20community%20questions",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=sell%20event%20tickets%20and%20grow%20the%20community%20around%20the%20Out%20Of%20Office%20brand%20facebook%20community%20questions",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=sell%20event%20tickets%20and%20grow%20the%20community%20around%20the%20Out%20Of%20Office%20brand%20facebook%20community%20questions",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-21",
+      "query": "corporate professionals trend",
+      "objective": "Find content gaps and positioning opportunities.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=corporate%20professionals%20trend",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=corporate%20professionals%20trend",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=corporate%20professionals%20trend",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-22",
+      "query": "corporate professionals content ideas",
+      "objective": "Find audience pain language and objections.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=corporate%20professionals%20content%20ideas",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=corporate%20professionals%20content%20ideas",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=corporate%20professionals%20content%20ideas",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-23",
+      "query": "corporate professionals problems objections",
+      "objective": "Find format, hook, and creative patterns.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=corporate%20professionals%20problems%20objections",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=corporate%20professionals%20problems%20objections",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=corporate%20professionals%20problems%20objections",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-24",
+      "query": "corporate professionals instagram reel hooks",
+      "objective": "Find content gaps and positioning opportunities.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=corporate%20professionals%20instagram%20reel%20hooks",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=corporate%20professionals%20instagram%20reel%20hooks",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=corporate%20professionals%20instagram%20reel%20hooks",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-25",
+      "query": "corporate professionals facebook community questions",
+      "objective": "Find audience pain language and objections.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=corporate%20professionals%20facebook%20community%20questions",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=corporate%20professionals%20facebook%20community%20questions",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=corporate%20professionals%20facebook%20community%20questions",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-26",
+      "query": "founders trend",
+      "objective": "Find format, hook, and creative patterns.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=founders%20trend",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=founders%20trend",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=founders%20trend",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-27",
+      "query": "founders content ideas",
+      "objective": "Find content gaps and positioning opportunities.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=founders%20content%20ideas",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=founders%20content%20ideas",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=founders%20content%20ideas",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-28",
+      "query": "founders problems objections",
+      "objective": "Find audience pain language and objections.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=founders%20problems%20objections",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=founders%20problems%20objections",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=founders%20problems%20objections",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-29",
+      "query": "founders instagram reel hooks",
+      "objective": "Find format, hook, and creative patterns.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=founders%20instagram%20reel%20hooks",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=founders%20instagram%20reel%20hooks",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=founders%20instagram%20reel%20hooks",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-30",
+      "query": "founders facebook community questions",
+      "objective": "Find content gaps and positioning opportunities.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=founders%20facebook%20community%20questions",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=founders%20facebook%20community%20questions",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=founders%20facebook%20community%20questions",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    }
+  ],
+  "guardrails": [
+    "Cite every source before using a claim.",
+    "Separate observed facts from strategic inference.",
+    "Do not automate restricted Meta surfaces.",
+    "Use high-risk sources only through human/manual review unless explicitly approved."
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "entries": [
+    {
+      "entryId": "642448d72cf13d06",
+      "timestamp": "2026-05-25T23:20:37.182Z",
+      "runId": "2026-05-25T23-19-24-058Z",
+      "step": "strategy",
+      "agent": "brand-strategist",
+      "type": "routing_decision",
+      "content": "Executed step strategy (initial) — status: completed",
+      "metadata": {
+        "elapsed": "73.1",
+        "revisionPass": false,
+        "error": null
+      }
+    },
+    {
+      "entryId": "bb4cf6b265daa550",
+      "timestamp": "2026-05-25T23:21:30.878Z",
+      "runId": "2026-05-25T23-19-24-058Z",
+      "step": "video",
+      "agent": "reel-shorts-producer",
+      "type": "routing_decision",
+      "content": "Executed step video (initial) — status: completed",
+      "metadata": {
+        "elapsed": "53.7",
+        "revisionPass": false,
+        "error": null
+      }
+    },
+    {
+      "entryId": "c753a79bcf7e5919",
+      "timestamp": "2026-05-25T23:22:46.415Z",
+      "runId": "2026-05-25T23-19-24-058Z",
+      "step": "capcut",
+      "agent": "capcut-editor",
+      "type": "routing_decision",
+      "content": "Executed step capcut (initial) — status: completed",
+      "metadata": {
+        "elapsed": "75.5",
+        "revisionPass": false,
+        "error": null
+      }
+    },
+    {
+      "entryId": "cc3475a1d881230a",
+      "timestamp": "2026-05-25T23:24:01.482Z",
+      "runId": "2026-05-25T23-19-24-058Z",
+      "step": "qa",
+      "agent": "critic-qa",
+      "type": "routing_decision",
+      "content": "Executed step qa (initial) — status: completed",
+      "metadata": {
+        "elapsed": "75.0",
+        "revisionPass": false,
+        "error": null
+      }
+    },
+    {
+      "entryId": "17d6976d411e9016",
+      "timestamp": "2026-05-25T23:25:34.346Z",
+      "runId": "2026-05-25T23-19-24-058Z",
+      "step": "copy",
+      "agent": "copywriter",
+      "type": "routing_decision",
+      "content": "Executed step copy (revision) — status: completed",
+      "metadata": {
+        "elapsed": "92.8",
+        "revisionPass": true,
+        "error": null
+      }
+    },
+    {
+      "entryId": "e3c10ef21393e3be",
+      "timestamp": "2026-05-25T23:27:18.657Z",
+      "runId": "2026-05-25T23-19-24-058Z",
+      "step": "qa",
+      "agent": "critic-qa",
+      "type": "routing_decision",
+      "content": "Executed step qa (initial) — status: completed",
+      "metadata": {
+        "elapsed": "104.3",
+        "revisionPass": false,
+        "error": null
+      }
+    },
+    {
+      "entryId": "403cecf94f7f9444",
+      "timestamp": "2026-05-25T23:27:18.657Z",
+      "runId": "2026-05-25T23-19-24-058Z",
+      "step": "qa",
+      "agent": null,
+      "type": "routing_decision",
+      "content": "QA loop 2: no revisions needed, proceeding to synthesis",
+      "metadata": {
+        "loop": 2
+      }
+    }
+  ]
+}

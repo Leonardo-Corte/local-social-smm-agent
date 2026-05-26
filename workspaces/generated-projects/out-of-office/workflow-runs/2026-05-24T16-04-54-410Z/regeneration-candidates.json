@@ -1,0 +1,60 @@
+{
+  "tasks": [
+    {
+      "id": "workflow-prompt-packet-intake-project-brief-json-execute-intake-strategist-step-with-a-local-model-and-review-the-resulting-output-before-ch",
+      "createdAt": "2026-05-24T16:04:54.508Z",
+      "source": "workflow-runner",
+      "workflowRun": "workflow-runs/2026-05-24T16-04-54-410Z",
+      "stepId": "intake",
+      "agentId": "intake-strategist",
+      "artifact": "workflow-runs/2026-05-24T16-04-54-410Z/steps/intake/prompt.md",
+      "feedback": "Execute intake-strategist step with a local model and review the resulting output before changing project-brief.json.",
+      "target": "project-brief.json",
+      "status": "pending_model_execution",
+      "priority": 3,
+      "action": "execute_agent_step"
+    },
+    {
+      "id": "workflow-prompt-packet-research-research-trend-report-md-execute-market-researcher-step-with-a-local-model-and-review-the-resulting-output-b",
+      "createdAt": "2026-05-24T16:04:54.508Z",
+      "source": "workflow-runner",
+      "workflowRun": "workflow-runs/2026-05-24T16-04-54-410Z",
+      "stepId": "research",
+      "agentId": "market-researcher",
+      "artifact": "workflow-runs/2026-05-24T16-04-54-410Z/steps/research/prompt.md",
+      "feedback": "Execute market-researcher step with a local model and review the resulting output before changing research/trend-report.md.",
+      "target": "research/trend-report.md",
+      "status": "pending_model_execution",
+      "priority": 3,
+      "action": "execute_agent_step"
+    },
+    {
+      "id": "workflow-prompt-packet-strategy-strategy-content-pillars-md-execute-brand-strategist-step-with-a-local-model-and-review-the-resulting-output",
+      "createdAt": "2026-05-24T16:04:54.508Z",
+      "source": "workflow-runner",
+      "workflowRun": "workflow-runs/2026-05-24T16-04-54-410Z",
+      "stepId": "strategy",
+      "agentId": "brand-strategist",
+      "artifact": "workflow-runs/2026-05-24T16-04-54-410Z/steps/strategy/prompt.md",
+      "feedback": "Execute brand-strategist step with a local model and review the resulting output before changing strategy/content-pillars.md.",
+      "target": "strategy/content-pillars.md",
+      "status": "pending_model_execution",
+      "priority": 3,
+      "action": "execute_agent_step"
+    },
+    {
+      "id": "workflow-prompt-packet-calendar-calendar-30-day-calendar-md-execute-content-planner-step-with-a-local-model-and-review-the-resulting-output-",
+      "createdAt": "2026-05-24T16:04:54.508Z",
+      "source": "workflow-runner",
+      "workflowRun": "workflow-runs/2026-05-24T16-04-54-410Z",
+      "stepId": "calendar",
+      "agentId": "content-planner",
+      "artifact": "workflow-runs/2026-05-24T16-04-54-410Z/steps/calendar/prompt.md",
+      "feedback": "Execute content-planner step with a local model and review the resulting output before changing calendar/30-day-calendar.md.",
+      "target": "calendar/30-day-calendar.md",
+      "status": "pending_model_execution",
+      "priority": 3,
+      "action": "execute_agent_step"
+    }
+  ]
+}

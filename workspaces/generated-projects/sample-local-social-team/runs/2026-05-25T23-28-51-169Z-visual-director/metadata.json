@@ -1,0 +1,14 @@
+{
+  "runId": "2026-05-25T23-28-51-169Z-visual-director",
+  "agentId": "visual-director",
+  "generatedAt": "2026-05-25T23:28:51.223Z",
+  "dryRun": false,
+  "backend": "ollama",
+  "model": "qwen2.5:14b",
+  "inputPaths": [],
+  "contentPolicy": {
+    "status": "passed",
+    "blockers": 0,
+    "warnings": 0
+  }
+}

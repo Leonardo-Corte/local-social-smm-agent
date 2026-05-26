@@ -1,0 +1,482 @@
+[
+  {
+    "name": ".env.example",
+    "path": ".env.example",
+    "sha": "6464fb0044f922737d718ba529476f4e45c2ebf8",
+    "size": 247,
+    "url": "https://api.github.com/repos/microsoft/TinyTroupe/contents/.env.example?ref=main",
+    "html_url": "https://github.com/microsoft/TinyTroupe/blob/main/.env.example",
+    "git_url": "https://api.github.com/repos/microsoft/TinyTroupe/git/blobs/6464fb0044f922737d718ba529476f4e45c2ebf8",
+    "download_url": "https://raw.githubusercontent.com/microsoft/TinyTroupe/main/.env.example",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/microsoft/TinyTroupe/contents/.env.example?ref=main",
+      "git": "https://api.github.com/repos/microsoft/TinyTroupe/git/blobs/6464fb0044f922737d718ba529476f4e45c2ebf8",
+      "html": "https://github.com/microsoft/TinyTroupe/blob/main/.env.example"
+    }
+  },
+  {
+    "name": ".gitattributes",
+    "path": ".gitattributes",
+    "sha": "827c1b0c7e27f9ea0e68d00fa2132e3fc59f39fa",
+    "size": 49,
+    "url": "https://api.github.com/repos/microsoft/TinyTroupe/contents/.gitattributes?ref=main",
+    "html_url": "https://github.com/microsoft/TinyTroupe/blob/main/.gitattributes",
+    "git_url": "https://api.github.com/repos/microsoft/TinyTroupe/git/blobs/827c1b0c7e27f9ea0e68d00fa2132e3fc59f39fa",
+    "download_url": "https://raw.githubusercontent.com/microsoft/TinyTroupe/main/.gitattributes",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/microsoft/TinyTroupe/contents/.gitattributes?ref=main",
+      "git": "https://api.github.com/repos/microsoft/TinyTroupe/git/blobs/827c1b0c7e27f9ea0e68d00fa2132e3fc59f39fa",
+      "html": "https://github.com/microsoft/TinyTroupe/blob/main/.gitattributes"
+    }
+  },
+  {
+    "name": ".github",
+    "path": ".github",
+    "sha": "443f3241acf3b6290f69dfe8cdcef0e57e04c846",
+    "size": 0,
+    "url": "https://api.github.com/repos/microsoft/TinyTroupe/contents/.github?ref=main",
+    "html_url": "https://github.com/microsoft/TinyTroupe/tree/main/.github",
+    "git_url": "https://api.github.com/repos/microsoft/TinyTroupe/git/trees/443f3241acf3b6290f69dfe8cdcef0e57e04c846",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/microsoft/TinyTroupe/contents/.github?ref=main",
+      "git": "https://api.github.com/repos/microsoft/TinyTroupe/git/trees/443f3241acf3b6290f69dfe8cdcef0e57e04c846",
+      "html": "https://github.com/microsoft/TinyTroupe/tree/main/.github"
+    }
+  },
+  {
+    "name": ".gitignore",
+    "path": ".gitignore",
+    "sha": "0a5d6b986045b74ad4d94a2e3839c495276377b8",
+    "size": 3348,
+    "url": "https://api.github.com/repos/microsoft/TinyTroupe/contents/.gitignore?ref=main",
+    "html_url": "https://github.com/microsoft/TinyTroupe/blob/main/.gitignore",
+    "git_url": "https://api.github.com/repos/microsoft/TinyTroupe/git/blobs/0a5d6b986045b74ad4d94a2e3839c495276377b8",
+    "download_url": "https://raw.githubusercontent.com/microsoft/TinyTroupe/main/.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/microsoft/TinyTroupe/contents/.gitignore?ref=main",
+      "git": "https://api.github.com/repos/microsoft/TinyTroupe/git/blobs/0a5d6b986045b74ad4d94a2e3839c495276377b8",
+      "html": "https://github.com/microsoft/TinyTroupe/blob/main/.gitignore"
+    }
+  },
+  {
+    "name": "CODE_OF_CONDUCT.md",
+    "path": "CODE_OF_CONDUCT.md",
+    "sha": "f9ba8cf65f3e3104dd061c178066ec8247811f33",
+    "size": 444,
+    "url": "https://api.github.com/repos/microsoft/TinyTroupe/contents/CODE_OF_CONDUCT.md?ref=main",
+    "html_url": "https://github.com/microsoft/TinyTroupe/blob/main/CODE_OF_CONDUCT.md",
+    "git_url": "https://api.github.com/repos/microsoft/TinyTroupe/git/blobs/f9ba8cf65f3e3104dd061c178066ec8247811f33",
+    "download_url": "https://raw.githubusercontent.com/microsoft/TinyTroupe/main/CODE_OF_CONDUCT.md",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/microsoft/TinyTroupe/contents/CODE_OF_CONDUCT.md?ref=main",
+      "git": "https://api.github.com/repos/microsoft/TinyTroupe/git/blobs/f9ba8cf65f3e3104dd061c178066ec8247811f33",
+      "html": "https://github.com/microsoft/TinyTroupe/blob/main/CODE_OF_CONDUCT.md"
+    }
+  },
+  {
+    "name": "LICENSE",
+    "path": "LICENSE",
+    "sha": "9e841e7a26e4eb057b24511e7b92d42b257a80e5",
+    "size": 1141,
+    "url": "https://api.github.com/repos/microsoft/TinyTroupe/contents/LICENSE?ref=main",
+    "html_url": "https://github.com/microsoft/TinyTroupe/blob/main/LICENSE",
+    "git_url": "https://api.github.com/repos/microsoft/TinyTroupe/git/blobs/9e841e7a26e4eb057b24511e7b92d42b257a80e5",
+    "download_url": "https://raw.githubusercontent.com/microsoft/TinyTroupe/main/LICENSE",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/microsoft/TinyTroupe/contents/LICENSE?ref=main",
+      "git": "https://api.github.com/repos/microsoft/TinyTroupe/git/blobs/9e841e7a26e4eb057b24511e7b92d42b257a80e5",
+      "html": "https://github.com/microsoft/TinyTroupe/blob/main/LICENSE"
+    }
+  },
+  {
+    "name": "MANIFEST.in",
+    "path": "MANIFEST.in",
+    "sha": "85e76f56324315efae5097ebd9c738b63ac8ed84",
+    "size": 149,
+    "url": "https://api.github.com/repos/microsoft/TinyTroupe/contents/MANIFEST.in?ref=main",
+    "html_url": "https://github.com/microsoft/TinyTroupe/blob/main/MANIFEST.in",
+    "git_url": "https://api.github.com/repos/microsoft/TinyTroupe/git/blobs/85e76f56324315efae5097ebd9c738b63ac8ed84",
+    "download_url": "https://raw.githubusercontent.com/microsoft/TinyTroupe/main/MANIFEST.in",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/microsoft/TinyTroupe/contents/MANIFEST.in?ref=main",
+      "git": "https://api.github.com/repos/microsoft/TinyTroupe/git/blobs/85e76f56324315efae5097ebd9c738b63ac8ed84",
+      "html": "https://github.com/microsoft/TinyTroupe/blob/main/MANIFEST.in"
+    }
+  },
+  {
+    "name": "README.md",
+    "path": "README.md",
+    "sha": "7597f10f3e6bcdf5ba2c05d6fca5d302a9ab20d9",
+    "size": 52516,
+    "url": "https://api.github.com/repos/microsoft/TinyTroupe/contents/README.md?ref=main",
+    "html_url": "https://github.com/microsoft/TinyTroupe/blob/main/README.md",
+    "git_url": "https://api.github.com/repos/microsoft/TinyTroupe/git/blobs/7597f10f3e6bcdf5ba2c05d6fca5d302a9ab20d9",
+    "download_url": "https://raw.githubusercontent.com/microsoft/TinyTroupe/main/README.md",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/microsoft/TinyTroupe/contents/README.md?ref=main",
+      "git": "https://api.github.com/repos/microsoft/TinyTroupe/git/blobs/7597f10f3e6bcdf5ba2c05d6fca5d302a9ab20d9",
+      "html": "https://github.com/microsoft/TinyTroupe/blob/main/README.md"
+    }
+  },
+  {
+    "name": "RESPONSIBLE_AI_FAQ.md",
+    "path": "RESPONSIBLE_AI_FAQ.md",
+    "sha": "c1f146879720be4fcd83b5f2cfc533fb01c37361",
+    "size": 5228,
+    "url": "https://api.github.com/repos/microsoft/TinyTroupe/contents/RESPONSIBLE_AI_FAQ.md?ref=main",
+    "html_url": "https://github.com/microsoft/TinyTroupe/blob/main/RESPONSIBLE_AI_FAQ.md",
+    "git_url": "https://api.github.com/repos/microsoft/TinyTroupe/git/blobs/c1f146879720be4fcd83b5f2cfc533fb01c37361",
+    "download_url": "https://raw.githubusercontent.com/microsoft/TinyTroupe/main/RESPONSIBLE_AI_FAQ.md",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/microsoft/TinyTroupe/contents/RESPONSIBLE_AI_FAQ.md?ref=main",
+      "git": "https://api.github.com/repos/microsoft/TinyTroupe/git/blobs/c1f146879720be4fcd83b5f2cfc533fb01c37361",
+      "html": "https://github.com/microsoft/TinyTroupe/blob/main/RESPONSIBLE_AI_FAQ.md"
+    }
+  },
+  {
+    "name": "SECURITY.md",
+    "path": "SECURITY.md",
+    "sha": "b3c89efc852e22f71eabf5dfbc6ac62493425eb6",
+    "size": 2656,
+    "url": "https://api.github.com/repos/microsoft/TinyTroupe/contents/SECURITY.md?ref=main",
+    "html_url": "https://github.com/microsoft/TinyTroupe/blob/main/SECURITY.md",
+    "git_url": "https://api.github.com/repos/microsoft/TinyTroupe/git/blobs/b3c89efc852e22f71eabf5dfbc6ac62493425eb6",
+    "download_url": "https://raw.githubusercontent.com/microsoft/TinyTroupe/main/SECURITY.md",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/microsoft/TinyTroupe/contents/SECURITY.md?ref=main",
+      "git": "https://api.github.com/repos/microsoft/TinyTroupe/git/blobs/b3c89efc852e22f71eabf5dfbc6ac62493425eb6",
+      "html": "https://github.com/microsoft/TinyTroupe/blob/main/SECURITY.md"
+    }
+  },
+  {
+    "name": "SUPPORT.md",
+    "path": "SUPPORT.md",
+    "sha": "574c30ed998760e6a26d2522a60efcfa38f2496e",
+    "size": 510,
+    "url": "https://api.github.com/repos/microsoft/TinyTroupe/contents/SUPPORT.md?ref=main",
+    "html_url": "https://github.com/microsoft/TinyTroupe/blob/main/SUPPORT.md",
+    "git_url": "https://api.github.com/repos/microsoft/TinyTroupe/git/blobs/574c30ed998760e6a26d2522a60efcfa38f2496e",
+    "download_url": "https://raw.githubusercontent.com/microsoft/TinyTroupe/main/SUPPORT.md",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/microsoft/TinyTroupe/contents/SUPPORT.md?ref=main",
+      "git": "https://api.github.com/repos/microsoft/TinyTroupe/git/blobs/574c30ed998760e6a26d2522a60efcfa38f2496e",
+      "html": "https://github.com/microsoft/TinyTroupe/blob/main/SUPPORT.md"
+    }
+  },
+  {
+    "name": "build_and_install_package_from_repo.bat",
+    "path": "build_and_install_package_from_repo.bat",
+    "sha": "9cd8edf17051c1c311daa11ee68ce3052d90cb17",
+    "size": 79,
+    "url": "https://api.github.com/repos/microsoft/TinyTroupe/contents/build_and_install_package_from_repo.bat?ref=main",
+    "html_url": "https://github.com/microsoft/TinyTroupe/blob/main/build_and_install_package_from_repo.bat",
+    "git_url": "https://api.github.com/repos/microsoft/TinyTroupe/git/blobs/9cd8edf17051c1c311daa11ee68ce3052d90cb17",
+    "download_url": "https://raw.githubusercontent.com/microsoft/TinyTroupe/main/build_and_install_package_from_repo.bat",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/microsoft/TinyTroupe/contents/build_and_install_package_from_repo.bat?ref=main",
+      "git": "https://api.github.com/repos/microsoft/TinyTroupe/git/blobs/9cd8edf17051c1c311daa11ee68ce3052d90cb17",
+      "html": "https://github.com/microsoft/TinyTroupe/blob/main/build_and_install_package_from_repo.bat"
+    }
+  },
+  {
+    "name": "build_package.bat",
+    "path": "build_package.bat",
+    "sha": "e6b65cb57916c57f68a77d496196ad87de93abd2",
+    "size": 33,
+    "url": "https://api.github.com/repos/microsoft/TinyTroupe/contents/build_package.bat?ref=main",
+    "html_url": "https://github.com/microsoft/TinyTroupe/blob/main/build_package.bat",
+    "git_url": "https://api.github.com/repos/microsoft/TinyTroupe/git/blobs/e6b65cb57916c57f68a77d496196ad87de93abd2",
+    "download_url": "https://raw.githubusercontent.com/microsoft/TinyTroupe/main/build_package.bat",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/microsoft/TinyTroupe/contents/build_package.bat?ref=main",
+      "git": "https://api.github.com/repos/microsoft/TinyTroupe/git/blobs/e6b65cb57916c57f68a77d496196ad87de93abd2",
+      "html": "https://github.com/microsoft/TinyTroupe/blob/main/build_package.bat"
+    }
+  },
+  {
+    "name": "config.ini",
+    "path": "config.ini",
+    "sha": "2332c1a3dca053d46f060db3c9f2d72334b629e6",
+    "size": 759,
+    "url": "https://api.github.com/repos/microsoft/TinyTroupe/contents/config.ini?ref=main",
+    "html_url": "https://github.com/microsoft/TinyTroupe/blob/main/config.ini",
+    "git_url": "https://api.github.com/repos/microsoft/TinyTroupe/git/blobs/2332c1a3dca053d46f060db3c9f2d72334b629e6",
+    "download_url": "https://raw.githubusercontent.com/microsoft/TinyTroupe/main/config.ini",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/microsoft/TinyTroupe/contents/config.ini?ref=main",
+      "git": "https://api.github.com/repos/microsoft/TinyTroupe/git/blobs/2332c1a3dca053d46f060db3c9f2d72334b629e6",
+      "html": "https://github.com/microsoft/TinyTroupe/blob/main/config.ini"
+    }
+  },
+  {
+    "name": "data",
+    "path": "data",
+    "sha": "137c43ea695de6b894004805cb20490ed3e0cb95",
+    "size": 0,
+    "url": "https://api.github.com/repos/microsoft/TinyTroupe/contents/data?ref=main",
+    "html_url": "https://github.com/microsoft/TinyTroupe/tree/main/data",
+    "git_url": "https://api.github.com/repos/microsoft/TinyTroupe/git/trees/137c43ea695de6b894004805cb20490ed3e0cb95",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/microsoft/TinyTroupe/contents/data?ref=main",
+      "git": "https://api.github.com/repos/microsoft/TinyTroupe/git/trees/137c43ea695de6b894004805cb20490ed3e0cb95",
+      "html": "https://github.com/microsoft/TinyTroupe/tree/main/data"
+    }
+  },
+  {
+    "name": "docs",
+    "path": "docs",
+    "sha": "b80db0d4527079defb3b7545cd01e48d65e31e12",
+    "size": 0,
+    "url": "https://api.github.com/repos/microsoft/TinyTroupe/contents/docs?ref=main",
+    "html_url": "https://github.com/microsoft/TinyTroupe/tree/main/docs",
+    "git_url": "https://api.github.com/repos/microsoft/TinyTroupe/git/trees/b80db0d4527079defb3b7545cd01e48d65e31e12",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/microsoft/TinyTroupe/contents/docs?ref=main",
+      "git": "https://api.github.com/repos/microsoft/TinyTroupe/git/trees/b80db0d4527079defb3b7545cd01e48d65e31e12",
+      "html": "https://github.com/microsoft/TinyTroupe/tree/main/docs"
+    }
+  },
+  {
+    "name": "examples",
+    "path": "examples",
+    "sha": "535a12d152629526baef74ab7019565d4dca1793",
+    "size": 0,
+    "url": "https://api.github.com/repos/microsoft/TinyTroupe/contents/examples?ref=main",
+    "html_url": "https://github.com/microsoft/TinyTroupe/tree/main/examples",
+    "git_url": "https://api.github.com/repos/microsoft/TinyTroupe/git/trees/535a12d152629526baef74ab7019565d4dca1793",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/microsoft/TinyTroupe/contents/examples?ref=main",
+      "git": "https://api.github.com/repos/microsoft/TinyTroupe/git/trees/535a12d152629526baef74ab7019565d4dca1793",
+      "html": "https://github.com/microsoft/TinyTroupe/tree/main/examples"
+    }
+  },
+  {
+    "name": "generate_api_documentation.bat",
+    "path": "generate_api_documentation.bat",
+    "sha": "13e954b53c0295a1aec5d8567239d249257cf767",
+    "size": 44,
+    "url": "https://api.github.com/repos/microsoft/TinyTroupe/contents/generate_api_documentation.bat?ref=main",
+    "html_url": "https://github.com/microsoft/TinyTroupe/blob/main/generate_api_documentation.bat",
+    "git_url": "https://api.github.com/repos/microsoft/TinyTroupe/git/blobs/13e954b53c0295a1aec5d8567239d249257cf767",
+    "download_url": "https://raw.githubusercontent.com/microsoft/TinyTroupe/main/generate_api_documentation.bat",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/microsoft/TinyTroupe/contents/generate_api_documentation.bat?ref=main",
+      "git": "https://api.github.com/repos/microsoft/TinyTroupe/git/blobs/13e954b53c0295a1aec5d8567239d249257cf767",
+      "html": "https://github.com/microsoft/TinyTroupe/blob/main/generate_api_documentation.bat"
+    }
+  },
+  {
+    "name": "install_package_from_repo.bat",
+    "path": "install_package_from_repo.bat",
+    "sha": "16cf0bf8be1f37b5877a11f2a778a40344629263",
+    "size": 28,
+    "url": "https://api.github.com/repos/microsoft/TinyTroupe/contents/install_package_from_repo.bat?ref=main",
+    "html_url": "https://github.com/microsoft/TinyTroupe/blob/main/install_package_from_repo.bat",
+    "git_url": "https://api.github.com/repos/microsoft/TinyTroupe/git/blobs/16cf0bf8be1f37b5877a11f2a778a40344629263",
+    "download_url": "https://raw.githubusercontent.com/microsoft/TinyTroupe/main/install_package_from_repo.bat",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/microsoft/TinyTroupe/contents/install_package_from_repo.bat?ref=main",
+      "git": "https://api.github.com/repos/microsoft/TinyTroupe/git/blobs/16cf0bf8be1f37b5877a11f2a778a40344629263",
+      "html": "https://github.com/microsoft/TinyTroupe/blob/main/install_package_from_repo.bat"
+    }
+  },
+  {
+    "name": "publications",
+    "path": "publications",
+    "sha": "bbc81b5b2c888c8076e4f878fbe76f3916628144",
+    "size": 0,
+    "url": "https://api.github.com/repos/microsoft/TinyTroupe/contents/publications?ref=main",
+    "html_url": "https://github.com/microsoft/TinyTroupe/tree/main/publications",
+    "git_url": "https://api.github.com/repos/microsoft/TinyTroupe/git/trees/bbc81b5b2c888c8076e4f878fbe76f3916628144",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/microsoft/TinyTroupe/contents/publications?ref=main",
+      "git": "https://api.github.com/repos/microsoft/TinyTroupe/git/trees/bbc81b5b2c888c8076e4f878fbe76f3916628144",
+      "html": "https://github.com/microsoft/TinyTroupe/tree/main/publications"
+    }
+  },
+  {
+    "name": "pyproject.toml",
+    "path": "pyproject.toml",
+    "sha": "fc91985648acfb13f0531cd7d5ece532713ffca5",
+    "size": 1734,
+    "url": "https://api.github.com/repos/microsoft/TinyTroupe/contents/pyproject.toml?ref=main",
+    "html_url": "https://github.com/microsoft/TinyTroupe/blob/main/pyproject.toml",
+    "git_url": "https://api.github.com/repos/microsoft/TinyTroupe/git/blobs/fc91985648acfb13f0531cd7d5ece532713ffca5",
+    "download_url": "https://raw.githubusercontent.com/microsoft/TinyTroupe/main/pyproject.toml",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/microsoft/TinyTroupe/contents/pyproject.toml?ref=main",
+      "git": "https://api.github.com/repos/microsoft/TinyTroupe/git/blobs/fc91985648acfb13f0531cd7d5ece532713ffca5",
+      "html": "https://github.com/microsoft/TinyTroupe/blob/main/pyproject.toml"
+    }
+  },
+  {
+    "name": "reinstall_package_from_repo.bat",
+    "path": "reinstall_package_from_repo.bat",
+    "sha": "543f6d99120b2d2ed004f0aa2713f143ec2275c8",
+    "size": 56,
+    "url": "https://api.github.com/repos/microsoft/TinyTroupe/contents/reinstall_package_from_repo.bat?ref=main",
+    "html_url": "https://github.com/microsoft/TinyTroupe/blob/main/reinstall_package_from_repo.bat",
+    "git_url": "https://api.github.com/repos/microsoft/TinyTroupe/git/blobs/543f6d99120b2d2ed004f0aa2713f143ec2275c8",
+    "download_url": "https://raw.githubusercontent.com/microsoft/TinyTroupe/main/reinstall_package_from_repo.bat",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/microsoft/TinyTroupe/contents/reinstall_package_from_repo.bat?ref=main",
+      "git": "https://api.github.com/repos/microsoft/TinyTroupe/git/blobs/543f6d99120b2d2ed004f0aa2713f143ec2275c8",
+      "html": "https://github.com/microsoft/TinyTroupe/blob/main/reinstall_package_from_repo.bat"
+    }
+  },
+  {
+    "name": "test.bat",
+    "path": "test.bat",
+    "sha": "5b916ce4d00d745f878cf6a8f9af3231b3e1c0f3",
+    "size": 25,
+    "url": "https://api.github.com/repos/microsoft/TinyTroupe/contents/test.bat?ref=main",
+    "html_url": "https://github.com/microsoft/TinyTroupe/blob/main/test.bat",
+    "git_url": "https://api.github.com/repos/microsoft/TinyTroupe/git/blobs/5b916ce4d00d745f878cf6a8f9af3231b3e1c0f3",
+    "download_url": "https://raw.githubusercontent.com/microsoft/TinyTroupe/main/test.bat",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/microsoft/TinyTroupe/contents/test.bat?ref=main",
+      "git": "https://api.github.com/repos/microsoft/TinyTroupe/git/blobs/5b916ce4d00d745f878cf6a8f9af3231b3e1c0f3",
+      "html": "https://github.com/microsoft/TinyTroupe/blob/main/test.bat"
+    }
+  },
+  {
+    "name": "test_core_with_cache.bat",
+    "path": "test_core_with_cache.bat",
+    "sha": "f9e509fa2e478c6e98b84dc1f491e78821cc3b77",
+    "size": 277,
+    "url": "https://api.github.com/repos/microsoft/TinyTroupe/contents/test_core_with_cache.bat?ref=main",
+    "html_url": "https://github.com/microsoft/TinyTroupe/blob/main/test_core_with_cache.bat",
+    "git_url": "https://api.github.com/repos/microsoft/TinyTroupe/git/blobs/f9e509fa2e478c6e98b84dc1f491e78821cc3b77",
+    "download_url": "https://raw.githubusercontent.com/microsoft/TinyTroupe/main/test_core_with_cache.bat",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/microsoft/TinyTroupe/contents/test_core_with_cache.bat?ref=main",
+      "git": "https://api.github.com/repos/microsoft/TinyTroupe/git/blobs/f9e509fa2e478c6e98b84dc1f491e78821cc3b77",
+      "html": "https://github.com/microsoft/TinyTroupe/blob/main/test_core_with_cache.bat"
+    }
+  },
+  {
+    "name": "test_gpt41mini_with_cache.bat",
+    "path": "test_gpt41mini_with_cache.bat",
+    "sha": "d0e3be0543c17d9d102cf3a73f261ac81f08bad2",
+    "size": 196,
+    "url": "https://api.github.com/repos/microsoft/TinyTroupe/contents/test_gpt41mini_with_cache.bat?ref=main",
+    "html_url": "https://github.com/microsoft/TinyTroupe/blob/main/test_gpt41mini_with_cache.bat",
+    "git_url": "https://api.github.com/repos/microsoft/TinyTroupe/git/blobs/d0e3be0543c17d9d102cf3a73f261ac81f08bad2",
+    "download_url": "https://raw.githubusercontent.com/microsoft/TinyTroupe/main/test_gpt41mini_with_cache.bat",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/microsoft/TinyTroupe/contents/test_gpt41mini_with_cache.bat?ref=main",
+      "git": "https://api.github.com/repos/microsoft/TinyTroupe/git/blobs/d0e3be0543c17d9d102cf3a73f261ac81f08bad2",
+      "html": "https://github.com/microsoft/TinyTroupe/blob/main/test_gpt41mini_with_cache.bat"
+    }
+  },
+  {
+    "name": "test_with_cache_without_slow.bat",
+    "path": "test_with_cache_without_slow.bat",
+    "sha": "9afff7bb14ac7ac00eed5401d0c1ac6e3f82a016",
+    "size": 168,
+    "url": "https://api.github.com/repos/microsoft/TinyTroupe/contents/test_with_cache_without_slow.bat?ref=main",
+    "html_url": "https://github.com/microsoft/TinyTroupe/blob/main/test_with_cache_without_slow.bat",
+    "git_url": "https://api.github.com/repos/microsoft/TinyTroupe/git/blobs/9afff7bb14ac7ac00eed5401d0c1ac6e3f82a016",
+    "download_url": "https://raw.githubusercontent.com/microsoft/TinyTroupe/main/test_with_cache_without_slow.bat",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/microsoft/TinyTroupe/contents/test_with_cache_without_slow.bat?ref=main",
+      "git": "https://api.github.com/repos/microsoft/TinyTroupe/git/blobs/9afff7bb14ac7ac00eed5401d0c1ac6e3f82a016",
+      "html": "https://github.com/microsoft/TinyTroupe/blob/main/test_with_cache_without_slow.bat"
+    }
+  },
+  {
+    "name": "test_without_slow.bat",
+    "path": "test_without_slow.bat",
+    "sha": "f43fbde01a38505374a8f70bd67d9d77756917bb",
+    "size": 172,
+    "url": "https://api.github.com/repos/microsoft/TinyTroupe/contents/test_without_slow.bat?ref=main",
+    "html_url": "https://github.com/microsoft/TinyTroupe/blob/main/test_without_slow.bat",
+    "git_url": "https://api.github.com/repos/microsoft/TinyTroupe/git/blobs/f43fbde01a38505374a8f70bd67d9d77756917bb",
+    "download_url": "https://raw.githubusercontent.com/microsoft/TinyTroupe/main/test_without_slow.bat",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/microsoft/TinyTroupe/contents/test_without_slow.bat?ref=main",
+      "git": "https://api.github.com/repos/microsoft/TinyTroupe/git/blobs/f43fbde01a38505374a8f70bd67d9d77756917bb",
+      "html": "https://github.com/microsoft/TinyTroupe/blob/main/test_without_slow.bat"
+    }
+  },
+  {
+    "name": "tests",
+    "path": "tests",
+    "sha": "0aad8c18f587407249fcd5dc282231084fa9163f",
+    "size": 0,
+    "url": "https://api.github.com/repos/microsoft/TinyTroupe/contents/tests?ref=main",
+    "html_url": "https://github.com/microsoft/TinyTroupe/tree/main/tests",
+    "git_url": "https://api.github.com/repos/microsoft/TinyTroupe/git/trees/0aad8c18f587407249fcd5dc282231084fa9163f",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/microsoft/TinyTroupe/contents/tests?ref=main",
+      "git": "https://api.github.com/repos/microsoft/TinyTroupe/git/trees/0aad8c18f587407249fcd5dc282231084fa9163f",
+      "html": "https://github.com/microsoft/TinyTroupe/tree/main/tests"
+    }
+  },
+  {
+    "name": "tinytroupe",
+    "path": "tinytroupe",
+    "sha": "cad98402a2b9849cca8715cfa36790916a48d74c",
+    "size": 0,
+    "url": "https://api.github.com/repos/microsoft/TinyTroupe/contents/tinytroupe?ref=main",
+    "html_url": "https://github.com/microsoft/TinyTroupe/tree/main/tinytroupe",
+    "git_url": "https://api.github.com/repos/microsoft/TinyTroupe/git/trees/cad98402a2b9849cca8715cfa36790916a48d74c",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/microsoft/TinyTroupe/contents/tinytroupe?ref=main",
+      "git": "https://api.github.com/repos/microsoft/TinyTroupe/git/trees/cad98402a2b9849cca8715cfa36790916a48d74c",
+      "html": "https://github.com/microsoft/TinyTroupe/tree/main/tinytroupe"
+    }
+  },
+  {
+    "name": "uninstall_package.bat",
+    "path": "uninstall_package.bat",
+    "sha": "a6cf4cc4f7b1fb2399eef6b359f2538f86073df9",
+    "size": 24,
+    "url": "https://api.github.com/repos/microsoft/TinyTroupe/contents/uninstall_package.bat?ref=main",
+    "html_url": "https://github.com/microsoft/TinyTroupe/blob/main/uninstall_package.bat",
+    "git_url": "https://api.github.com/repos/microsoft/TinyTroupe/git/blobs/a6cf4cc4f7b1fb2399eef6b359f2538f86073df9",
+    "download_url": "https://raw.githubusercontent.com/microsoft/TinyTroupe/main/uninstall_package.bat",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/microsoft/TinyTroupe/contents/uninstall_package.bat?ref=main",
+      "git": "https://api.github.com/repos/microsoft/TinyTroupe/git/blobs/a6cf4cc4f7b1fb2399eef6b359f2538f86073df9",
+      "html": "https://github.com/microsoft/TinyTroupe/blob/main/uninstall_package.bat"
+    }
+  }
+]

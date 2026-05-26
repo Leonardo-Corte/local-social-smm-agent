@@ -1,0 +1,13 @@
+{
+  "version": "0.1.0",
+  "index": 1,
+  "createdAt": "2026-05-24T18:57:16.326Z",
+  "stepId": "copy",
+  "agentId": "copywriter",
+  "status": "fallback_saved_prompt_packet",
+  "backend": "prompt-packet",
+  "model": "qwen2.5:14b",
+  "target": "drafts/posts.md",
+  "handoff": "Local execution failed, so this step was saved as a prompt packet.\n\nError: This operation was aborted\n",
+  "outputPreview": "Local execution failed, so this step was saved as a prompt packet.\n\nError: This operation was aborted\n"
+}

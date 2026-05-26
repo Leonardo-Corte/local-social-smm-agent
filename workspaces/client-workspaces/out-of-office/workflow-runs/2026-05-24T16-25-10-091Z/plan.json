@@ -1,0 +1,23 @@
+{
+  "version": "0.1.0",
+  "workspace": "out-of-office",
+  "runId": "2026-05-24T16-25-10-091Z",
+  "mode": "dry-run-prompt-packets",
+  "steps": [
+    {
+      "id": "intake",
+      "agentId": "intake-strategist",
+      "task": "Review the project brief and identify missing context, contradictions, and personalization tasks before content work starts.",
+      "inputs": [
+        "project-brief.json",
+        "business/business.md",
+        "operations/agent-operating-contracts.md",
+        "memory/preferences.json",
+        "memory/user-feedback.md"
+      ]
+    }
+  ],
+  "selectedStepIds": [],
+  "maxSteps": 1,
+  "timeoutMs": 180000
+}

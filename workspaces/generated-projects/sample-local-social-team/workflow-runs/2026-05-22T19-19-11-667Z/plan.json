@@ -1,0 +1,130 @@
+{
+  "version": "0.1.0",
+  "workspace": "sample-local-social-team",
+  "runId": "2026-05-22T19-19-11-667Z",
+  "mode": "dry-run-prompt-packets",
+  "steps": [
+    {
+      "id": "intake",
+      "agentId": "intake-strategist",
+      "task": "Review the project brief and identify missing context, contradictions, and personalization tasks before content work starts.",
+      "inputs": [
+        "project-brief.json",
+        "memory/preferences.json",
+        "memory/user-feedback.md"
+      ]
+    },
+    {
+      "id": "research",
+      "agentId": "market-researcher",
+      "task": "Review the trend report and source registry. Produce research gaps, source-risk notes, and concrete trend-research tasks.",
+      "inputs": [
+        "project-brief.json",
+        "sources/source-registry.md",
+        "research/trend-report.md"
+      ]
+    },
+    {
+      "id": "strategy",
+      "agentId": "brand-strategist",
+      "task": "Turn the brief and research into sharper positioning, voice rules, and content-pillar improvements.",
+      "inputs": [
+        "project-brief.json",
+        "research/trend-report.md",
+        "strategy/content-pillars.md"
+      ]
+    },
+    {
+      "id": "calendar",
+      "agentId": "content-planner",
+      "task": "Review the 30-day calendar for cadence, format variety, platform fit, and missing proof points.",
+      "inputs": [
+        "strategy/content-pillars.md",
+        "calendar/30-day-calendar.md"
+      ]
+    },
+    {
+      "id": "copy",
+      "agentId": "copywriter",
+      "task": "Review current post, carousel, and reel drafts. Propose better hooks, claims, CTAs, and format-specific improvements.",
+      "inputs": [
+        "calendar/30-day-calendar.md",
+        "drafts/posts.md",
+        "drafts/carousels.md",
+        "drafts/reels.md"
+      ]
+    },
+    {
+      "id": "video",
+      "agentId": "reel-shorts-producer",
+      "task": "Review reel scripts for first-three-second strength, visual beats, editability, and missing assets.",
+      "inputs": [
+        "calendar/30-day-calendar.md",
+        "drafts/reels.md"
+      ]
+    },
+    {
+      "id": "visuals",
+      "agentId": "visual-director",
+      "task": "Review visual briefs against the local model route. Produce practical image prompt and ComfyUI readiness improvements.",
+      "inputs": [
+        "model-routing-report.md",
+        "creative/visual-briefs.md",
+        "calendar/30-day-calendar.md"
+      ]
+    },
+    {
+      "id": "compliance",
+      "agentId": "compliance-platform-guardian",
+      "task": "Audit the workspace for platform, source, license, and publishing risks. Block unsafe automation and list approval blockers.",
+      "inputs": [
+        "policy/publishing-policy.json",
+        "sources/source-registry.md",
+        "publishing/publishing-checklist.md",
+        "drafts/posts.md"
+      ]
+    },
+    {
+      "id": "publishing",
+      "agentId": "publishing-operator",
+      "task": "Prepare a human-review publishing package. Do not publish. List exact manual/export steps and missing approvals.",
+      "inputs": [
+        "publishing/publishing-checklist.md",
+        "drafts/posts.md",
+        "drafts/carousels.md",
+        "drafts/reels.md"
+      ]
+    },
+    {
+      "id": "persona",
+      "agentId": "persona-simulator",
+      "task": "Use the existing persona report and drafts to identify likely objections, drop-off points, and content improvements.",
+      "inputs": [
+        "simulation/persona-report.md",
+        "drafts/posts.md"
+      ]
+    },
+    {
+      "id": "qa",
+      "agentId": "critic-qa",
+      "task": "Run a final adversarial QA pass. Decide what is not good enough for human approval and convert it into regeneration tasks.",
+      "inputs": [
+        "review/workspace-quality-rubric.json",
+        "simulation/persona-report.md",
+        "review/qa-recap.md",
+        "drafts/posts.md"
+      ]
+    },
+    {
+      "id": "memory",
+      "agentId": "memory-curator",
+      "task": "Summarize reusable preferences, rejected patterns, and regeneration tasks learned from this workflow run.",
+      "inputs": [
+        "memory/user-feedback.md",
+        "memory/preferences.json",
+        "memory/regeneration-queue.json",
+        "review/qa-recap.md"
+      ]
+    }
+  ]
+}

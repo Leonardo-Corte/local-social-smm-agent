@@ -1,0 +1,14 @@
+{
+  "id": "video",
+  "agentId": "reel-shorts-producer",
+  "status": "fallback_saved_prompt_packet",
+  "backend": "prompt-packet",
+  "model": "qwen2.5:14b",
+  "inputs": [
+    "calendar/30-day-calendar.md",
+    "drafts/reels.md",
+    "assets/analysis/video-asset-report.md"
+  ],
+  "generatedAt": "2026-05-23T01:21:01.843Z",
+  "error": "This operation was aborted"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "research",
+  "agentId": "market-researcher",
+  "status": "saved_prompt_packet",
+  "backend": "prompt-packet",
+  "model": "qwen2.5:14b",
+  "inputs": [
+    "project-brief.json",
+    "sources/source-registry.md",
+    "research/trend-report.md"
+  ],
+  "generatedAt": "2026-05-23T20:18:29.047Z"
+}

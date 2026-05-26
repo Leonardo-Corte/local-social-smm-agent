@@ -1,0 +1,13 @@
+{
+  "version": "0.1.0",
+  "index": 1,
+  "createdAt": "2026-05-24T19:28:10.927Z",
+  "stepId": "research",
+  "agentId": "market-researcher",
+  "status": "saved_prompt_packet",
+  "backend": "prompt-packet",
+  "model": "qwen2.5:14b",
+  "target": "research/trend-report.md",
+  "handoff": "Prompt packet saved. Run with --execute to use a detected local Ollama model.\n",
+  "outputPreview": "Prompt packet saved. Run with --execute to use a detected local Ollama model.\n"
+}

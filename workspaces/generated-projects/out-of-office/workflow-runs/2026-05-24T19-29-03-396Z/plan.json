@@ -1,0 +1,78 @@
+{
+  "version": "0.1.0",
+  "workspace": "out-of-office",
+  "runId": "2026-05-24T19-29-03-396Z",
+  "mode": "dry-run-prompt-packets",
+  "steps": [
+    {
+      "id": "research",
+      "agentId": "market-researcher",
+      "task": "Review the trend report and source registry. Produce research gaps, source-risk notes, and concrete trend-research tasks.",
+      "inputs": [
+        "project-brief.json",
+        "business/business.md",
+        "platforms/platform-playbooks.md",
+        "operations/current-request.md",
+        "operations/agent-operating-contracts.md",
+        "sources/source-registry.md",
+        "research/trend-report.md",
+        "research/live-trend-report.md",
+        "research/trend-items.json"
+      ]
+    },
+    {
+      "id": "platform",
+      "agentId": "platform-strategist",
+      "task": "Adapt the request to each selected platform's algorithm, format expectations, audience behavior, research sources, and approval blockers.",
+      "inputs": [
+        "project-brief.json",
+        "business/business.md",
+        "platforms/platform-playbooks.md",
+        "operations/current-request.md",
+        "sources/source-registry.md",
+        "research/trend-report.md",
+        "research/live-trend-report.md",
+        "drafts/platform-adaptations.md"
+      ]
+    },
+    {
+      "id": "copy",
+      "agentId": "copywriter",
+      "task": "Review the requested draft target. Improve clarity, specificity, platform fit, proof-awareness, and CTA quality without inventing offers, free trials, signups, discounts, testimonials, or claims not present in the brief.",
+      "inputs": [
+        "business/business.md",
+        "platforms/platform-playbooks.md",
+        "operations/current-request.md",
+        "calendar/30-day-calendar.md",
+        "drafts/posts.md",
+        "drafts/threads.md",
+        "drafts/reddit.md",
+        "drafts/platform-adaptations.md"
+      ]
+    },
+    {
+      "id": "qa",
+      "agentId": "critic-qa",
+      "task": "Run a final adversarial QA pass. Decide what is not good enough for human approval and convert it into regeneration tasks.",
+      "inputs": [
+        "business/business.md",
+        "platforms/platform-playbooks.md",
+        "operations/current-request.md",
+        "review/workspace-quality-rubric.json",
+        "simulation/persona-report.md",
+        "review/qa-recap.md",
+        "drafts/posts.md",
+        "drafts/threads.md",
+        "drafts/reddit.md"
+      ]
+    }
+  ],
+  "selectedStepIds": [
+    "research",
+    "platform",
+    "copy",
+    "qa"
+  ],
+  "maxSteps": null,
+  "timeoutMs": 500
+}

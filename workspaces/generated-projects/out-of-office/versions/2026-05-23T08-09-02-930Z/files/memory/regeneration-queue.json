@@ -1,0 +1,49 @@
+{
+  "tasks": [
+    {
+      "createdAt": "2026-05-23T08:08:09.623Z",
+      "artifact": "simulation/persona-report.md",
+      "feedback": "Add a concrete proof point for the Skeptical operator: screenshot, before/after, workflow artifact, or mini case.",
+      "target": "drafts/posts.md",
+      "status": "pending",
+      "source": "persona-sim",
+      "priority": 1
+    },
+    {
+      "createdAt": "2026-05-23T08:08:09.623Z",
+      "artifact": "simulation/persona-report.md",
+      "feedback": "Add a concrete proof point for the Cost-sensitive founder: screenshot, before/after, workflow artifact, or mini case.",
+      "target": "drafts/posts.md",
+      "status": "pending",
+      "source": "persona-sim",
+      "priority": 2
+    },
+    {
+      "createdAt": "2026-05-23T08:08:09.623Z",
+      "artifact": "simulation/persona-report.md",
+      "feedback": "Add a concrete proof point for the Creative strategist: screenshot, before/after, workflow artifact, or mini case.",
+      "target": "drafts/posts.md",
+      "status": "pending",
+      "source": "persona-sim",
+      "priority": 3
+    },
+    {
+      "createdAt": "2026-05-23T08:08:09.623Z",
+      "artifact": "simulation/persona-report.md",
+      "feedback": "Add a concrete proof point for the Agency delivery lead: screenshot, before/after, workflow artifact, or mini case.",
+      "target": "drafts/posts.md",
+      "status": "pending",
+      "source": "persona-sim",
+      "priority": 4
+    },
+    {
+      "createdAt": "2026-05-23T08:08:09.623Z",
+      "artifact": "simulation/persona-report.md",
+      "feedback": "Add a concrete proof point for the Technical early adopter: screenshot, before/after, workflow artifact, or mini case.",
+      "target": "drafts/posts.md",
+      "status": "pending",
+      "source": "persona-sim",
+      "priority": 5
+    }
+  ]
+}

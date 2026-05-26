@@ -1,0 +1,31 @@
+{
+  "version": "0.1.0",
+  "minimumScoreToPresent": 80,
+  "dimensions": [
+    {
+      "id": "strategic-fit",
+      "label": "Strategic fit",
+      "checks": ["niche is clear", "target is clear", "offer and goal are clear", "content pillars map to business outcome"]
+    },
+    {
+      "id": "content-quality",
+      "label": "Content quality",
+      "checks": ["hooks are specific", "drafts match voice", "formats vary", "CTAs are concrete"]
+    },
+    {
+      "id": "local-feasibility",
+      "label": "Local feasibility",
+      "checks": ["model profile is realistic", "visual workload matches hardware", "no required paid API"]
+    },
+    {
+      "id": "platform-safety",
+      "label": "Platform safety",
+      "checks": ["no spam automation", "approval gate present", "source risk labeled", "risky modules disabled"]
+    },
+    {
+      "id": "actionability",
+      "label": "Actionability",
+      "checks": ["calendar is complete", "publishing checklist is usable", "regeneration tasks are specific"]
+    }
+  ]
+}

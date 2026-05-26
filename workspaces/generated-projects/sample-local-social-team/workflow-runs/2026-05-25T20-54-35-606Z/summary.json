@@ -1,0 +1,31 @@
+{
+  "version": "0.1.0",
+  "workspace": "sample-local-social-team",
+  "runId": "2026-05-25T20-54-35-606Z",
+  "generatedAt": "2026-05-25T20:54:35.619Z",
+  "mode": "dry-run-prompt-packets",
+  "status": "needs-human-review",
+  "automaticPublishEnabled": false,
+  "requiredHumanApproval": true,
+  "steps": [
+    {
+      "id": "intake",
+      "agentId": "intake-strategist",
+      "status": "saved_prompt_packet",
+      "backend": "prompt-packet",
+      "model": "qwen2.5-coder:14b",
+      "inputs": [
+        "project-brief.json",
+        "memory/preferences.json",
+        "memory/user-feedback.md"
+      ],
+      "generatedAt": "2026-05-25T20:54:35.618Z"
+    }
+  ],
+  "humanReviewRequired": [
+    "Review generated step outputs and approve only specific artifacts.",
+    "Run regeneration tasks before treating drafts as client-ready.",
+    "Use official/manual publishing paths only after approval."
+  ],
+  "regenerationTaskCount": 1
+}

@@ -1,0 +1,96 @@
+{
+  "generatedAt": "2026-05-24T19:41:20.263Z",
+  "status": "brief-only",
+  "backend": {
+    "id": "comfyui",
+    "label": "ComfyUI",
+    "available": false,
+    "command": null,
+    "status": null
+  },
+  "install": {
+    "root": null,
+    "searchedRoots": [
+      "/Users/corte/ComfyUI",
+      "/Users/corte/Documents/ComfyUI",
+      "/Users/corte/Developer/ComfyUI",
+      "/Users/corte/Documents/Codex/2026-05-22/fammi-un-deep-interwie-per-questo/ComfyUI",
+      "/Users/corte/Documents/Codex/2026-05-22/fammi-un-deep-interwie-per-questo/third_party/ComfyUI"
+    ],
+    "modelRoot": null,
+    "checkpoints": [],
+    "loras": [],
+    "vae": [],
+    "workflows": []
+  },
+  "modelRecommendations": [
+    {
+      "id": "sdxl-lightning-or-turbo",
+      "fit": "fast poster, thumbnail, story background drafts",
+      "backendRequired": "ComfyUI",
+      "installPriority": "install-backend-first",
+      "licensePosture": "check exact model card before commercial/public use",
+      "notes": "Good first local workflow for Apple Silicon when speed matters; avoid relying on generated text inside images."
+    },
+    {
+      "id": "flux-schnell-compatible-local-workflow",
+      "fit": "higher quality moodboards and event visuals",
+      "backendRequired": "ComfyUI",
+      "installPriority": "medium",
+      "licensePosture": "check exact weights and commercial terms",
+      "notes": "Use only if hardware handles it comfortably; keep prompts text-light and add copy separately in design tools."
+    },
+    {
+      "id": "sd15-or-sdxl-controlnet",
+      "fit": "reusable brand layouts and reference-guided variants",
+      "backendRequired": "ComfyUI",
+      "installPriority": "later",
+      "licensePosture": "check checkpoint and ControlNet license",
+      "notes": "Useful after base generation is stable and brand assets exist."
+    }
+  ],
+  "requiredHumanApproval": true,
+  "automaticPublishEnabled": false,
+  "workflowNotes": [
+    "Use local image generation only after exact model/workflow license checks.",
+    "Do not generate or publish platform assets without human approval.",
+    "Prefer text-light layouts unless the selected image model is proven reliable with text.",
+    "Keep brand consistency and avoid misleading claims in generated visuals."
+  ],
+  "prompts": [
+    {
+      "id": "event-poster",
+      "purpose": "Event poster background",
+      "size": "1080x1350",
+      "prompt": "premium New York networking event, stylish professionals in a warm venue, candid social energy, editorial photography, clean negative space for typography, no readable text, realistic lighting"
+    },
+    {
+      "id": "reel-thumbnail",
+      "purpose": "Reel thumbnail",
+      "size": "1080x1920",
+      "prompt": "vertical event recap thumbnail, energetic after-work networking in New York, confident premium social atmosphere, expressive faces, sharp foreground, no readable text"
+    },
+    {
+      "id": "carousel-cover",
+      "purpose": "Carousel cover",
+      "size": "1080x1350",
+      "prompt": "modern editorial cover image for professional networking tips, New York evening venue, refined but approachable, strong composition, large clean empty area for headline, no readable text"
+    },
+    {
+      "id": "story-background",
+      "purpose": "Story background",
+      "size": "1080x1920",
+      "prompt": "Instagram story background for premium networking event, lively conversation, drinks and warm ambience, elegant New York venue, uncluttered center area, no readable text"
+    },
+    {
+      "id": "brand-moodboard",
+      "purpose": "Brand moodboard",
+      "size": "1536x1024",
+      "prompt": "moodboard for premium social networking brand in New York, candid conversations, after-work energy, hospitality venue details, confident warm visual language, editorial grid"
+    }
+  ],
+  "sourceContext": {
+    "visualBriefs": "# Visual Briefs\n\n## Brand Feel\n- Premium but not cold.\n- New York evening energy.\n- Warm hospitality lighting.\n- Candid professional conversations.\n- Social proof through real room energy, not exaggerated claims.\n\n## Asset Priorities\n1. Real event video clips and photos.\n2. Clean reel thumbnails with short human-added text.\n3. Carousel backgrounds with large empty typography zones.\n4. Venue and crowd detail shots.\n\n## Local Image Generation Prompts\nUse these only as drafts and keep generated text out of the image:\n- Premium New York networking event, stylish professionals in a warm venue, candid social energy, editorial photography, no readable text.\n- After-work professional social event in NYC, drinks, conversation, polished hospitality atmosphere, realistic lighting, no readable text.\n- Editorial carousel background for networking tips, elegant venue details, clean negative space, no readable text.\n\n## Review Rules\n- Prefer real event footage over synthetic imagery when selling tickets.\n- Generated imagery must be labeled internally with model/source metadata.\n- Human approval is required before use in publishing packages.\n",
+    "calendarExcerpt": "# 30-Day Content Calendar\n\nGoal: Grow Instagram organically. Increase community signups. Drive repeat attendance to events. Make venues understand why hosting Out Of Office can be valuable.\n\nAudience: Corporate professionals in New York City who want high-quality networking in a more relaxed, social environment.\n\n| Day | Pillar | Format | Topic | Status |\n| --- | --- | --- | --- | --- |\n| 1 | Desire | Reel | Out Of Office: Why networking feels easier when the room is curated | Draft -> QA -> human approval |\n| 2 | Proof | Carousel | Out Of Office: What a better after-work networking night looks like in NYC | Draft -> QA -> human approval |\n| 3 | Education | Static post | Out Of Office: The difference between stiff conferences and real social connection | Draft -> QA -> human approval |\n| 4 | Behind the scenes | Story sequence | Out Of Office: A night designed for corporate people who still want actual fun | Draft -> QA -> human approval |\n| 5 | Offer | Facebook event/community post | Out Of Office: What venues gain when the right professional crowd shows up | Draft -> QA -> human approval |\n| 6 | Venue buyer | LinkedIn authority post | Out Of Office: How to walk into the room without feeling awkward | Draft -> QA -> human approval |\n| 7 | Desire | X single post | Out Of Office: Why food, drinks, and warm energy make networking more natural | Draft -> QA -> human approval |\n| 8 | Proof | X mini-thread | Out Of Office: Behind the scenes of building a room people want to stay in | Draft -> QA -> human approval |\n| 9 | Education | Reddit discussion prompt | Out Of Office: A recap angle built from real event footage | Draft -> QA -> human approval |\n| 10 | Behind the scenes | Reel | Out Of Office: A direct ticket CTA for the next confirmed event | Draft -> QA -> human approval |"
+  }
+}

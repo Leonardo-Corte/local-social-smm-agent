@@ -1,0 +1,76 @@
+{
+  "version": "0.1.0",
+  "workspace": "out-of-office",
+  "runId": "2026-05-24T16-04-54-410Z",
+  "generatedAt": "2026-05-24T16:04:54.508Z",
+  "mode": "dry-run-prompt-packets",
+  "status": "needs-human-review",
+  "automaticPublishEnabled": false,
+  "requiredHumanApproval": true,
+  "steps": [
+    {
+      "id": "intake",
+      "agentId": "intake-strategist",
+      "status": "saved_prompt_packet",
+      "backend": "prompt-packet",
+      "model": "qwen2.5:14b",
+      "inputs": [
+        "project-brief.json",
+        "business/business.md",
+        "memory/preferences.json",
+        "memory/user-feedback.md"
+      ],
+      "generatedAt": "2026-05-24T16:04:54.503Z"
+    },
+    {
+      "id": "research",
+      "agentId": "market-researcher",
+      "status": "saved_prompt_packet",
+      "backend": "prompt-packet",
+      "model": "qwen2.5:14b",
+      "inputs": [
+        "project-brief.json",
+        "business/business.md",
+        "sources/source-registry.md",
+        "research/trend-report.md",
+        "research/live-trend-report.md",
+        "research/trend-items.json"
+      ],
+      "generatedAt": "2026-05-24T16:04:54.504Z"
+    },
+    {
+      "id": "strategy",
+      "agentId": "brand-strategist",
+      "status": "saved_prompt_packet",
+      "backend": "prompt-packet",
+      "model": "qwen2.5:14b",
+      "inputs": [
+        "project-brief.json",
+        "business/business.md",
+        "research/trend-report.md",
+        "research/live-trend-report.md",
+        "strategy/content-pillars.md"
+      ],
+      "generatedAt": "2026-05-24T16:04:54.506Z"
+    },
+    {
+      "id": "calendar",
+      "agentId": "content-planner",
+      "status": "saved_prompt_packet",
+      "backend": "prompt-packet",
+      "model": "qwen2.5:14b",
+      "inputs": [
+        "business/business.md",
+        "strategy/content-pillars.md",
+        "calendar/30-day-calendar.md"
+      ],
+      "generatedAt": "2026-05-24T16:04:54.508Z"
+    }
+  ],
+  "humanReviewRequired": [
+    "Review generated step outputs and approve only specific artifacts.",
+    "Run regeneration tasks before treating drafts as client-ready.",
+    "Use official/manual publishing paths only after approval."
+  ],
+  "regenerationTaskCount": 4
+}

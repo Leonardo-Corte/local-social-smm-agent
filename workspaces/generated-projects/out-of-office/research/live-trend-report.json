@@ -1,0 +1,129 @@
+{
+  "version": "0.1.0",
+  "generatedAt": "2026-05-25T20:39:28.854Z",
+  "mode": "live-public-sources",
+  "maxQueries": 4,
+  "items": [
+    {
+      "source": "project-link:luma",
+      "query": "luma",
+      "title": "https://luma.com/ishmpmbi?tk=zzHho4",
+      "excerpt": "User-provided source. Review manually and use as high-context project evidence.",
+      "url": "https://luma.com/ishmpmbi?tk=zzHho4",
+      "collectedAt": "2026-05-25T20:39:07.299Z",
+      "risk": "low",
+      "confidence": "medium",
+      "observationType": "user-provided-source"
+    },
+    {
+      "source": "reddit-public",
+      "query": "NYC networking events trend",
+      "title": "NameSummit - A Digital Branding Event in NYC",
+      "excerpt": "Hello fellow Redditors,\n\nI am an event coordinator for NameSummit, a Digital branding and Marketing event taking place in NYC on August 7th and 8th. I am extending a personal invitation to the Reddit community for this event. \n\nI am excited",
+      "url": "https://www.reddit.com/r/Entrepreneur/comments/6px0ox/namesummit_a_digital_branding_event_in_nyc/",
+      "collectedAt": "2026-05-25T20:39:07.909Z",
+      "risk": "medium",
+      "confidence": "low",
+      "relevanceScore": 3,
+      "observationType": "public-discussion"
+    },
+    {
+      "source": "reddit-public",
+      "query": "NYC networking events content ideas",
+      "title": "Building a Real-Time Platform for Bars &amp; Events - NYC Cofounder Wanted",
+      "excerpt": "**A real-time customer acquisition platform , activating demand through time-sensitive drink specials and events.**\n\nThe platform is a real-time nightlife platform that gives users line of sight on live drink specials they can act on immedi",
+      "url": "https://www.reddit.com/r/cofounderhunt/comments/1reikwi/building_a_realtime_platform_for_bars_events_nyc/",
+      "collectedAt": "2026-05-25T20:39:13.716Z",
+      "risk": "medium",
+      "confidence": "medium",
+      "relevanceScore": 4,
+      "observationType": "public-discussion"
+    },
+    {
+      "source": "reddit-public",
+      "query": "NYC networking events content ideas",
+      "title": "Which dress for an evening work event in NYC?",
+      "excerpt": "⭐️Edit⭐️ Thanks for the responses everyone! I will be going with the first one, and feel very confident in doing so given all the feedback. For those who asked, the first dress is from Aritzia, but it’s at least 5 years old and no longer on",
+      "url": "https://www.reddit.com/r/OUTFITS/comments/1t2ztqz/which_dress_for_an_evening_work_event_in_nyc/",
+      "collectedAt": "2026-05-25T20:39:13.716Z",
+      "risk": "medium",
+      "confidence": "medium",
+      "relevanceScore": 3,
+      "observationType": "public-discussion"
+    },
+    {
+      "source": "reddit-public",
+      "query": "NYC networking events problems objections",
+      "title": "[HIRING] Regional Customer Service Manager–NYC-3yr Contract-Infra, Cisco, Meraki, Network, CCNA, CCNP",
+      "excerpt": "**Location:** New York City, NY (Onsite)\n\n**Duration:** 3+ Year Contract with 2-year Extension\n\n**Start Date:** 3/1/2021\n\n**Top Skills:** Infra, Cisco, Meraki, Network, CCNA, CCNP\n\n**Notes:** No Remote, No Travel, No H1B, In-Person Client I",
+      "url": "https://www.reddit.com/r/NYCjobs/comments/l7xyt2/hiring_regional_customer_service_managernyc3yr/",
+      "collectedAt": "2026-05-25T20:39:19.004Z",
+      "risk": "medium",
+      "confidence": "low",
+      "relevanceScore": 3,
+      "observationType": "public-discussion"
+    }
+  ],
+  "failures": [
+    {
+      "source": "google-trends",
+      "query": "NYC networking events trend",
+      "url": "https://trends.google.com/trends/explore?q=NYC%20networking%20events%20trend",
+      "status": 429
+    },
+    {
+      "source": "youtube-trending-and-search",
+      "query": "NYC networking events trend",
+      "url": "https://www.youtube.com/results?search_query=NYC%20networking%20events%20trend",
+      "status": "low-relevance-snapshot",
+      "relevanceScore": 0
+    },
+    {
+      "source": "google-trends",
+      "query": "NYC networking events content ideas",
+      "url": "https://trends.google.com/trends/explore?q=NYC%20networking%20events%20content%20ideas",
+      "status": 429
+    },
+    {
+      "source": "youtube-trending-and-search",
+      "query": "NYC networking events content ideas",
+      "url": "https://www.youtube.com/results?search_query=NYC%20networking%20events%20content%20ideas",
+      "status": "low-relevance-snapshot",
+      "relevanceScore": 0
+    },
+    {
+      "source": "google-trends",
+      "query": "NYC networking events problems objections",
+      "url": "https://trends.google.com/trends/explore?q=NYC%20networking%20events%20problems%20objections",
+      "status": 429
+    },
+    {
+      "source": "youtube-trending-and-search",
+      "query": "NYC networking events problems objections",
+      "url": "https://www.youtube.com/results?search_query=NYC%20networking%20events%20problems%20objections",
+      "status": "low-relevance-snapshot",
+      "relevanceScore": 0
+    },
+    {
+      "source": "google-trends",
+      "query": "NYC networking events instagram reel hooks",
+      "url": "https://trends.google.com/trends/explore?q=NYC%20networking%20events%20instagram%20reel%20hooks",
+      "status": 429
+    },
+    {
+      "source": "youtube-trending-and-search",
+      "query": "NYC networking events instagram reel hooks",
+      "url": "https://www.youtube.com/results?search_query=NYC%20networking%20events%20instagram%20reel%20hooks",
+      "status": "low-relevance-snapshot",
+      "relevanceScore": 0
+    }
+  ],
+  "guardrails": [
+    "Public sources only; no login, no account automation, no DM/comment/like/follow actions.",
+    "X and Reddit are research/draft inputs only here; no replies, votes, follows, DMs, or auto-posting.",
+    "Reddit observations require subreddit-rule review before they become publishable recommendations.",
+    "Use collected items as directional trend intelligence, not proof.",
+    "Cite source URLs and collection dates.",
+    "Separate observation from inference."
+  ]
+}

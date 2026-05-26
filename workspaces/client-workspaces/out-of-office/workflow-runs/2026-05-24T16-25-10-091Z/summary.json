@@ -1,0 +1,33 @@
+{
+  "version": "0.1.0",
+  "workspace": "out-of-office",
+  "runId": "2026-05-24T16-25-10-091Z",
+  "generatedAt": "2026-05-24T16:25:10.132Z",
+  "mode": "dry-run-prompt-packets",
+  "status": "needs-human-review",
+  "automaticPublishEnabled": false,
+  "requiredHumanApproval": true,
+  "steps": [
+    {
+      "id": "intake",
+      "agentId": "intake-strategist",
+      "status": "saved_prompt_packet",
+      "backend": "prompt-packet",
+      "model": "qwen2.5:14b",
+      "inputs": [
+        "project-brief.json",
+        "business/business.md",
+        "operations/agent-operating-contracts.md",
+        "memory/preferences.json",
+        "memory/user-feedback.md"
+      ],
+      "generatedAt": "2026-05-24T16:25:10.132Z"
+    }
+  ],
+  "humanReviewRequired": [
+    "Review generated step outputs and approve only specific artifacts.",
+    "Run regeneration tasks before treating drafts as client-ready.",
+    "Use official/manual publishing paths only after approval."
+  ],
+  "regenerationTaskCount": 1
+}

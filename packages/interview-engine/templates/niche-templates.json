@@ -1,0 +1,35 @@
+{
+  "version": "0.1.0",
+  "templates": [
+    {
+      "id": "local-service-business",
+      "label": "Local service business",
+      "niche": "local service business marketing",
+      "targetAudience": "local business owners who need more qualified inquiries without agency bloat",
+      "offer": "a practical service or consultation with local proof and clear booking path",
+      "tone": "trustworthy, direct, useful, locally credible",
+      "contentPillars": ["local proof", "before and after", "common mistakes", "service education", "booking objections"],
+      "recommendedFormats": ["Reel", "Carousel", "Facebook post", "Story sequence"]
+    },
+    {
+      "id": "creator-education",
+      "label": "Creator education",
+      "niche": "creator education and digital products",
+      "targetAudience": "solo creators building an audience and validating paid educational offers",
+      "offer": "a course, workshop, paid community, template, or consulting product",
+      "tone": "sharp, educational, opinionated, practical",
+      "contentPillars": ["pain language", "frameworks", "proof of process", "mistakes", "offer education"],
+      "recommendedFormats": ["Carousel", "Reel", "Static post", "Story sequence"]
+    },
+    {
+      "id": "saas-founder",
+      "label": "SaaS founder",
+      "niche": "B2B SaaS founder-led content",
+      "targetAudience": "founders, operators, and teams with a painful workflow problem",
+      "offer": "software, waitlist, demo, or productized workflow",
+      "tone": "specific, strategic, evidence-led, concise",
+      "contentPillars": ["problem framing", "workflow proof", "user objections", "product education", "founder POV"],
+      "recommendedFormats": ["Linked carousel adapted for IG", "Reel", "Facebook post", "Static post"]
+    }
+  ]
+}

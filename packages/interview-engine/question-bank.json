@@ -1,0 +1,78 @@
+{
+  "version": "0.1.0",
+  "purpose": "Collect enough context to generate a customized social-media agent workspace.",
+  "requiredFields": [
+    "projectName",
+    "niche",
+    "targetAudience",
+    "primaryGoal30Days",
+    "offer",
+    "tone",
+    "platforms",
+    "constraints",
+    "availableAssets",
+    "approvalPolicy"
+  ],
+  "questions": [
+    {
+      "id": "projectName",
+      "field": "projectName",
+      "prompt": "Come si chiama il progetto o brand per cui vuoi creare il workspace?",
+      "why": "The workspace needs a stable name and slug."
+    },
+    {
+      "id": "niche",
+      "field": "niche",
+      "prompt": "In quale nicchia vuoi posizionarti, oppure quale nicchia vuoi che il sistema ti aiuti a scegliere?",
+      "why": "Niche drives research, content pillars, and persona simulation."
+    },
+    {
+      "id": "targetAudience",
+      "field": "targetAudience",
+      "prompt": "Chi deve seguire, fidarsi o comprare da questo progetto?",
+      "why": "The generated agents need a concrete audience."
+    },
+    {
+      "id": "primaryGoal30Days",
+      "field": "primaryGoal30Days",
+      "prompt": "Quale risultato vuoi nei primi 30 giorni?",
+      "why": "The content calendar optimizes for this outcome."
+    },
+    {
+      "id": "offer",
+      "field": "offer",
+      "prompt": "Che cosa vendi, promuovi, validi o vuoi far capire al pubblico?",
+      "why": "Content needs a business or strategic center."
+    },
+    {
+      "id": "tone",
+      "field": "tone",
+      "prompt": "Che tono deve avere il brand? Dammi 3-5 aggettivi.",
+      "why": "Voice consistency is a quality gate."
+    },
+    {
+      "id": "platforms",
+      "field": "platforms",
+      "prompt": "Quali piattaforme vuoi includere nel primo workspace?",
+      "why": "Formats, algorithms, audience expectations, research sources, and publishing constraints differ by platform."
+    },
+    {
+      "id": "availableAssets",
+      "field": "availableAssets",
+      "prompt": "Che asset hai già? Esempi: foto, video, sito, offerte, testimonianze, note, competitor.",
+      "why": "The system should not invent unavailable assets."
+    },
+    {
+      "id": "constraints",
+      "field": "constraints",
+      "prompt": "Quali limiti vanno rispettati? Esempi: no volto, no budget, solo locale, approvazione cliente.",
+      "why": "Constraints keep the generated plan realistic."
+    },
+    {
+      "id": "approvalPolicy",
+      "field": "approvalPolicy",
+      "prompt": "Chi deve approvare prima che qualcosa venga pubblicato?",
+      "why": "Publishing is human-approved by default."
+    }
+  ]
+}

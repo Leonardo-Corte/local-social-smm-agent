@@ -1,0 +1,137 @@
+{
+  "generatedAt": "2026-05-22T23:32:52.276Z",
+  "projectName": "Interview Generated Social Team",
+  "personas": [
+    {
+      "id": "persona-01",
+      "label": "Skeptical operator",
+      "segment": "solo creators",
+      "motivation": "save time and avoid fragile tools",
+      "coreObjection": "This sounds like setup complexity disguised as automation.",
+      "conversionTrigger": "clear before/after workflow proof",
+      "contentLens": "Skeptical operator evaluating a local-first AI workspace that generates strategy, drafts, reviews, and publishing packages"
+    },
+    {
+      "id": "persona-02",
+      "label": "Cost-sensitive founder",
+      "segment": "small agencies",
+      "motivation": "reduce recurring SaaS costs",
+      "coreObjection": "Local-first is attractive, but quality and maintenance worry me.",
+      "conversionTrigger": "specific hardware expectations and realistic limits",
+      "contentLens": "Cost-sensitive founder evaluating a local-first AI workspace that generates strategy, drafts, reviews, and publishing packages"
+    },
+    {
+      "id": "persona-03",
+      "label": "Creative strategist",
+      "segment": "founders",
+      "motivation": "produce better ideas faster",
+      "coreObjection": "The content may become generic if the system does not learn taste.",
+      "conversionTrigger": "memory from feedback and strong examples",
+      "contentLens": "Creative strategist evaluating a local-first AI workspace that generates strategy, drafts, reviews, and publishing packages"
+    },
+    {
+      "id": "persona-04",
+      "label": "Agency delivery lead",
+      "segment": "solo creators",
+      "motivation": "standardize client delivery",
+      "coreObjection": "Approval, revisions, and client-specific voice need to be robust.",
+      "conversionTrigger": "clear review states and client-ready artifacts",
+      "contentLens": "Agency delivery lead evaluating a local-first AI workspace that generates strategy, drafts, reviews, and publishing packages"
+    },
+    {
+      "id": "persona-05",
+      "label": "Technical early adopter",
+      "segment": "small agencies",
+      "motivation": "own the stack and customize agents",
+      "coreObjection": "I need proof that integrations are modular and not locked to a SaaS.",
+      "conversionTrigger": "repo structure, local commands, and extension points",
+      "contentLens": "Technical early adopter evaluating a local-first AI workspace that generates strategy, drafts, reviews, and publishing packages"
+    }
+  ],
+  "drafts": [
+    {
+      "title": "Post 1",
+      "body": "Hook: Stop paying for a social stack before your content system is even working.\n\nBody: solo creators, small agencies, founders need a repeatable local-first workflow: strategy, drafts, review, and publishing discipline before more SaaS.\n\nCTA: Save this and review your current content workflow."
+    }
+  ],
+  "evaluations": [
+    {
+      "personaId": "persona-01",
+      "draftTitle": "Post 1",
+      "scores": {
+        "interest": 67,
+        "trust": 62,
+        "clarity": 65,
+        "purchaseIntent": 55
+      },
+      "likelyReaction": "Interesting, but show me how this works in a real solo creators workflow.",
+      "mainObjection": "Needs concrete proof or before/after example.",
+      "recommendedFix": "Add a concrete proof point for the Skeptical operator: screenshot, before/after, workflow artifact, or mini case."
+    },
+    {
+      "personaId": "persona-02",
+      "draftTitle": "Post 1",
+      "scores": {
+        "interest": 67,
+        "trust": 62,
+        "clarity": 65,
+        "purchaseIntent": 55
+      },
+      "likelyReaction": "Interesting, but show me how this works in a real small agencies workflow.",
+      "mainObjection": "Needs concrete proof or before/after example.",
+      "recommendedFix": "Add a concrete proof point for the Cost-sensitive founder: screenshot, before/after, workflow artifact, or mini case."
+    },
+    {
+      "personaId": "persona-03",
+      "draftTitle": "Post 1",
+      "scores": {
+        "interest": 67,
+        "trust": 62,
+        "clarity": 65,
+        "purchaseIntent": 55
+      },
+      "likelyReaction": "Interesting, but show me how this works in a real founders workflow.",
+      "mainObjection": "Needs concrete proof or before/after example.",
+      "recommendedFix": "Add a concrete proof point for the Creative strategist: screenshot, before/after, workflow artifact, or mini case."
+    },
+    {
+      "personaId": "persona-04",
+      "draftTitle": "Post 1",
+      "scores": {
+        "interest": 67,
+        "trust": 62,
+        "clarity": 65,
+        "purchaseIntent": 55
+      },
+      "likelyReaction": "Interesting, but show me how this works in a real solo creators workflow.",
+      "mainObjection": "Needs concrete proof or before/after example.",
+      "recommendedFix": "Add a concrete proof point for the Agency delivery lead: screenshot, before/after, workflow artifact, or mini case."
+    },
+    {
+      "personaId": "persona-05",
+      "draftTitle": "Post 1",
+      "scores": {
+        "interest": 67,
+        "trust": 62,
+        "clarity": 65,
+        "purchaseIntent": 55
+      },
+      "likelyReaction": "Interesting, but show me how this works in a real small agencies workflow.",
+      "mainObjection": "Needs concrete proof or before/after example.",
+      "recommendedFix": "Add a concrete proof point for the Technical early adopter: screenshot, before/after, workflow artifact, or mini case."
+    }
+  ],
+  "summary": {
+    "averageInterest": 67,
+    "averageTrust": 62,
+    "averageClarity": 65,
+    "averagePurchaseIntent": 55,
+    "topFixes": [
+      "Add a concrete proof point for the Skeptical operator: screenshot, before/after, workflow artifact, or mini case.",
+      "Add a concrete proof point for the Cost-sensitive founder: screenshot, before/after, workflow artifact, or mini case.",
+      "Add a concrete proof point for the Creative strategist: screenshot, before/after, workflow artifact, or mini case.",
+      "Add a concrete proof point for the Agency delivery lead: screenshot, before/after, workflow artifact, or mini case.",
+      "Add a concrete proof point for the Technical early adopter: screenshot, before/after, workflow artifact, or mini case."
+    ]
+  }
+}

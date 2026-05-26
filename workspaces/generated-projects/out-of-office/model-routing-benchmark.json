@@ -1,0 +1,11 @@
+{
+  "generatedAt": "2026-05-25T20:36:51.808Z",
+  "timeoutMs": 45000,
+  "recommendations": {
+    "brand-strategist": "qwen2.5-coder:14b",
+    "copywriter": "qwen2.5-coder:14b",
+    "critic-qa": "qwen2.5-coder:14b",
+    "persona-simulator": null
+  },
+  "source": "model-benchmarks/latest.json"
+}

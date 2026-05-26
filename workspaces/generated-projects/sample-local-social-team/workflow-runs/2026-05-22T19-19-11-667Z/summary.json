@@ -1,0 +1,175 @@
+{
+  "version": "0.1.0",
+  "workspace": "sample-local-social-team",
+  "runId": "2026-05-22T19-19-11-667Z",
+  "generatedAt": "2026-05-22T19:19:11.770Z",
+  "mode": "dry-run-prompt-packets",
+  "status": "needs-human-review",
+  "automaticPublishEnabled": false,
+  "requiredHumanApproval": true,
+  "steps": [
+    {
+      "id": "intake",
+      "agentId": "intake-strategist",
+      "status": "saved_prompt_packet",
+      "backend": "prompt-packet",
+      "model": null,
+      "inputs": [
+        "project-brief.json",
+        "memory/preferences.json",
+        "memory/user-feedback.md"
+      ],
+      "generatedAt": "2026-05-22T19:19:11.762Z"
+    },
+    {
+      "id": "research",
+      "agentId": "market-researcher",
+      "status": "saved_prompt_packet",
+      "backend": "prompt-packet",
+      "model": null,
+      "inputs": [
+        "project-brief.json",
+        "sources/source-registry.md",
+        "research/trend-report.md"
+      ],
+      "generatedAt": "2026-05-22T19:19:11.763Z"
+    },
+    {
+      "id": "strategy",
+      "agentId": "brand-strategist",
+      "status": "saved_prompt_packet",
+      "backend": "prompt-packet",
+      "model": null,
+      "inputs": [
+        "project-brief.json",
+        "research/trend-report.md",
+        "strategy/content-pillars.md"
+      ],
+      "generatedAt": "2026-05-22T19:19:11.764Z"
+    },
+    {
+      "id": "calendar",
+      "agentId": "content-planner",
+      "status": "saved_prompt_packet",
+      "backend": "prompt-packet",
+      "model": null,
+      "inputs": [
+        "strategy/content-pillars.md",
+        "calendar/30-day-calendar.md"
+      ],
+      "generatedAt": "2026-05-22T19:19:11.764Z"
+    },
+    {
+      "id": "copy",
+      "agentId": "copywriter",
+      "status": "saved_prompt_packet",
+      "backend": "prompt-packet",
+      "model": null,
+      "inputs": [
+        "calendar/30-day-calendar.md",
+        "drafts/posts.md",
+        "drafts/carousels.md",
+        "drafts/reels.md"
+      ],
+      "generatedAt": "2026-05-22T19:19:11.765Z"
+    },
+    {
+      "id": "video",
+      "agentId": "reel-shorts-producer",
+      "status": "saved_prompt_packet",
+      "backend": "prompt-packet",
+      "model": null,
+      "inputs": [
+        "calendar/30-day-calendar.md",
+        "drafts/reels.md"
+      ],
+      "generatedAt": "2026-05-22T19:19:11.766Z"
+    },
+    {
+      "id": "visuals",
+      "agentId": "visual-director",
+      "status": "saved_prompt_packet",
+      "backend": "prompt-packet",
+      "model": null,
+      "inputs": [
+        "model-routing-report.md",
+        "creative/visual-briefs.md",
+        "calendar/30-day-calendar.md"
+      ],
+      "generatedAt": "2026-05-22T19:19:11.766Z"
+    },
+    {
+      "id": "compliance",
+      "agentId": "compliance-platform-guardian",
+      "status": "saved_prompt_packet",
+      "backend": "prompt-packet",
+      "model": null,
+      "inputs": [
+        "policy/publishing-policy.json",
+        "sources/source-registry.md",
+        "publishing/publishing-checklist.md",
+        "drafts/posts.md"
+      ],
+      "generatedAt": "2026-05-22T19:19:11.767Z"
+    },
+    {
+      "id": "publishing",
+      "agentId": "publishing-operator",
+      "status": "saved_prompt_packet",
+      "backend": "prompt-packet",
+      "model": null,
+      "inputs": [
+        "publishing/publishing-checklist.md",
+        "drafts/posts.md",
+        "drafts/carousels.md",
+        "drafts/reels.md"
+      ],
+      "generatedAt": "2026-05-22T19:19:11.767Z"
+    },
+    {
+      "id": "persona",
+      "agentId": "persona-simulator",
+      "status": "saved_prompt_packet",
+      "backend": "prompt-packet",
+      "model": null,
+      "inputs": [
+        "simulation/persona-report.md",
+        "drafts/posts.md"
+      ],
+      "generatedAt": "2026-05-22T19:19:11.768Z"
+    },
+    {
+      "id": "qa",
+      "agentId": "critic-qa",
+      "status": "saved_prompt_packet",
+      "backend": "prompt-packet",
+      "model": null,
+      "inputs": [
+        "review/workspace-quality-rubric.json",
+        "simulation/persona-report.md",
+        "review/qa-recap.md",
+        "drafts/posts.md"
+      ],
+      "generatedAt": "2026-05-22T19:19:11.769Z"
+    },
+    {
+      "id": "memory",
+      "agentId": "memory-curator",
+      "status": "saved_prompt_packet",
+      "backend": "prompt-packet",
+      "model": null,
+      "inputs": [
+        "memory/user-feedback.md",
+        "memory/preferences.json",
+        "memory/regeneration-queue.json",
+        "review/qa-recap.md"
+      ],
+      "generatedAt": "2026-05-22T19:19:11.770Z"
+    }
+  ],
+  "humanReviewRequired": [
+    "Review generated step outputs and approve only specific artifacts.",
+    "Run regeneration tasks before treating drafts as client-ready.",
+    "Use official/manual publishing paths only after approval."
+  ]
+}

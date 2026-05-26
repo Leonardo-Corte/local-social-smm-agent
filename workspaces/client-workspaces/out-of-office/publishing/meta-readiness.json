@@ -1,0 +1,67 @@
+{
+  "generatedAt": "2026-05-24T19:41:20.387Z",
+  "projectName": "Out Of Office",
+  "status": "manual-export-ready-api-not-configured",
+  "automaticPublishEnabled": false,
+  "supportedModes": [
+    "manual-export",
+    "official-meta-api-assisted-after-explicit-setup"
+  ],
+  "blockedModes": [
+    "automatic publishing without human approval",
+    "DM/comment/like/follow automation",
+    "credential storage in generated workspace files",
+    "browser bot publishing"
+  ],
+  "platformTargets": [
+    "instagram",
+    "facebook",
+    "linkedin",
+    "x",
+    "reddit"
+  ],
+  "officialDocs": [
+    {
+      "label": "Instagram Graph API Content Publishing",
+      "url": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/content-publishing/"
+    },
+    {
+      "label": "Pages API posts",
+      "url": "https://developers.facebook.com/docs/pages-api/posts/"
+    },
+    {
+      "label": "Meta permissions reference",
+      "url": "https://developers.facebook.com/docs/permissions/reference/"
+    }
+  ],
+  "setupChecklist": [
+    "Create or choose a Meta developer app owned by the business.",
+    "Connect the Facebook Page and Instagram professional account in Meta Business settings.",
+    "Confirm the Instagram account is eligible for Graph API publishing.",
+    "Request only the permissions required for the selected official publishing path.",
+    "Keep tokens outside the generated workspace, for example in local environment variables.",
+    "Run publish checks only after the exact caption, asset, and platform are human-approved.",
+    "Log approver, timestamp, asset path, caption path, and platform before any official publish attempt."
+  ],
+  "likelyPermissionAreas": [
+    "instagram_basic",
+    "instagram_content_publish",
+    "pages_show_list",
+    "pages_read_engagement",
+    "pages_manage_posts"
+  ],
+  "manualExportSteps": [
+    "Open the approved publishing package.",
+    "Copy the approved caption and hashtags.",
+    "Attach only approved media assets.",
+    "Check event link, date, venue, ticket inclusions, and claims.",
+    "Publish manually through Meta Business Suite, Instagram, Facebook, or LinkedIn.",
+    "Record the published URL in the workspace publishing log."
+  ],
+  "envContract": {
+    "META_ACCESS_TOKEN": "optional; never write token into repo files",
+    "META_PAGE_ID": "optional official adapter target",
+    "META_IG_USER_ID": "optional official adapter target",
+    "META_DRY_RUN": "default true until explicit human setup"
+  }
+}

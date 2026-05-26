@@ -1,0 +1,23 @@
+{
+  "version": "0.1.0",
+  "generatedAt": "2026-05-24T19:40:54.777Z",
+  "url": "https://example.com",
+  "finalUrl": "https://example.com/",
+  "ok": true,
+  "status": 200,
+  "contentType": "text/html",
+  "risk": "low-public-page",
+  "error": null,
+  "signals": {
+    "title": "Example Domain",
+    "description": "",
+    "headings": [
+      "Example Domain"
+    ]
+  },
+  "guardrails": [
+    "Use links as context and cite the URL.",
+    "Do not bypass login, paywalls, robots, captchas, or private areas.",
+    "For social links, treat observations as manual-review context unless an official approved API path exists."
+  ]
+}

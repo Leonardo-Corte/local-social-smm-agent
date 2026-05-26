@@ -1,0 +1,257 @@
+{
+  "version": "0.1.0",
+  "skills": [
+    {
+      "id": "audience-growth-tracker-sms",
+      "source": "blacktwist/social-media-skills",
+      "sourcePath": "/Users/corte/Documents/Codex/2026-05-22/fammi-un-deep-interwie-per-questo/reference/inspiration-only/social-media-skills/skills/audience-growth-tracker-sms/SKILL.md",
+      "license": "MIT",
+      "version": "1.0.0",
+      "category": "analysis",
+      "description": "When the user wants to track follower growth, understand what drives new followers, or analyze audience development. Also use when the user mentions 'follower growth,' 'followers,' 'audience growth,' 'gaining followers,' 'losing followers,' 'who follows me,' or 'grow my audience.' Uses BlackTwist follower data when available. For post-level metrics, see performance-analyzer-sms. For content patterns, see content-pattern-analyzer-sms.",
+      "targetAgents": [
+        "analyst",
+        "critic-qa"
+      ],
+      "expectedOutputs": [
+        "growth-report.md"
+      ],
+      "integrationStatus": "adapted-taxonomy",
+      "usePolicy": "Use taxonomy and behavior patterns; do not require BlackTwist or any paid SaaS."
+    },
+    {
+      "id": "caption-writer-sms",
+      "source": "blacktwist/social-media-skills",
+      "sourcePath": "/Users/corte/Documents/Codex/2026-05-22/fammi-un-deep-interwie-per-questo/reference/inspiration-only/social-media-skills/skills/caption-writer-sms/SKILL.md",
+      "license": "MIT",
+      "version": "1.1.0",
+      "category": "creation",
+      "description": "When the user wants to write a caption for a visual-first social media post on Facebook, Instagram, TikTok, Pinterest, or YouTube. Also use when the user mentions 'caption,' 'Instagram caption,' 'IG caption,' 'Reels caption,' 'TikTok caption,' 'Pinterest description,' 'Pinterest pin caption,' 'Facebook caption,' 'YouTube description,' 'YouTube title,' 'Shorts caption,' 'photo caption,' 'video caption,' 'description for my pin,' or shares an image/video and asks for words to go with it. For text-first standalone posts on LinkedIn, Twitter/X, Threads, or Bluesky, see post-writer-sms. For multi-slide carousels, see carousel-writer-sms. For opening lines, see hook-writer-sms.",
+      "targetAgents": [
+        "copywriter"
+      ],
+      "expectedOutputs": [
+        "captions.md"
+      ],
+      "integrationStatus": "adapted-taxonomy",
+      "usePolicy": "Use taxonomy and behavior patterns; do not require BlackTwist or any paid SaaS."
+    },
+    {
+      "id": "carousel-writer-sms",
+      "source": "blacktwist/social-media-skills",
+      "sourcePath": "/Users/corte/Documents/Codex/2026-05-22/fammi-un-deep-interwie-per-questo/reference/inspiration-only/social-media-skills/skills/carousel-writer-sms/SKILL.md",
+      "license": "MIT",
+      "version": "1.1.0",
+      "category": "creation",
+      "description": "When the user wants to write content for a LinkedIn carousel, Instagram carousel, Facebook carousel, TikTok photo carousel, Pinterest Idea Pin, or any swipeable multi-slide format. Also use when the user mentions 'carousel,' 'slides,' 'LinkedIn carousel,' 'Instagram carousel,' 'IG carousel,' 'photo carousel,' 'TikTok photo carousel,' 'Idea Pin,' 'Pinterest Idea Pin,' 'swipe post,' 'slide deck,' or 'visual content.' Outputs slide-by-slide text content (not visual design). For single posts, see post-writer-sms. For threads, see thread-writer-sms. For caption copy under each slide post, see caption-writer-sms.",
+      "targetAgents": [
+        "copywriter",
+        "visual-director"
+      ],
+      "expectedOutputs": [
+        "carousels.md"
+      ],
+      "integrationStatus": "adapted-taxonomy",
+      "usePolicy": "Use taxonomy and behavior patterns; do not require BlackTwist or any paid SaaS."
+    },
+    {
+      "id": "content-calendar-sms",
+      "source": "blacktwist/social-media-skills",
+      "sourcePath": "/Users/corte/Documents/Codex/2026-05-22/fammi-un-deep-interwie-per-questo/reference/inspiration-only/social-media-skills/skills/content-calendar-sms/SKILL.md",
+      "license": "MIT",
+      "version": "1.0.0",
+      "category": "strategy",
+      "description": "When the user wants to plan a posting schedule, create a content calendar, or organize when and what to post. Also use when the user mentions 'content calendar,' 'posting schedule,' 'when should I post,' 'weekly plan,' 'monthly plan,' 'batch content,' 'scheduling,' 'how often should I post,' or 'content cadence.' For deciding what topics to cover, see content-strategy-sms. For writing the actual posts, see post-writer-sms.",
+      "targetAgents": [
+        "content-planner"
+      ],
+      "expectedOutputs": [
+        "30-day-calendar.md",
+        "batching-plan.md"
+      ],
+      "integrationStatus": "adapted-taxonomy",
+      "usePolicy": "Use taxonomy and behavior patterns; do not require BlackTwist or any paid SaaS."
+    },
+    {
+      "id": "content-pattern-analyzer-sms",
+      "source": "blacktwist/social-media-skills",
+      "sourcePath": "/Users/corte/Documents/Codex/2026-05-22/fammi-un-deep-interwie-per-questo/reference/inspiration-only/social-media-skills/skills/content-pattern-analyzer-sms/SKILL.md",
+      "license": "MIT",
+      "version": "1.0.0",
+      "category": "analysis",
+      "description": "When the user wants to find patterns in what content works and what doesn't. Also use when the user mentions 'what's working,' 'content patterns,' 'best topics,' 'best format,' 'best time to post,' 'analyze my content,' 'do more of,' 'do less of,' or 'what should I change.' For raw metrics, see performance-analyzer-sms. For audience-specific analysis, see audience-growth-tracker-sms. For actionable recommendations, see optimization-advisor-sms.",
+      "targetAgents": [
+        "analyst",
+        "critic-qa"
+      ],
+      "expectedOutputs": [
+        "content-pattern-report.md"
+      ],
+      "integrationStatus": "adapted-taxonomy",
+      "usePolicy": "Use taxonomy and behavior patterns; do not require BlackTwist or any paid SaaS."
+    },
+    {
+      "id": "content-repurposer-sms",
+      "source": "blacktwist/social-media-skills",
+      "sourcePath": "/Users/corte/Documents/Codex/2026-05-22/fammi-un-deep-interwie-per-questo/reference/inspiration-only/social-media-skills/skills/content-repurposer-sms/SKILL.md",
+      "license": "MIT",
+      "version": "1.1.0",
+      "category": "creation",
+      "description": "When the user wants to turn one piece of content into multiple formats or adapt content across text-first and visual-first platforms (LinkedIn, Twitter/X, Threads, Bluesky, Facebook, Instagram, TikTok, Pinterest, YouTube). Also use when the user mentions 'repurpose,' 'turn this into,' 'adapt this for,' 'cross-post,' 'reformat,' 'blog to social,' 'newsletter to posts,' 'video to posts,' 'YouTube to clips,' 'Reels from a podcast,' or 'get more from this content.' For writing original posts, see post-writer-sms. For threads, see thread-writer-sms. For carousels, see carousel-writer-sms. For visual-first captions, see caption-writer-sms.",
+      "targetAgents": [
+        "content-planner",
+        "copywriter"
+      ],
+      "expectedOutputs": [
+        "repurposing-plan.md"
+      ],
+      "integrationStatus": "adapted-taxonomy",
+      "usePolicy": "Use taxonomy and behavior patterns; do not require BlackTwist or any paid SaaS."
+    },
+    {
+      "id": "content-strategy-sms",
+      "source": "blacktwist/social-media-skills",
+      "sourcePath": "/Users/corte/Documents/Codex/2026-05-22/fammi-un-deep-interwie-per-questo/reference/inspiration-only/social-media-skills/skills/content-strategy-sms/SKILL.md",
+      "license": "MIT",
+      "version": "1.0.0",
+      "category": "strategy",
+      "description": "When the user wants to plan a social media content strategy, decide what to post, or figure out topic clusters and content mix. Also use when the user mentions 'content strategy,' 'what should I post,' 'content ideas,' 'topic clusters,' 'content pillars,' 'content planning,' 'content mix,' 'I don't know what to post,' or 'social media strategy.' Use this to define the what and why of posting. For writing actual posts, see post-writer-sms. For scheduling, see content-calendar-sms. For platform-specific tactics, see platform-strategy-sms.",
+      "targetAgents": [
+        "brand-strategist",
+        "market-researcher"
+      ],
+      "expectedOutputs": [
+        "content-strategy.md",
+        "platform-strategy.md"
+      ],
+      "integrationStatus": "adapted-taxonomy",
+      "usePolicy": "Use taxonomy and behavior patterns; do not require BlackTwist or any paid SaaS."
+    },
+    {
+      "id": "hook-writer-sms",
+      "source": "blacktwist/social-media-skills",
+      "sourcePath": "/Users/corte/Documents/Codex/2026-05-22/fammi-un-deep-interwie-per-questo/reference/inspiration-only/social-media-skills/skills/hook-writer-sms/SKILL.md",
+      "license": "MIT",
+      "version": "1.1.0",
+      "category": "creation",
+      "description": "When the user wants help writing opening lines, hooks, first sentences, video hooks, thumbnails titles, or pin titles that grab attention. Also use when the user mentions 'hook,' 'opening line,' 'first line,' 'scroll stopper,' 'attention grabber,' 'headline,' 'video hook,' 'on-screen hook,' 'YouTube title,' 'thumbnail text,' 'pin title,' 'how to start my post,' or 'nobody reads past my first line.' Covers text-first platforms (LinkedIn, Twitter/X, Threads, Bluesky) and visual-first platforms (Facebook, Instagram, TikTok, Pinterest, YouTube). Can be used standalone or invoked by other creation skills. For writing full posts, see post-writer-sms. For threads, see thread-writer-sms.",
+      "targetAgents": [
+        "copywriter"
+      ],
+      "expectedOutputs": [
+        "hook-bank.md"
+      ],
+      "integrationStatus": "adapted-taxonomy",
+      "usePolicy": "Use taxonomy and behavior patterns; do not require BlackTwist or any paid SaaS."
+    },
+    {
+      "id": "optimization-advisor-sms",
+      "source": "blacktwist/social-media-skills",
+      "sourcePath": "/Users/corte/Documents/Codex/2026-05-22/fammi-un-deep-interwie-per-questo/reference/inspiration-only/social-media-skills/skills/optimization-advisor-sms/SKILL.md",
+      "license": "MIT",
+      "version": "1.0.0",
+      "category": "analysis",
+      "description": "When the user wants concrete recommendations on how to improve their social media performance. Also use when the user mentions 'what should I do next,' 'how do I improve,' 'optimize my social media,' 'recommendations,' 'suggestions,' 'next steps,' 'what's my biggest opportunity,' or 'help me grow.' Synthesizes insights from performance, audience, and pattern analysis into prioritized actions. For raw analytics, see performance-analyzer-sms. For growth tracking, see audience-growth-tracker-sms. For pattern detection, see content-pattern-analyzer-sms.",
+      "targetAgents": [
+        "analyst",
+        "critic-qa"
+      ],
+      "expectedOutputs": [
+        "optimization-tasks.md"
+      ],
+      "integrationStatus": "adapted-taxonomy",
+      "usePolicy": "Use taxonomy and behavior patterns; do not require BlackTwist or any paid SaaS."
+    },
+    {
+      "id": "performance-analyzer-sms",
+      "source": "blacktwist/social-media-skills",
+      "sourcePath": "/Users/corte/Documents/Codex/2026-05-22/fammi-un-deep-interwie-per-questo/reference/inspiration-only/social-media-skills/skills/performance-analyzer-sms/SKILL.md",
+      "license": "MIT",
+      "version": "1.0.0",
+      "category": "analysis",
+      "description": "When the user wants to analyze how their social media posts are performing. Also use when the user mentions 'analytics,' 'performance,' 'how did my posts do,' 'engagement,' 'impressions,' 'what's working,' 'post metrics,' 'my best posts,' or 'why isn't this post performing.' Uses BlackTwist analytics when available, works from user-provided data otherwise. For audience growth specifically, see audience-growth-tracker-sms. For pattern detection, see content-pattern-analyzer-sms. For actionable next steps, see optimization-advisor-sms.",
+      "targetAgents": [
+        "analyst",
+        "critic-qa"
+      ],
+      "expectedOutputs": [
+        "performance-report.md"
+      ],
+      "integrationStatus": "adapted-taxonomy",
+      "usePolicy": "Use taxonomy and behavior patterns; do not require BlackTwist or any paid SaaS."
+    },
+    {
+      "id": "platform-strategy-sms",
+      "source": "blacktwist/social-media-skills",
+      "sourcePath": "/Users/corte/Documents/Codex/2026-05-22/fammi-un-deep-interwie-per-questo/reference/inspiration-only/social-media-skills/skills/platform-strategy-sms/SKILL.md",
+      "license": "MIT",
+      "version": "1.0.0",
+      "category": "strategy",
+      "description": "When the user wants platform-specific tactical guidance for LinkedIn, Twitter/X, Threads, or Bluesky. Also use when the user mentions 'LinkedIn strategy,' 'Twitter strategy,' 'Threads strategy,' 'Bluesky strategy,' 'algorithm,' 'what works on LinkedIn,' 'cross-posting,' 'platform differences,' 'adapt my content,' or 'which platform should I focus on.' For overall content strategy, see content-strategy-sms. For writing posts, see post-writer-sms.",
+      "targetAgents": [
+        "brand-strategist",
+        "market-researcher"
+      ],
+      "expectedOutputs": [
+        "content-strategy.md",
+        "platform-strategy.md"
+      ],
+      "integrationStatus": "adapted-taxonomy",
+      "usePolicy": "Use taxonomy and behavior patterns; do not require BlackTwist or any paid SaaS."
+    },
+    {
+      "id": "post-writer-sms",
+      "source": "blacktwist/social-media-skills",
+      "sourcePath": "/Users/corte/Documents/Codex/2026-05-22/fammi-un-deep-interwie-per-questo/reference/inspiration-only/social-media-skills/skills/post-writer-sms/SKILL.md",
+      "license": "MIT",
+      "version": "1.2.0",
+      "category": "creation",
+      "description": "When the user wants to write a social media post for LinkedIn, Twitter/X, Threads, Bluesky, Facebook, Instagram, TikTok, Pinterest, or YouTube. Also use when the user mentions 'write a post,' 'draft a post,' 'LinkedIn post,' 'tweet,' 'Threads post,' 'Bluesky post,' 'Facebook post,' 'Instagram post,' 'TikTok post,' 'Pinterest pin,' 'YouTube Community post,' 'social media post,' 'help me write,' or shares a topic and wants it turned into a post. For deeper visual-platform caption writing, see caption-writer-sms. For multi-part content, see thread-writer-sms. For carousels, see carousel-writer-sms. For opening lines, see hook-writer-sms.",
+      "targetAgents": [
+        "copywriter"
+      ],
+      "expectedOutputs": [
+        "posts.md"
+      ],
+      "integrationStatus": "adapted-taxonomy",
+      "usePolicy": "Use taxonomy and behavior patterns; do not require BlackTwist or any paid SaaS."
+    },
+    {
+      "id": "social-media-context-sms",
+      "source": "blacktwist/social-media-skills",
+      "sourcePath": "/Users/corte/Documents/Codex/2026-05-22/fammi-un-deep-interwie-per-questo/reference/inspiration-only/social-media-skills/skills/social-media-context-sms/SKILL.md",
+      "license": "MIT",
+      "version": "1.0.0",
+      "category": "foundation",
+      "description": "When the user wants to set up or update their social media profile, voice, audience, content pillars, or platform preferences. Also use when the user mentions 'set up context,' 'my voice,' 'my audience,' 'content pillars,' 'brand voice,' 'who I'm writing for,' 'social media profile,' or wants to avoid repeating foundational information across social media tasks. Use this at the start of any new project before using other social media skills — it creates .agents/social-media-context-sms.md that all other skills reference.",
+      "targetAgents": [
+        "intake-strategist",
+        "memory-curator"
+      ],
+      "expectedOutputs": [
+        "social-context.md",
+        "voice-guide.md"
+      ],
+      "integrationStatus": "adapted-taxonomy",
+      "usePolicy": "Use taxonomy and behavior patterns; do not require BlackTwist or any paid SaaS."
+    },
+    {
+      "id": "thread-writer-sms",
+      "source": "blacktwist/social-media-skills",
+      "sourcePath": "/Users/corte/Documents/Codex/2026-05-22/fammi-un-deep-interwie-per-questo/reference/inspiration-only/social-media-skills/skills/thread-writer-sms/SKILL.md",
+      "license": "MIT",
+      "version": "1.3.0",
+      "category": "creation",
+      "description": "When the user wants to write a multi-part thread or content series for Twitter/X, LinkedIn, Threads, Instagram (Reel/carousel/Story series), TikTok (multi-part videos), YouTube (video series, multi-Short series), or Facebook. Also use when the user mentions 'thread,' 'Twitter thread,' 'tweetstorm,' 'multi-part post,' 'series of posts,' 'Part 1 / Part 2,' 'Reel series,' 'TikTok series,' 'YouTube series,' 'video series,' or has a long-form idea that needs breaking into parts. For single posts, see post-writer-sms. For carousels, see carousel-writer-sms.",
+      "targetAgents": [
+        "copywriter",
+        "reel-shorts-producer"
+      ],
+      "expectedOutputs": [
+        "skill-output.md"
+      ],
+      "integrationStatus": "adapted-taxonomy",
+      "usePolicy": "Use taxonomy and behavior patterns; do not require BlackTwist or any paid SaaS."
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "version": "0.1.0",
+  "generatedAt": "2026-05-25T20:36:51.808Z",
+  "workspace": "out-of-office",
+  "timeoutMs": 45000,
+  "availableModels": [
+    "qwen2.5vl:7b",
+    "deepseek-coder-v2:latest",
+    "qwen2.5-coder:14b",
+    "qwen-agent:latest",
+    "qwen2.5:14b"
+  ],
+  "models": [
+    {
+      "model": "qwen2.5-coder:14b",
+      "totalScore": 25,
+      "totalElapsedMs": 95206,
+      "results": [
+        {
+          "taskId": "messy-italian-cleanup",
+          "role": "business-profile",
+          "elapsedMs": 23500,
+          "score": {
+            "requiredHits": 4,
+            "requiredTotal": 4,
+            "hasNoInventWarning": false,
+            "structured": true,
+            "lengthScore": 2,
+            "speedScore": 2,
+            "total": 9
+          },
+          "error": null,
+          "outputPreview": "Posizionamento (Positioning): \nUn evento networking professionale a NYC per chi cerca nuove opportunità di connessione.\n\nTarget:\nProfessionisti che desiderano espandere la loro rete di contatti e potenziali collaboratori nel settore di New York City.\n\nOfferta:\nBiglietto inclusivo che comprende drink, cibo e l'accesso all'evento networking.\n\nDomande mancanti (Missing Questions):\n1. Qual è il tema specifico dell'evento?\n2. Chi sono i principali speaker o panellisti del networking event?\n3. Quanto dura l'evento?\n4. C'è un limite di posti disponibili?"
+        },
+        {
+          "taskId": "reel-caption",
+          "role": "copywriter",
+          "elapsedMs": 12174,
+          "score": {
+            "requiredHits": 3,
+            "requiredTotal": 3,
+            "hasNoInventWarning": false,
+            "structured": true,
+            "lengthScore": 2,
+            "speedScore": 2,
+            "total": 8
+          },
+          "error": null,
+          "outputPreview": "Sure! Here are the Instagram reel hooks and caption for your premium NYC networking event:\n\n### Instagram Reel Hooks:\n1. **Hook 1:** \"Networking like never before in the heart of NYC 🏙️ #NYC #NetworkingEvent\"\n2. **Hook 2:** \"Experience a night of unparalleled connections 🌟 #VIPEvent #PremiumNetworking\"\n3. **Hook 3:** \"Dive into exclusive conversations and deals 💬💼 #BusinessOpportunities #NYCCapital\"\n\n### Caption:\nJoin us for an unforgettable evening in the vibrant heart of NYC! This premium networking event is your ticket to unparalleled connections, exclusive deals, and a night filled with opportunities. Don't miss out on this chance to make meaningful business relationships that could propel your career forward. 🌟"
+        },
+        {
+          "taskId": "safety-critique",
+          "role": "critic-qa",
+          "elapsedMs": 14526,
+          "score": {
+            "requiredHits": 3,
+            "requiredTotal": 3,
+            "hasNoInventWarning": false,
+            "structured": true,
+            "lengthScore": 2,
+            "speedScore": 2,
+            "total": 8
+          },
+          "error": null,
+          "outputPreview": "**Blockers:**\n1. **Falsity Risk:** The claim uses an absolute statement (\"best\"), which is subjective and may not be verifiable or accurate.\n2. **Exclusivity Claims:** Promising \"guaranteed\" elite guests can come across as exclusive, potentially alienating others who feel left out or undervalued.\n\n**Safer Rewrite:**\n\"The highly anticipated networking event in New York brings together 200 distinguished professionals for an unparalleled experience.\"\n\n**Questions:**\n1. **How is the 'best' status determined?** Could you provide more details on how this event was rated or selected as the best among others?\n2. **Who qualifies as an 'elite guest'?** Can you specify the criteria or process used to select these guests?\n3. **What measures are in place to ensure a positive experience for all participants, not just the elite?** How do you address inclusivity and diversity within such an exclusive setting?"
+        },
+        {
+          "taskId": "persona-simulation",
+          "role": "persona-simulator",
+          "elapsedMs": 45006,
+          "score": {
+            "total": 0,
+            "error": "This operation was aborted"
+          },
+          "error": "This operation was aborted",
+          "outputPreview": ""
+        }
+      ]
+    }
+  ],
+  "recommendations": {
+    "brand-strategist": "qwen2.5-coder:14b",
+    "copywriter": "qwen2.5-coder:14b",
+    "critic-qa": "qwen2.5-coder:14b",
+    "persona-simulator": null
+  }
+}

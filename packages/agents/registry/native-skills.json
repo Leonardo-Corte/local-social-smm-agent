@@ -1,0 +1,53 @@
+{
+  "version": "0.1.0",
+  "skills": [
+    {
+      "id": "platform-compliance-guardian",
+      "source": "local",
+      "license": "project",
+      "version": "0.1.0",
+      "category": "safety",
+      "description": "Checks platform risk, source policy, license boundaries, approval gates, and blocked account actions before content or integrations move forward.",
+      "targetAgents": ["compliance-platform-guardian", "critic-qa"],
+      "expectedOutputs": ["risk-review.md", "blocked-actions.md", "approval-gates.md"],
+      "integrationStatus": "native",
+      "usePolicy": "Block risky account actions by default; require explicit human approval for publishing, credentials, high-risk sources, or experimental automation."
+    },
+    {
+      "id": "human-approved-publishing",
+      "source": "local",
+      "license": "project",
+      "version": "0.1.0",
+      "category": "publishing",
+      "description": "Prepares platform-ready export packages and publishing checklists while preventing automatic publishing until human approval is recorded.",
+      "targetAgents": ["publishing-operator", "compliance-platform-guardian"],
+      "expectedOutputs": ["publishing-checklist.md", "export-package.md", "approval-log.md"],
+      "integrationStatus": "native",
+      "usePolicy": "Use the approval state machine. Drafts cannot become published unless status is approved."
+    },
+    {
+      "id": "persona-panel-simulation",
+      "source": "local-inspired-by-TinyTroupe-and-sdialog",
+      "license": "project",
+      "version": "0.1.0",
+      "category": "simulation",
+      "description": "Builds audience panels, evaluates draft content against persona motivations and objections, and creates regeneration tasks for weak claims.",
+      "targetAgents": ["persona-simulator", "critic-qa", "copywriter"],
+      "expectedOutputs": ["persona-report.md", "persona-report.json", "regeneration-queue.json"],
+      "integrationStatus": "native",
+      "usePolicy": "Treat simulation as directional QA, not proof of market demand."
+    },
+    {
+      "id": "feedback-memory-curation",
+      "source": "local",
+      "license": "project",
+      "version": "0.1.0",
+      "category": "memory",
+      "description": "Turns human feedback and simulation findings into durable preferences, rejected patterns, approved patterns, and regeneration tasks.",
+      "targetAgents": ["memory-curator", "critic-qa"],
+      "expectedOutputs": ["user-feedback.md", "preferences.json", "regeneration-queue.json"],
+      "integrationStatus": "native",
+      "usePolicy": "Preserve human feedback as the highest-priority workspace memory."
+    }
+  ]
+}

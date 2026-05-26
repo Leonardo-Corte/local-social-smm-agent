@@ -1,0 +1,158 @@
+{
+  "generatedAt": "2026-05-23T08:19:59.271Z",
+  "projectName": "Out Of Office E2E Test",
+  "personas": [
+    {
+      "id": "persona-01",
+      "label": "Skeptical operator",
+      "segment": "corporate professionals",
+      "motivation": "save time and avoid fragile tools",
+      "coreObjection": "This sounds like setup complexity disguised as automation.",
+      "conversionTrigger": "clear before/after workflow proof",
+      "contentLens": "Skeptical operator evaluating fun, curated networking events in New York where interesting people meet through a social hospitality experience; sell event tickets and grow the community around the Out Of Office brand"
+    },
+    {
+      "id": "persona-02",
+      "label": "Cost-sensitive founder",
+      "segment": "founders",
+      "motivation": "reduce recurring SaaS costs",
+      "coreObjection": "Local-first is attractive, but quality and maintenance worry me.",
+      "conversionTrigger": "specific hardware expectations and realistic limits",
+      "contentLens": "Cost-sensitive founder evaluating fun, curated networking events in New York where interesting people meet through a social hospitality experience; sell event tickets and grow the community around the Out Of Office brand"
+    },
+    {
+      "id": "persona-03",
+      "label": "Creative strategist",
+      "segment": "operators",
+      "motivation": "produce better ideas faster",
+      "coreObjection": "The content may become generic if the system does not learn taste.",
+      "conversionTrigger": "memory from feedback and strong examples",
+      "contentLens": "Creative strategist evaluating fun, curated networking events in New York where interesting people meet through a social hospitality experience; sell event tickets and grow the community around the Out Of Office brand"
+    },
+    {
+      "id": "persona-04",
+      "label": "Agency delivery lead",
+      "segment": "creatives",
+      "motivation": "standardize client delivery",
+      "coreObjection": "Approval, revisions, and client-specific voice need to be robust.",
+      "conversionTrigger": "clear review states and client-ready artifacts",
+      "contentLens": "Agency delivery lead evaluating fun, curated networking events in New York where interesting people meet through a social hospitality experience; sell event tickets and grow the community around the Out Of Office brand"
+    },
+    {
+      "id": "persona-05",
+      "label": "Technical early adopter",
+      "segment": "consultants",
+      "motivation": "own the stack and customize agents",
+      "coreObjection": "I need proof that integrations are modular and not locked to a SaaS.",
+      "conversionTrigger": "repo structure, local commands, and extension points",
+      "contentLens": "Technical early adopter evaluating fun, curated networking events in New York where interesting people meet through a social hospitality experience; sell event tickets and grow the community around the Out Of Office brand"
+    }
+  ],
+  "drafts": [
+    {
+      "title": "Post 1",
+      "body": "Hook: Stop paying for a social stack before your content system is even working.\n\nBody: corporate professionals, founders, operators, creatives, consultants, finance and tech workers, and socially ambitious newcomers in New York who want high-quality networking without a stiff conference vibe need a repeatable local-first workflow: strategy, drafts, review, and publishing discipline before more SaaS.\n\nCTA: Save this and review your current content workflow."
+    }
+  ],
+  "evaluations": [
+    {
+      "personaId": "persona-01",
+      "draftTitle": "Post 1",
+      "scores": {
+        "interest": 67,
+        "trust": 62,
+        "clarity": 60,
+        "purchaseIntent": 53
+      },
+      "likelyReaction": "Interesting, but show me how this works in a real corporate professionals workflow.",
+      "mainObjection": "Needs concrete proof or before/after example.",
+      "recommendedFix": "Add a concrete proof point for the Skeptical operator: screenshot, before/after, workflow artifact, or mini case."
+    },
+    {
+      "personaId": "persona-02",
+      "draftTitle": "Post 1",
+      "scores": {
+        "interest": 67,
+        "trust": 62,
+        "clarity": 60,
+        "purchaseIntent": 53
+      },
+      "likelyReaction": "Interesting, but show me how this works in a real founders workflow.",
+      "mainObjection": "Needs concrete proof or before/after example.",
+      "recommendedFix": "Add a concrete proof point for the Cost-sensitive founder: screenshot, before/after, workflow artifact, or mini case."
+    },
+    {
+      "personaId": "persona-03",
+      "draftTitle": "Post 1",
+      "scores": {
+        "interest": 67,
+        "trust": 62,
+        "clarity": 60,
+        "purchaseIntent": 53
+      },
+      "likelyReaction": "Interesting, but show me how this works in a real operators workflow.",
+      "mainObjection": "Needs concrete proof or before/after example.",
+      "recommendedFix": "Add a concrete proof point for the Creative strategist: screenshot, before/after, workflow artifact, or mini case."
+    },
+    {
+      "personaId": "persona-04",
+      "draftTitle": "Post 1",
+      "scores": {
+        "interest": 67,
+        "trust": 62,
+        "clarity": 60,
+        "purchaseIntent": 53
+      },
+      "likelyReaction": "Interesting, but show me how this works in a real creatives workflow.",
+      "mainObjection": "Needs concrete proof or before/after example.",
+      "recommendedFix": "Add a concrete proof point for the Agency delivery lead: screenshot, before/after, workflow artifact, or mini case."
+    },
+    {
+      "personaId": "persona-05",
+      "draftTitle": "Post 1",
+      "scores": {
+        "interest": 67,
+        "trust": 62,
+        "clarity": 60,
+        "purchaseIntent": 53
+      },
+      "likelyReaction": "Interesting, but show me how this works in a real consultants workflow.",
+      "mainObjection": "Needs concrete proof or before/after example.",
+      "recommendedFix": "Add a concrete proof point for the Technical early adopter: screenshot, before/after, workflow artifact, or mini case."
+    }
+  ],
+  "dialogue": [
+    {
+      "draftTitle": "Post 1",
+      "turns": [
+        {
+          "speaker": "Skeptical operator",
+          "message": "Needs concrete proof or before/after example."
+        },
+        {
+          "speaker": "Skeptical operator",
+          "message": "Interesting, but show me how this works in a real corporate professionals workflow."
+        },
+        {
+          "speaker": "Panel moderator",
+          "message": "The draft should first fix: Add a concrete proof point for the Skeptical operator: screenshot, before/after, workflow artifact, or mini case."
+        }
+      ],
+      "likelyDecision": "not_ready",
+      "dominantObjection": "Needs concrete proof or before/after example."
+    }
+  ],
+  "summary": {
+    "averageInterest": 67,
+    "averageTrust": 62,
+    "averageClarity": 60,
+    "averagePurchaseIntent": 53,
+    "topFixes": [
+      "Add a concrete proof point for the Skeptical operator: screenshot, before/after, workflow artifact, or mini case.",
+      "Add a concrete proof point for the Cost-sensitive founder: screenshot, before/after, workflow artifact, or mini case.",
+      "Add a concrete proof point for the Creative strategist: screenshot, before/after, workflow artifact, or mini case.",
+      "Add a concrete proof point for the Agency delivery lead: screenshot, before/after, workflow artifact, or mini case.",
+      "Add a concrete proof point for the Technical early adopter: screenshot, before/after, workflow artifact, or mini case."
+    ]
+  }
+}

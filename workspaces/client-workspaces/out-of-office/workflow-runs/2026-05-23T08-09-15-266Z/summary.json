@@ -1,0 +1,107 @@
+{
+  "version": "0.1.0",
+  "workspace": "out-of-office",
+  "runId": "2026-05-23T08-09-15-266Z",
+  "generatedAt": "2026-05-23T08:09:15.319Z",
+  "mode": "dry-run-prompt-packets",
+  "status": "needs-human-review",
+  "automaticPublishEnabled": false,
+  "requiredHumanApproval": true,
+  "steps": [
+    {
+      "id": "intake",
+      "agentId": "intake-strategist",
+      "status": "saved_prompt_packet",
+      "backend": "prompt-packet",
+      "model": "qwen2.5:14b",
+      "inputs": [
+        "project-brief.json",
+        "memory/preferences.json",
+        "memory/user-feedback.md"
+      ],
+      "generatedAt": "2026-05-23T08:09:15.314Z"
+    },
+    {
+      "id": "research",
+      "agentId": "market-researcher",
+      "status": "saved_prompt_packet",
+      "backend": "prompt-packet",
+      "model": "qwen2.5:14b",
+      "inputs": [
+        "project-brief.json",
+        "sources/source-registry.md",
+        "research/trend-report.md"
+      ],
+      "generatedAt": "2026-05-23T08:09:15.315Z"
+    },
+    {
+      "id": "strategy",
+      "agentId": "brand-strategist",
+      "status": "saved_prompt_packet",
+      "backend": "prompt-packet",
+      "model": "qwen2.5:14b",
+      "inputs": [
+        "project-brief.json",
+        "research/trend-report.md",
+        "strategy/content-pillars.md"
+      ],
+      "generatedAt": "2026-05-23T08:09:15.315Z"
+    },
+    {
+      "id": "copy",
+      "agentId": "copywriter",
+      "status": "saved_prompt_packet",
+      "backend": "prompt-packet",
+      "model": "qwen2.5:14b",
+      "inputs": [
+        "calendar/30-day-calendar.md",
+        "drafts/posts.md"
+      ],
+      "generatedAt": "2026-05-23T08:09:15.316Z"
+    },
+    {
+      "id": "video",
+      "agentId": "reel-shorts-producer",
+      "status": "saved_prompt_packet",
+      "backend": "prompt-packet",
+      "model": "qwen2.5:14b",
+      "inputs": [
+        "calendar/30-day-calendar.md",
+        "drafts/reels.md"
+      ],
+      "generatedAt": "2026-05-23T08:09:15.317Z"
+    },
+    {
+      "id": "persona",
+      "agentId": "persona-simulator",
+      "status": "saved_prompt_packet",
+      "backend": "prompt-packet",
+      "model": "qwen2.5:14b",
+      "inputs": [
+        "simulation/persona-report.md",
+        "drafts/posts.md"
+      ],
+      "generatedAt": "2026-05-23T08:09:15.318Z"
+    },
+    {
+      "id": "qa",
+      "agentId": "critic-qa",
+      "status": "saved_prompt_packet",
+      "backend": "prompt-packet",
+      "model": "qwen2.5:14b",
+      "inputs": [
+        "review/workspace-quality-rubric.json",
+        "simulation/persona-report.md",
+        "review/qa-recap.md",
+        "drafts/posts.md"
+      ],
+      "generatedAt": "2026-05-23T08:09:15.319Z"
+    }
+  ],
+  "humanReviewRequired": [
+    "Review generated step outputs and approve only specific artifacts.",
+    "Run regeneration tasks before treating drafts as client-ready.",
+    "Use official/manual publishing paths only after approval."
+  ],
+  "regenerationTaskCount": 7
+}

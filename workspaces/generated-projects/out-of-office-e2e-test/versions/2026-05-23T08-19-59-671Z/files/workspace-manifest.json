@@ -1,0 +1,12 @@
+{
+  "generatorVersion": "0.1.0",
+  "workspaceSlug": "out-of-office-e2e-test",
+  "projectName": "Out Of Office E2E Test",
+  "generatedAt": "2026-05-23T08:19:58.944Z",
+  "modelProfile": "apple-silicon-pro",
+  "approvalMode": "human-approved",
+  "automaticPublishEnabled": false,
+  "riskyAutomationEnabled": false,
+  "requiredHumanApproval": true,
+  "agentCount": 13
+}

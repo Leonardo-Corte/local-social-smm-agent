@@ -1,0 +1,13 @@
+{
+  "id": "intake",
+  "agentId": "intake-strategist",
+  "status": "completed",
+  "backend": "ollama",
+  "model": "qwen2.5:14b",
+  "inputs": [
+    "project-brief.json",
+    "memory/preferences.json",
+    "memory/user-feedback.md"
+  ],
+  "generatedAt": "2026-05-23T00:39:41.147Z"
+}

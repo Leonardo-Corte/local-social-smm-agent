@@ -1,0 +1,310 @@
+{
+  "version": "0.1.0",
+  "generatedAt": "2026-05-25T20:25:32.111Z",
+  "noCostPolicy": "software-only no-cost; quality depends on local hardware and installed backends",
+  "profile": {
+    "id": "apple-silicon-pro",
+    "label": "Apple Silicon Pro/Max",
+    "detect": [
+      "darwin",
+      "arm64"
+    ],
+    "backends": [
+      "mlx",
+      "ollama",
+      "llama.cpp",
+      "comfyui"
+    ],
+    "textModelTier": "quantized 14B-32B reasoning/copy models where memory allows",
+    "imageModelTier": "ComfyUI with Qwen-Image or lighter fallback depending on RAM",
+    "parallelism": "moderate",
+    "notes": "First-class target for MacBook Pro M3 Pro class machines.",
+    "detectedSignals": [
+      "platform:darwin",
+      "arch:arm64",
+      "memoryGb:18"
+    ],
+    "totalMemoryGb": 18,
+    "nvidiaVramGb": 0,
+    "availableBackends": [
+      {
+        "id": "ollama",
+        "label": "Ollama",
+        "available": true,
+        "command": "ollama-api",
+        "status": 0
+      },
+      {
+        "id": "mlx",
+        "label": "MLX LM",
+        "available": false,
+        "command": null,
+        "status": null
+      },
+      {
+        "id": "llama.cpp",
+        "label": "llama.cpp",
+        "available": false,
+        "command": null,
+        "status": null
+      },
+      {
+        "id": "vllm",
+        "label": "vLLM",
+        "available": false,
+        "command": null,
+        "status": null
+      },
+      {
+        "id": "comfyui",
+        "label": "ComfyUI",
+        "available": false,
+        "command": null,
+        "status": null
+      },
+      {
+        "id": "nvidia-smi",
+        "label": "NVIDIA SMI",
+        "available": false,
+        "command": null,
+        "status": null
+      }
+    ]
+  },
+  "recommendations": {
+    "text": [
+      {
+        "id": "frontier-local-reasoning",
+        "label": "Frontier local reasoning/copy tier",
+        "role": "strategy, critique, long-form copy, persona simulation",
+        "profiles": [
+          "apple-silicon-pro",
+          "nvidia-strong"
+        ],
+        "backendPreference": [
+          "ollama",
+          "mlx",
+          "llama.cpp",
+          "vllm"
+        ],
+        "candidateTier": "quantized 14B-32B+ open-weight instruct/reasoning model",
+        "licensePosture": "audit exact checkpoint before download",
+        "notes": "Use for strategist, critic, copywriter, and persona-simulation passes when RAM/VRAM allows.",
+        "backendAvailability": [
+          {
+            "id": "ollama",
+            "available": true,
+            "command": "ollama-api"
+          },
+          {
+            "id": "mlx",
+            "available": false,
+            "command": null
+          },
+          {
+            "id": "llama.cpp",
+            "available": false,
+            "command": null
+          },
+          {
+            "id": "vllm",
+            "available": false,
+            "command": null
+          }
+        ]
+      },
+      {
+        "id": "fast-local-operator",
+        "label": "Fast local operator tier",
+        "role": "summaries, extraction, task routing, checklist generation",
+        "profiles": [
+          "all"
+        ],
+        "backendPreference": [
+          "ollama",
+          "mlx",
+          "llama.cpp"
+        ],
+        "candidateTier": "quantized 3B-9B instruct model",
+        "licensePosture": "audit exact checkpoint before download",
+        "notes": "Use for repeatable low-cost internal tasks so the strongest model is reserved for high-leverage thinking.",
+        "backendAvailability": [
+          {
+            "id": "ollama",
+            "available": true,
+            "command": "ollama-api"
+          },
+          {
+            "id": "mlx",
+            "available": false,
+            "command": null
+          },
+          {
+            "id": "llama.cpp",
+            "available": false,
+            "command": null
+          }
+        ]
+      }
+    ],
+    "vision": [
+      {
+        "id": "frontier-local-vision",
+        "label": "Frontier local vision tier",
+        "role": "image understanding, social asset analysis, visual QA, screenshot/link creative context",
+        "profiles": [
+          "apple-silicon-pro",
+          "nvidia-strong"
+        ],
+        "backendPreference": [
+          "ollama",
+          "mlx",
+          "llama.cpp"
+        ],
+        "candidateTier": "Qwen2.5-VL 7B/32B or comparable open-weight VLM depending on memory",
+        "licensePosture": "audit exact checkpoint license before client/commercial use",
+        "preferredOllamaModels": [
+          "qwen2.5vl:7b",
+          "llama3.2-vision:11b",
+          "gemma3:12b",
+          "llava:13b"
+        ],
+        "installCommand": "ollama pull qwen2.5vl:7b",
+        "notes": "Default for MacBook Pro Apple Silicon class machines. Use it to inspect uploaded images before copy, carousel, and platform adaptation work.",
+        "backendAvailability": [
+          {
+            "id": "ollama",
+            "available": true,
+            "command": "ollama-api"
+          },
+          {
+            "id": "mlx",
+            "available": false,
+            "command": null
+          },
+          {
+            "id": "llama.cpp",
+            "available": false,
+            "command": null
+          }
+        ]
+      },
+      {
+        "id": "fast-local-vision",
+        "label": "Fast local vision tier",
+        "role": "quick visual summaries, lightweight image triage, attachment routing",
+        "profiles": [
+          "all"
+        ],
+        "backendPreference": [
+          "ollama"
+        ],
+        "candidateTier": "small open-weight VLM for machines where 7B+ vision is too slow",
+        "licensePosture": "audit exact checkpoint license before client/commercial use",
+        "preferredOllamaModels": [
+          "moondream:latest",
+          "llava:7b",
+          "qwen2.5vl:3b"
+        ],
+        "installCommand": "ollama pull moondream",
+        "notes": "Fallback when the stronger VLM is not installed or the machine is too constrained.",
+        "backendAvailability": [
+          {
+            "id": "ollama",
+            "available": true,
+            "command": "ollama-api"
+          }
+        ]
+      }
+    ],
+    "image": [
+      {
+        "id": "text-heavy-social-graphics",
+        "label": "Text-heavy social graphics tier",
+        "role": "IG carousel covers, ad-like static visuals, quote cards",
+        "profiles": [
+          "apple-silicon-pro",
+          "nvidia-strong"
+        ],
+        "backendPreference": [
+          "comfyui"
+        ],
+        "candidateTier": "local workflow optimized for readable text and brand-safe compositions",
+        "licensePosture": "audit exact image model and workflow licenses",
+        "notes": "Prefer for carousels and graphics where legible text matters. Keep human approval before publishing.",
+        "backendAvailability": [
+          {
+            "id": "comfyui",
+            "available": false,
+            "command": null
+          }
+        ]
+      },
+      {
+        "id": "general-social-visuals",
+        "label": "General local image tier",
+        "role": "mood boards, backgrounds, concept art, visual variants",
+        "profiles": [
+          "nvidia-medium",
+          "nvidia-strong",
+          "apple-silicon-pro"
+        ],
+        "backendPreference": [
+          "comfyui"
+        ],
+        "candidateTier": "memory-aware local diffusion or image model workflow",
+        "licensePosture": "audit exact image model and workflow licenses",
+        "notes": "Use for optional image ideation. If ComfyUI is missing, generate precise briefs instead of blocking the workspace.",
+        "backendAvailability": [
+          {
+            "id": "comfyui",
+            "available": false,
+            "command": null
+          }
+        ]
+      }
+    ],
+    "orchestration": [
+      {
+        "id": "local-agent-batch",
+        "label": "Local sequential agent batch",
+        "role": "multi-agent workflow execution",
+        "profiles": [
+          "cpu-weak",
+          "nvidia-medium",
+          "apple-silicon-pro"
+        ],
+        "backendPreference": [
+          "ollama",
+          "llama.cpp",
+          "mlx"
+        ],
+        "candidateTier": "single active model call at a time with cached context",
+        "licensePosture": "project code is no-cost; backend/model licenses audited separately",
+        "notes": "Best default for laptops. Agents run in sequence and persist outputs to files.",
+        "backendAvailability": [
+          {
+            "id": "ollama",
+            "available": true,
+            "command": "ollama-api"
+          },
+          {
+            "id": "llama.cpp",
+            "available": false,
+            "command": null
+          },
+          {
+            "id": "mlx",
+            "available": false,
+            "command": null
+          }
+        ]
+      }
+    ]
+  },
+  "requiredHumanDecision": [
+    "Download exact local model weights only after checking their license and hardware fit.",
+    "Do not configure paid API fallbacks in generated workspaces.",
+    "Keep image/video generation optional when hardware is too small."
+  ]
+}

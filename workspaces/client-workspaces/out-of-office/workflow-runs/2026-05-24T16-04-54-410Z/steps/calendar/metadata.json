@@ -1,0 +1,13 @@
+{
+  "id": "calendar",
+  "agentId": "content-planner",
+  "status": "saved_prompt_packet",
+  "backend": "prompt-packet",
+  "model": "qwen2.5:14b",
+  "inputs": [
+    "business/business.md",
+    "strategy/content-pillars.md",
+    "calendar/30-day-calendar.md"
+  ],
+  "generatedAt": "2026-05-24T16:04:54.508Z"
+}

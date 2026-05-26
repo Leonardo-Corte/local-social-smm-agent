@@ -1,0 +1,35 @@
+{
+  "generatedAt": "2026-05-22T23:34:44.429Z",
+  "status": "brief-only",
+  "backend": {
+    "id": "comfyui",
+    "label": "ComfyUI",
+    "available": false,
+    "command": null,
+    "status": null
+  },
+  "requiredHumanApproval": true,
+  "automaticPublishEnabled": false,
+  "workflowNotes": [
+    "Use local image generation only after exact model/workflow license checks.",
+    "Do not generate or publish platform assets without human approval.",
+    "Prefer text-light layouts unless the selected image model is proven reliable with text.",
+    "Keep brand consistency and avoid misleading claims in generated visuals."
+  ],
+  "prompts": [
+    {
+      "id": "carousel-cover",
+      "purpose": "IG carousel cover",
+      "prompt": "clean professional social media carousel cover, local-first AI content workspace, visible workflow board, crisp typography space, brand-safe composition"
+    },
+    {
+      "id": "workflow-screenshot-style",
+      "purpose": "educational post visual",
+      "prompt": "editorial product screenshot style, content calendar, agent roles, review checklist, minimal UI, trustworthy and practical"
+    }
+  ],
+  "sourceContext": {
+    "visualBriefs": "# Visual Briefs\n\n## Brief 1\nStyle: clean professional interface, local-first AI workspace, visible calendar and agent roles.\nModel route: ComfyUI with Qwen-Image or lighter fallback depending on RAM\nText guidance: use Qwen-Image candidate for text-heavy graphics when available.\n",
+    "calendarExcerpt": "# 30-Day Content Calendar\n\nGoal: validate positioning and publish consistently with human-approved drafts\n\n| Day | Pillar | Format | Topic | Status |\n| --- | --- | --- | --- | --- |\n| 1 | Problem awareness | Reel | local-first AI tools for creators and small businesses angle 1 | Draft then human review |\n| 2 | Proof/credibility | Carousel | local-first AI tools for creators and small businesses angle 2 | Draft then human review |\n| 3 | Education | Static post | local-first AI tools for creators and small businesses angle 3 | Draft then human review |\n| 4 | Behind the scenes | Story sequence | local-first AI tools for creators and small businesses angle 4 | Draft then human review |\n| 5 | Offer/CTA | Facebook post | local-first AI tools for creators and small businesses angle 5 | Draft then human review |\n| 6 | Problem awareness | Reel | local-first AI tools for creators and small businesses angle 6 | Draft then human review |\n| 7 | Proof/credibility | Carousel | local-first AI tools for creators and small businesses angle 7 | Draft then human review |\n| 8 | Education | Static post | local-first AI tools for creators and small businesses angle 8 | Draft then human review |\n| 9 | Behind the scenes | Story sequence | local-first AI tools for creators and small businesses angle 9 | Draft then human review |\n| 10 | Offer/CTA | Facebook post | local-first AI tools for creators and small businesses angle 10 | Draft then human review |\n| 11 | Problem awareness | Reel | local-first AI tools for creators and small businesses angle 11 | Draft then human review |\n| 12 | Proof/credibility | Carousel | local-first AI tools for creators and small businesses angle 12 | Draft then human review |"
+  }
+}

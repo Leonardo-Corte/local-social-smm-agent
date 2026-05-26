@@ -1,0 +1,176 @@
+{
+  "version": "0.1.0",
+  "workspace": "sample-local-social-team",
+  "runId": "2026-05-22T23-58-52-498Z",
+  "generatedAt": "2026-05-23T00:16:08.191Z",
+  "mode": "local-model-execution",
+  "status": "needs-human-review",
+  "automaticPublishEnabled": false,
+  "requiredHumanApproval": true,
+  "steps": [
+    {
+      "id": "intake",
+      "agentId": "intake-strategist",
+      "status": "completed",
+      "backend": "ollama",
+      "model": "qwen2.5:14b",
+      "inputs": [
+        "project-brief.json",
+        "memory/preferences.json",
+        "memory/user-feedback.md"
+      ],
+      "generatedAt": "2026-05-22T23:58:52.589Z"
+    },
+    {
+      "id": "research",
+      "agentId": "market-researcher",
+      "status": "completed",
+      "backend": "ollama",
+      "model": "qwen2.5:14b",
+      "inputs": [
+        "project-brief.json",
+        "sources/source-registry.md",
+        "research/trend-report.md"
+      ],
+      "generatedAt": "2026-05-23T00:00:27.112Z"
+    },
+    {
+      "id": "strategy",
+      "agentId": "brand-strategist",
+      "status": "completed",
+      "backend": "ollama",
+      "model": "qwen2.5:14b",
+      "inputs": [
+        "project-brief.json",
+        "research/trend-report.md",
+        "strategy/content-pillars.md"
+      ],
+      "generatedAt": "2026-05-23T00:01:55.632Z"
+    },
+    {
+      "id": "calendar",
+      "agentId": "content-planner",
+      "status": "completed",
+      "backend": "ollama",
+      "model": "qwen2.5:14b",
+      "inputs": [
+        "strategy/content-pillars.md",
+        "calendar/30-day-calendar.md"
+      ],
+      "generatedAt": "2026-05-23T00:04:34.380Z"
+    },
+    {
+      "id": "copy",
+      "agentId": "copywriter",
+      "status": "completed",
+      "backend": "ollama",
+      "model": "qwen2.5:14b",
+      "inputs": [
+        "calendar/30-day-calendar.md",
+        "drafts/posts.md",
+        "drafts/carousels.md",
+        "drafts/reels.md"
+      ],
+      "generatedAt": "2026-05-23T00:06:59.444Z"
+    },
+    {
+      "id": "video",
+      "agentId": "reel-shorts-producer",
+      "status": "completed",
+      "backend": "ollama",
+      "model": "qwen2.5:14b",
+      "inputs": [
+        "calendar/30-day-calendar.md",
+        "drafts/reels.md"
+      ],
+      "generatedAt": "2026-05-23T00:08:34.986Z"
+    },
+    {
+      "id": "visuals",
+      "agentId": "visual-director",
+      "status": "completed",
+      "backend": "ollama",
+      "model": "qwen2.5:14b",
+      "inputs": [
+        "model-routing-report.md",
+        "creative/visual-briefs.md",
+        "calendar/30-day-calendar.md"
+      ],
+      "generatedAt": "2026-05-23T00:09:33.729Z"
+    },
+    {
+      "id": "compliance",
+      "agentId": "compliance-platform-guardian",
+      "status": "completed",
+      "backend": "ollama",
+      "model": "qwen2.5:14b",
+      "inputs": [
+        "policy/publishing-policy.json",
+        "sources/source-registry.md",
+        "publishing/publishing-checklist.md",
+        "drafts/posts.md"
+      ],
+      "generatedAt": "2026-05-23T00:10:28.637Z"
+    },
+    {
+      "id": "publishing",
+      "agentId": "publishing-operator",
+      "status": "completed",
+      "backend": "ollama",
+      "model": "qwen2.5:14b",
+      "inputs": [
+        "publishing/publishing-checklist.md",
+        "drafts/posts.md",
+        "drafts/carousels.md",
+        "drafts/reels.md"
+      ],
+      "generatedAt": "2026-05-23T00:11:22.793Z"
+    },
+    {
+      "id": "persona",
+      "agentId": "persona-simulator",
+      "status": "completed",
+      "backend": "ollama",
+      "model": "qwen2.5:14b",
+      "inputs": [
+        "simulation/persona-report.md",
+        "drafts/posts.md"
+      ],
+      "generatedAt": "2026-05-23T00:12:10.246Z"
+    },
+    {
+      "id": "qa",
+      "agentId": "critic-qa",
+      "status": "completed",
+      "backend": "ollama",
+      "model": "qwen2.5:14b",
+      "inputs": [
+        "review/workspace-quality-rubric.json",
+        "simulation/persona-report.md",
+        "review/qa-recap.md",
+        "drafts/posts.md"
+      ],
+      "generatedAt": "2026-05-23T00:13:38.121Z"
+    },
+    {
+      "id": "memory",
+      "agentId": "memory-curator",
+      "status": "completed",
+      "backend": "ollama",
+      "model": "qwen2.5:14b",
+      "inputs": [
+        "memory/user-feedback.md",
+        "memory/preferences.json",
+        "memory/regeneration-queue.json",
+        "review/qa-recap.md"
+      ],
+      "generatedAt": "2026-05-23T00:15:02.639Z"
+    }
+  ],
+  "humanReviewRequired": [
+    "Review generated step outputs and approve only specific artifacts.",
+    "Run regeneration tasks before treating drafts as client-ready.",
+    "Use official/manual publishing paths only after approval."
+  ],
+  "regenerationTaskCount": 51
+}

@@ -1,0 +1,231 @@
+{
+  "version": "1.0.0",
+  "updatedAt": "2026-05-25T23:57:05.049Z",
+  "artifacts": [
+    {
+      "id": "42c483fb81aaeb40",
+      "path": "calendar/30-day-calendar.md",
+      "type": "calendar",
+      "intent": "content-calendar",
+      "platform": null,
+      "sourceRun": "workspace-bootstrap",
+      "sourceAgent": "publishing-operator",
+      "appliedTarget": null,
+      "status": "needs_human_review",
+      "requiredHumanApproval": true,
+      "automaticPublishEnabled": false,
+      "approval": null,
+      "metadata": {
+        "reason": "Known workspace artifact discovered by publishing package builder."
+      },
+      "createdAt": "2026-05-25T21:03:30.210Z",
+      "updatedAt": "2026-05-25T21:03:30.210Z"
+    },
+    {
+      "id": "4ec71905f1673e98",
+      "path": "drafts/posts.md",
+      "type": "draft",
+      "intent": "post",
+      "platform": null,
+      "sourceRun": "workspace-bootstrap",
+      "sourceAgent": "publishing-operator",
+      "appliedTarget": null,
+      "status": "needs_human_review",
+      "requiredHumanApproval": true,
+      "automaticPublishEnabled": false,
+      "approval": null,
+      "metadata": {
+        "reason": "Known workspace artifact discovered by publishing package builder."
+      },
+      "createdAt": "2026-05-25T21:03:30.211Z",
+      "updatedAt": "2026-05-25T21:03:30.211Z"
+    },
+    {
+      "id": "6544c9b0715b2e87",
+      "path": "drafts/carousels.md",
+      "type": "draft",
+      "intent": "carousel",
+      "platform": null,
+      "sourceRun": "workspace-bootstrap",
+      "sourceAgent": "publishing-operator",
+      "appliedTarget": null,
+      "status": "needs_human_review",
+      "requiredHumanApproval": true,
+      "automaticPublishEnabled": false,
+      "approval": null,
+      "metadata": {
+        "reason": "Known workspace artifact discovered by publishing package builder."
+      },
+      "createdAt": "2026-05-25T21:03:30.211Z",
+      "updatedAt": "2026-05-25T21:03:30.211Z"
+    },
+    {
+      "id": "a9595ab5655ca37d",
+      "path": "drafts/reels.md",
+      "type": "draft",
+      "intent": "reel",
+      "platform": null,
+      "sourceRun": "workspace-bootstrap",
+      "sourceAgent": "publishing-operator",
+      "appliedTarget": null,
+      "status": "needs_human_review",
+      "requiredHumanApproval": true,
+      "automaticPublishEnabled": false,
+      "approval": null,
+      "metadata": {
+        "reason": "Known workspace artifact discovered by publishing package builder."
+      },
+      "createdAt": "2026-05-25T21:03:30.211Z",
+      "updatedAt": "2026-05-25T21:03:30.211Z"
+    },
+    {
+      "id": "10a45d9d41f159c8",
+      "path": "publishing/publishing-checklist.md",
+      "type": "checklist",
+      "intent": "publishing",
+      "platform": null,
+      "sourceRun": "workspace-bootstrap",
+      "sourceAgent": "publishing-operator",
+      "appliedTarget": null,
+      "status": "needs_human_review",
+      "requiredHumanApproval": true,
+      "automaticPublishEnabled": false,
+      "approval": null,
+      "metadata": {
+        "reason": "Known workspace artifact discovered by publishing package builder."
+      },
+      "createdAt": "2026-05-25T21:03:30.211Z",
+      "updatedAt": "2026-05-25T21:03:30.211Z"
+    },
+    {
+      "id": "6a727b1ad9bee15b",
+      "path": "team-runs/2026-05-25T21-03-53-133Z/final-artifact.md",
+      "type": "team-final-artifact",
+      "intent": "post",
+      "platform": null,
+      "sourceRun": "2026-05-25T21-03-53-133Z",
+      "sourceAgent": "social-team-orchestrator",
+      "appliedTarget": null,
+      "status": "needs_human_review",
+      "requiredHumanApproval": true,
+      "automaticPublishEnabled": false,
+      "approval": null,
+      "metadata": {
+        "request": "Create a short approval-gated Instagram draft for a test event.",
+        "target": "drafts/posts.md",
+        "contentPolicyStatus": "passed",
+        "workflowRun": "workflow-runs/2026-05-25T21-03-53-134Z",
+        "teamRun": "team-runs/2026-05-25T21-03-53-133Z",
+        "applied": true
+      },
+      "createdAt": "2026-05-25T21:03:53.188Z",
+      "updatedAt": "2026-05-25T21:03:53.188Z"
+    },
+    {
+      "id": "d4d5394e9adabff3",
+      "path": "drafts/posts.md",
+      "type": "applied-draft",
+      "intent": "post",
+      "platform": null,
+      "sourceRun": "2026-05-25T21-03-53-133Z",
+      "sourceAgent": "social-team-orchestrator",
+      "appliedTarget": "drafts/posts.md",
+      "status": "needs_human_review",
+      "requiredHumanApproval": true,
+      "automaticPublishEnabled": false,
+      "approval": null,
+      "metadata": {
+        "request": "Create a short approval-gated Instagram draft for a test event.",
+        "sourceArtifact": "team-runs/2026-05-25T21-03-53-133Z/final-artifact.md",
+        "backup": "review/orchestrator-backups/2026-05-25T21-03-53-133Z/drafts__posts.md"
+      },
+      "createdAt": "2026-05-25T21:03:53.188Z",
+      "updatedAt": "2026-05-25T21:03:53.188Z"
+    },
+    {
+      "id": "0905612591a79ddb",
+      "path": "team-runs/2026-05-25T23-19-24-058Z/final-artifact.md",
+      "type": "adaptive-team-final-artifact",
+      "intent": "reel",
+      "platform": null,
+      "sourceRun": "2026-05-25T23-19-24-058Z",
+      "sourceAgent": "adaptive-orchestrator",
+      "appliedTarget": null,
+      "status": "needs_human_review",
+      "requiredHumanApproval": true,
+      "automaticPublishEnabled": false,
+      "approval": null,
+      "metadata": {
+        "request": "generami un reel Instagram per questo sistema AI locale: mostra come si creano contenuti professionali senza API a pagamento, tutto gira sul Mac con Ollama, zero abbonamenti, approvazione umana prima della pubblicazione. Tono: pratico, sharp, credibile. Nessun claim inventato.",
+        "target": "drafts/reels.md",
+        "contentPolicyStatus": "passed",
+        "agentSteps": {
+          "completed": 6,
+          "fallback": 0,
+          "total": 4,
+          "revisionLoops": 1
+        },
+        "workflowRun": "workflow-runs/2026-05-25T23-19-24-059Z",
+        "teamRun": "team-runs/2026-05-25T23-19-24-058Z",
+        "applied": true,
+        "blackboard": {
+          "totalEntries": 43,
+          "decisions": 18,
+          "risks": 14,
+          "blockers": 0,
+          "revisionRequests": 5
+        }
+      },
+      "createdAt": "2026-05-25T23:28:26.476Z",
+      "updatedAt": "2026-05-25T23:28:26.482Z"
+    },
+    {
+      "id": "27064295f7bafad0",
+      "path": "drafts/reels.md",
+      "type": "applied-draft",
+      "intent": "reel",
+      "platform": null,
+      "sourceRun": "2026-05-25T23-19-24-058Z",
+      "sourceAgent": "adaptive-orchestrator",
+      "appliedTarget": "drafts/reels.md",
+      "status": "needs_human_review",
+      "requiredHumanApproval": true,
+      "automaticPublishEnabled": false,
+      "approval": null,
+      "metadata": {
+        "request": "generami un reel Instagram per questo sistema AI locale: mostra come si creano contenuti professionali senza API a pagamento, tutto gira sul Mac con Ollama, zero abbonamenti, approvazione umana prima della pubblicazione. Tono: pratico, sharp, credibile. Nessun claim inventato.",
+        "sourceArtifact": "team-runs/2026-05-25T23-19-24-058Z/final-artifact.md",
+        "backup": "review/orchestrator-backups/2026-05-25T23-19-24-058Z/drafts__reels.md"
+      },
+      "createdAt": "2026-05-25T23:28:26.483Z",
+      "updatedAt": "2026-05-25T23:28:26.483Z"
+    },
+    {
+      "id": "031337b16e34ec35",
+      "path": "publishing/ready-2026-05-25/index.md",
+      "type": "publishing-package",
+      "intent": "publishing",
+      "platform": null,
+      "sourceRun": "ready-2026-05-25",
+      "sourceAgent": "ready-guide",
+      "appliedTarget": null,
+      "status": "needs_human_review",
+      "requiredHumanApproval": true,
+      "automaticPublishEnabled": false,
+      "approval": null,
+      "metadata": {
+        "platforms": [
+          "instagram",
+          "x",
+          "facebook",
+          "reddit",
+          "linkedin"
+        ],
+        "hasAdaptedCopy": [],
+        "outputDir": "publishing/ready-2026-05-25"
+      },
+      "createdAt": "2026-05-25T23:57:05.049Z",
+      "updatedAt": "2026-05-25T23:57:05.049Z"
+    }
+  ]
+}

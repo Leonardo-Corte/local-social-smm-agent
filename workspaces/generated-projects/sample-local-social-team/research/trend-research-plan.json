@@ -1,0 +1,992 @@
+{
+  "generatedAt": "2026-05-22T19:49:47.190Z",
+  "projectName": "Sample Local Social Team",
+  "niche": "local-first AI tools for creators and small businesses",
+  "targetAudience": "solo creators, small agencies, and founders who want professional social content without recurring SaaS costs",
+  "researchMode": "planned-local-first",
+  "sourceSummary": {
+    "lowRisk": [
+      "google-trends",
+      "user-provided-assets"
+    ],
+    "mediumRisk": [
+      "youtube-trending-and-search",
+      "reddit-public",
+      "tiktok-creative-center"
+    ],
+    "highRiskManualOnly": [
+      "instagram-public-review",
+      "facebook-public-review"
+    ]
+  },
+  "queries": [
+    "local-first AI tools for creators and small businesses trend",
+    "local-first AI tools for creators and small businesses content ideas",
+    "local-first AI tools for creators and small businesses problems objections",
+    "local-first AI tools for creators and small businesses instagram reel hooks",
+    "local-first AI tools for creators and small businesses facebook community questions",
+    "a local-first AI social media workspace factory trend",
+    "a local-first AI social media workspace factory content ideas",
+    "a local-first AI social media workspace factory problems objections",
+    "a local-first AI social media workspace factory instagram reel hooks",
+    "a local-first AI social media workspace factory facebook community questions",
+    "solo creators trend",
+    "solo creators content ideas",
+    "solo creators problems objections",
+    "solo creators instagram reel hooks",
+    "solo creators facebook community questions",
+    "small agencies trend",
+    "small agencies content ideas",
+    "small agencies problems objections",
+    "small agencies instagram reel hooks",
+    "small agencies facebook community questions",
+    "and founders who want professional social content without recurring SaaS costs trend",
+    "and founders who want professional social content without recurring SaaS costs content ideas",
+    "and founders who want professional social content without recurring SaaS costs problems objections",
+    "and founders who want professional social content without recurring SaaS costs instagram reel hooks",
+    "and founders who want professional social content without recurring SaaS costs facebook community questions",
+    "instagram trend",
+    "instagram content ideas",
+    "instagram problems objections",
+    "instagram instagram reel hooks",
+    "instagram facebook community questions"
+  ],
+  "tasks": [
+    {
+      "id": "research-task-01",
+      "query": "local-first AI tools for creators and small businesses trend",
+      "objective": "Find audience pain language and objections.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=local-first%20AI%20tools%20for%20creators%20and%20small%20businesses%20trend",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=local-first%20AI%20tools%20for%20creators%20and%20small%20businesses%20trend",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=local-first%20AI%20tools%20for%20creators%20and%20small%20businesses%20trend",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-02",
+      "query": "local-first AI tools for creators and small businesses content ideas",
+      "objective": "Find format, hook, and creative patterns.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=local-first%20AI%20tools%20for%20creators%20and%20small%20businesses%20content%20ideas",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=local-first%20AI%20tools%20for%20creators%20and%20small%20businesses%20content%20ideas",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=local-first%20AI%20tools%20for%20creators%20and%20small%20businesses%20content%20ideas",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-03",
+      "query": "local-first AI tools for creators and small businesses problems objections",
+      "objective": "Find content gaps and positioning opportunities.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=local-first%20AI%20tools%20for%20creators%20and%20small%20businesses%20problems%20objections",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=local-first%20AI%20tools%20for%20creators%20and%20small%20businesses%20problems%20objections",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=local-first%20AI%20tools%20for%20creators%20and%20small%20businesses%20problems%20objections",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-04",
+      "query": "local-first AI tools for creators and small businesses instagram reel hooks",
+      "objective": "Find audience pain language and objections.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=local-first%20AI%20tools%20for%20creators%20and%20small%20businesses%20instagram%20reel%20hooks",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=local-first%20AI%20tools%20for%20creators%20and%20small%20businesses%20instagram%20reel%20hooks",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=local-first%20AI%20tools%20for%20creators%20and%20small%20businesses%20instagram%20reel%20hooks",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-05",
+      "query": "local-first AI tools for creators and small businesses facebook community questions",
+      "objective": "Find format, hook, and creative patterns.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=local-first%20AI%20tools%20for%20creators%20and%20small%20businesses%20facebook%20community%20questions",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=local-first%20AI%20tools%20for%20creators%20and%20small%20businesses%20facebook%20community%20questions",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=local-first%20AI%20tools%20for%20creators%20and%20small%20businesses%20facebook%20community%20questions",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-06",
+      "query": "a local-first AI social media workspace factory trend",
+      "objective": "Find content gaps and positioning opportunities.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=a%20local-first%20AI%20social%20media%20workspace%20factory%20trend",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=a%20local-first%20AI%20social%20media%20workspace%20factory%20trend",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=a%20local-first%20AI%20social%20media%20workspace%20factory%20trend",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-07",
+      "query": "a local-first AI social media workspace factory content ideas",
+      "objective": "Find audience pain language and objections.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=a%20local-first%20AI%20social%20media%20workspace%20factory%20content%20ideas",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=a%20local-first%20AI%20social%20media%20workspace%20factory%20content%20ideas",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=a%20local-first%20AI%20social%20media%20workspace%20factory%20content%20ideas",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-08",
+      "query": "a local-first AI social media workspace factory problems objections",
+      "objective": "Find format, hook, and creative patterns.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=a%20local-first%20AI%20social%20media%20workspace%20factory%20problems%20objections",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=a%20local-first%20AI%20social%20media%20workspace%20factory%20problems%20objections",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=a%20local-first%20AI%20social%20media%20workspace%20factory%20problems%20objections",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-09",
+      "query": "a local-first AI social media workspace factory instagram reel hooks",
+      "objective": "Find content gaps and positioning opportunities.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=a%20local-first%20AI%20social%20media%20workspace%20factory%20instagram%20reel%20hooks",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=a%20local-first%20AI%20social%20media%20workspace%20factory%20instagram%20reel%20hooks",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=a%20local-first%20AI%20social%20media%20workspace%20factory%20instagram%20reel%20hooks",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-10",
+      "query": "a local-first AI social media workspace factory facebook community questions",
+      "objective": "Find audience pain language and objections.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=a%20local-first%20AI%20social%20media%20workspace%20factory%20facebook%20community%20questions",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=a%20local-first%20AI%20social%20media%20workspace%20factory%20facebook%20community%20questions",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=a%20local-first%20AI%20social%20media%20workspace%20factory%20facebook%20community%20questions",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-11",
+      "query": "solo creators trend",
+      "objective": "Find format, hook, and creative patterns.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=solo%20creators%20trend",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=solo%20creators%20trend",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=solo%20creators%20trend",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-12",
+      "query": "solo creators content ideas",
+      "objective": "Find content gaps and positioning opportunities.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=solo%20creators%20content%20ideas",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=solo%20creators%20content%20ideas",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=solo%20creators%20content%20ideas",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-13",
+      "query": "solo creators problems objections",
+      "objective": "Find audience pain language and objections.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=solo%20creators%20problems%20objections",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=solo%20creators%20problems%20objections",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=solo%20creators%20problems%20objections",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-14",
+      "query": "solo creators instagram reel hooks",
+      "objective": "Find format, hook, and creative patterns.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=solo%20creators%20instagram%20reel%20hooks",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=solo%20creators%20instagram%20reel%20hooks",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=solo%20creators%20instagram%20reel%20hooks",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-15",
+      "query": "solo creators facebook community questions",
+      "objective": "Find content gaps and positioning opportunities.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=solo%20creators%20facebook%20community%20questions",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=solo%20creators%20facebook%20community%20questions",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=solo%20creators%20facebook%20community%20questions",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-16",
+      "query": "small agencies trend",
+      "objective": "Find audience pain language and objections.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=small%20agencies%20trend",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=small%20agencies%20trend",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=small%20agencies%20trend",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-17",
+      "query": "small agencies content ideas",
+      "objective": "Find format, hook, and creative patterns.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=small%20agencies%20content%20ideas",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=small%20agencies%20content%20ideas",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=small%20agencies%20content%20ideas",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-18",
+      "query": "small agencies problems objections",
+      "objective": "Find content gaps and positioning opportunities.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=small%20agencies%20problems%20objections",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=small%20agencies%20problems%20objections",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=small%20agencies%20problems%20objections",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-19",
+      "query": "small agencies instagram reel hooks",
+      "objective": "Find audience pain language and objections.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=small%20agencies%20instagram%20reel%20hooks",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=small%20agencies%20instagram%20reel%20hooks",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=small%20agencies%20instagram%20reel%20hooks",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-20",
+      "query": "small agencies facebook community questions",
+      "objective": "Find format, hook, and creative patterns.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=small%20agencies%20facebook%20community%20questions",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=small%20agencies%20facebook%20community%20questions",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=small%20agencies%20facebook%20community%20questions",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-21",
+      "query": "and founders who want professional social content without recurring SaaS costs trend",
+      "objective": "Find content gaps and positioning opportunities.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=and%20founders%20who%20want%20professional%20social%20content%20without%20recurring%20SaaS%20costs%20trend",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=and%20founders%20who%20want%20professional%20social%20content%20without%20recurring%20SaaS%20costs%20trend",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=and%20founders%20who%20want%20professional%20social%20content%20without%20recurring%20SaaS%20costs%20trend",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-22",
+      "query": "and founders who want professional social content without recurring SaaS costs content ideas",
+      "objective": "Find audience pain language and objections.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=and%20founders%20who%20want%20professional%20social%20content%20without%20recurring%20SaaS%20costs%20content%20ideas",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=and%20founders%20who%20want%20professional%20social%20content%20without%20recurring%20SaaS%20costs%20content%20ideas",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=and%20founders%20who%20want%20professional%20social%20content%20without%20recurring%20SaaS%20costs%20content%20ideas",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-23",
+      "query": "and founders who want professional social content without recurring SaaS costs problems objections",
+      "objective": "Find format, hook, and creative patterns.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=and%20founders%20who%20want%20professional%20social%20content%20without%20recurring%20SaaS%20costs%20problems%20objections",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=and%20founders%20who%20want%20professional%20social%20content%20without%20recurring%20SaaS%20costs%20problems%20objections",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=and%20founders%20who%20want%20professional%20social%20content%20without%20recurring%20SaaS%20costs%20problems%20objections",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-24",
+      "query": "and founders who want professional social content without recurring SaaS costs instagram reel hooks",
+      "objective": "Find content gaps and positioning opportunities.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=and%20founders%20who%20want%20professional%20social%20content%20without%20recurring%20SaaS%20costs%20instagram%20reel%20hooks",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=and%20founders%20who%20want%20professional%20social%20content%20without%20recurring%20SaaS%20costs%20instagram%20reel%20hooks",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=and%20founders%20who%20want%20professional%20social%20content%20without%20recurring%20SaaS%20costs%20instagram%20reel%20hooks",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-25",
+      "query": "and founders who want professional social content without recurring SaaS costs facebook community questions",
+      "objective": "Find audience pain language and objections.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=and%20founders%20who%20want%20professional%20social%20content%20without%20recurring%20SaaS%20costs%20facebook%20community%20questions",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=and%20founders%20who%20want%20professional%20social%20content%20without%20recurring%20SaaS%20costs%20facebook%20community%20questions",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=and%20founders%20who%20want%20professional%20social%20content%20without%20recurring%20SaaS%20costs%20facebook%20community%20questions",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-26",
+      "query": "instagram trend",
+      "objective": "Find format, hook, and creative patterns.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=instagram%20trend",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=instagram%20trend",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=instagram%20trend",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-27",
+      "query": "instagram content ideas",
+      "objective": "Find content gaps and positioning opportunities.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=instagram%20content%20ideas",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=instagram%20content%20ideas",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=instagram%20content%20ideas",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-28",
+      "query": "instagram problems objections",
+      "objective": "Find audience pain language and objections.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=instagram%20problems%20objections",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=instagram%20problems%20objections",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=instagram%20problems%20objections",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-29",
+      "query": "instagram instagram reel hooks",
+      "objective": "Find format, hook, and creative patterns.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=instagram%20instagram%20reel%20hooks",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=instagram%20instagram%20reel%20hooks",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=instagram%20instagram%20reel%20hooks",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-30",
+      "query": "instagram facebook community questions",
+      "objective": "Find content gaps and positioning opportunities.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=instagram%20facebook%20community%20questions",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=instagram%20facebook%20community%20questions",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=instagram%20facebook%20community%20questions",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    }
+  ],
+  "guardrails": [
+    "Cite every source before using a claim.",
+    "Separate observed facts from strategic inference.",
+    "Do not automate restricted Meta surfaces.",
+    "Use high-risk sources only through human/manual review unless explicitly approved."
+  ]
+}

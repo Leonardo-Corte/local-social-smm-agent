@@ -1,0 +1,10 @@
+{
+  "steps": [],
+  "artifacts": [],
+  "warnings": [],
+  "completedAt": "2026-05-25T23:56:44.522Z",
+  "workspace": "sample-local-social-team",
+  "type": "reel",
+  "model": "qwen2.5:14b",
+  "dryRun": true
+}

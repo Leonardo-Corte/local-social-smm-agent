@@ -1,0 +1,9 @@
+{
+  "index": 2,
+  "step": "copy",
+  "agentId": "copywriter",
+  "status": "failed",
+  "error": "This operation was aborted",
+  "handoff": "Agent step failed: This operation was aborted",
+  "outputPreview": "Agent step failed: This operation was aborted\n"
+}

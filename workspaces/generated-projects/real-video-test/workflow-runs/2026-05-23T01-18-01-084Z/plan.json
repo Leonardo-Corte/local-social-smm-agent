@@ -1,0 +1,59 @@
+{
+  "version": "0.1.0",
+  "workspace": "real-video-test",
+  "runId": "2026-05-23T01-18-01-084Z",
+  "mode": "local-model-execution",
+  "steps": [
+    {
+      "id": "copy",
+      "agentId": "copywriter",
+      "task": "Review only drafts/posts.md. Improve clarity, specificity, proof-awareness, and CTA quality without inventing offers, free trials, signups, discounts, testimonials, or claims not present in the brief. Propose a complete replacement only for drafts/posts.md. Do not include carousel or reel content in the Proposed Artifact.",
+      "inputs": [
+        "calendar/30-day-calendar.md",
+        "drafts/posts.md",
+        "assets/analysis/video-asset-report.md"
+      ]
+    },
+    {
+      "id": "video",
+      "agentId": "reel-shorts-producer",
+      "task": "Review reel scripts for first-three-second strength, visual beats, editability, and missing assets.",
+      "inputs": [
+        "calendar/30-day-calendar.md",
+        "drafts/reels.md",
+        "assets/analysis/video-asset-report.md"
+      ]
+    },
+    {
+      "id": "visuals",
+      "agentId": "visual-director",
+      "task": "Review visual briefs against the local model route. Produce practical image prompt and ComfyUI readiness improvements.",
+      "inputs": [
+        "model-routing-report.md",
+        "creative/visual-briefs.md",
+        "calendar/30-day-calendar.md",
+        "assets/analysis/video-asset-report.md"
+      ]
+    },
+    {
+      "id": "qa",
+      "agentId": "critic-qa",
+      "task": "Run a final adversarial QA pass. Decide what is not good enough for human approval and convert it into regeneration tasks.",
+      "inputs": [
+        "review/workspace-quality-rubric.json",
+        "simulation/persona-report.md",
+        "review/qa-recap.md",
+        "drafts/posts.md",
+        "assets/analysis/video-asset-report.md"
+      ]
+    }
+  ],
+  "selectedStepIds": [
+    "copy",
+    "video",
+    "visuals",
+    "qa"
+  ],
+  "maxSteps": null,
+  "timeoutMs": 180000
+}

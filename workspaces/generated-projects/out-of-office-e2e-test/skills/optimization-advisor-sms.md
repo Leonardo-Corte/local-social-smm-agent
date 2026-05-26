@@ -1,0 +1,25 @@
+# optimization-advisor-sms
+
+Source: blacktwist/social-media-skills
+License: MIT
+Version: 1.0.0
+Category: analysis
+Integration status: adapted-taxonomy
+
+## Description
+When the user wants concrete recommendations on how to improve their social media performance. Also use when the user mentions 'what should I do next,' 'how do I improve,' 'optimize my social media,' 'recommendations,' 'suggestions,' 'next steps,' 'what's my biggest opportunity,' or 'help me grow.' Synthesizes insights from performance, audience, and pattern analysis into prioritized actions. For raw analytics, see performance-analyzer-sms. For growth tracking, see audience-growth-tracker-sms. For pattern detection, see content-pattern-analyzer-sms.
+
+## Assigned Agents
+- analyst
+- critic-qa
+
+## Expected Outputs
+- optimization-tasks.md
+
+## Use Policy
+Use taxonomy and behavior patterns; do not require BlackTwist or any paid SaaS.
+
+## Workspace Adaptation Notes
+- Use the generated project brief and workspace memory as the source of truth.
+- Keep outputs local-first and human-approved.
+- Do not assume BlackTwist, SaaS scheduling, or external publishing APIs are available.

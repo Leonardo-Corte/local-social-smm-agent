@@ -1,0 +1,35 @@
+{
+  "generatedAt": "2026-05-23T01:16:21.623Z",
+  "status": "brief-only",
+  "backend": {
+    "id": "comfyui",
+    "label": "ComfyUI",
+    "available": false,
+    "command": null,
+    "status": null
+  },
+  "requiredHumanApproval": true,
+  "automaticPublishEnabled": false,
+  "workflowNotes": [
+    "Use local image generation only after exact model/workflow license checks.",
+    "Do not generate or publish platform assets without human approval.",
+    "Prefer text-light layouts unless the selected image model is proven reliable with text.",
+    "Keep brand consistency and avoid misleading claims in generated visuals."
+  ],
+  "prompts": [
+    {
+      "id": "carousel-cover",
+      "purpose": "IG carousel cover",
+      "prompt": "clean professional social media carousel cover, local-first AI content workspace, visible workflow board, crisp typography space, brand-safe composition"
+    },
+    {
+      "id": "workflow-screenshot-style",
+      "purpose": "educational post visual",
+      "prompt": "editorial product screenshot style, content calendar, agent roles, review checklist, minimal UI, trustworthy and practical"
+    }
+  ],
+  "sourceContext": {
+    "visualBriefs": "# Visual Briefs\n\n## Brief 1\nStyle: clean professional interface, local-first AI workspace, visible calendar and agent roles.\nModel route: ComfyUI with Qwen-Image or lighter fallback depending on RAM\nText guidance: use Qwen-Image candidate for text-heavy graphics when available.\n",
+    "calendarExcerpt": "# 30-Day Content Calendar\n\nGoal: turn one real event video into a repeatable Instagram/Facebook content system with human-approved captions, reel angles, and follow-up posts\n\n| Day | Pillar | Format | Topic | Status |\n| --- | --- | --- | --- | --- |\n| 1 | Problem awareness | Reel | premium hospitality events, cocktail bars, and social dining experiences angle 1 | Draft then human review |\n| 2 | Proof/credibility | Carousel | premium hospitality events, cocktail bars, and social dining experiences angle 2 | Draft then human review |\n| 3 | Education | Static post | premium hospitality events, cocktail bars, and social dining experiences angle 3 | Draft then human review |\n| 4 | Behind the scenes | Story sequence | premium hospitality events, cocktail bars, and social dining experiences angle 4 | Draft then human review |\n| 5 | Offer/CTA | Facebook post | premium hospitality events, cocktail bars, and social dining experiences angle 5 | Draft then human review |\n| 6 | Problem awareness | Reel | premium hospitality events, cocktail bars, and social dining experiences angle 6 | Draft then human review |\n| 7 | Proof/credibility | Carousel | premium hospitality events, cocktail bars, and social dining experiences angle 7 | Draft then human review |\n| 8 | Education | Static post | premium hospitality events, cocktail bars, and social dining experiences angle 8 | Draft then human review |\n| 9 | Behind the scenes | Story sequence | premium hospitality events, cocktail bars, and social dining experiences angle 9 | Draft then human review |\n| 10 | Offer/CTA | Facebook post | premium hospitality events, cocktail bars, and social dining experiences angle 10 | Draft then human review |\n| 11 | Problem awareness | Reel | premium hospitality events, cocktail bars, and social dining experiences angle 11 | Draft then human review |\n| 12 | Proof/credibility | Carousel | premium hospitality events, cocktail bars, and social dining experiences angle 12 | Draft then human review |"
+  }
+}

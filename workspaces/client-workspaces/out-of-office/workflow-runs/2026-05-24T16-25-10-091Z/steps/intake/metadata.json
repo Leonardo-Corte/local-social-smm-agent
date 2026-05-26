@@ -1,0 +1,15 @@
+{
+  "id": "intake",
+  "agentId": "intake-strategist",
+  "status": "saved_prompt_packet",
+  "backend": "prompt-packet",
+  "model": "qwen2.5:14b",
+  "inputs": [
+    "project-brief.json",
+    "business/business.md",
+    "operations/agent-operating-contracts.md",
+    "memory/preferences.json",
+    "memory/user-feedback.md"
+  ],
+  "generatedAt": "2026-05-24T16:25:10.132Z"
+}

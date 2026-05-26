@@ -1,0 +1,12 @@
+{
+  "id": "video",
+  "agentId": "reel-shorts-producer",
+  "status": "saved_prompt_packet",
+  "backend": "prompt-packet",
+  "model": "qwen2.5:14b",
+  "inputs": [
+    "calendar/30-day-calendar.md",
+    "drafts/reels.md"
+  ],
+  "generatedAt": "2026-05-23T08:09:15.317Z"
+}

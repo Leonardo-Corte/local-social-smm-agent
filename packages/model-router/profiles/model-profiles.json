@@ -1,0 +1,46 @@
+{
+  "version": "0.1.0",
+  "defaultPolicy": "auto-detect hardware and choose the strongest local tier that can run reliably",
+  "profiles": [
+    {
+      "id": "apple-silicon-pro",
+      "label": "Apple Silicon Pro/Max",
+      "detect": ["darwin", "arm64"],
+      "backends": ["mlx", "ollama", "llama.cpp", "comfyui"],
+      "textModelTier": "quantized 14B-32B reasoning/copy models where memory allows",
+      "imageModelTier": "ComfyUI with Qwen-Image or lighter fallback depending on RAM",
+      "parallelism": "moderate",
+      "notes": "First-class target for MacBook Pro M3 Pro class machines."
+    },
+    {
+      "id": "nvidia-strong",
+      "label": "NVIDIA GPU 16GB+ VRAM",
+      "detect": ["linux-or-windows", "nvidia"],
+      "backends": ["vllm", "ollama", "llama.cpp", "comfyui"],
+      "textModelTier": "larger dense or MoE local models depending on VRAM",
+      "imageModelTier": "ComfyUI high-quality workflows",
+      "parallelism": "high",
+      "notes": "Best target for concurrent agents and image generation."
+    },
+    {
+      "id": "nvidia-medium",
+      "label": "NVIDIA GPU 8GB-12GB VRAM",
+      "detect": ["linux-or-windows", "nvidia"],
+      "backends": ["ollama", "llama.cpp", "comfyui"],
+      "textModelTier": "quantized 7B-14B models",
+      "imageModelTier": "SDXL/Qwen/FLUX fallback workflows after license and memory checks",
+      "parallelism": "low-moderate",
+      "notes": "Batch generation is preferred."
+    },
+    {
+      "id": "cpu-weak",
+      "label": "CPU or weak GPU",
+      "detect": ["fallback"],
+      "backends": ["ollama", "llama.cpp"],
+      "textModelTier": "small local instruct models with slower batch workflows",
+      "imageModelTier": "manual visual briefs or external optional local machine",
+      "parallelism": "low",
+      "notes": "Still no required paid APIs, but output quality/speed is limited."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "version": "0.1.0",
+  "index": 1,
+  "createdAt": "2026-05-25T20:54:27.446Z",
+  "stepId": "intake",
+  "agentId": "intake-strategist",
+  "status": "saved_prompt_packet",
+  "backend": "prompt-packet",
+  "model": "qwen2.5-coder:14b",
+  "target": "project-brief.json",
+  "handoff": "Prompt packet saved. Run with --execute to use a detected local Ollama model.\n",
+  "outputPreview": "Prompt packet saved. Run with --execute to use a detected local Ollama model.\n"
+}

@@ -1,0 +1,61 @@
+{
+  "version": "0.1.0",
+  "workspace": "sample-local-social-team",
+  "runId": "2026-05-25T23-19-24-059Z",
+  "generatedAt": "2026-05-25T23:19:24.075Z",
+  "mode": "dry-run-prompt-packets",
+  "status": "needs-human-review",
+  "automaticPublishEnabled": false,
+  "requiredHumanApproval": true,
+  "steps": [
+    {
+      "id": "strategy",
+      "agentId": "brand-strategist",
+      "status": "saved_prompt_packet",
+      "backend": "prompt-packet",
+      "model": "qwen2.5:14b",
+      "inputs": [
+        "project-brief.json",
+        "operations/current-request.md",
+        "operations/agent-operating-contracts.md",
+        "research/trend-report.md",
+        "strategy/content-pillars.md"
+      ],
+      "generatedAt": "2026-05-25T23:19:24.072Z"
+    },
+    {
+      "id": "video",
+      "agentId": "reel-shorts-producer",
+      "status": "saved_prompt_packet",
+      "backend": "prompt-packet",
+      "model": "qwen2.5:14b",
+      "inputs": [
+        "operations/current-request.md",
+        "calendar/30-day-calendar.md",
+        "drafts/reels.md"
+      ],
+      "generatedAt": "2026-05-25T23:19:24.073Z"
+    },
+    {
+      "id": "qa",
+      "agentId": "critic-qa",
+      "status": "saved_prompt_packet",
+      "backend": "prompt-packet",
+      "model": "qwen2.5:14b",
+      "inputs": [
+        "operations/current-request.md",
+        "review/workspace-quality-rubric.json",
+        "simulation/persona-report.md",
+        "review/qa-recap.md",
+        "drafts/posts.md"
+      ],
+      "generatedAt": "2026-05-25T23:19:24.075Z"
+    }
+  ],
+  "humanReviewRequired": [
+    "Review generated step outputs and approve only specific artifacts.",
+    "Run regeneration tasks before treating drafts as client-ready.",
+    "Use official/manual publishing paths only after approval."
+  ],
+  "regenerationTaskCount": 3
+}

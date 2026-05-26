@@ -1,0 +1,102 @@
+{
+  "tasks": [
+    {
+      "id": "workflow-prompt-packet-intake-project-brief-json-execute-intake-strategist-step-with-a-local-model-and-review-the-resulting-output-before-ch",
+      "createdAt": "2026-05-23T20:18:29.052Z",
+      "source": "workflow-runner",
+      "workflowRun": "workflow-runs/2026-05-23T20-18-29-023Z",
+      "stepId": "intake",
+      "agentId": "intake-strategist",
+      "artifact": "workflow-runs/2026-05-23T20-18-29-023Z/steps/intake/prompt.md",
+      "feedback": "Execute intake-strategist step with a local model and review the resulting output before changing project-brief.json.",
+      "target": "project-brief.json",
+      "status": "pending_model_execution",
+      "priority": 3,
+      "action": "execute_agent_step"
+    },
+    {
+      "id": "workflow-prompt-packet-research-research-trend-report-md-execute-market-researcher-step-with-a-local-model-and-review-the-resulting-output-b",
+      "createdAt": "2026-05-23T20:18:29.052Z",
+      "source": "workflow-runner",
+      "workflowRun": "workflow-runs/2026-05-23T20-18-29-023Z",
+      "stepId": "research",
+      "agentId": "market-researcher",
+      "artifact": "workflow-runs/2026-05-23T20-18-29-023Z/steps/research/prompt.md",
+      "feedback": "Execute market-researcher step with a local model and review the resulting output before changing research/trend-report.md.",
+      "target": "research/trend-report.md",
+      "status": "pending_model_execution",
+      "priority": 3,
+      "action": "execute_agent_step"
+    },
+    {
+      "id": "workflow-prompt-packet-strategy-strategy-content-pillars-md-execute-brand-strategist-step-with-a-local-model-and-review-the-resulting-output",
+      "createdAt": "2026-05-23T20:18:29.052Z",
+      "source": "workflow-runner",
+      "workflowRun": "workflow-runs/2026-05-23T20-18-29-023Z",
+      "stepId": "strategy",
+      "agentId": "brand-strategist",
+      "artifact": "workflow-runs/2026-05-23T20-18-29-023Z/steps/strategy/prompt.md",
+      "feedback": "Execute brand-strategist step with a local model and review the resulting output before changing strategy/content-pillars.md.",
+      "target": "strategy/content-pillars.md",
+      "status": "pending_model_execution",
+      "priority": 3,
+      "action": "execute_agent_step"
+    },
+    {
+      "id": "workflow-prompt-packet-copy-drafts-posts-md-execute-copywriter-step-with-a-local-model-and-review-the-resulting-output-before-changing-draft",
+      "createdAt": "2026-05-23T20:18:29.052Z",
+      "source": "workflow-runner",
+      "workflowRun": "workflow-runs/2026-05-23T20-18-29-023Z",
+      "stepId": "copy",
+      "agentId": "copywriter",
+      "artifact": "workflow-runs/2026-05-23T20-18-29-023Z/steps/copy/prompt.md",
+      "feedback": "Execute copywriter step with a local model and review the resulting output before changing drafts/posts.md.",
+      "target": "drafts/posts.md",
+      "status": "pending_model_execution",
+      "priority": 3,
+      "action": "execute_agent_step"
+    },
+    {
+      "id": "workflow-prompt-packet-video-drafts-reels-md-execute-reel-shorts-producer-step-with-a-local-model-and-review-the-resulting-output-before-cha",
+      "createdAt": "2026-05-23T20:18:29.052Z",
+      "source": "workflow-runner",
+      "workflowRun": "workflow-runs/2026-05-23T20-18-29-023Z",
+      "stepId": "video",
+      "agentId": "reel-shorts-producer",
+      "artifact": "workflow-runs/2026-05-23T20-18-29-023Z/steps/video/prompt.md",
+      "feedback": "Execute reel-shorts-producer step with a local model and review the resulting output before changing drafts/reels.md.",
+      "target": "drafts/reels.md",
+      "status": "pending_model_execution",
+      "priority": 3,
+      "action": "execute_agent_step"
+    },
+    {
+      "id": "workflow-prompt-packet-persona-simulation-persona-report-md-execute-persona-simulator-step-with-a-local-model-and-review-the-resulting-outpu",
+      "createdAt": "2026-05-23T20:18:29.052Z",
+      "source": "workflow-runner",
+      "workflowRun": "workflow-runs/2026-05-23T20-18-29-023Z",
+      "stepId": "persona",
+      "agentId": "persona-simulator",
+      "artifact": "workflow-runs/2026-05-23T20-18-29-023Z/steps/persona/prompt.md",
+      "feedback": "Execute persona-simulator step with a local model and review the resulting output before changing simulation/persona-report.md.",
+      "target": "simulation/persona-report.md",
+      "status": "pending_model_execution",
+      "priority": 3,
+      "action": "execute_agent_step"
+    },
+    {
+      "id": "workflow-prompt-packet-qa-review-qa-recap-md-execute-critic-qa-step-with-a-local-model-and-review-the-resulting-output-before-changing-revie",
+      "createdAt": "2026-05-23T20:18:29.052Z",
+      "source": "workflow-runner",
+      "workflowRun": "workflow-runs/2026-05-23T20-18-29-023Z",
+      "stepId": "qa",
+      "agentId": "critic-qa",
+      "artifact": "workflow-runs/2026-05-23T20-18-29-023Z/steps/qa/prompt.md",
+      "feedback": "Execute critic-qa step with a local model and review the resulting output before changing review/qa-recap.md.",
+      "target": "review/qa-recap.md",
+      "status": "pending_model_execution",
+      "priority": 3,
+      "action": "execute_agent_step"
+    }
+  ]
+}

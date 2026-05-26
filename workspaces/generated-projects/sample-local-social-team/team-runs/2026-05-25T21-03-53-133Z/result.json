@@ -1,0 +1,22 @@
+{
+  "version": "0.1.0",
+  "runId": "2026-05-25T21-03-53-133Z",
+  "generatedAt": "2026-05-25T21:03:53.187Z",
+  "workspace": "sample-local-social-team",
+  "request": "Create a short approval-gated Instagram draft for a test event.",
+  "type": "post",
+  "target": "drafts/posts.md",
+  "model": "qwen2.5:14b",
+  "workflowRun": "workflow-runs/2026-05-25T21-03-53-134Z",
+  "teamRun": "team-runs/2026-05-25T21-03-53-133Z",
+  "status": "applied_needs_human_review",
+  "revisionAttempted": false,
+  "backup": "review/orchestrator-backups/2026-05-25T21-03-53-133Z/drafts__posts.md",
+  "requiredHumanApproval": true,
+  "automaticPublishEnabled": false,
+  "contentPolicy": {
+    "status": "passed",
+    "blockers": 0,
+    "warnings": 0
+  }
+}

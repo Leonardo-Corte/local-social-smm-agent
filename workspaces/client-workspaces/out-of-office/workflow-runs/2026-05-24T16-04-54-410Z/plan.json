@@ -1,0 +1,57 @@
+{
+  "version": "0.1.0",
+  "workspace": "out-of-office",
+  "runId": "2026-05-24T16-04-54-410Z",
+  "mode": "dry-run-prompt-packets",
+  "steps": [
+    {
+      "id": "intake",
+      "agentId": "intake-strategist",
+      "task": "Review the project brief and identify missing context, contradictions, and personalization tasks before content work starts.",
+      "inputs": [
+        "project-brief.json",
+        "business/business.md",
+        "memory/preferences.json",
+        "memory/user-feedback.md"
+      ]
+    },
+    {
+      "id": "research",
+      "agentId": "market-researcher",
+      "task": "Review the trend report and source registry. Produce research gaps, source-risk notes, and concrete trend-research tasks.",
+      "inputs": [
+        "project-brief.json",
+        "business/business.md",
+        "sources/source-registry.md",
+        "research/trend-report.md",
+        "research/live-trend-report.md",
+        "research/trend-items.json"
+      ]
+    },
+    {
+      "id": "strategy",
+      "agentId": "brand-strategist",
+      "task": "Turn the brief and research into sharper positioning, voice rules, and content-pillar improvements.",
+      "inputs": [
+        "project-brief.json",
+        "business/business.md",
+        "research/trend-report.md",
+        "research/live-trend-report.md",
+        "strategy/content-pillars.md"
+      ]
+    },
+    {
+      "id": "calendar",
+      "agentId": "content-planner",
+      "task": "Review the 30-day calendar for cadence, format variety, platform fit, and missing proof points.",
+      "inputs": [
+        "business/business.md",
+        "strategy/content-pillars.md",
+        "calendar/30-day-calendar.md"
+      ]
+    }
+  ],
+  "selectedStepIds": [],
+  "maxSteps": 4,
+  "timeoutMs": 180000
+}

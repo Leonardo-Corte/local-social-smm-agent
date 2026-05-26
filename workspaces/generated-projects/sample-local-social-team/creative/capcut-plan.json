@@ -1,0 +1,72 @@
+{
+  "version": "0.1.0",
+  "generatedAt": "2026-05-25T23:30:57.667Z",
+  "status": "needs_human_review",
+  "requiredHumanApproval": true,
+  "automaticPublishEnabled": false,
+  "adapter": "manual-capcut",
+  "source": {
+    "assetPath": "[bring your video file — run: npm run assets:ingest]",
+    "relativePath": "[video file required]",
+    "duration": 42,
+    "width": 1080,
+    "height": 1920,
+    "orientation": "vertical",
+    "note": "Duration estimated from overlay timings. Replace with real video via: npm run video:intel"
+  },
+  "timeline": {
+    "targetFormat": "vertical-9x16",
+    "trim": null,
+    "overlays": [
+      {
+        "at": 0,
+        "duration": 3.5,
+        "text": "Create pro content locally",
+        "position": "lower"
+      },
+      {
+        "at": 4,
+        "duration": 2.8,
+        "text": "Start with an idea",
+        "position": "lower"
+      },
+      {
+        "at": 10,
+        "duration": 3,
+        "text": "Script it up sharp",
+        "position": "lower"
+      },
+      {
+        "at": 20,
+        "duration": 3.5,
+        "text": "Edit locally publish",
+        "position": "lower"
+      },
+      {
+        "at": 34,
+        "duration": 3.5,
+        "text": "[CTA — approval required]",
+        "position": "lower"
+      }
+    ],
+    "subtitles": {
+      "status": "needs-capcut-auto-captions",
+      "source": "capcut-auto-captions/manual",
+      "transcriptPreview": ""
+    },
+    "sound": {
+      "keepOriginalAudio": false,
+      "musicVolume": 0.8,
+      "direction": "upbeat instrumental"
+    }
+  },
+  "agentBrief": {
+    "reelProducer": "Use overlay timings from the assembly plan. Template: gold-title",
+    "criticQa": "Block unverified claims. CTA requires link confirmation before export.",
+    "publishingOperator": "Do not export until registry approval exists."
+  },
+  "approvalBlockers": [
+    "Confirm CTA link before final export.",
+    "Verify all asset clearance and brand approval."
+  ]
+}

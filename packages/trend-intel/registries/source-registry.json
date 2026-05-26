@@ -1,0 +1,77 @@
+{
+  "version": "0.1.0",
+  "sources": [
+    {
+      "id": "google-trends",
+      "name": "Google Trends",
+      "risk": "low",
+      "method": "manual export or browser-assisted public research",
+      "allowedUse": "trend direction and topic discovery",
+      "refreshCadence": "weekly"
+    },
+    {
+      "id": "youtube-trending-and-search",
+      "name": "YouTube public search/trending",
+      "risk": "medium",
+      "method": "browser-assisted public research with rate limits",
+      "allowedUse": "format, hook, title, and topic benchmarking",
+      "refreshCadence": "weekly"
+    },
+    {
+      "id": "reddit-public",
+      "name": "Reddit public communities",
+      "risk": "medium",
+      "method": "public browsing, RSS where available, or official API if configured",
+      "allowedUse": "pain points, language mining, objections",
+      "refreshCadence": "weekly"
+    },
+    {
+      "id": "reddit-subreddit-rules",
+      "name": "Reddit subreddit rules manual review",
+      "risk": "medium",
+      "method": "human/manual review of subreddit rules before any draft is approved",
+      "allowedUse": "community fit, promotion limits, post-format constraints",
+      "refreshCadence": "per post"
+    },
+    {
+      "id": "x-public-search-manual",
+      "name": "X public search manual review",
+      "risk": "high",
+      "method": "human/manual public search review only; no login automation or account actions",
+      "allowedUse": "text hooks, timely topics, conversation style, thread formats",
+      "refreshCadence": "manual"
+    },
+    {
+      "id": "tiktok-creative-center",
+      "name": "TikTok Creative Center",
+      "risk": "medium",
+      "method": "manual/browser-assisted research",
+      "allowedUse": "creative inspiration and trend patterns",
+      "refreshCadence": "weekly"
+    },
+    {
+      "id": "instagram-public-review",
+      "name": "Instagram public manual review",
+      "risk": "high",
+      "method": "human/manual or explicitly approved browser review only",
+      "allowedUse": "competitor and format observation",
+      "refreshCadence": "manual"
+    },
+    {
+      "id": "facebook-public-review",
+      "name": "Facebook public manual review",
+      "risk": "high",
+      "method": "human/manual or explicitly approved browser review only",
+      "allowedUse": "page and group topic observation without automated collection",
+      "refreshCadence": "manual"
+    },
+    {
+      "id": "user-provided-assets",
+      "name": "User-provided documents and exports",
+      "risk": "low",
+      "method": "local file import",
+      "allowedUse": "brand context, audience research, performance review",
+      "refreshCadence": "on upload"
+    }
+  ]
+}

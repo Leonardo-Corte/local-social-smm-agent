@@ -1,0 +1,91 @@
+[
+  {
+    "name": "TinyTroupe",
+    "path": "reference/inspiration-only/TinyTroupe",
+    "exists": true,
+    "licenseFile": "LICENSE",
+    "readmeFile": "README.md",
+    "packageFile": null,
+    "topLevel": [
+      "LICENSE",
+      "README.md"
+    ],
+    "retrievalMode": "targeted-api-reference",
+    "licenseHint": "MIT",
+    "recommendedUse": "reference until manual code audit is complete"
+  },
+  {
+    "name": "sdialog",
+    "path": "reference/inspiration-only/sdialog",
+    "exists": true,
+    "licenseFile": "LICENSE",
+    "readmeFile": "README.md",
+    "packageFile": null,
+    "topLevel": [
+      "LICENSE",
+      "README.md"
+    ],
+    "retrievalMode": "targeted-api-reference",
+    "licenseHint": "MIT",
+    "recommendedUse": "reference until manual code audit is complete"
+  },
+  {
+    "name": "social-media-agent",
+    "path": "reference/inspiration-only/social-media-agent",
+    "exists": true,
+    "licenseFile": "LICENSE",
+    "readmeFile": "README.md",
+    "packageFile": "package.json",
+    "topLevel": [
+      ".codespellignore",
+      ".dockerignore",
+      ".editorconfig",
+      ".env.full.example",
+      ".env.quickstart.example",
+      ".eslintrc.cjs",
+      ".github",
+      ".gitignore",
+      ".vscode",
+      "FEATURES.md",
+      "LICENSE",
+      "README.md",
+      "jest.config.js",
+      "jest.setup.cjs",
+      "langgraph.json",
+      "memory-v2",
+      "package.json",
+      "pyproject.toml",
+      "scripts",
+      "slack-messaging",
+      "src",
+      "static",
+      "tsconfig.json",
+      "uv.lock",
+      "yarn.lock"
+    ],
+    "retrievalMode": "git-clone",
+    "licenseHint": "MIT",
+    "recommendedUse": "reference until manual code audit is complete"
+  },
+  {
+    "name": "social-media-skills",
+    "path": "reference/inspiration-only/social-media-skills",
+    "exists": true,
+    "licenseFile": "LICENSE",
+    "readmeFile": "README.md",
+    "packageFile": null,
+    "topLevel": [
+      ".claude-plugin",
+      ".gitignore",
+      "AGENTS.md",
+      "LICENSE",
+      "README.md",
+      "skills",
+      "tools",
+      "validate-skills.sh"
+    ],
+    "retrievalMode": "git-clone",
+    "licenseHint": "MIT",
+    "recommendedUse": "reference until manual code audit is complete"
+  }
+]

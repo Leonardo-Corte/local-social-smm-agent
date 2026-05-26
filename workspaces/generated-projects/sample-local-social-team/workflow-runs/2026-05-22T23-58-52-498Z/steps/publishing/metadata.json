@@ -1,0 +1,14 @@
+{
+  "id": "publishing",
+  "agentId": "publishing-operator",
+  "status": "completed",
+  "backend": "ollama",
+  "model": "qwen2.5:14b",
+  "inputs": [
+    "publishing/publishing-checklist.md",
+    "drafts/posts.md",
+    "drafts/carousels.md",
+    "drafts/reels.md"
+  ],
+  "generatedAt": "2026-05-23T00:11:22.793Z"
+}

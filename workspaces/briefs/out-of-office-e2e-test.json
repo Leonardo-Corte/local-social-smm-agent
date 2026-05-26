@@ -1,0 +1,29 @@
+{
+  "projectName": "Out Of Office E2E Test",
+  "niche": "premium after-work networking events for corporate professionals and ambitious people seeking real connections in New York City",
+  "targetAudience": "corporate professionals, founders, operators, creatives, consultants, finance and tech workers, and socially ambitious newcomers in New York who want high-quality networking without a stiff conference vibe",
+  "primaryGoal30Days": "generate high-retention reels, increase ticket sales, and grow Instagram/Facebook profile follows for upcoming Out Of Office events",
+  "offer": "fun, curated networking events in New York where interesting people meet through a social hospitality experience; sell event tickets and grow the community around the Out Of Office brand",
+  "tone": "social, polished, energetic, witty, aspirational but not fake",
+  "platforms": [
+    "instagram",
+    "facebook"
+  ],
+  "constraints": [
+    "human approval required before publishing",
+    "no automatic DM/comment/like/follow automation",
+    "do not invent attendance numbers or guest identities",
+    "keep the brand premium",
+    "social"
+  ],
+  "availableAssets": [
+    "photos",
+    "videos",
+    "website",
+    "Luma event pages",
+    "past event notes",
+    "competitor reference Post Office Roma"
+  ],
+  "approvalPolicy": "Leonardo Corte, Ludovico Margio, or Cristian Google must approve before publishing",
+  "createdAt": "2026-05-23T08:19:58.774Z"
+}

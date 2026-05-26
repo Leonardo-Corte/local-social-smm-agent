@@ -1,0 +1,8 @@
+{
+  "workspace": "out-of-office-e2e-test",
+  "factoryRoot": "/Users/corte/Documents/Codex/2026-05-22/fammi-un-deep-interwie-per-questo",
+  "generatedWorkspaceRoot": "/Users/corte/Documents/Codex/2026-05-22/fammi-un-deep-interwie-per-questo/workspaces/generated-projects/out-of-office-e2e-test",
+  "clientWorkspaceRoot": "/Users/corte/Documents/Codex/2026-05-22/fammi-un-deep-interwie-per-questo/workspaces/client-workspaces/out-of-office-e2e-test",
+  "chatCommand": "npm run workspace:chat out-of-office-e2e-test -- --model qwen2.5:14b",
+  "refreshCommand": "npm run workspace:bootstrap out-of-office-e2e-test"
+}

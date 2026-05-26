@@ -1,0 +1,1176 @@
+{
+  "generatedAt": "2026-05-24T19:41:18.609Z",
+  "projectName": "Out Of Office",
+  "niche": "allora la nichia è corporate people che vogliono connnetersi con altre perople in corporte o anceh in generle gente a cui piace fare networking tutte perosne solo a new york city",
+  "targetAudience": "tuute le perone corporate peoole, perosne a cui pioace fare netwokl di livello, i locali ci devono chiamere per fare gli venti nei loro locali anceh capito perche noi priu o meno portio 200 perosne di livello nel locale che fanno netwiking magiano e beevnono e espendono la voce ...",
+  "researchMode": "planned-local-first",
+  "sourceSummary": {
+    "lowRisk": [
+      "google-trends",
+      "user-provided-assets"
+    ],
+    "mediumRisk": [
+      "youtube-trending-and-search",
+      "reddit-public",
+      "reddit-subreddit-rules",
+      "tiktok-creative-center"
+    ],
+    "highRiskManualOnly": [
+      "x-public-search-manual",
+      "instagram-public-review",
+      "facebook-public-review"
+    ]
+  },
+  "queries": [
+    "NYC networking events trend",
+    "NYC networking events content ideas",
+    "NYC networking events problems objections",
+    "NYC networking events instagram reel hooks",
+    "NYC networking events facebook community questions",
+    "NYC networking events linkedin post angles",
+    "NYC networking events X thread hooks",
+    "NYC networking events Twitter conversation prompts",
+    "NYC networking events reddit questions objections",
+    "NYC networking events subreddit discussion angle",
+    "NYC corporate networking trend",
+    "NYC corporate networking content ideas",
+    "NYC corporate networking problems objections",
+    "NYC corporate networking instagram reel hooks",
+    "NYC corporate networking facebook community questions",
+    "NYC corporate networking linkedin post angles",
+    "NYC corporate networking X thread hooks",
+    "NYC corporate networking Twitter conversation prompts",
+    "NYC corporate networking reddit questions objections",
+    "NYC corporate networking subreddit discussion angle",
+    "NYC professional networking trend",
+    "NYC professional networking content ideas",
+    "NYC professional networking problems objections",
+    "NYC professional networking instagram reel hooks",
+    "NYC professional networking facebook community questions",
+    "NYC professional networking linkedin post angles",
+    "NYC professional networking X thread hooks",
+    "NYC professional networking Twitter conversation prompts",
+    "NYC professional networking reddit questions objections",
+    "NYC professional networking subreddit discussion angle"
+  ],
+  "tasks": [
+    {
+      "id": "research-task-01",
+      "query": "NYC networking events trend",
+      "objective": "Find audience pain language and objections.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "reddit-subreddit-rules",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=NYC%20networking%20events%20trend",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=NYC%20networking%20events%20trend",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=NYC%20networking%20events%20trend",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        },
+        {
+          "source": "x-public-search-manual",
+          "url": "https://x.com/search?q=NYC%20networking%20events%20trend&src=typed_query",
+          "action": "Open manually for text-first hooks, timely POVs, and conversation angles; do not automate login or account actions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-02",
+      "query": "NYC networking events content ideas",
+      "objective": "Find format, hook, and creative patterns.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "reddit-subreddit-rules",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=NYC%20networking%20events%20content%20ideas",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=NYC%20networking%20events%20content%20ideas",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=NYC%20networking%20events%20content%20ideas",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        },
+        {
+          "source": "x-public-search-manual",
+          "url": "https://x.com/search?q=NYC%20networking%20events%20content%20ideas&src=typed_query",
+          "action": "Open manually for text-first hooks, timely POVs, and conversation angles; do not automate login or account actions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-03",
+      "query": "NYC networking events problems objections",
+      "objective": "Find content gaps and positioning opportunities.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "reddit-subreddit-rules",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=NYC%20networking%20events%20problems%20objections",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=NYC%20networking%20events%20problems%20objections",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=NYC%20networking%20events%20problems%20objections",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        },
+        {
+          "source": "x-public-search-manual",
+          "url": "https://x.com/search?q=NYC%20networking%20events%20problems%20objections&src=typed_query",
+          "action": "Open manually for text-first hooks, timely POVs, and conversation angles; do not automate login or account actions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-04",
+      "query": "NYC networking events instagram reel hooks",
+      "objective": "Find audience pain language and objections.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "reddit-subreddit-rules",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=NYC%20networking%20events%20instagram%20reel%20hooks",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=NYC%20networking%20events%20instagram%20reel%20hooks",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=NYC%20networking%20events%20instagram%20reel%20hooks",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        },
+        {
+          "source": "x-public-search-manual",
+          "url": "https://x.com/search?q=NYC%20networking%20events%20instagram%20reel%20hooks&src=typed_query",
+          "action": "Open manually for text-first hooks, timely POVs, and conversation angles; do not automate login or account actions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-05",
+      "query": "NYC networking events facebook community questions",
+      "objective": "Find format, hook, and creative patterns.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "reddit-subreddit-rules",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=NYC%20networking%20events%20facebook%20community%20questions",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=NYC%20networking%20events%20facebook%20community%20questions",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=NYC%20networking%20events%20facebook%20community%20questions",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        },
+        {
+          "source": "x-public-search-manual",
+          "url": "https://x.com/search?q=NYC%20networking%20events%20facebook%20community%20questions&src=typed_query",
+          "action": "Open manually for text-first hooks, timely POVs, and conversation angles; do not automate login or account actions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-06",
+      "query": "NYC networking events linkedin post angles",
+      "objective": "Find content gaps and positioning opportunities.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "reddit-subreddit-rules",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=NYC%20networking%20events%20linkedin%20post%20angles",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=NYC%20networking%20events%20linkedin%20post%20angles",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=NYC%20networking%20events%20linkedin%20post%20angles",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        },
+        {
+          "source": "x-public-search-manual",
+          "url": "https://x.com/search?q=NYC%20networking%20events%20linkedin%20post%20angles&src=typed_query",
+          "action": "Open manually for text-first hooks, timely POVs, and conversation angles; do not automate login or account actions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-07",
+      "query": "NYC networking events X thread hooks",
+      "objective": "Find audience pain language and objections.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "reddit-subreddit-rules",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=NYC%20networking%20events%20X%20thread%20hooks",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=NYC%20networking%20events%20X%20thread%20hooks",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=NYC%20networking%20events%20X%20thread%20hooks",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        },
+        {
+          "source": "x-public-search-manual",
+          "url": "https://x.com/search?q=NYC%20networking%20events%20X%20thread%20hooks&src=typed_query",
+          "action": "Open manually for text-first hooks, timely POVs, and conversation angles; do not automate login or account actions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-08",
+      "query": "NYC networking events Twitter conversation prompts",
+      "objective": "Find format, hook, and creative patterns.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "reddit-subreddit-rules",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=NYC%20networking%20events%20Twitter%20conversation%20prompts",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=NYC%20networking%20events%20Twitter%20conversation%20prompts",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=NYC%20networking%20events%20Twitter%20conversation%20prompts",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        },
+        {
+          "source": "x-public-search-manual",
+          "url": "https://x.com/search?q=NYC%20networking%20events%20Twitter%20conversation%20prompts&src=typed_query",
+          "action": "Open manually for text-first hooks, timely POVs, and conversation angles; do not automate login or account actions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-09",
+      "query": "NYC networking events reddit questions objections",
+      "objective": "Find content gaps and positioning opportunities.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "reddit-subreddit-rules",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=NYC%20networking%20events%20reddit%20questions%20objections",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=NYC%20networking%20events%20reddit%20questions%20objections",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=NYC%20networking%20events%20reddit%20questions%20objections",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        },
+        {
+          "source": "x-public-search-manual",
+          "url": "https://x.com/search?q=NYC%20networking%20events%20reddit%20questions%20objections&src=typed_query",
+          "action": "Open manually for text-first hooks, timely POVs, and conversation angles; do not automate login or account actions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-10",
+      "query": "NYC networking events subreddit discussion angle",
+      "objective": "Find audience pain language and objections.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "reddit-subreddit-rules",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=NYC%20networking%20events%20subreddit%20discussion%20angle",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=NYC%20networking%20events%20subreddit%20discussion%20angle",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=NYC%20networking%20events%20subreddit%20discussion%20angle",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        },
+        {
+          "source": "x-public-search-manual",
+          "url": "https://x.com/search?q=NYC%20networking%20events%20subreddit%20discussion%20angle&src=typed_query",
+          "action": "Open manually for text-first hooks, timely POVs, and conversation angles; do not automate login or account actions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-11",
+      "query": "NYC corporate networking trend",
+      "objective": "Find format, hook, and creative patterns.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "reddit-subreddit-rules",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=NYC%20corporate%20networking%20trend",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=NYC%20corporate%20networking%20trend",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=NYC%20corporate%20networking%20trend",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        },
+        {
+          "source": "x-public-search-manual",
+          "url": "https://x.com/search?q=NYC%20corporate%20networking%20trend&src=typed_query",
+          "action": "Open manually for text-first hooks, timely POVs, and conversation angles; do not automate login or account actions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-12",
+      "query": "NYC corporate networking content ideas",
+      "objective": "Find content gaps and positioning opportunities.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "reddit-subreddit-rules",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=NYC%20corporate%20networking%20content%20ideas",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=NYC%20corporate%20networking%20content%20ideas",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=NYC%20corporate%20networking%20content%20ideas",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        },
+        {
+          "source": "x-public-search-manual",
+          "url": "https://x.com/search?q=NYC%20corporate%20networking%20content%20ideas&src=typed_query",
+          "action": "Open manually for text-first hooks, timely POVs, and conversation angles; do not automate login or account actions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-13",
+      "query": "NYC corporate networking problems objections",
+      "objective": "Find audience pain language and objections.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "reddit-subreddit-rules",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=NYC%20corporate%20networking%20problems%20objections",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=NYC%20corporate%20networking%20problems%20objections",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=NYC%20corporate%20networking%20problems%20objections",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        },
+        {
+          "source": "x-public-search-manual",
+          "url": "https://x.com/search?q=NYC%20corporate%20networking%20problems%20objections&src=typed_query",
+          "action": "Open manually for text-first hooks, timely POVs, and conversation angles; do not automate login or account actions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-14",
+      "query": "NYC corporate networking instagram reel hooks",
+      "objective": "Find format, hook, and creative patterns.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "reddit-subreddit-rules",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=NYC%20corporate%20networking%20instagram%20reel%20hooks",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=NYC%20corporate%20networking%20instagram%20reel%20hooks",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=NYC%20corporate%20networking%20instagram%20reel%20hooks",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        },
+        {
+          "source": "x-public-search-manual",
+          "url": "https://x.com/search?q=NYC%20corporate%20networking%20instagram%20reel%20hooks&src=typed_query",
+          "action": "Open manually for text-first hooks, timely POVs, and conversation angles; do not automate login or account actions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-15",
+      "query": "NYC corporate networking facebook community questions",
+      "objective": "Find content gaps and positioning opportunities.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "reddit-subreddit-rules",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=NYC%20corporate%20networking%20facebook%20community%20questions",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=NYC%20corporate%20networking%20facebook%20community%20questions",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=NYC%20corporate%20networking%20facebook%20community%20questions",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        },
+        {
+          "source": "x-public-search-manual",
+          "url": "https://x.com/search?q=NYC%20corporate%20networking%20facebook%20community%20questions&src=typed_query",
+          "action": "Open manually for text-first hooks, timely POVs, and conversation angles; do not automate login or account actions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-16",
+      "query": "NYC corporate networking linkedin post angles",
+      "objective": "Find audience pain language and objections.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "reddit-subreddit-rules",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=NYC%20corporate%20networking%20linkedin%20post%20angles",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=NYC%20corporate%20networking%20linkedin%20post%20angles",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=NYC%20corporate%20networking%20linkedin%20post%20angles",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        },
+        {
+          "source": "x-public-search-manual",
+          "url": "https://x.com/search?q=NYC%20corporate%20networking%20linkedin%20post%20angles&src=typed_query",
+          "action": "Open manually for text-first hooks, timely POVs, and conversation angles; do not automate login or account actions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-17",
+      "query": "NYC corporate networking X thread hooks",
+      "objective": "Find format, hook, and creative patterns.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "reddit-subreddit-rules",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=NYC%20corporate%20networking%20X%20thread%20hooks",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=NYC%20corporate%20networking%20X%20thread%20hooks",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=NYC%20corporate%20networking%20X%20thread%20hooks",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        },
+        {
+          "source": "x-public-search-manual",
+          "url": "https://x.com/search?q=NYC%20corporate%20networking%20X%20thread%20hooks&src=typed_query",
+          "action": "Open manually for text-first hooks, timely POVs, and conversation angles; do not automate login or account actions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-18",
+      "query": "NYC corporate networking Twitter conversation prompts",
+      "objective": "Find content gaps and positioning opportunities.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "reddit-subreddit-rules",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=NYC%20corporate%20networking%20Twitter%20conversation%20prompts",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=NYC%20corporate%20networking%20Twitter%20conversation%20prompts",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=NYC%20corporate%20networking%20Twitter%20conversation%20prompts",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        },
+        {
+          "source": "x-public-search-manual",
+          "url": "https://x.com/search?q=NYC%20corporate%20networking%20Twitter%20conversation%20prompts&src=typed_query",
+          "action": "Open manually for text-first hooks, timely POVs, and conversation angles; do not automate login or account actions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-19",
+      "query": "NYC corporate networking reddit questions objections",
+      "objective": "Find audience pain language and objections.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "reddit-subreddit-rules",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=NYC%20corporate%20networking%20reddit%20questions%20objections",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=NYC%20corporate%20networking%20reddit%20questions%20objections",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=NYC%20corporate%20networking%20reddit%20questions%20objections",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        },
+        {
+          "source": "x-public-search-manual",
+          "url": "https://x.com/search?q=NYC%20corporate%20networking%20reddit%20questions%20objections&src=typed_query",
+          "action": "Open manually for text-first hooks, timely POVs, and conversation angles; do not automate login or account actions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-20",
+      "query": "NYC corporate networking subreddit discussion angle",
+      "objective": "Find format, hook, and creative patterns.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "reddit-subreddit-rules",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=NYC%20corporate%20networking%20subreddit%20discussion%20angle",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=NYC%20corporate%20networking%20subreddit%20discussion%20angle",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=NYC%20corporate%20networking%20subreddit%20discussion%20angle",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        },
+        {
+          "source": "x-public-search-manual",
+          "url": "https://x.com/search?q=NYC%20corporate%20networking%20subreddit%20discussion%20angle&src=typed_query",
+          "action": "Open manually for text-first hooks, timely POVs, and conversation angles; do not automate login or account actions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-21",
+      "query": "NYC professional networking trend",
+      "objective": "Find content gaps and positioning opportunities.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "reddit-subreddit-rules",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=NYC%20professional%20networking%20trend",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=NYC%20professional%20networking%20trend",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=NYC%20professional%20networking%20trend",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        },
+        {
+          "source": "x-public-search-manual",
+          "url": "https://x.com/search?q=NYC%20professional%20networking%20trend&src=typed_query",
+          "action": "Open manually for text-first hooks, timely POVs, and conversation angles; do not automate login or account actions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-22",
+      "query": "NYC professional networking content ideas",
+      "objective": "Find audience pain language and objections.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "reddit-subreddit-rules",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=NYC%20professional%20networking%20content%20ideas",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=NYC%20professional%20networking%20content%20ideas",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=NYC%20professional%20networking%20content%20ideas",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        },
+        {
+          "source": "x-public-search-manual",
+          "url": "https://x.com/search?q=NYC%20professional%20networking%20content%20ideas&src=typed_query",
+          "action": "Open manually for text-first hooks, timely POVs, and conversation angles; do not automate login or account actions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-23",
+      "query": "NYC professional networking problems objections",
+      "objective": "Find format, hook, and creative patterns.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "reddit-subreddit-rules",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=NYC%20professional%20networking%20problems%20objections",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=NYC%20professional%20networking%20problems%20objections",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=NYC%20professional%20networking%20problems%20objections",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        },
+        {
+          "source": "x-public-search-manual",
+          "url": "https://x.com/search?q=NYC%20professional%20networking%20problems%20objections&src=typed_query",
+          "action": "Open manually for text-first hooks, timely POVs, and conversation angles; do not automate login or account actions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-24",
+      "query": "NYC professional networking instagram reel hooks",
+      "objective": "Find content gaps and positioning opportunities.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "reddit-subreddit-rules",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=NYC%20professional%20networking%20instagram%20reel%20hooks",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=NYC%20professional%20networking%20instagram%20reel%20hooks",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=NYC%20professional%20networking%20instagram%20reel%20hooks",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        },
+        {
+          "source": "x-public-search-manual",
+          "url": "https://x.com/search?q=NYC%20professional%20networking%20instagram%20reel%20hooks&src=typed_query",
+          "action": "Open manually for text-first hooks, timely POVs, and conversation angles; do not automate login or account actions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-25",
+      "query": "NYC professional networking facebook community questions",
+      "objective": "Find audience pain language and objections.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "reddit-subreddit-rules",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=NYC%20professional%20networking%20facebook%20community%20questions",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=NYC%20professional%20networking%20facebook%20community%20questions",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=NYC%20professional%20networking%20facebook%20community%20questions",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        },
+        {
+          "source": "x-public-search-manual",
+          "url": "https://x.com/search?q=NYC%20professional%20networking%20facebook%20community%20questions&src=typed_query",
+          "action": "Open manually for text-first hooks, timely POVs, and conversation angles; do not automate login or account actions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-26",
+      "query": "NYC professional networking linkedin post angles",
+      "objective": "Find format, hook, and creative patterns.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "reddit-subreddit-rules",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=NYC%20professional%20networking%20linkedin%20post%20angles",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=NYC%20professional%20networking%20linkedin%20post%20angles",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=NYC%20professional%20networking%20linkedin%20post%20angles",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        },
+        {
+          "source": "x-public-search-manual",
+          "url": "https://x.com/search?q=NYC%20professional%20networking%20linkedin%20post%20angles&src=typed_query",
+          "action": "Open manually for text-first hooks, timely POVs, and conversation angles; do not automate login or account actions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-27",
+      "query": "NYC professional networking X thread hooks",
+      "objective": "Find content gaps and positioning opportunities.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "reddit-subreddit-rules",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=NYC%20professional%20networking%20X%20thread%20hooks",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=NYC%20professional%20networking%20X%20thread%20hooks",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=NYC%20professional%20networking%20X%20thread%20hooks",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        },
+        {
+          "source": "x-public-search-manual",
+          "url": "https://x.com/search?q=NYC%20professional%20networking%20X%20thread%20hooks&src=typed_query",
+          "action": "Open manually for text-first hooks, timely POVs, and conversation angles; do not automate login or account actions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-28",
+      "query": "NYC professional networking Twitter conversation prompts",
+      "objective": "Find audience pain language and objections.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "reddit-subreddit-rules",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=NYC%20professional%20networking%20Twitter%20conversation%20prompts",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=NYC%20professional%20networking%20Twitter%20conversation%20prompts",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=NYC%20professional%20networking%20Twitter%20conversation%20prompts",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        },
+        {
+          "source": "x-public-search-manual",
+          "url": "https://x.com/search?q=NYC%20professional%20networking%20Twitter%20conversation%20prompts&src=typed_query",
+          "action": "Open manually for text-first hooks, timely POVs, and conversation angles; do not automate login or account actions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-29",
+      "query": "NYC professional networking reddit questions objections",
+      "objective": "Find format, hook, and creative patterns.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "reddit-subreddit-rules",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=NYC%20professional%20networking%20reddit%20questions%20objections",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=NYC%20professional%20networking%20reddit%20questions%20objections",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=NYC%20professional%20networking%20reddit%20questions%20objections",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        },
+        {
+          "source": "x-public-search-manual",
+          "url": "https://x.com/search?q=NYC%20professional%20networking%20reddit%20questions%20objections&src=typed_query",
+          "action": "Open manually for text-first hooks, timely POVs, and conversation angles; do not automate login or account actions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-30",
+      "query": "NYC professional networking subreddit discussion angle",
+      "objective": "Find content gaps and positioning opportunities.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "reddit-subreddit-rules",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=NYC%20professional%20networking%20subreddit%20discussion%20angle",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=NYC%20professional%20networking%20subreddit%20discussion%20angle",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=NYC%20professional%20networking%20subreddit%20discussion%20angle",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        },
+        {
+          "source": "x-public-search-manual",
+          "url": "https://x.com/search?q=NYC%20professional%20networking%20subreddit%20discussion%20angle&src=typed_query",
+          "action": "Open manually for text-first hooks, timely POVs, and conversation angles; do not automate login or account actions."
+        }
+      ]
+    }
+  ],
+  "guardrails": [
+    "Cite every source before using a claim.",
+    "Separate observed facts from strategic inference.",
+    "Do not automate restricted Meta surfaces.",
+    "Treat X and Reddit account-facing actions as manual/approved only.",
+    "For Reddit, verify subreddit rules before any public draft becomes publishable.",
+    "Use high-risk sources only through human/manual review unless explicitly approved."
+  ]
+}

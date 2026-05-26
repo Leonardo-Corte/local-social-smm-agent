@@ -1,0 +1,22 @@
+{
+  "version": "0.1.0",
+  "runId": "2026-05-24T19-03-21-977Z",
+  "generatedAt": "2026-05-24T19:06:40.230Z",
+  "workspace": "out-of-office",
+  "request": "Fammi un messaggio breve premium per invitare un venue manager a ospitare Out Of Office, senza inventare numeri.",
+  "type": "message",
+  "target": "drafts/messages.md",
+  "model": "qwen2.5:14b",
+  "workflowRun": "workflow-runs/2026-05-24T19-03-21-979Z",
+  "teamRun": "team-runs/2026-05-24T19-03-21-977Z",
+  "status": "draft_ready",
+  "revisionAttempted": false,
+  "backup": null,
+  "requiredHumanApproval": true,
+  "automaticPublishEnabled": false,
+  "contentPolicy": {
+    "status": "passed",
+    "blockers": 0,
+    "warnings": 0
+  }
+}

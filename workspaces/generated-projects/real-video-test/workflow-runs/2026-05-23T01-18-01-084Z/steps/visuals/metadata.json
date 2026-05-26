@@ -1,0 +1,15 @@
+{
+  "id": "visuals",
+  "agentId": "visual-director",
+  "status": "fallback_saved_prompt_packet",
+  "backend": "prompt-packet",
+  "model": "qwen2.5:14b",
+  "inputs": [
+    "model-routing-report.md",
+    "creative/visual-briefs.md",
+    "calendar/30-day-calendar.md",
+    "assets/analysis/video-asset-report.md"
+  ],
+  "generatedAt": "2026-05-23T01:24:09.326Z",
+  "error": "This operation was aborted"
+}

@@ -1,0 +1,14 @@
+{
+  "generatorVersion": "0.1.0",
+  "workspaceSlug": "sample-local-social-team",
+  "projectName": "Sample Local Social Team",
+  "generatedAt": "2026-05-22T18:47:33.496Z",
+  "modelProfile": "apple-silicon-pro",
+  "approvalMode": "human-approved",
+  "automaticPublishEnabled": false,
+  "riskyAutomationEnabled": false,
+  "requiredHumanApproval": true,
+  "agentCount": 13,
+  "lastWorkflowRun": "workflow-runs/2026-05-22T19-24-56-279Z",
+  "lastWorkflowStatus": "needs-human-review"
+}

@@ -1,0 +1,11 @@
+{
+  "runId": "2026-05-22T23-57-05-466Z-critic-qa",
+  "agentId": "critic-qa",
+  "generatedAt": "2026-05-22T23:57:05.482Z",
+  "dryRun": false,
+  "backend": "ollama",
+  "model": "qwen2.5:14b",
+  "inputPaths": [
+    "drafts/posts.md"
+  ]
+}

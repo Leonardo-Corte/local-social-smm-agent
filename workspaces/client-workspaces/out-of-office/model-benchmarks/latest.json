@@ -1,0 +1,78 @@
+{
+  "version": "0.1.0",
+  "generatedAt": "2026-05-24T16:03:44.478Z",
+  "workspace": "out-of-office",
+  "timeoutMs": 30000,
+  "availableModels": [
+    "qwen2.5:14b"
+  ],
+  "models": [
+    {
+      "model": "qwen2.5:14b",
+      "totalScore": 18,
+      "totalElapsedMs": 105565,
+      "results": [
+        {
+          "taskId": "messy-italian-cleanup",
+          "role": "business-profile",
+          "elapsedMs": 30014,
+          "score": {
+            "total": 0,
+            "error": "This operation was aborted"
+          },
+          "error": "This operation was aborted",
+          "outputPreview": ""
+        },
+        {
+          "taskId": "reel-caption",
+          "role": "copywriter",
+          "elapsedMs": 25209,
+          "score": {
+            "requiredHits": 3,
+            "requiredTotal": 3,
+            "hasNoInventWarning": false,
+            "structured": true,
+            "lengthScore": 2,
+            "speedScore": 2,
+            "total": 8
+          },
+          "error": null,
+          "outputPreview": "### Instagram Reel Hooks:\n\n1. **Reel Hook 1:** \n   *Visual:* A sleek, cityscape backdrop with the Manhattan skyline twinkling in the evening light.\n   *Soundbite:* \"🌟 New York City lights up the night for our exclusive event! Join us and network like never before.\"\n   \n2. **Reel Hook 2:**\n   *Visual:* A montage of close-ups featuring stylish suits, designer dresses, and sparkling cocktail glasses against a chic lounge setting.\n   *Soundbite:* \"✨ Elegance meets opportunity in the heart of NYC. Experience the pinnacle of professional connections this season.\"\n\n3. **Reel Hook 3:**\n   *Visual:* Fast-paced cuts showing business cards being exchanged, laughter over cocktails, and hands shaking in agreement.\n   *Soundbite:* \"🤝 Make your mark at the city's top networking event! Connections made here last a lifetime. #NYCNetworking\"\n\n### Caption:\n🌟 Dive into the heart of New York City’s professional scene this week with our premium networking event. Immerse yourself in an evening filled with endless opportunities, inspiring conversations, and unforgettable moments. 🏙️✨ Don’t miss out on shaping your future—let’s connect! #NYCNetworkingEvent"
+        },
+        {
+          "taskId": "safety-critique",
+          "role": "critic-qa",
+          "elapsedMs": 20319,
+          "score": {
+            "requiredHits": 3,
+            "requiredTotal": 3,
+            "hasNoInventWarning": true,
+            "structured": true,
+            "lengthScore": 2,
+            "speedScore": 2,
+            "total": 10
+          },
+          "error": null,
+          "outputPreview": "### Blockers:\n1. **Guaranteed Attendance**: The claim states that the event will have \"guaranteed\" attendance of 200 elite guests. This is a strong guarantee that may not be verifiable or easily achievable, potentially leading to false promises.\n2. **Definition of Elite Guests**: Who qualifies as an \"elite guest\"? Without clear criteria and verification methods, this claim can come across as vague or misleading.\n3. **Event Quality**: The term \"best\" is subjective and can vary widely based on personal opinions. Defining what makes a networking event the best might be challenging without concrete metrics.\n\n### Safer Rewrite:\n- \"Join our exclusive networking event in New York featuring over 200 carefully selected guests from various industries.\"\n\n### Questions to Clarify:\n1. How will you ensure that all attendees are considered 'elite'?\n2. Can you provide a list of criteria used for selecting these guests?\n3. What steps have been taken to verify the attendance numbers and guest qualifications?"
+        },
+        {
+          "taskId": "persona-simulation",
+          "role": "persona-simulator",
+          "elapsedMs": 30023,
+          "score": {
+            "total": 0,
+            "error": "This operation was aborted"
+          },
+          "error": "This operation was aborted",
+          "outputPreview": ""
+        }
+      ]
+    }
+  ],
+  "recommendations": {
+    "brand-strategist": null,
+    "copywriter": "qwen2.5:14b",
+    "critic-qa": "qwen2.5:14b",
+    "persona-simulator": null
+  }
+}

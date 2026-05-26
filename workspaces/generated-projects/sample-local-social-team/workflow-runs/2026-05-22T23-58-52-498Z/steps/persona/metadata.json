@@ -1,0 +1,12 @@
+{
+  "id": "persona",
+  "agentId": "persona-simulator",
+  "status": "completed",
+  "backend": "ollama",
+  "model": "qwen2.5:14b",
+  "inputs": [
+    "simulation/persona-report.md",
+    "drafts/posts.md"
+  ],
+  "generatedAt": "2026-05-23T00:12:10.246Z"
+}

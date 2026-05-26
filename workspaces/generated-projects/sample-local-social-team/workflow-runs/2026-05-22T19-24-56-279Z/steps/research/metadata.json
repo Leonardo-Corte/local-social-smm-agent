@@ -1,0 +1,13 @@
+{
+  "id": "research",
+  "agentId": "market-researcher",
+  "status": "saved_prompt_packet",
+  "backend": "prompt-packet",
+  "model": null,
+  "inputs": [
+    "project-brief.json",
+    "sources/source-registry.md",
+    "research/trend-report.md"
+  ],
+  "generatedAt": "2026-05-22T19:24:56.360Z"
+}

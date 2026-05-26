@@ -1,0 +1,197 @@
+{
+  "version": "0.1.0",
+  "generatedAt": "2026-05-24T15:45:15.266Z",
+  "workspaceRoot": "/Users/corte/Documents/Codex/2026-05-22/fammi-un-deep-interwie-per-questo/workspaces/generated-projects/real-video-test",
+  "asset": {
+    "absolutePath": "/Users/corte/Documents/Codex/2026-05-22/fammi-un-deep-interwie-per-questo/workspaces/generated-projects/real-video-test/assets/raw/VIDEO-2026-05-21-19-25-07.mp4",
+    "relativePath": "assets/raw/VIDEO-2026-05-21-19-25-07.mp4",
+    "sha256": "2142746e10565705a3b04b1e3a0ec5b4d2fdf04a5a347e3877a178e10b5a96bf"
+  },
+  "summary": {
+    "format": "QuickTime / MOV",
+    "duration": 11.2,
+    "width": 576,
+    "height": 1024,
+    "orientation": "vertical",
+    "fps": 30,
+    "videoCodec": "h264",
+    "audioPresent": true,
+    "audioCodec": "aac",
+    "meanVolume": -14.8,
+    "maxVolume": 0,
+    "silenceEvents": 0,
+    "keyframeCount": 1,
+    "keyframesPerSecond": 0.08928571428571429
+  },
+  "frames": [
+    "/Users/corte/Documents/Codex/2026-05-22/fammi-un-deep-interwie-per-questo/workspaces/generated-projects/real-video-test/assets/frames/video-2026-05-21-19-25-07/frame-001.jpg",
+    "/Users/corte/Documents/Codex/2026-05-22/fammi-un-deep-interwie-per-questo/workspaces/generated-projects/real-video-test/assets/frames/video-2026-05-21-19-25-07/frame-002.jpg",
+    "/Users/corte/Documents/Codex/2026-05-22/fammi-un-deep-interwie-per-questo/workspaces/generated-projects/real-video-test/assets/frames/video-2026-05-21-19-25-07/frame-003.jpg",
+    "/Users/corte/Documents/Codex/2026-05-22/fammi-un-deep-interwie-per-questo/workspaces/generated-projects/real-video-test/assets/frames/video-2026-05-21-19-25-07/frame-004.jpg",
+    "/Users/corte/Documents/Codex/2026-05-22/fammi-un-deep-interwie-per-questo/workspaces/generated-projects/real-video-test/assets/frames/video-2026-05-21-19-25-07/frame-005.jpg",
+    "/Users/corte/Documents/Codex/2026-05-22/fammi-un-deep-interwie-per-questo/workspaces/generated-projects/real-video-test/assets/frames/video-2026-05-21-19-25-07/frame-006.jpg",
+    "/Users/corte/Documents/Codex/2026-05-22/fammi-un-deep-interwie-per-questo/workspaces/generated-projects/real-video-test/assets/frames/video-2026-05-21-19-25-07/frame-007.jpg",
+    "/Users/corte/Documents/Codex/2026-05-22/fammi-un-deep-interwie-per-questo/workspaces/generated-projects/real-video-test/assets/frames/video-2026-05-21-19-25-07/frame-008.jpg",
+    "/Users/corte/Documents/Codex/2026-05-22/fammi-un-deep-interwie-per-questo/workspaces/generated-projects/real-video-test/assets/frames/video-2026-05-21-19-25-07/frame-009.jpg",
+    "/Users/corte/Documents/Codex/2026-05-22/fammi-un-deep-interwie-per-questo/workspaces/generated-projects/real-video-test/assets/frames/video-2026-05-21-19-25-07/frame-010.jpg",
+    "/Users/corte/Documents/Codex/2026-05-22/fammi-un-deep-interwie-per-questo/workspaces/generated-projects/real-video-test/assets/frames/video-2026-05-21-19-25-07/frame-011.jpg"
+  ],
+  "transcription": {
+    "status": "missing-model",
+    "backend": {
+      "command": "whisper-cli",
+      "label": "whisper.cpp CLI"
+    },
+    "notes": [
+      "whisper-cli is installed, but no local model file was found.",
+      "Set WHISPER_MODEL=/absolute/path/to/ggml-model.bin to enable transcription."
+    ]
+  },
+  "soundNotes": [
+    "Review whether original audio should stay, be ducked under music, or be replaced by a trending sound.",
+    "If people are speaking, generate captions after transcription is available."
+  ],
+  "recommendations": [
+    "Duration is short enough for a fast recap; make the first three seconds visually explicit.",
+    "Low keyframe density can indicate few major scene changes; review whether the edit feels dynamic enough."
+  ],
+  "raw": {
+    "probe": {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+          "profile": "Baseline",
+          "codec_type": "video",
+          "codec_tag_string": "avc1",
+          "codec_tag": "0x31637661",
+          "mime_codec_string": "avc1.42001f",
+          "width": 576,
+          "height": 1024,
+          "coded_width": 576,
+          "coded_height": 1024,
+          "has_b_frames": 0,
+          "pix_fmt": "yuv420p",
+          "level": 31,
+          "color_range": "tv",
+          "color_space": "bt709",
+          "color_transfer": "bt709",
+          "color_primaries": "bt709",
+          "chroma_location": "left",
+          "field_order": "progressive",
+          "is_avc": "true",
+          "nal_length_size": "4",
+          "id": "0x1",
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "time_base": "1/600",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 6720,
+          "duration": "11.200000",
+          "bit_rate": "1632288",
+          "bits_per_raw_sample": "8",
+          "nb_frames": "336",
+          "extradata_size": 29,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          },
+          "tags": {
+            "language": "und"
+          }
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_long_name": "AAC (Advanced Audio Coding)",
+          "profile": "LC",
+          "codec_type": "audio",
+          "codec_tag_string": "mp4a",
+          "codec_tag": "0x6134706d",
+          "mime_codec_string": "mp4a.40.2",
+          "sample_fmt": "fltp",
+          "sample_rate": "44100",
+          "channels": 2,
+          "channel_layout": "stereo",
+          "bits_per_sample": 0,
+          "initial_padding": 0,
+          "id": "0x2",
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "time_base": "1/44100",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 496640,
+          "duration": "11.261678",
+          "bit_rate": "65492",
+          "nb_frames": "485",
+          "extradata_size": 2,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          },
+          "tags": {
+            "language": "und"
+          }
+        }
+      ],
+      "format": {
+        "filename": "/Users/corte/Documents/Codex/2026-05-22/fammi-un-deep-interwie-per-questo/workspaces/generated-projects/real-video-test/assets/raw/VIDEO-2026-05-21-19-25-07.mp4",
+        "nb_streams": 2,
+        "nb_programs": 0,
+        "nb_stream_groups": 0,
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "format_long_name": "QuickTime / MOV",
+        "start_time": "0.000000",
+        "duration": "11.261678",
+        "size": "2382198",
+        "bit_rate": "1692250",
+        "probe_score": 100,
+        "tags": {
+          "major_brand": "mp42",
+          "minor_version": "0",
+          "compatible_brands": "mp42isom"
+        }
+      }
+    },
+    "framesExtractionOk": true,
+    "audioAnalysisOk": true,
+    "keyframeAnalysisOk": true
+  }
+}

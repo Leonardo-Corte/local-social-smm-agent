@@ -1,0 +1,13 @@
+{
+  "version": "0.1.0",
+  "index": 1,
+  "createdAt": "2026-05-25T21:03:53.149Z",
+  "stepId": "copy",
+  "agentId": "copywriter",
+  "status": "saved_prompt_packet",
+  "backend": "prompt-packet",
+  "model": "qwen2.5:14b",
+  "target": "drafts/posts.md",
+  "handoff": "Prompt packet saved. Run with --execute to use a detected local Ollama model.\n",
+  "outputPreview": "Prompt packet saved. Run with --execute to use a detected local Ollama model.\n"
+}

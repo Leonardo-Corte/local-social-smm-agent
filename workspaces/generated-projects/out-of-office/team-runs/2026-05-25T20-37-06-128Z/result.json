@@ -1,0 +1,22 @@
+{
+  "version": "0.1.0",
+  "runId": "2026-05-25T20-37-06-128Z",
+  "generatedAt": "2026-05-25T20:38:46.191Z",
+  "workspace": "out-of-office",
+  "request": "crea un post instagram basato sul business profile, senza usare numeri inventati",
+  "type": "post",
+  "target": "drafts/posts.md",
+  "model": "qwen2.5-coder:14b",
+  "workflowRun": "workflow-runs/2026-05-25T20-37-06-129Z",
+  "teamRun": "team-runs/2026-05-25T20-37-06-128Z",
+  "status": "blocked_by_content_policy",
+  "revisionAttempted": true,
+  "backup": null,
+  "requiredHumanApproval": true,
+  "automaticPublishEnabled": false,
+  "contentPolicy": {
+    "status": "blocked_needs_revision",
+    "blockers": 1,
+    "warnings": 0
+  }
+}

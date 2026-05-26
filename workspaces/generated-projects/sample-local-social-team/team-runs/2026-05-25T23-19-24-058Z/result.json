@@ -1,0 +1,35 @@
+{
+  "version": "0.1.0",
+  "runId": "2026-05-25T23-19-24-058Z",
+  "generatedAt": "2026-05-25T23:28:26.469Z",
+  "workspace": "sample-local-social-team",
+  "request": "generami un reel Instagram per questo sistema AI locale: mostra come si creano contenuti professionali senza API a pagamento, tutto gira sul Mac con Ollama, zero abbonamenti, approvazione umana prima della pubblicazione. Tono: pratico, sharp, credibile. Nessun claim inventato.",
+  "type": "reel",
+  "target": "drafts/reels.md",
+  "model": "qwen2.5:14b",
+  "workflowRun": "workflow-runs/2026-05-25T23-19-24-059Z",
+  "teamRun": "team-runs/2026-05-25T23-19-24-058Z",
+  "status": "applied_needs_human_review",
+  "revisionAttempted": false,
+  "agentSteps": {
+    "completed": 6,
+    "fallback": 0,
+    "total": 4,
+    "revisionLoops": 1
+  },
+  "backup": "review/orchestrator-backups/2026-05-25T23-19-24-058Z/drafts__reels.md",
+  "requiredHumanApproval": true,
+  "automaticPublishEnabled": false,
+  "contentPolicy": {
+    "status": "passed",
+    "blockers": 0,
+    "warnings": 0
+  },
+  "blackboard": {
+    "totalEntries": 43,
+    "decisions": 18,
+    "risks": 14,
+    "blockers": 0,
+    "revisionRequests": 5
+  }
+}

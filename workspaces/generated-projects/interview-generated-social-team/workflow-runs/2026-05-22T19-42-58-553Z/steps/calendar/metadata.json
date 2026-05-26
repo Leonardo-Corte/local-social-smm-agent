@@ -1,0 +1,12 @@
+{
+  "id": "calendar",
+  "agentId": "content-planner",
+  "status": "saved_prompt_packet",
+  "backend": "prompt-packet",
+  "model": null,
+  "inputs": [
+    "strategy/content-pillars.md",
+    "calendar/30-day-calendar.md"
+  ],
+  "generatedAt": "2026-05-22T19:42:58.582Z"
+}

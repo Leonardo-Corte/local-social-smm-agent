@@ -1,0 +1,22 @@
+{
+  "version": "0.1.0",
+  "runId": "2026-05-24T19-29-03-395Z",
+  "generatedAt": "2026-05-24T19:29:05.931Z",
+  "workspace": "out-of-office",
+  "request": "crea un post Reddit per capire cosa pensano dei networking event a NYC",
+  "type": "reddit",
+  "target": "drafts/reddit.md",
+  "model": "qwen2.5:14b",
+  "workflowRun": "workflow-runs/2026-05-24T19-29-03-396Z",
+  "teamRun": "team-runs/2026-05-24T19-29-03-395Z",
+  "status": "draft_ready",
+  "revisionAttempted": false,
+  "backup": null,
+  "requiredHumanApproval": true,
+  "automaticPublishEnabled": false,
+  "contentPolicy": {
+    "status": "passed",
+    "blockers": 0,
+    "warnings": 0
+  }
+}

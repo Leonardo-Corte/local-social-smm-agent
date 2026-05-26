@@ -1,0 +1,27 @@
+{
+  "projectName": "Real Video Test",
+  "niche": "premium hospitality events, cocktail bars, and social dining experiences",
+  "targetAudience": "young professionals, food and drink lovers, nightlife guests, event partners, and local hospitality audiences",
+  "primaryGoal30Days": "turn one real event video into a repeatable Instagram/Facebook content system with human-approved captions, reel angles, and follow-up posts",
+  "offer": "a premium out-of-office social event experience hosted with La Tazza D Oro",
+  "tone": "warm, premium, lively, social, polished, practical",
+  "platforms": [
+    "instagram",
+    "facebook"
+  ],
+  "constraints": [
+    "use only observed video evidence unless human adds more context",
+    "no invented attendance numbers",
+    "no invented celebrity, sponsor, menu, or pricing claims",
+    "human approval required before publishing",
+    "no DM/comment/like/follow automation"
+  ],
+  "availableAssets": [
+    "assets/raw/VIDEO-2026-05-21-19-25-07.mp4",
+    "assets/analysis/contact-sheet.jpg",
+    "assets/frames/frame-01.jpg through frame-11.jpg",
+    "assets/audio/audio.wav"
+  ],
+  "approvalPolicy": "human-approved by project owner",
+  "createdAt": "2026-05-23T01:16:08.594Z"
+}

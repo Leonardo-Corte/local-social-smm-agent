@@ -1,0 +1,246 @@
+{
+  "generatedAt": "2026-05-24T19:41:18.667Z",
+  "projectName": "Out Of Office",
+  "personas": [
+    {
+      "id": "persona-01",
+      "label": "Skeptical operator",
+      "segment": "tuute le perone corporate peoole",
+      "motivation": "save time and avoid fragile tools",
+      "coreObjection": "This sounds like setup complexity disguised as automation.",
+      "conversionTrigger": "clear before/after workflow proof",
+      "contentLens": "Skeptical operator evaluating tiket del evento nel qule è compero cibo e drink"
+    },
+    {
+      "id": "persona-02",
+      "label": "Cost-sensitive founder",
+      "segment": "perosne a cui pioace fare netwokl di livello",
+      "motivation": "reduce recurring SaaS costs",
+      "coreObjection": "Local-first is attractive, but quality and maintenance worry me.",
+      "conversionTrigger": "specific hardware expectations and realistic limits",
+      "contentLens": "Cost-sensitive founder evaluating tiket del evento nel qule è compero cibo e drink"
+    },
+    {
+      "id": "persona-03",
+      "label": "Creative strategist",
+      "segment": "i locali ci devono chiamere per fare gli venti nei loro locali anceh capito perche noi priu o meno portio 200 perosne di livello nel locale che fanno netwiking magiano",
+      "motivation": "produce better ideas faster",
+      "coreObjection": "The content may become generic if the system does not learn taste.",
+      "conversionTrigger": "memory from feedback and strong examples",
+      "contentLens": "Creative strategist evaluating tiket del evento nel qule è compero cibo e drink"
+    },
+    {
+      "id": "persona-04",
+      "label": "Agency delivery lead",
+      "segment": "beevnono",
+      "motivation": "standardize client delivery",
+      "coreObjection": "Approval, revisions, and client-specific voice need to be robust.",
+      "conversionTrigger": "clear review states and client-ready artifacts",
+      "contentLens": "Agency delivery lead evaluating tiket del evento nel qule è compero cibo e drink"
+    },
+    {
+      "id": "persona-05",
+      "label": "Technical early adopter",
+      "segment": "espendono la voce ...",
+      "motivation": "own the stack and customize agents",
+      "coreObjection": "I need proof that integrations are modular and not locked to a SaaS.",
+      "conversionTrigger": "repo structure, local commands, and extension points",
+      "contentLens": "Technical early adopter evaluating tiket del evento nel qule è compero cibo e drink"
+    }
+  ],
+  "drafts": [
+    {
+      "title": "Post 1: The Room",
+      "body": "Hook: Networking in New York should not feel like a conference lobby.\n\nBody: Out Of Office is built for people who want useful professional connections without losing the social energy of a good night out. The promise is simple: a curated room, interesting people, food and drinks when confirmed for the event, and a setting that makes starting conversations easier.\n\nCTA: Join the community or grab a ticket for the next confirmed event.\n\nSafety note: Confirm event date, venue, ticket inclusions, and link before publishing."
+    },
+    {
+      "title": "Post 2: Venue Angle",
+      "body": "Hook: A strong event is not just traffic. It is the right room.\n\nBody: For New York venues, Out Of Office can position events around qualified professional attendance, social energy, and food and drink spend. Any attendance number or venue result must be verified before it becomes a public claim.\n\nCTA: Ask about hosting a future Out Of Office night.\n\nSafety note: Do not publish attendance claims unless a human confirms the exact proof."
+    }
+  ],
+  "evaluations": [
+    {
+      "personaId": "persona-01",
+      "draftTitle": "Post 1: The Room",
+      "scores": {
+        "interest": 55,
+        "trust": 50,
+        "clarity": 50,
+        "purchaseIntent": 42
+      },
+      "likelyReaction": "I understand the idea, but I do not yet see why I should care now.",
+      "mainObjection": "Needs concrete proof or before/after example.",
+      "recommendedFix": "Add a concrete proof point for the Skeptical operator: screenshot, before/after, workflow artifact, or mini case."
+    },
+    {
+      "personaId": "persona-02",
+      "draftTitle": "Post 1: The Room",
+      "scores": {
+        "interest": 55,
+        "trust": 50,
+        "clarity": 50,
+        "purchaseIntent": 42
+      },
+      "likelyReaction": "I understand the idea, but I do not yet see why I should care now.",
+      "mainObjection": "Needs concrete proof or before/after example.",
+      "recommendedFix": "Add a concrete proof point for the Cost-sensitive founder: screenshot, before/after, workflow artifact, or mini case."
+    },
+    {
+      "personaId": "persona-03",
+      "draftTitle": "Post 1: The Room",
+      "scores": {
+        "interest": 55,
+        "trust": 50,
+        "clarity": 50,
+        "purchaseIntent": 42
+      },
+      "likelyReaction": "I understand the idea, but I do not yet see why I should care now.",
+      "mainObjection": "Needs concrete proof or before/after example.",
+      "recommendedFix": "Add a concrete proof point for the Creative strategist: screenshot, before/after, workflow artifact, or mini case."
+    },
+    {
+      "personaId": "persona-04",
+      "draftTitle": "Post 1: The Room",
+      "scores": {
+        "interest": 55,
+        "trust": 50,
+        "clarity": 50,
+        "purchaseIntent": 42
+      },
+      "likelyReaction": "I understand the idea, but I do not yet see why I should care now.",
+      "mainObjection": "Needs concrete proof or before/after example.",
+      "recommendedFix": "Add a concrete proof point for the Agency delivery lead: screenshot, before/after, workflow artifact, or mini case."
+    },
+    {
+      "personaId": "persona-05",
+      "draftTitle": "Post 1: The Room",
+      "scores": {
+        "interest": 55,
+        "trust": 50,
+        "clarity": 50,
+        "purchaseIntent": 42
+      },
+      "likelyReaction": "I understand the idea, but I do not yet see why I should care now.",
+      "mainObjection": "Needs concrete proof or before/after example.",
+      "recommendedFix": "Add a concrete proof point for the Technical early adopter: screenshot, before/after, workflow artifact, or mini case."
+    },
+    {
+      "personaId": "persona-01",
+      "draftTitle": "Post 2: Venue Angle",
+      "scores": {
+        "interest": 55,
+        "trust": 72,
+        "clarity": 50,
+        "purchaseIntent": 49
+      },
+      "likelyReaction": "I understand the idea, but I do not yet see why I should care now.",
+      "mainObjection": "Offer connection is weak or implicit.",
+      "recommendedFix": "Name the offer and outcome directly in the body."
+    },
+    {
+      "personaId": "persona-02",
+      "draftTitle": "Post 2: Venue Angle",
+      "scores": {
+        "interest": 55,
+        "trust": 72,
+        "clarity": 50,
+        "purchaseIntent": 49
+      },
+      "likelyReaction": "I understand the idea, but I do not yet see why I should care now.",
+      "mainObjection": "Offer connection is weak or implicit.",
+      "recommendedFix": "Name the offer and outcome directly in the body."
+    },
+    {
+      "personaId": "persona-03",
+      "draftTitle": "Post 2: Venue Angle",
+      "scores": {
+        "interest": 55,
+        "trust": 72,
+        "clarity": 50,
+        "purchaseIntent": 49
+      },
+      "likelyReaction": "I understand the idea, but I do not yet see why I should care now.",
+      "mainObjection": "Offer connection is weak or implicit.",
+      "recommendedFix": "Name the offer and outcome directly in the body."
+    },
+    {
+      "personaId": "persona-04",
+      "draftTitle": "Post 2: Venue Angle",
+      "scores": {
+        "interest": 55,
+        "trust": 72,
+        "clarity": 50,
+        "purchaseIntent": 49
+      },
+      "likelyReaction": "I understand the idea, but I do not yet see why I should care now.",
+      "mainObjection": "Offer connection is weak or implicit.",
+      "recommendedFix": "Name the offer and outcome directly in the body."
+    },
+    {
+      "personaId": "persona-05",
+      "draftTitle": "Post 2: Venue Angle",
+      "scores": {
+        "interest": 55,
+        "trust": 72,
+        "clarity": 50,
+        "purchaseIntent": 49
+      },
+      "likelyReaction": "I understand the idea, but I do not yet see why I should care now.",
+      "mainObjection": "Offer connection is weak or implicit.",
+      "recommendedFix": "Name the offer and outcome directly in the body."
+    }
+  ],
+  "dialogue": [
+    {
+      "draftTitle": "Post 1: The Room",
+      "turns": [
+        {
+          "speaker": "Skeptical operator",
+          "message": "Needs concrete proof or before/after example."
+        },
+        {
+          "speaker": "Skeptical operator",
+          "message": "I understand the idea, but I do not yet see why I should care now."
+        },
+        {
+          "speaker": "Panel moderator",
+          "message": "The draft should first fix: Add a concrete proof point for the Skeptical operator: screenshot, before/after, workflow artifact, or mini case."
+        }
+      ],
+      "likelyDecision": "not_ready",
+      "dominantObjection": "Needs concrete proof or before/after example."
+    },
+    {
+      "draftTitle": "Post 2: Venue Angle",
+      "turns": [
+        {
+          "speaker": "Skeptical operator",
+          "message": "Offer connection is weak or implicit."
+        },
+        {
+          "speaker": "Skeptical operator",
+          "message": "I understand the idea, but I do not yet see why I should care now."
+        },
+        {
+          "speaker": "Panel moderator",
+          "message": "The draft should first fix: Name the offer and outcome directly in the body."
+        }
+      ],
+      "likelyDecision": "not_ready",
+      "dominantObjection": "Offer connection is weak or implicit."
+    }
+  ],
+  "summary": {
+    "averageInterest": 55,
+    "averageTrust": 61,
+    "averageClarity": 50,
+    "averagePurchaseIntent": 46,
+    "topFixes": [
+      "Name the offer and outcome directly in the body.",
+      "Add a concrete proof point for the Skeptical operator: screenshot, before/after, workflow artifact, or mini case.",
+      "Add a concrete proof point for the Cost-sensitive founder: screenshot, before/after, workflow artifact, or mini case.",
+      "Add a concrete proof point for the Creative strategist: screenshot, before/after, workflow artifact, or mini case.",
+      "Add a concrete proof point for the Agency delivery lead: screenshot, before/after, workflow artifact, or mini case."
+    ]
+  }
+}

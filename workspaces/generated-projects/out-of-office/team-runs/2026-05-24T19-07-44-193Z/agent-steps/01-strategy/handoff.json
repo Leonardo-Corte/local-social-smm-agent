@@ -1,0 +1,9 @@
+{
+  "index": 1,
+  "step": "strategy",
+  "agentId": "brand-strategist",
+  "status": "fallback_template",
+  "error": "This operation was aborted",
+  "handoff": "The next agent should keep the request focused, avoid invented numbers or status claims, and verify the final draft against content policy.\n\nFallback reason: This operation was aborted",
+  "outputPreview": "# brand-strategist Fallback Handoff\n\nStatus: fallback_template\n\nThe local model step did not complete in time, so this structured fallback keeps the team chain usable.\n\n## Observed Facts\n- User request: Fammi un messaggio breve premium per invitare un venue manager a ospitare Out Of Office, senza inventare numeri.\n- Intent: message\n- Previous handoffs are available and should be preserved.\n\n## Assumptions\n- The final artifact must stay draft-only and require human approval.\n- Missing facts should become approval blockers, not invented claims.\n\n## Draft/Recommendation For This Step\nTurn the request and business profile into positioning, voice, promise boundaries, and content angle.\n\nUse the previous handoff context below and keep the artifact concise, proof-aware, and specific:\n\nNo previous handoffs.\n\n## Approval Blockers\n- Confirm event details before publishing.\n- Confirm ticket inclusions before mentioning food/drinks.\n- Confirm any attendance, venue, guest, or partnership claim before use.\n\n## Agent Handoff\nThe next agent should keep the request focused, avoid invented numbers or status claims, and verify the final draft against content policy.\n\nFallback reason: This operation w"
+}

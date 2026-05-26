@@ -1,0 +1,110 @@
+[
+  {
+    "id": "brightbean-studio",
+    "repo": "brightbeanxyz/brightbean-studio",
+    "category": "social-management-scheduler",
+    "expectedLicense": "audit-required",
+    "costPosture": "self-host candidate",
+    "risk": "low-medium",
+    "initialDecision": "inspect-first",
+    "why": "Workspace, approval, scheduling, and official integration concepts.",
+    "recommendedDecision": "inspect-first",
+    "auditStatus": "pending"
+  },
+  {
+    "id": "social-media-skills",
+    "repo": "blacktwist/social-media-skills",
+    "category": "agent-skills-content",
+    "expectedLicense": "MIT",
+    "costPosture": "no-cost",
+    "risk": "low",
+    "initialDecision": "candidate-for-adaptation",
+    "why": "Social media strategy and content skills align with generated agent files.",
+    "recommendedDecision": "eligible after audit",
+    "auditStatus": "pending"
+  },
+  {
+    "id": "postiz",
+    "repo": "gitroomhq/postiz-app",
+    "category": "social-scheduler",
+    "expectedLicense": "AGPL-3.0",
+    "costPosture": "self-host candidate",
+    "risk": "license-boundary",
+    "initialDecision": "reference-or-separate-service",
+    "why": "Mature scheduler reference, but AGPL means core copying is not acceptable by default.",
+    "recommendedDecision": "separate module or reference",
+    "auditStatus": "pending"
+  },
+  {
+    "id": "trypost",
+    "repo": "trypost-it/trypost",
+    "category": "social-scheduler-api",
+    "expectedLicense": "AGPL-3.0",
+    "costPosture": "self-host candidate",
+    "risk": "license-boundary",
+    "initialDecision": "reference-or-separate-module",
+    "why": "Useful brand profile and API/MCP ideas.",
+    "recommendedDecision": "separate module or reference",
+    "auditStatus": "pending"
+  },
+  {
+    "id": "social-media-agent",
+    "repo": "langchain-ai/social-media-agent",
+    "category": "human-in-loop-agent",
+    "expectedLicense": "audit-required",
+    "costPosture": "may-require-external-services",
+    "risk": "dependency-cost",
+    "initialDecision": "pattern-reference",
+    "why": "Human-in-the-loop social generation flow patterns.",
+    "recommendedDecision": "pattern-reference",
+    "auditStatus": "pending"
+  },
+  {
+    "id": "tinytroupe",
+    "repo": "microsoft/TinyTroupe",
+    "category": "persona-simulation",
+    "expectedLicense": "audit-required",
+    "costPosture": "model-dependent",
+    "risk": "low",
+    "initialDecision": "inspect",
+    "why": "Persona simulation and business insight framing.",
+    "recommendedDecision": "inspect",
+    "auditStatus": "pending"
+  },
+  {
+    "id": "sdialog",
+    "repo": "idiap/sdialog",
+    "category": "persona-dialog-simulation",
+    "expectedLicense": "MIT",
+    "costPosture": "model-dependent",
+    "risk": "low",
+    "initialDecision": "candidate-for-adaptation",
+    "why": "MIT persona/dialog simulation and evaluation toolkit.",
+    "recommendedDecision": "eligible after audit",
+    "auditStatus": "pending"
+  },
+  {
+    "id": "comfyui",
+    "repo": "Comfy-Org/ComfyUI",
+    "category": "visual-generation",
+    "expectedLicense": "audit-required",
+    "costPosture": "local",
+    "risk": "dependency-complexity",
+    "initialDecision": "integration-candidate",
+    "why": "Primary local image workflow backend candidate.",
+    "recommendedDecision": "integration-candidate",
+    "auditStatus": "pending"
+  },
+  {
+    "id": "gramaddict",
+    "repo": "GramAddict/bot",
+    "category": "instagram-automation",
+    "expectedLicense": "audit-required",
+    "costPosture": "local",
+    "risk": "high-account-tos",
+    "initialDecision": "experimental-reference-only",
+    "why": "Useful to understand bot risks; disabled by default.",
+    "recommendedDecision": "experimental/reference only",
+    "auditStatus": "pending"
+  }
+]

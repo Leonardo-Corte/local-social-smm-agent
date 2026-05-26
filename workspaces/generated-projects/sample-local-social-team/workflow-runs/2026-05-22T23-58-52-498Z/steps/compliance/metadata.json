@@ -1,0 +1,14 @@
+{
+  "id": "compliance",
+  "agentId": "compliance-platform-guardian",
+  "status": "completed",
+  "backend": "ollama",
+  "model": "qwen2.5:14b",
+  "inputs": [
+    "policy/publishing-policy.json",
+    "sources/source-registry.md",
+    "publishing/publishing-checklist.md",
+    "drafts/posts.md"
+  ],
+  "generatedAt": "2026-05-23T00:10:28.637Z"
+}

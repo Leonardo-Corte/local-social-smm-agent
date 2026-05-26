@@ -1,0 +1,26 @@
+{
+  "projectName": "Interview Generated Social Team",
+  "niche": "local-first AI content systems for creators and small agencies",
+  "targetAudience": "solo creators, small agencies, founders",
+  "primaryGoal30Days": "validate the offer and publish a consistent human-approved content calendar",
+  "offer": "a local-first AI workspace that generates strategy, drafts, reviews, and publishing packages",
+  "tone": "sharp, practical, professional, direct",
+  "platforms": [
+    "instagram",
+    "facebook"
+  ],
+  "constraints": [
+    "no paid APIs",
+    "no spam automation",
+    "human approval required",
+    "local-first generation"
+  ],
+  "availableAssets": [
+    "founder notes",
+    "repo audit",
+    "sample drafts",
+    "competitor ideas"
+  ],
+  "approvalPolicy": "human-approved by the project owner",
+  "createdAt": "2026-05-22T23:32:51.997Z"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "copy",
+  "agentId": "copywriter",
+  "status": "saved_prompt_packet",
+  "backend": "prompt-packet",
+  "model": "qwen2.5:14b",
+  "inputs": [
+    "business/business.md",
+    "platforms/platform-playbooks.md",
+    "operations/current-request.md",
+    "calendar/30-day-calendar.md",
+    "drafts/posts.md",
+    "drafts/threads.md",
+    "drafts/reddit.md",
+    "drafts/platform-adaptations.md"
+  ],
+  "generatedAt": "2026-05-24T19:29:03.411Z"
+}

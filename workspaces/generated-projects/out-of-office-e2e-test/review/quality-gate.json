@@ -1,0 +1,76 @@
+{
+  "generatedAt": "2026-05-23T08:22:37.058Z",
+  "workspace": "out-of-office-e2e-test",
+  "score": 100,
+  "maxScore": 100,
+  "percentage": 100,
+  "status": "ready_for_human_review",
+  "automaticPublishEnabled": false,
+  "requiredHumanApproval": true,
+  "results": [
+    {
+      "id": "brief-complete",
+      "label": "Brief complete",
+      "points": 15,
+      "passed": true,
+      "score": 15
+    },
+    {
+      "id": "calendar-30-days",
+      "label": "30-day calendar present",
+      "points": 12,
+      "passed": true,
+      "score": 12
+    },
+    {
+      "id": "drafts-present",
+      "label": "Draft artifacts present",
+      "points": 12,
+      "passed": true,
+      "score": 12
+    },
+    {
+      "id": "persona-simulation",
+      "label": "Persona simulation present",
+      "points": 10,
+      "passed": true,
+      "score": 10
+    },
+    {
+      "id": "trend-report",
+      "label": "Trend report present",
+      "points": 10,
+      "passed": true,
+      "score": 10
+    },
+    {
+      "id": "model-routing",
+      "label": "Model routing present",
+      "points": 10,
+      "passed": true,
+      "score": 10
+    },
+    {
+      "id": "publishing-safety",
+      "label": "Publishing safety locked",
+      "points": 15,
+      "passed": true,
+      "score": 15
+    },
+    {
+      "id": "regeneration-loop",
+      "label": "Regeneration loop exists",
+      "points": 8,
+      "passed": true,
+      "score": 8
+    },
+    {
+      "id": "workflow-run",
+      "label": "Workflow run present",
+      "points": 8,
+      "passed": true,
+      "score": 8
+    }
+  ],
+  "blockers": []
+}

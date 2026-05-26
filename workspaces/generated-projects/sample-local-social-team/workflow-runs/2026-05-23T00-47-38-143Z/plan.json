@@ -1,0 +1,46 @@
+{
+  "version": "0.1.0",
+  "workspace": "sample-local-social-team",
+  "runId": "2026-05-23T00-47-38-143Z",
+  "mode": "local-model-execution",
+  "steps": [
+    {
+      "id": "copy",
+      "agentId": "copywriter",
+      "task": "Review current post, carousel, and reel drafts. Propose better hooks, claims, CTAs, and format-specific improvements.",
+      "inputs": [
+        "calendar/30-day-calendar.md",
+        "drafts/posts.md",
+        "drafts/carousels.md",
+        "drafts/reels.md"
+      ]
+    },
+    {
+      "id": "persona",
+      "agentId": "persona-simulator",
+      "task": "Use the existing persona report and drafts to identify likely objections, drop-off points, and content improvements.",
+      "inputs": [
+        "simulation/persona-report.md",
+        "drafts/posts.md"
+      ]
+    },
+    {
+      "id": "qa",
+      "agentId": "critic-qa",
+      "task": "Run a final adversarial QA pass. Decide what is not good enough for human approval and convert it into regeneration tasks.",
+      "inputs": [
+        "review/workspace-quality-rubric.json",
+        "simulation/persona-report.md",
+        "review/qa-recap.md",
+        "drafts/posts.md"
+      ]
+    }
+  ],
+  "selectedStepIds": [
+    "copy",
+    "persona",
+    "qa"
+  ],
+  "maxSteps": null,
+  "timeoutMs": 180000
+}

@@ -1,0 +1,57 @@
+{
+  "version": "0.1.0",
+  "generatedAt": "2026-05-24T16:01:13.609Z",
+  "status": "preview-recipe",
+  "humanApprovalRequired": true,
+  "destructiveEdits": false,
+  "source": {
+    "assetPath": "/Users/corte/Documents/Codex/2026-05-22/fammi-un-deep-interwie-per-questo/workspaces/generated-projects/real-video-test/assets/raw/VIDEO-2026-05-21-19-25-07.mp4",
+    "sha256": "2142746e10565705a3b04b1e3a0ec5b4d2fdf04a5a347e3877a178e10b5a96bf",
+    "duration": 11.2,
+    "width": 576,
+    "height": 1024,
+    "orientation": "vertical"
+  },
+  "output": {
+    "editedDir": "/Users/corte/Documents/Codex/2026-05-22/fammi-un-deep-interwie-per-questo/workspaces/generated-projects/real-video-test/assets/edited/video-2026-05-21-19-25-07",
+    "outputPath": "/Users/corte/Documents/Codex/2026-05-22/fammi-un-deep-interwie-per-questo/workspaces/generated-projects/real-video-test/assets/edited/video-2026-05-21-19-25-07/video-2026-05-21-19-25-07-preview-social.mp4",
+    "recipePath": "/Users/corte/Documents/Codex/2026-05-22/fammi-un-deep-interwie-per-questo/workspaces/generated-projects/real-video-test/assets/edited/video-2026-05-21-19-25-07/video-2026-05-21-19-25-07-edit-recipe.json",
+    "notesPath": "/Users/corte/Documents/Codex/2026-05-22/fammi-un-deep-interwie-per-questo/workspaces/generated-projects/real-video-test/assets/edited/video-2026-05-21-19-25-07/video-2026-05-21-19-25-07-edit-notes.md"
+  },
+  "steps": [
+    {
+      "id": "trim",
+      "enabled": true,
+      "start": 0,
+      "end": 11.2,
+      "reason": "Keep the first preview short and platform-friendly."
+    },
+    {
+      "id": "vertical-master",
+      "enabled": true,
+      "filter": "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920",
+      "reason": "Normalize to 9:16 social preview dimensions."
+    },
+    {
+      "id": "visual-polish",
+      "enabled": true,
+      "filter": "eq=contrast=1.05:saturation=1.08",
+      "reason": "Small contrast/saturation lift only; avoid changing the reality of the event."
+    },
+    {
+      "id": "audio-normalize",
+      "enabled": true,
+      "filter": "loudnorm=I=-16:TP=-1.5:LRA=11",
+      "reason": "Make preview audio easier to review without clipping."
+    }
+  ],
+  "captionPlan": {
+    "status": "waiting-for-transcription",
+    "notes": "No transcript available yet; install/set WHISPER_MODEL to generate captions locally."
+  },
+  "strategicNotes": [
+    "Keep full clip; strengthen the hook with caption/copy rather than cutting too much.",
+    "Use real event footage as the primary proof layer.",
+    "Do not add attendance, venue, food, drink, or ticket claims unless confirmed for this exact event."
+  ]
+}

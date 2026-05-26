@@ -1,0 +1,27 @@
+{
+  "snapshotId": "2026-05-23T08-09-02-930Z",
+  "createdAt": "2026-05-23T08:09:02.934Z",
+  "reason": "bootstrap",
+  "workspace": "out-of-office",
+  "projectName": "Out Of Office",
+  "lastWorkflowStatus": null,
+  "qualityStatus": "ready_for_human_review",
+  "qualityScore": 92,
+  "copiedFiles": [
+    "project-brief.json",
+    "workspace-manifest.json",
+    "strategy/content-pillars.md",
+    "calendar/30-day-calendar.md",
+    "drafts/posts.md",
+    "drafts/carousels.md",
+    "drafts/reels.md",
+    "creative/visual-briefs.md",
+    "simulation/persona-report.md",
+    "review/qa-recap.md",
+    "review/quality-gate.md",
+    "publishing/export-package.md",
+    "client-report/report.md",
+    "memory/preferences.json",
+    "memory/regeneration-queue.json"
+  ]
+}

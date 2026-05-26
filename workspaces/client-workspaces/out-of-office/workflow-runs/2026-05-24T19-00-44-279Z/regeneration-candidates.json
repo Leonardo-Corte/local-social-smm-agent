@@ -1,0 +1,18 @@
+{
+  "tasks": [
+    {
+      "id": "workflow-prompt-packet-copy-drafts-posts-md-execute-copywriter-step-with-a-local-model-and-review-the-resulting-output-before-changing-draft",
+      "createdAt": "2026-05-24T19:01:44.590Z",
+      "source": "workflow-runner",
+      "workflowRun": "workflow-runs/2026-05-24T19-00-44-279Z",
+      "stepId": "copy",
+      "agentId": "copywriter",
+      "artifact": "workflow-runs/2026-05-24T19-00-44-279Z/steps/copy/prompt.md",
+      "feedback": "Execute copywriter step with a local model and review the resulting output before changing drafts/posts.md.",
+      "target": "drafts/posts.md",
+      "status": "pending_model_execution",
+      "priority": 3,
+      "action": "execute_agent_step"
+    }
+  ]
+}

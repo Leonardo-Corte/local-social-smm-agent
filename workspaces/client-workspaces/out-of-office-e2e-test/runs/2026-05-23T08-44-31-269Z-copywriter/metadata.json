@@ -1,0 +1,14 @@
+{
+  "runId": "2026-05-23T08-44-31-269Z-copywriter",
+  "agentId": "copywriter",
+  "generatedAt": "2026-05-23T08:44:31.366Z",
+  "dryRun": true,
+  "backend": "prompt-packet",
+  "model": "qwen2.5:14b",
+  "inputPaths": [],
+  "contentPolicy": {
+    "status": "passed",
+    "blockers": 0,
+    "warnings": 0
+  }
+}

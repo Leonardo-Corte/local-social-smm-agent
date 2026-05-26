@@ -1,0 +1,23 @@
+{
+  "version": "0.1.0",
+  "workspace": "sample-local-social-team",
+  "runId": "2026-05-25T21-03-53-134Z",
+  "mode": "dry-run-prompt-packets",
+  "steps": [
+    {
+      "id": "copy",
+      "agentId": "copywriter",
+      "task": "Review the requested draft target. Improve clarity, specificity, platform fit, proof-awareness, and CTA quality without inventing offers, free trials, signups, discounts, testimonials, or claims not present in the brief.",
+      "inputs": [
+        "operations/current-request.md",
+        "calendar/30-day-calendar.md",
+        "drafts/posts.md"
+      ]
+    }
+  ],
+  "selectedStepIds": [
+    "copy"
+  ],
+  "maxSteps": null,
+  "timeoutMs": 1
+}

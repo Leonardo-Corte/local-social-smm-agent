@@ -1,0 +1,14 @@
+{
+  "id": "copy",
+  "agentId": "copywriter",
+  "status": "completed",
+  "backend": "ollama",
+  "model": "qwen2.5:14b",
+  "inputs": [
+    "calendar/30-day-calendar.md",
+    "drafts/posts.md",
+    "drafts/carousels.md",
+    "drafts/reels.md"
+  ],
+  "generatedAt": "2026-05-23T00:47:38.252Z"
+}

@@ -1,0 +1,69 @@
+{
+  "id": "apple-silicon-pro",
+  "label": "Apple Silicon Pro/Max",
+  "detect": [
+    "darwin",
+    "arm64"
+  ],
+  "backends": [
+    "mlx",
+    "ollama",
+    "llama.cpp",
+    "comfyui"
+  ],
+  "textModelTier": "quantized 14B-32B reasoning/copy models where memory allows",
+  "imageModelTier": "ComfyUI with Qwen-Image or lighter fallback depending on RAM",
+  "parallelism": "moderate",
+  "notes": "First-class target for MacBook Pro M3 Pro class machines.",
+  "detectedSignals": [
+    "platform:darwin",
+    "arch:arm64",
+    "memoryGb:18"
+  ],
+  "totalMemoryGb": 18,
+  "nvidiaVramGb": 0,
+  "availableBackends": [
+    {
+      "id": "ollama",
+      "label": "Ollama",
+      "available": true,
+      "command": "ollama-api",
+      "status": 0
+    },
+    {
+      "id": "mlx",
+      "label": "MLX LM",
+      "available": false,
+      "command": null,
+      "status": null
+    },
+    {
+      "id": "llama.cpp",
+      "label": "llama.cpp",
+      "available": false,
+      "command": null,
+      "status": null
+    },
+    {
+      "id": "vllm",
+      "label": "vLLM",
+      "available": false,
+      "command": null,
+      "status": null
+    },
+    {
+      "id": "comfyui",
+      "label": "ComfyUI",
+      "available": false,
+      "command": null,
+      "status": null
+    },
+    {
+      "id": "nvidia-smi",
+      "label": "NVIDIA SMI",
+      "available": false,
+      "command": null,
+      "status": null
+    }
+  ]
+}

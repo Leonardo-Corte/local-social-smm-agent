@@ -1,0 +1,22 @@
+{
+  "version": "0.1.0",
+  "workspace": "sample-local-social-team",
+  "runId": "2026-05-23T00-56-01-714Z",
+  "mode": "local-model-execution",
+  "steps": [
+    {
+      "id": "copy",
+      "agentId": "copywriter",
+      "task": "Review only drafts/posts.md. Propose better hooks, claims, CTAs, and a complete replacement only for drafts/posts.md. Do not include carousel or reel content in the Proposed Artifact.",
+      "inputs": [
+        "calendar/30-day-calendar.md",
+        "drafts/posts.md"
+      ]
+    }
+  ],
+  "selectedStepIds": [
+    "copy"
+  ],
+  "maxSteps": null,
+  "timeoutMs": 180000
+}

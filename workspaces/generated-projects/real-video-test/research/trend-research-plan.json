@@ -1,0 +1,992 @@
+{
+  "generatedAt": "2026-05-23T01:16:21.383Z",
+  "projectName": "Real Video Test",
+  "niche": "premium hospitality events, cocktail bars, and social dining experiences",
+  "targetAudience": "young professionals, food and drink lovers, nightlife guests, event partners, and local hospitality audiences",
+  "researchMode": "planned-local-first",
+  "sourceSummary": {
+    "lowRisk": [
+      "google-trends",
+      "user-provided-assets"
+    ],
+    "mediumRisk": [
+      "youtube-trending-and-search",
+      "reddit-public",
+      "tiktok-creative-center"
+    ],
+    "highRiskManualOnly": [
+      "instagram-public-review",
+      "facebook-public-review"
+    ]
+  },
+  "queries": [
+    "premium hospitality events trend",
+    "premium hospitality events content ideas",
+    "premium hospitality events problems objections",
+    "premium hospitality events instagram reel hooks",
+    "premium hospitality events facebook community questions",
+    "cocktail bars trend",
+    "cocktail bars content ideas",
+    "cocktail bars problems objections",
+    "cocktail bars instagram reel hooks",
+    "cocktail bars facebook community questions",
+    "and social dining experiences trend",
+    "and social dining experiences content ideas",
+    "and social dining experiences problems objections",
+    "and social dining experiences instagram reel hooks",
+    "and social dining experiences facebook community questions",
+    "a premium out-of-office social event experience hosted with La Tazza D Oro trend",
+    "a premium out-of-office social event experience hosted with La Tazza D Oro content ideas",
+    "a premium out-of-office social event experience hosted with La Tazza D Oro problems objections",
+    "a premium out-of-office social event experience hosted with La Tazza D Oro instagram reel hooks",
+    "a premium out-of-office social event experience hosted with La Tazza D Oro facebook community questions",
+    "young professionals trend",
+    "young professionals content ideas",
+    "young professionals problems objections",
+    "young professionals instagram reel hooks",
+    "young professionals facebook community questions",
+    "food and drink lovers trend",
+    "food and drink lovers content ideas",
+    "food and drink lovers problems objections",
+    "food and drink lovers instagram reel hooks",
+    "food and drink lovers facebook community questions"
+  ],
+  "tasks": [
+    {
+      "id": "research-task-01",
+      "query": "premium hospitality events trend",
+      "objective": "Find audience pain language and objections.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=premium%20hospitality%20events%20trend",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=premium%20hospitality%20events%20trend",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=premium%20hospitality%20events%20trend",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-02",
+      "query": "premium hospitality events content ideas",
+      "objective": "Find format, hook, and creative patterns.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=premium%20hospitality%20events%20content%20ideas",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=premium%20hospitality%20events%20content%20ideas",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=premium%20hospitality%20events%20content%20ideas",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-03",
+      "query": "premium hospitality events problems objections",
+      "objective": "Find content gaps and positioning opportunities.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=premium%20hospitality%20events%20problems%20objections",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=premium%20hospitality%20events%20problems%20objections",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=premium%20hospitality%20events%20problems%20objections",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-04",
+      "query": "premium hospitality events instagram reel hooks",
+      "objective": "Find audience pain language and objections.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=premium%20hospitality%20events%20instagram%20reel%20hooks",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=premium%20hospitality%20events%20instagram%20reel%20hooks",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=premium%20hospitality%20events%20instagram%20reel%20hooks",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-05",
+      "query": "premium hospitality events facebook community questions",
+      "objective": "Find format, hook, and creative patterns.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=premium%20hospitality%20events%20facebook%20community%20questions",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=premium%20hospitality%20events%20facebook%20community%20questions",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=premium%20hospitality%20events%20facebook%20community%20questions",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-06",
+      "query": "cocktail bars trend",
+      "objective": "Find content gaps and positioning opportunities.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=cocktail%20bars%20trend",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=cocktail%20bars%20trend",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=cocktail%20bars%20trend",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-07",
+      "query": "cocktail bars content ideas",
+      "objective": "Find audience pain language and objections.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=cocktail%20bars%20content%20ideas",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=cocktail%20bars%20content%20ideas",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=cocktail%20bars%20content%20ideas",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-08",
+      "query": "cocktail bars problems objections",
+      "objective": "Find format, hook, and creative patterns.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=cocktail%20bars%20problems%20objections",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=cocktail%20bars%20problems%20objections",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=cocktail%20bars%20problems%20objections",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-09",
+      "query": "cocktail bars instagram reel hooks",
+      "objective": "Find content gaps and positioning opportunities.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=cocktail%20bars%20instagram%20reel%20hooks",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=cocktail%20bars%20instagram%20reel%20hooks",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=cocktail%20bars%20instagram%20reel%20hooks",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-10",
+      "query": "cocktail bars facebook community questions",
+      "objective": "Find audience pain language and objections.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=cocktail%20bars%20facebook%20community%20questions",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=cocktail%20bars%20facebook%20community%20questions",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=cocktail%20bars%20facebook%20community%20questions",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-11",
+      "query": "and social dining experiences trend",
+      "objective": "Find format, hook, and creative patterns.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=and%20social%20dining%20experiences%20trend",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=and%20social%20dining%20experiences%20trend",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=and%20social%20dining%20experiences%20trend",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-12",
+      "query": "and social dining experiences content ideas",
+      "objective": "Find content gaps and positioning opportunities.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=and%20social%20dining%20experiences%20content%20ideas",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=and%20social%20dining%20experiences%20content%20ideas",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=and%20social%20dining%20experiences%20content%20ideas",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-13",
+      "query": "and social dining experiences problems objections",
+      "objective": "Find audience pain language and objections.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=and%20social%20dining%20experiences%20problems%20objections",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=and%20social%20dining%20experiences%20problems%20objections",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=and%20social%20dining%20experiences%20problems%20objections",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-14",
+      "query": "and social dining experiences instagram reel hooks",
+      "objective": "Find format, hook, and creative patterns.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=and%20social%20dining%20experiences%20instagram%20reel%20hooks",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=and%20social%20dining%20experiences%20instagram%20reel%20hooks",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=and%20social%20dining%20experiences%20instagram%20reel%20hooks",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-15",
+      "query": "and social dining experiences facebook community questions",
+      "objective": "Find content gaps and positioning opportunities.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=and%20social%20dining%20experiences%20facebook%20community%20questions",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=and%20social%20dining%20experiences%20facebook%20community%20questions",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=and%20social%20dining%20experiences%20facebook%20community%20questions",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-16",
+      "query": "a premium out-of-office social event experience hosted with La Tazza D Oro trend",
+      "objective": "Find audience pain language and objections.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=a%20premium%20out-of-office%20social%20event%20experience%20hosted%20with%20La%20Tazza%20D%20Oro%20trend",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=a%20premium%20out-of-office%20social%20event%20experience%20hosted%20with%20La%20Tazza%20D%20Oro%20trend",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=a%20premium%20out-of-office%20social%20event%20experience%20hosted%20with%20La%20Tazza%20D%20Oro%20trend",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-17",
+      "query": "a premium out-of-office social event experience hosted with La Tazza D Oro content ideas",
+      "objective": "Find format, hook, and creative patterns.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=a%20premium%20out-of-office%20social%20event%20experience%20hosted%20with%20La%20Tazza%20D%20Oro%20content%20ideas",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=a%20premium%20out-of-office%20social%20event%20experience%20hosted%20with%20La%20Tazza%20D%20Oro%20content%20ideas",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=a%20premium%20out-of-office%20social%20event%20experience%20hosted%20with%20La%20Tazza%20D%20Oro%20content%20ideas",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-18",
+      "query": "a premium out-of-office social event experience hosted with La Tazza D Oro problems objections",
+      "objective": "Find content gaps and positioning opportunities.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=a%20premium%20out-of-office%20social%20event%20experience%20hosted%20with%20La%20Tazza%20D%20Oro%20problems%20objections",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=a%20premium%20out-of-office%20social%20event%20experience%20hosted%20with%20La%20Tazza%20D%20Oro%20problems%20objections",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=a%20premium%20out-of-office%20social%20event%20experience%20hosted%20with%20La%20Tazza%20D%20Oro%20problems%20objections",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-19",
+      "query": "a premium out-of-office social event experience hosted with La Tazza D Oro instagram reel hooks",
+      "objective": "Find audience pain language and objections.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=a%20premium%20out-of-office%20social%20event%20experience%20hosted%20with%20La%20Tazza%20D%20Oro%20instagram%20reel%20hooks",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=a%20premium%20out-of-office%20social%20event%20experience%20hosted%20with%20La%20Tazza%20D%20Oro%20instagram%20reel%20hooks",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=a%20premium%20out-of-office%20social%20event%20experience%20hosted%20with%20La%20Tazza%20D%20Oro%20instagram%20reel%20hooks",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-20",
+      "query": "a premium out-of-office social event experience hosted with La Tazza D Oro facebook community questions",
+      "objective": "Find format, hook, and creative patterns.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=a%20premium%20out-of-office%20social%20event%20experience%20hosted%20with%20La%20Tazza%20D%20Oro%20facebook%20community%20questions",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=a%20premium%20out-of-office%20social%20event%20experience%20hosted%20with%20La%20Tazza%20D%20Oro%20facebook%20community%20questions",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=a%20premium%20out-of-office%20social%20event%20experience%20hosted%20with%20La%20Tazza%20D%20Oro%20facebook%20community%20questions",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-21",
+      "query": "young professionals trend",
+      "objective": "Find content gaps and positioning opportunities.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=young%20professionals%20trend",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=young%20professionals%20trend",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=young%20professionals%20trend",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-22",
+      "query": "young professionals content ideas",
+      "objective": "Find audience pain language and objections.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=young%20professionals%20content%20ideas",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=young%20professionals%20content%20ideas",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=young%20professionals%20content%20ideas",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-23",
+      "query": "young professionals problems objections",
+      "objective": "Find format, hook, and creative patterns.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=young%20professionals%20problems%20objections",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=young%20professionals%20problems%20objections",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=young%20professionals%20problems%20objections",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-24",
+      "query": "young professionals instagram reel hooks",
+      "objective": "Find content gaps and positioning opportunities.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=young%20professionals%20instagram%20reel%20hooks",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=young%20professionals%20instagram%20reel%20hooks",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=young%20professionals%20instagram%20reel%20hooks",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-25",
+      "query": "young professionals facebook community questions",
+      "objective": "Find audience pain language and objections.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=young%20professionals%20facebook%20community%20questions",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=young%20professionals%20facebook%20community%20questions",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=young%20professionals%20facebook%20community%20questions",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-26",
+      "query": "food and drink lovers trend",
+      "objective": "Find format, hook, and creative patterns.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=food%20and%20drink%20lovers%20trend",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=food%20and%20drink%20lovers%20trend",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=food%20and%20drink%20lovers%20trend",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-27",
+      "query": "food and drink lovers content ideas",
+      "objective": "Find content gaps and positioning opportunities.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=food%20and%20drink%20lovers%20content%20ideas",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=food%20and%20drink%20lovers%20content%20ideas",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=food%20and%20drink%20lovers%20content%20ideas",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-28",
+      "query": "food and drink lovers problems objections",
+      "objective": "Find audience pain language and objections.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=food%20and%20drink%20lovers%20problems%20objections",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=food%20and%20drink%20lovers%20problems%20objections",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=food%20and%20drink%20lovers%20problems%20objections",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-29",
+      "query": "food and drink lovers instagram reel hooks",
+      "objective": "Find format, hook, and creative patterns.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=food%20and%20drink%20lovers%20instagram%20reel%20hooks",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=food%20and%20drink%20lovers%20instagram%20reel%20hooks",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=food%20and%20drink%20lovers%20instagram%20reel%20hooks",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    },
+    {
+      "id": "research-task-30",
+      "query": "food and drink lovers facebook community questions",
+      "objective": "Find content gaps and positioning opportunities.",
+      "suggestedSources": [
+        "google-trends",
+        "youtube-trending-and-search",
+        "reddit-public",
+        "tiktok-creative-center",
+        "user-provided-assets"
+      ],
+      "status": "pending",
+      "evidenceRequired": true,
+      "sourceLinks": [
+        {
+          "source": "google-trends",
+          "url": "https://trends.google.com/trends/explore?q=food%20and%20drink%20lovers%20facebook%20community%20questions",
+          "action": "Open manually or browser-assisted, record trend direction and related queries."
+        },
+        {
+          "source": "youtube-trending-and-search",
+          "url": "https://www.youtube.com/results?search_query=food%20and%20drink%20lovers%20facebook%20community%20questions",
+          "action": "Review public titles, thumbnails, formats, and hooks with light rate limits."
+        },
+        {
+          "source": "reddit-public",
+          "url": "https://www.reddit.com/search/?q=food%20and%20drink%20lovers%20facebook%20community%20questions",
+          "action": "Review public discussions for pain language, objections, and recurring questions."
+        }
+      ]
+    }
+  ],
+  "guardrails": [
+    "Cite every source before using a claim.",
+    "Separate observed facts from strategic inference.",
+    "Do not automate restricted Meta surfaces.",
+    "Use high-risk sources only through human/manual review unless explicitly approved."
+  ]
+}
