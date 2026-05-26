@@ -37,6 +37,7 @@ const {
   assertSafeLocalAssetFile,
   importLocalAsset
 } = require("../../../packages/workspace-runner/safe-ingestion");
+const { generateImage } = require("../../../packages/image-workflow/pollinations-adapter");
 
 const root = path.resolve(__dirname, "../../..");
 
@@ -188,6 +189,8 @@ Comandi chat:
   /help                         mostra questi comandi
   /agents                       lista agenti disponibili
   /agent <id>                   cambia agente attivo
+  /generate <prompt>            genera un'immagine con Pollinations.ai (zero API key)
+  /img <prompt>                 alias di /generate
   /attach <path>                allega un file al contesto della chat
   /link <url>                   importa un link pubblico come contesto
   /image <path>                 importa e analizza un'immagine locale
@@ -261,6 +264,42 @@ function wantsCreativeOrchestration(input) {
     /\bcreative\b|\bcreativ[ao]\b|\borchestra\b|\bmonta\b|\bedita\b|\bcapcut\b/.test(text) ||
     (/\b(gener|crea|fammi|prepara|sviluppa)\b/.test(text) && /\b(reel|video|immagin|locandina|drive|cartella|folder|trend|reddit|x)\b/.test(text))
   );
+}
+
+function wantsDirectImageGeneration(input) {
+  const t = input.toLowerCase();
+  return /\b(crea|genera|fammi|disegna|illustra|show me|make|draw|generate)\b/.test(t)
+    && /\b(immagin|image|foto|illustra|picture|visual|thumbnail|copertina|cover|poster)\b/.test(t);
+}
+
+function extractImageStyleFromInput(input) {
+  const styleMap = [
+    [/\bup\b|\bpalloncin/i, "Pixar Up movie style, colorful balloons, heartwarming illustration"],
+    [/pixar|disney/i, "Pixar/Disney 3D animation style"],
+    [/anime|manga/i, "anime illustration style, vibrant colors"],
+    [/minimalista|minimal/i, "flat minimalist vector illustration"],
+    [/fotorealist|realistic|foto/i, "photorealistic, DSLR quality"],
+    [/vintage|retro/i, "vintage poster illustration style"],
+    [/watercolor|acquerello/i, "watercolor painting style"]
+  ];
+  for (const [pattern, style] of styleMap) {
+    if (pattern.test(input)) return style;
+  }
+  return "professional digital illustration, high quality";
+}
+
+async function generateImageFromChat({ workspaceRoot, input, preset = "square" }) {
+  const style = extractImageStyleFromInput(input);
+  // Strip command words to get the scene description
+  const scene = input
+    .replace(/^(crea|genera|fammi|disegna|illustra|make|draw|generate)\s*(mi|un[ao]?)?\s*/i, "")
+    .replace(/\b(in stile|stile|come nel film|nello stile di)\b.*/i, "")
+    .trim();
+  const prompt = `${scene}, ${style}, no text, no watermark, no logo, high detail`;
+  console.log(`  Generando immagine con Pollinations.ai...`);
+  console.log(`  Prompt: ${prompt.slice(0, 100)}`);
+  const result = await generateImage(prompt, { preset, workspaceRoot });
+  return result;
 }
 
 async function runCreativeFromChat({ workspace, workspaceRoot, input, model }) {
@@ -403,7 +442,7 @@ async function runAgentTeam({ workspace, input, intent, model }) {
       type: intent.type,
       steps: intent.steps,
       model,
-      timeoutMs: 120000,
+      timeoutMs: 240000,
       apply: true
     });
     return {
@@ -690,6 +729,22 @@ async function main() {
         rl.prompt();
         return;
       }
+      if (input.startsWith("/generate ") || input.startsWith("/img ")) {
+        const prompt = input.startsWith("/generate ") ? input.slice("/generate ".length).trim() : input.slice("/img ".length).trim();
+        processing = true;
+        console.log("Generando immagine con Pollinations.ai...");
+        try {
+          const result = await generateImage(prompt, { preset: "square", workspaceRoot });
+          const msg = `Immagine salvata:\n  ${result.outputPath}\n  ${result.width}x${result.height} — ${(result.sizeBytes / 1024).toFixed(0)} KB\n  Artifact: ${result.artifact?.id || "-"}`;
+          console.log(`\n${msg}\n`);
+          appendText(transcriptPath, `\n## Image Generated\n\n${msg}\n`);
+        } catch (err) {
+          console.log(`Errore generazione immagine: ${err.message}`);
+        }
+        processing = false;
+        rl.prompt();
+        return;
+      }
 
       processing = true;
       console.log("thinking...");
@@ -718,7 +773,21 @@ async function main() {
       }
       const intent = detectContentIntent(input);
       let teamRunSummary = "";
-      if (wantsCreativeOrchestration(input)) {
+      if (wantsDirectImageGeneration(input)) {
+        try {
+          const imgResult = await generateImageFromChat({ workspaceRoot, input, preset: "square" });
+          const msg = `Immagine generata:\n  ${imgResult.outputPath}\n  ${imgResult.width}x${imgResult.height} — ${(imgResult.sizeBytes / 1024).toFixed(0)} KB`;
+          console.log(`\n${msg}\n`);
+          appendText(transcriptPath, `\n## Image Generated\n\n${msg}\n`);
+          history.push({ role: "user", content: input });
+          history.push({ role: "assistant", content: msg });
+          processing = false;
+          rl.prompt();
+          return;
+        } catch (err) {
+          console.log(`Generazione immagine fallita: ${err.message} — continuo con la risposta testuale.`);
+        }
+      } else if (wantsCreativeOrchestration(input)) {
         const creativeRunSummary = await runCreativeFromChat({ workspace, workspaceRoot, input, model });
         console.log(`\n${creativeRunSummary}\n`);
         appendText(transcriptPath, `\n## Creative Workflow\n\n${creativeRunSummary}\n`);

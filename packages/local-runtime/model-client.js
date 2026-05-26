@@ -89,14 +89,17 @@ function chooseOllamaModel(models, preferredModel) {
     return preferredModel;
   }
   const textModels = filterTextModels(models);
-  const preferenceHints = ["qwen", "deepseek", "llama", "mistral", "gemma"];
+  // Prefer non-coder models for general/chat/social tasks
+  const nonCoderModels = textModels.filter((m) => !CODER_PATTERN.test(m));
+  const pool = nonCoderModels.length > 0 ? nonCoderModels : textModels;
+  const preferenceHints = ["qwen2.5:14b", "qwen2.5:", "qwen2.5", "qwen", "deepseek", "llama", "mistral", "gemma"];
   for (const hint of preferenceHints) {
-    const match = textModels.find((model) => model.toLowerCase().includes(hint));
+    const match = pool.find((model) => model.toLowerCase().includes(hint));
     if (match) {
       return match;
     }
   }
-  return textModels[0] || models[0] || null;
+  return pool[0] || models[0] || null;
 }
 
 function chooseOllamaModelForTask(models, taskType, preferredModel) {
