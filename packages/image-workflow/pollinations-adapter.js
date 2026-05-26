@@ -54,7 +54,7 @@ function httpsGet(url) {
   });
 }
 
-async function generateImage(prompt, { preset = "thumbnail", width, height, seed, model, workspaceRoot, filename } = {}) {
+async function generateImage(prompt, { preset = "thumbnail", width, height, seed, model, workspaceRoot, filename, saveToDesktop = false } = {}) {
   const presetDef = PRESETS[preset] || PRESETS.thumbnail;
   const w = width || presetDef.width;
   const h = height || presetDef.height;
@@ -65,10 +65,21 @@ async function generateImage(prompt, { preset = "thumbnail", width, height, seed
 
   const ts = new Date().toISOString().slice(0, 16).replace(/[T:]/g, "-");
   const resolvedFilename = filename || `${label}-${ts}.png`;
-  const outputDir = workspaceRoot ? path.join(workspaceRoot, "creative", "images") : process.cwd();
+
+  // Always save to workspace
+  const outputDir = workspaceRoot ? path.join(workspaceRoot, "creative", "images") : path.join(require("os").homedir(), "Desktop", "smm-images");
   fs.mkdirSync(outputDir, { recursive: true });
   const outputPath = path.join(outputDir, resolvedFilename);
   fs.writeFileSync(outputPath, imageBuffer);
+
+  // Also save to Desktop if requested
+  let desktopPath = null;
+  if (saveToDesktop) {
+    const desktopDir = path.join(require("os").homedir(), "Desktop", "smm-images");
+    fs.mkdirSync(desktopDir, { recursive: true });
+    desktopPath = path.join(desktopDir, resolvedFilename);
+    fs.copyFileSync(outputPath, desktopPath);
+  }
 
   let artifact = null;
   if (workspaceRoot) {
@@ -80,11 +91,11 @@ async function generateImage(prompt, { preset = "thumbnail", width, height, seed
       sourceRun: `pollinations-${Date.now()}`,
       sourceAgent: "image-gen",
       status: "needs_human_review",
-      metadata: { prompt: prompt.slice(0, 200), width: w, height: h, preset, label, model: model || "flux", url }
+      metadata: { prompt: prompt.slice(0, 200), width: w, height: h, preset, label, model: model || "flux", url, desktopPath }
     });
   }
 
-  return { outputPath, filename: resolvedFilename, width: w, height: h, preset, label, sizeBytes: imageBuffer.length, artifact };
+  return { outputPath, desktopPath, filename: resolvedFilename, width: w, height: h, preset, label, sizeBytes: imageBuffer.length, artifact };
 }
 
 async function generateVisualBrief(workspaceRoot, { model } = {}) {

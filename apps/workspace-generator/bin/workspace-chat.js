@@ -288,17 +288,22 @@ function extractImageStyleFromInput(input) {
   return "professional digital illustration, high quality";
 }
 
-async function generateImageFromChat({ workspaceRoot, input, preset = "square" }) {
+function buildImagePromptFromInput(input) {
   const style = extractImageStyleFromInput(input);
-  // Strip command words to get the scene description
   const scene = input
     .replace(/^(crea|genera|fammi|disegna|illustra|make|draw|generate)\s*(mi|un[ao]?)?\s*/i, "")
+    .replace(/\b(post|promozional\w*|instagram|facebook|social)\b/gi, "")
     .replace(/\b(in stile|stile|come nel film|nello stile di)\b.*/i, "")
+    .replace(/\s{2,}/g, " ")
     .trim();
-  const prompt = `${scene}, ${style}, no text, no watermark, no logo, high detail`;
+  return `${scene}, ${style}, high detail, vibrant colors, professional quality, no watermark`;
+}
+
+async function generateImageFromChat({ workspaceRoot, input, preset = "square" }) {
+  const prompt = buildImagePromptFromInput(input);
   console.log(`  Generando immagine con Pollinations.ai...`);
-  console.log(`  Prompt: ${prompt.slice(0, 100)}`);
-  const result = await generateImage(prompt, { preset, workspaceRoot });
+  console.log(`  Prompt: ${prompt.slice(0, 120)}`);
+  const result = await generateImage(prompt, { preset, workspaceRoot, saveToDesktop: true });
   return result;
 }
 
@@ -734,8 +739,9 @@ async function main() {
         processing = true;
         console.log("Generando immagine con Pollinations.ai...");
         try {
-          const result = await generateImage(prompt, { preset: "square", workspaceRoot });
-          const msg = `Immagine salvata:\n  ${result.outputPath}\n  ${result.width}x${result.height} — ${(result.sizeBytes / 1024).toFixed(0)} KB\n  Artifact: ${result.artifact?.id || "-"}`;
+          const result = await generateImage(prompt, { preset: "square", workspaceRoot, saveToDesktop: true });
+          const desktopNote = result.desktopPath ? `\n  Desktop: ${result.desktopPath}` : "";
+          const msg = `Immagine salvata:\n  Workspace: ${result.outputPath}${desktopNote}\n  ${result.width}x${result.height} — ${(result.sizeBytes / 1024).toFixed(0)} KB`;
           console.log(`\n${msg}\n`);
           appendText(transcriptPath, `\n## Image Generated\n\n${msg}\n`);
         } catch (err) {
@@ -773,10 +779,13 @@ async function main() {
       }
       const intent = detectContentIntent(input);
       let teamRunSummary = "";
-      if (wantsDirectImageGeneration(input)) {
+      const wantsImage = wantsDirectImageGeneration(input) || (intent && intent.type === "image");
+
+      if (wantsImage) {
         try {
           const imgResult = await generateImageFromChat({ workspaceRoot, input, preset: "square" });
-          const msg = `Immagine generata:\n  ${imgResult.outputPath}\n  ${imgResult.width}x${imgResult.height} — ${(imgResult.sizeBytes / 1024).toFixed(0)} KB`;
+          const desktopNote = imgResult.desktopPath ? `\n  Desktop: ${imgResult.desktopPath}` : "";
+          const msg = `Immagine generata e salvata:\n  Workspace: ${imgResult.outputPath}${desktopNote}\n  Dimensioni: ${imgResult.width}x${imgResult.height} — ${(imgResult.sizeBytes / 1024).toFixed(0)} KB\n\nAprila dal Desktop → cartella smm-images`;
           console.log(`\n${msg}\n`);
           appendText(transcriptPath, `\n## Image Generated\n\n${msg}\n`);
           history.push({ role: "user", content: input });
@@ -785,7 +794,8 @@ async function main() {
           rl.prompt();
           return;
         } catch (err) {
-          console.log(`Generazione immagine fallita: ${err.message} — continuo con la risposta testuale.`);
+          console.log(`  Generazione immagine fallita: ${err.message}`);
+          console.log(`  Riprova con: /generate <descrizione in inglese>`);
         }
       } else if (wantsCreativeOrchestration(input)) {
         const creativeRunSummary = await runCreativeFromChat({ workspace, workspaceRoot, input, model });
