@@ -1,0 +1,64 @@
+{
+  "version": "1.0.0",
+  "updatedAt": "2026-05-27T05:01:07.643Z",
+  "artifacts": [
+    {
+      "id": "da405f5bd8b2ea3c",
+      "path": "team-runs/2026-05-27T04-50-43-437Z/final-artifact.md",
+      "type": "adaptive-team-final-artifact",
+      "intent": "post",
+      "platform": null,
+      "sourceRun": "2026-05-27T04-50-43-437Z",
+      "sourceAgent": "adaptive-orchestrator",
+      "appliedTarget": null,
+      "status": "needs_human_review",
+      "requiredHumanApproval": true,
+      "automaticPublishEnabled": false,
+      "approval": null,
+      "metadata": {
+        "request": "ciao allora ora creami il post per instagrm per l annoncio di GIGI il nuovo assitente vocale AI che vuole sostituire siri anlizzati anceh tutto il sitoweb per capire meglio tonon come momunichiamo e tutto https://killsiri.xyz/",
+        "target": "drafts/posts.md",
+        "contentPolicyStatus": "passed",
+        "agentSteps": {
+          "completed": 7,
+          "fallback": 0,
+          "total": 6,
+          "revisionLoops": 1
+        },
+        "workflowRun": "workflow-runs/2026-05-27T04-50-43-444Z",
+        "teamRun": "team-runs/2026-05-27T04-50-43-437Z",
+        "applied": true,
+        "blackboard": {
+          "totalEntries": 45,
+          "decisions": 15,
+          "risks": 16,
+          "blockers": 0,
+          "revisionRequests": 7
+        }
+      },
+      "createdAt": "2026-05-27T05:01:07.637Z",
+      "updatedAt": "2026-05-27T05:01:07.642Z"
+    },
+    {
+      "id": "3aa2f5eca6bee818",
+      "path": "drafts/posts.md",
+      "type": "applied-draft",
+      "intent": "post",
+      "platform": null,
+      "sourceRun": "2026-05-27T04-50-43-437Z",
+      "sourceAgent": "adaptive-orchestrator",
+      "appliedTarget": "drafts/posts.md",
+      "status": "needs_human_review",
+      "requiredHumanApproval": true,
+      "automaticPublishEnabled": false,
+      "approval": null,
+      "metadata": {
+        "request": "ciao allora ora creami il post per instagrm per l annoncio di GIGI il nuovo assitente vocale AI che vuole sostituire siri anlizzati anceh tutto il sitoweb per capire meglio tonon come momunichiamo e tutto https://killsiri.xyz/",
+        "sourceArtifact": "team-runs/2026-05-27T04-50-43-437Z/final-artifact.md",
+        "backup": "review/orchestrator-backups/2026-05-27T04-50-43-437Z/drafts__posts.md"
+      },
+      "createdAt": "2026-05-27T05:01:07.642Z",
+      "updatedAt": "2026-05-27T05:01:07.643Z"
+    }
+  ]
+}

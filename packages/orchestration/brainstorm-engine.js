@@ -87,6 +87,64 @@ ASSEGNAZIONE [@agente]: [cosa deve fare concretamente]
 Questo brief diventa la guida per la fase di esecuzione.`;
 }
 
+function councilPrompt({ agents, agentDefs, request, taskPlan, reflectionsContext }) {
+  const roles = agents.map((agent) => {
+    const definition = (agentDefs[agent.id] || "").slice(0, 900);
+    const tasks = taskPlan.tasksByAgent[agent.id]?.join("\n") || "Contribuisci dal tuo punto di vista.";
+    return `### @${agent.id} - ${agent.label}
+Focus: ${agent.focus}
+Agent definition:
+${definition}
+Assigned task:
+${tasks}`;
+  }).join("\n\n---\n\n");
+
+  return `# Fast Creative Council
+
+You are simulating a real editorial room for a local-first social media team.
+The goal is to get multi-agent debate quality with fewer local-model calls.
+
+## User Request
+${request}
+
+## Team Roles
+${roles}
+${reflectionsContext ? `\n${reflectionsContext}\n` : ""}
+## Method
+Run the room in one pass:
+1. Each specialist proposes one strong idea from its role.
+2. Each specialist challenges or improves one other idea.
+3. The creative director converges the best direction into an execution-ready creative brief.
+
+## Output Format
+Use exactly this structure.
+
+${agents.map((agent) => `### @${agent.id}
+IDEA: [one specific idea]
+WHY IT WORKS: [platform/audience reason]
+CHALLENGE: [what could fail or become generic]
+BUILD: [how to improve it concretely]
+HANDOFF: [what the next production agent must keep]`).join("\n\n")}
+
+### CREATIVE_DIRECTOR_SYNTHESIS
+TOP IDEA: [winning idea title]
+Proposta da: [agent id]
+Supportata da: [agent ids]
+Perche funziona: [2-3 concrete lines]
+Come si esegue: [steps]
+
+### Creative Brief
+- Concept centrale:
+- Tono:
+- Visual:
+- Copy angle:
+- Platform adaptation:
+- Risks / approval blockers:
+
+### Execution Assignments
+${agents.map((agent) => `ASSEGNAZIONE [@${agent.id}]: [concrete next production task]`).join("\n")}`;
+}
+
 function extractIdeas(output) {
   const ideas = [];
   const regex = /^IDEA:\s*(.+)$([\s\S]*?)(?=^IDEA:|^DOMANDA:|$)/gm;
@@ -243,7 +301,62 @@ AGGIUNTA: [insight o dettaglio che emerge da questo scambio]`;
   return results;
 }
 
-async function runBrainstorm({ agents, agentDefs, request, taskPlan, room, model, timeoutMs = 240000, onProgress, reflectionsContext }) {
+function extractAgentCouncilBlock(output, agentId) {
+  const regex = new RegExp(`^###\\s+@${agentId}\\b[\\s\\S]*?(?=^###\\s+@|^###\\s+CREATIVE_DIRECTOR_SYNTHESIS|$)`, "im");
+  const match = String(output || "").match(regex);
+  return match ? match[0].trim() : "";
+}
+
+function extractCouncilSynthesis(output) {
+  const match = String(output || "").match(/^###\s+CREATIVE_DIRECTOR_SYNTHESIS\s*([\s\S]*)$/im);
+  return match ? match[1].trim() : String(output || "").trim();
+}
+
+async function runCouncilBrainstorm({ agents, agentDefs, request, taskPlan, room, model, timeoutMs = 120000, onProgress, reflectionsContext }) {
+  room.round = 1;
+  if (onProgress) onProgress({ phase: "council", agent: "creative-council" });
+
+  const prompt = councilPrompt({ agents, agentDefs, request, taskPlan, reflectionsContext });
+  let output = "";
+  try {
+    output = await runOllamaGenerate({ model, prompt, timeoutMs: Math.min(timeoutMs, 120000) });
+  } catch (err) {
+    output = `[Creative council failed: ${err.message}]`;
+  }
+
+  const divergeResults = [];
+  for (const agent of agents) {
+    const block = extractAgentCouncilBlock(output, agent.id);
+    if (!block) {
+      continue;
+    }
+    room.post({ from: agent.id, to: "all", type: "idea", content: block, round: 1 });
+    divergeResults.push({
+      agent: agent.id,
+      ideas: extractIdeas(block),
+      question: extractQuestion(block),
+      raw: block
+    });
+  }
+
+  const synthesis = extractCouncilSynthesis(output);
+  room.round = 3;
+  room.post({ from: "creative-director", to: "all", type: "synthesis", content: synthesis, round: 3 });
+  return {
+    mode: "council",
+    divergeResults,
+    reactResults: [],
+    dialogueResults: [],
+    synthesis,
+    roomSummary: room.getRoundSummary(1)
+  };
+}
+
+async function runBrainstorm({ agents, agentDefs, request, taskPlan, room, model, timeoutMs = 240000, onProgress, reflectionsContext, mode = process.env.SMM_BRAINSTORM_MODE || "council" }) {
+  if (mode !== "full") {
+    return runCouncilBrainstorm({ agents, agentDefs, request, taskPlan, room, model, timeoutMs, onProgress, reflectionsContext });
+  }
+
   const divergeResults = await runDivergeRound({ agents, agentDefs, request, taskPlan, room, model, timeoutMs, onProgress, reflectionsContext });
   const reactResults = await runReactRound({ agents, agentDefs, request, room, model, timeoutMs, onProgress });
 
@@ -252,7 +365,7 @@ async function runBrainstorm({ agents, agentDefs, request, taskPlan, room, model
 
   const synthesis = await runConvergeRound({ request, room, taskPlan, model, timeoutMs, onProgress });
 
-  return { divergeResults, reactResults, dialogueResults, synthesis, roomSummary: room.getRoundSummary(1) };
+  return { mode: "full", divergeResults, reactResults, dialogueResults, synthesis, roomSummary: room.getRoundSummary(1) };
 }
 
-module.exports = { runBrainstorm, runDivergeRound, runReactRound, runConvergeRound, runDirectDialogueRound };
+module.exports = { runBrainstorm, runCouncilBrainstorm, runDivergeRound, runReactRound, runConvergeRound, runDirectDialogueRound };

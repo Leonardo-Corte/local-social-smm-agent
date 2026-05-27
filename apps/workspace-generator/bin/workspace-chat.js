@@ -15,6 +15,10 @@ const {
   writeReelIntelligence
 } = require("../../../packages/video-intel/reel-intelligence");
 const {
+  buildVideoQualityReport,
+  writeVideoQualityReport
+} = require("../../../packages/video-intel/video-quality-report");
+const {
   buildEditRecipe,
   runPreviewEdit,
   writeRecipe
@@ -30,15 +34,52 @@ const {
   writeLinkIntelligence
 } = require("../../../packages/asset-intel/attachment-ingestor");
 const { runWorkflow } = require("../../../packages/workflow-runner/pipeline");
-const { runTeamOrchestration } = require("../../../packages/workflow-runner/team-orchestrator");
+const { requestScopeGuard, runAdaptiveTeamOrchestration } = require("../../../packages/orchestration/adaptive-orchestrator");
 const { runCreativeWorkflow } = require("../../../packages/workflow-runner/creative-orchestrator");
 const { workspacePaths } = require("../../../packages/workspace-runner/workspace-paths");
 const {
   assertSafeLocalAssetFile,
   importLocalAsset
 } = require("../../../packages/workspace-runner/safe-ingestion");
-const { generateImage } = require("../../../packages/image-workflow/pollinations-adapter");
+const { generateImage, PRESETS } = require("../../../packages/image-workflow/pollinations-adapter");
+const {
+  runComfyUiWorkflow,
+  writeComfyUiRunReport
+} = require("../../../packages/image-workflow/comfyui-api-client");
+const {
+  buildImageQualityReport,
+  writeImageQualityReport
+} = require("../../../packages/image-workflow/image-quality-report");
+const {
+  buildLaunchCreativePackage,
+  writeLaunchCreativePackage
+} = require("../../../packages/image-workflow/launch-creative-package");
+const {
+  runVisionCritic,
+  writeVisionCriticReport
+} = require("../../../packages/image-workflow/vision-critic");
+const {
+  buildComfyUiCopilotPlan,
+  comfyUiCopilotPlanMarkdown
+} = require("../../../packages/image-workflow/comfyui-copilot-plan");
+const { renderStaticPost } = require("../../../packages/design-renderer/static-post-renderer");
+const { writePixelleHandoff } = require("../../../packages/video-engines/pixelle-adapter");
+const { detectVideoEngines, videoEngineRegistryMarkdown } = require("../../../packages/video-engines/engine-registry");
+const { buildPublishingDryRun, writePublishingDryRun } = require("../../../packages/publishing/dry-run-publisher");
+const { writeFinalSystemStatus, statusMarkdown } = require("../../../packages/roadmap/final-system-status");
+const { nextCommandPolicy } = require("../../../packages/workspace-runner/next-commands");
 const { runMegaOrchestration } = require("../../../packages/orchestration/mega-orchestrator");
+const { runConsensusOrchestration } = require("../../../packages/orchestration/consensus-orchestrator");
+const { runPromptEngineer } = require("../../../packages/orchestration/prompt-engineer");
+const {
+  routeNaturalLanguage,
+  intentFromRoute,
+  routeNeedsAutoVisual,
+  routeWantsDirectImageGeneration,
+  routeUsesCreativeWorkflow,
+  visualPresetFromRoute,
+  routeReportMarkdown
+} = require("../../../packages/orchestration/natural-language-router");
 
 const root = path.resolve(__dirname, "../../..");
 
@@ -132,8 +173,9 @@ function buildWorkspaceContext({ workspaceRoot, activeAgent, attachments }) {
   ].filter(Boolean).join("\n\n");
 }
 
-function buildChatPrompt({ workspaceRoot, activeAgent, history, attachments, userMessage }) {
+function buildChatPrompt({ workspace, workspaceRoot, activeAgent, history, attachments, userMessage }) {
   const context = buildWorkspaceContext({ workspaceRoot, activeAgent, attachments });
+  const commandPolicy = nextCommandPolicy({ root, workspace });
   const recentHistory = history.slice(-8).map((item) => {
     return `${item.role.toUpperCase()}: ${item.content}`;
   }).join("\n\n");
@@ -160,9 +202,13 @@ You must stay inside the workspace scope. Behave like a coordinated communicatio
 - Keep answers practical and specific to the brief.
 - For content requests, simulate internal agent collaboration: strategist -> specialist producer -> persona objections -> QA -> final artifact.
 - End with exactly where the artifact should be saved or which command can apply the deeper workflow.
+- When there is a next terminal action, include the exact copy/paste command. Do not tell the user only to "open the workspace" or "run the folder".
 
 ## Active Agent
 ${activeAgent}
+
+## Next Command Policy
+${commandPolicy}
 
 ## Workspace Context
 ${context}
@@ -192,18 +238,26 @@ Comandi chat:
   /agent <id>                   cambia agente attivo
   /team <brief>                 mega-orchestrator: brainstorming a 3 round + esecuzione
   /brainstorm <brief>          alias di /team
+  /consensus <brief>            agenti multipli + giudici + sintesi stile MassGen
   /generate <prompt>            genera un'immagine con Pollinations.ai (zero API key)
   /img <prompt>                 alias di /generate
+  /comfyui <prompt>             genera un'immagine con ComfyUI locale usando SMM_COMFYUI_WORKFLOW
+  /copilot                      crea handoff prompt per ComfyUI-Copilot
+  /pixelle <brief>              crea handoff per Pixelle-Video se vuoi generare video con engine esterno
+  /video-engines                mostra stato CapCut/Pixelle/OpenMontage
   /attach <path>                allega un file al contesto della chat
   /link <url>                   importa un link pubblico come contesto
   /image <path>                 importa e analizza un'immagine locale
   /video <path>                 importa e analizza un video/reel, poi crea preview locale
   /make <tipo> <brief>           attiva team agenti: post, carousel, reel, message, image, x, thread, reddit
   /creative <brief>              orchestra asset, trend, immagini/video, CapCut plan, caption e review
+  /execute-plan <brief>          esegue un piano multi-step: consensus -> creative workflow -> package review
   /workflow <steps>              genera run agenti: es. /workflow research,strategy,copy,video,persona,qa
   /attachments                  lista file allegati
   /clear                        svuota storico chat e allegati
   /feedback <testo>             salva feedback in memory/user-feedback.md
+  /publish-dry-run <artifact>   controlla se un artifact approvato può essere preparato per publishing ufficiale
+  /roadmap                      mostra stato mega plan finale
   /where                        mostra cartelle workspace
   /exit                         esci
 
@@ -213,6 +267,7 @@ Esempi:
   /make x scrivimi 5 post per X sul prossimo evento
   /make reddit crea un post discussione per r/AskNYC senza promo aggressiva
   ciao, crea un post Instagram basato su questa immagine /Users/corte/Desktop/gigigraph.png
+  /comfyui crea una cover 9:16 premium per un evento networking a New York
   analizza questo link https://example.com e trasformalo in 5 idee contenuto
   analizza questo video: /Users/.../reel.mp4
   vatti a pescare questa cartella drive /Users/.../OutOfOffice e generami 4 reel seguendo trend X e Reddit
@@ -221,29 +276,17 @@ Esempi:
 }
 
 function detectContentIntent(input) {
-  const text = input.toLowerCase();
-  if (/\b(reddit|subreddit)\b/.test(text)) {
-    return { type: "reddit", steps: ["research", "platform", "strategy", "copy", "persona", "qa"], agent: "platform-strategist" };
-  }
-  if (/\b(x|twitter|tweet|thread|threads)\b/.test(text)) {
-    return { type: /\b(thread|threads)\b/.test(text) ? "thread" : "x", steps: ["research", "platform", "strategy", "copy", "persona", "qa"], agent: "platform-strategist" };
-  }
-  if (/\b(carosello|carousel)\b/.test(text)) {
-    return { type: "carousel", steps: ["research", "platform", "strategy", "copy", "persona", "qa"], agent: "copywriter" };
-  }
-  if (/\b(reel|script|video|short)\b/.test(text)) {
-    return { type: "reel", steps: ["research", "platform", "strategy", "video", "persona", "qa"], agent: "reel-shorts-producer" };
-  }
-  if (/\b(post|caption|didascalia|copy)\b/.test(text)) {
-    return { type: "post", steps: ["research", "platform", "strategy", "copy", "persona", "qa"], agent: "copywriter" };
-  }
-  if (/\b(messaggio|message|dm|email|whatsapp)\b/.test(text)) {
-    return { type: "message", steps: ["strategy", "copy", "qa"], agent: "copywriter" };
-  }
-  if (/\b(immagine|image|visual|thumbnail|poster)\b/.test(text)) {
-    return { type: "image", steps: ["strategy", "visuals", "qa"], agent: "visual-director" };
-  }
-  return null;
+  return intentFromRoute(routeNaturalLanguage(input));
+}
+
+function shouldAutoGenerateVisual(input, intent) {
+  const route = intent && intent.route ? intent.route : routeNaturalLanguage(input);
+  return routeNeedsAutoVisual(route);
+}
+
+function visualPresetForIntent(input, intent) {
+  const route = intent && intent.route ? intent.route : routeNaturalLanguage(input);
+  return visualPresetFromRoute(route);
 }
 
 function extractVideoPath(input) {
@@ -262,17 +305,11 @@ function extractAssetDirectory(input) {
 }
 
 function wantsCreativeOrchestration(input) {
-  const text = input.toLowerCase();
-  return (
-    /\bcreative\b|\bcreativ[ao]\b|\borchestra\b|\bmonta\b|\bedita\b|\bcapcut\b/.test(text) ||
-    (/\b(gener|crea|fammi|prepara|sviluppa)\b/.test(text) && /\b(reel|video|immagin|locandina|drive|cartella|folder|trend|reddit|x)\b/.test(text))
-  );
+  return routeUsesCreativeWorkflow(routeNaturalLanguage(input));
 }
 
 function wantsDirectImageGeneration(input) {
-  const t = input.toLowerCase();
-  return /\b(crea|genera|fammi|disegna|illustra|show me|make|draw|generate)\b/.test(t)
-    && /\b(immagin|image|foto|illustra|picture|visual|thumbnail|copertina|cover|poster)\b/.test(t);
+  return routeWantsDirectImageGeneration(routeNaturalLanguage(input));
 }
 
 function extractImageStyleFromInput(input) {
@@ -302,11 +339,203 @@ function buildImagePromptFromInput(input) {
   return `${scene}, ${style}, high detail, vibrant colors, professional quality, no watermark`;
 }
 
-async function generateImageFromChat({ workspaceRoot, input, preset = "square" }) {
-  const prompt = buildImagePromptFromInput(input);
+function imageGenerationMessage(imgResult) {
+  const desktopNote = imgResult.desktopPath ? `\n  Desktop: ${imgResult.desktopPath}` : "";
+  const styleNote = imgResult.promptEngineer?.styleTag ? `\n  Prompt style: ${imgResult.promptEngineer.styleTag}` : "";
+  const comfyReport = imgResult.reportPath ? `\n  ComfyUI report: ${path.relative(root, imgResult.reportPath)}` : "";
+  const qualityNote = imgResult.qualityReportPath ? `\n  Quality report: ${path.relative(root, imgResult.qualityReportPath)}` : "";
+  const visionNote = imgResult.visionCriticPath
+    ? `\n  Vision critic: ${path.relative(root, imgResult.visionCriticPath)} (${imgResult.visionCritic.status}, ${imgResult.visionCritic.score}/100)`
+    : "";
+  const launchNote = imgResult.launchPackagePath ? `\n  Launch package: ${path.relative(root, imgResult.launchPackagePath)}` : "";
+  const artifactNote = imgResult.artifact ? `\n  Artifact: ${imgResult.artifact.id} (${imgResult.artifact.status})` : "";
+  const blockedNote = imgResult.visionCritic && imgResult.visionCritic.score < 85
+    ? `\n\nNota: non e un asset finale. Il vision critic lo ha marcato come ${imgResult.visionCritic.status}.`
+    : "";
+  const openNote = imgResult.desktopPath ? "\n\nAprila dal Desktop -> cartella smm-images" : "\n\nAprila dal workspace in creative/images.";
+  return `Immagine generata e salvata:\n  Backend: ${imgResult.backend || "pollinations"}\n  Workspace: ${imgResult.outputPath}${desktopNote}${styleNote}${comfyReport}${qualityNote}${visionNote}${launchNote}${artifactNote}\n  Dimensioni: ${imgResult.width}x${imgResult.height} — ${(imgResult.sizeBytes / 1024).toFixed(0)} KB\n  Prompt report: ${path.relative(root, path.join(imgResult.workspaceRoot || "", "creative/image-prompt-engineer-latest.md"))}${blockedNote}${openNote}`;
+}
+
+function staticRenderMessage(result) {
+  const lines = [
+    "Static post renderer completato.",
+    `Run: ${path.relative(root, result.renderRoot)}`,
+    `Manifest: ${path.relative(root, result.manifestPath)}`,
+    `Quality: ${path.relative(root, result.reportMdPath)}`
+  ];
+  for (const item of result.rendered) {
+    const png = item.png?.outputPath ? ` | PNG: ${path.relative(root, item.png.outputPath)}` : ` | PNG: ${item.png?.status || "not_requested"}`;
+    lines.push(`- ${item.exportId}: ${path.relative(root, item.outputPath)}${png}`);
+  }
+  lines.push("");
+  lines.push("Nota: questi sono asset finali di layout, ma restano draft-only e richiedono approvazione umana.");
+  return lines.join("\n");
+}
+
+function renderStaticPostFromChat({ workspaceRoot, input, sourceRun = null }) {
+  return renderStaticPost({
+    workspaceRoot,
+    request: input,
+    sourceRun: sourceRun || `chat-static-${timestampId()}`
+  });
+}
+
+function workspaceRelativePath(workspaceRoot, filePath) {
+  if (!filePath || !workspaceRoot || !filePath.startsWith(workspaceRoot)) {
+    return filePath ? path.basename(filePath) : "unknown";
+  }
+  return path.relative(workspaceRoot, filePath).split(path.sep).join("/");
+}
+
+async function generateComfyUiImageFromPrompt({ workspaceRoot, prompt, preset = "square", platform = "instagram" }) {
+  const workflowPath = process.env.SMM_COMFYUI_WORKFLOW;
+  if (!workflowPath) {
+    throw new Error("SMM_COMFYUI_WORKFLOW non impostato. Esporta un workflow API JSON da ComfyUI e metti il path in questa variabile.");
+  }
+  const presetDef = PRESETS[preset] || PRESETS.square;
+  const result = await runComfyUiWorkflow({
+    workspaceRoot,
+    workflowPath,
+    prompt,
+    width: presetDef.width,
+    height: presetDef.height,
+    seed: process.env.SMM_COMFYUI_SEED || "random",
+    filenamePrefix: `smm-${preset}`,
+    platform,
+    timeoutMs: Number(process.env.SMM_COMFYUI_TIMEOUT_MS || 600000)
+  });
+  const reportPaths = writeComfyUiRunReport({ workspaceRoot, result });
+  const first = result.savedOutputs[0];
+  if (!first) {
+    throw new Error(`ComfyUI ha completato la run ma non ha restituito immagini. Report: ${path.relative(root, reportPaths.mdPath)}`);
+  }
+  return {
+    backend: "comfyui",
+    outputPath: first.outputPath,
+    desktopPath: null,
+    width: presetDef.width,
+    height: presetDef.height,
+    sizeBytes: first.sizeBytes,
+    artifact: first.artifact,
+    reportPath: reportPaths.mdPath,
+    promptId: result.promptId
+  };
+}
+
+async function generateImageFromChat({ workspaceRoot, input, model, preset = "square" }) {
+  const business = readText(path.join(workspaceRoot, "business/business.md")).slice(0, 3000);
+  const imageIntel = readText(path.join(workspaceRoot, "assets/analysis/image-intelligence-latest.md")).slice(0, 3000);
+  const linkIntel = readText(path.join(workspaceRoot, "sources/link-intelligence-latest.md")).slice(0, 2000);
+  const scopeGuard = requestScopeGuard({ business, request: input, linkIntel });
+  const creativeBrief = [
+    "## Request Scope Guard",
+    scopeGuard,
+    "## Business Profile",
+    business || "No business profile available.",
+    "## Latest Image Context",
+    imageIntel || "No image context available.",
+    "## Latest Link Context",
+    linkIntel || "No link context available.",
+    "## User Request",
+    input
+  ].join("\n\n");
+
+  const promptEngineerResult = await runPromptEngineer({
+    creativeBrief,
+    request: input,
+    intent: "image",
+    model,
+    timeoutMs: 90000
+  });
+  const prompt = promptEngineerResult.imagePrompt || buildImagePromptFromInput(input);
+  const promptReport = [
+    "# Image Prompt Engineer",
+    "",
+    `Generated at: ${new Date().toISOString()}`,
+    "",
+    `Style: ${promptEngineerResult.styleTag || "n/a"}`,
+    `Fallback: ${promptEngineerResult.fallback ? "yes" : "no"}`,
+    "",
+    "## Image Prompt",
+    prompt,
+    "",
+    "## Cover Prompt",
+    promptEngineerResult.coverPrompt || "-",
+    "",
+    "## Rationale",
+    promptEngineerResult.rationale || "-"
+  ].join("\n");
+  writeText(path.join(workspaceRoot, "creative/image-prompt-engineer-latest.md"), promptReport);
+
+  const wantsComfyUi = process.env.SMM_IMAGE_BACKEND === "comfyui" || Boolean(process.env.SMM_COMFYUI_WORKFLOW);
+  if (wantsComfyUi) {
+    try {
+      console.log(`  Generando immagine con ComfyUI locale...`);
+      console.log(`  Prompt: ${prompt.slice(0, 120)}`);
+      const result = await generateComfyUiImageFromPrompt({ workspaceRoot, prompt, preset });
+      result.promptEngineer = promptEngineerResult;
+      result.workspaceRoot = workspaceRoot;
+      return await finalizeImageGeneration({ workspaceRoot, input, result, prompt, promptEngineerResult, business });
+    } catch (error) {
+      if (process.env.SMM_IMAGE_BACKEND === "comfyui") {
+        throw error;
+      }
+      console.log(`  ComfyUI non disponibile (${error.message}). Uso fallback no-cost Pollinations.`);
+    }
+  }
+
   console.log(`  Generando immagine con Pollinations.ai...`);
   console.log(`  Prompt: ${prompt.slice(0, 120)}`);
   const result = await generateImage(prompt, { preset, workspaceRoot, saveToDesktop: true });
+  result.promptEngineer = promptEngineerResult;
+  result.workspaceRoot = workspaceRoot;
+  return await finalizeImageGeneration({ workspaceRoot, input, result, prompt, promptEngineerResult, business });
+}
+
+async function finalizeImageGeneration({ workspaceRoot, input, result, prompt, promptEngineerResult, business }) {
+  const relativePath = workspaceRelativePath(workspaceRoot, result.outputPath);
+  const platform = routeNaturalLanguage(input).intent.primaryPlatform || "instagram";
+  const buffer = fs.readFileSync(result.outputPath);
+  const qualityReport = buildImageQualityReport({
+    buffer,
+    relativePath,
+    prompt,
+    platform,
+    expectedWidth: result.width,
+    expectedHeight: result.height,
+    imagePath: result.outputPath,
+    brandContext: business
+  });
+  const qualityPaths = writeImageQualityReport({ workspaceRoot, report: qualityReport });
+  const visionCritic = await runVisionCritic({
+    imagePath: result.outputPath,
+    relativePath,
+    request: input,
+    prompt,
+    platform,
+    businessContext: business,
+    qualityReport,
+    preferredModel: process.env.SMM_VISION_MODEL || null,
+    timeoutMs: Number(process.env.SMM_VISION_CRITIC_TIMEOUT_MS || 240000)
+  });
+  const visionPaths = writeVisionCriticReport({ workspaceRoot, report: visionCritic });
+  const launchPackage = buildLaunchCreativePackage({
+    workspaceRoot,
+    request: input,
+    imageResult: result,
+    prompt,
+    promptEngineer: promptEngineerResult,
+    qualityReport,
+    visionCritic,
+    businessContext: business
+  });
+  const launchPaths = writeLaunchCreativePackage({ workspaceRoot, packageData: launchPackage });
+  result.qualityReport = qualityReport;
+  result.qualityReportPath = qualityPaths.mdPath;
+  result.visionCritic = visionCritic;
+  result.visionCriticPath = visionPaths.mdPath;
+  result.launchPackage = launchPackage;
+  result.launchPackagePath = launchPaths.mdPath;
   return result;
 }
 
@@ -343,6 +572,7 @@ function summarizeMegaRun(result) {
     ``,
     `Run: mega-runs/${result.runId}/`,
     `Intent rilevato: ${result.intent}`,
+    `Modalita brainstorm: ${result.brainstormResult?.mode || "full"}`,
     `Messaggi in creative room: ${result.room.messages.length}`,
     `  Round 1 (Diverge): ${result.room.getMessages({ round: 1 }).length} contributi`,
     `  Round 2 (React + Dialogue): ${result.room.getMessages({ round: 2 }).length} messaggi`,
@@ -403,11 +633,50 @@ ${run.summary.steps.map((step) => `- ${step.id}: ${step.status}`).join("\n")}
 Output principali:
 - Asset library: ${path.relative(root, path.join(workspaceRoot, "assets/asset-library.md"))}
 - Trend report: ${path.relative(root, path.join(workspaceRoot, "research/trend-report.md"))}
+- ComfyUI-Copilot plan: ${path.relative(root, path.join(workspaceRoot, "creative/comfyui-copilot-plan.md"))}
+- Video engine plan: ${path.relative(root, path.join(workspaceRoot, "creative/video-engine-plan.md"))}
 - CapCut plan: ${path.relative(root, path.join(workspaceRoot, "creative/capcut-plan.md"))}
 - Performance review: ${path.relative(root, path.join(workspaceRoot, "review/creative-performance-review.md"))}
 - Publishing package: ${path.relative(root, path.join(workspaceRoot, "publishing/export-package.md"))}
 
 Niente pubblicazione automatica: tutto resta in review umana.`;
+}
+
+async function runTaskPlanFromChat({ workspace, workspaceRoot, input, model }) {
+  const consensus = await runConsensusOrchestration({
+    root,
+    workspace,
+    request: input,
+    model,
+    timeoutMs: 240000
+  });
+  const creativeSummary = await runCreativeFromChat({
+    workspace,
+    workspaceRoot,
+    input,
+    model
+  });
+  const planDir = path.join(workspaceRoot, "chat-task-plans");
+  ensureDir(planDir);
+  const planPath = path.join(planDir, `${timestampId()}.md`);
+  const content = `# Chat Task Plan Execution
+
+Request: ${input}
+
+## Steps
+- Consensus run: ${path.relative(workspaceRoot, consensus.runRoot)}
+- Creative workflow: completed; see summary below.
+- Publishing remains human-approved only.
+
+## Creative Summary
+${creativeSummary}
+`;
+  writeText(planPath, content);
+  return {
+    consensus,
+    creativeSummary,
+    planPath
+  };
 }
 
 async function analyzeImageAsset({ workspaceRoot, sourcePath, model }) {
@@ -511,15 +780,16 @@ async function ingestUrlForChat({ workspaceRoot, url }) {
 
 async function runAgentTeam({ workspace, input, intent, model }) {
   if (intent.type !== "custom-workflow") {
-    const team = await runTeamOrchestration({
+    const team = await runAdaptiveTeamOrchestration({
       root,
       workspace,
       request: input,
       type: intent.type,
       steps: intent.steps,
       model,
-      timeoutMs: 240000,
-      apply: true
+      timeoutMs: 120000,
+      apply: true,
+      maxRevisions: 1
     });
     return {
       teamRoot: team.teamRoot,
@@ -551,16 +821,21 @@ async function runAgentTeam({ workspace, input, intent, model }) {
 
 function summarizeTeamRun(teamRun) {
   if (teamRun.teamRoot) {
+    const artifactLine = teamRun.result.status === "failed_needs_model_run"
+      ? `- ${path.relative(root, path.join(teamRun.teamRoot, "result.json"))}`
+      : `- ${path.relative(root, path.join(teamRun.teamRoot, "final-artifact.md"))}`;
     return `Team agenti avviato per: ${teamRun.type}
 Steps: ${teamRun.selectedStepIds.join(", ")}
 Workflow: ${path.relative(root, teamRun.workflowRoot)}
 Team run: ${path.relative(root, teamRun.teamRoot)}
 Target scritto: ${teamRun.result.target}
 Status: ${teamRun.result.status}
+${teamRun.result.agentSteps ? `Agent steps: ${teamRun.result.agentSteps.completed}/${teamRun.result.agentSteps.total} completed, ${teamRun.result.agentSteps.fallback} fallback, ${teamRun.result.agentSteps.revisionLoops} revision loop(s)` : ""}
+${teamRun.result.blackboard ? `Blackboard: ${teamRun.result.blackboard.totalEntries} entries, ${teamRun.result.blackboard.decisions} decisions, ${teamRun.result.blackboard.risks} risks` : ""}
 
 Leggi:
-- ${path.relative(root, path.join(teamRun.teamRoot, "summary.md"))}
-- ${path.relative(root, path.join(teamRun.teamRoot, "final-artifact.md"))}
+- ${path.relative(root, path.join(teamRun.teamRoot, "orchestration-report.md"))}
+${artifactLine}
 
 Nota: il file target è draft-only e richiede approvazione umana. Non pubblica nulla.`;
   }
@@ -583,10 +858,12 @@ function analyzeVideoAsset({ workspaceRoot, sourcePath }) {
   }
   const report = buildReelIntelligence({ workspaceRoot, assetPath, transcribe: true });
   const reportPaths = writeReelIntelligence({ workspaceRoot, report });
+  const quality = buildVideoQualityReport({ reelReport: report });
+  const qualityPaths = writeVideoQualityReport({ workspaceRoot, report: quality });
   const recipe = buildEditRecipe({ workspaceRoot, analysis: report });
   const runResult = runPreviewEdit(recipe);
   writeRecipe({ recipe, runResult });
-  return { report, reportPaths, recipe, runResult };
+  return { report, reportPaths, quality, qualityPaths, recipe, runResult };
 }
 
 function summarizeVideoRun(result) {
@@ -595,6 +872,7 @@ function summarizeVideoRun(result) {
 Report:
 - ${path.relative(root, result.reportPaths.mdPath)}
 - ${path.relative(root, result.reportPaths.latestPath)}
+- Quality: ${path.relative(root, result.qualityPaths.mdPath)} (${result.quality.status}, ${result.quality.averageScore}/100)
 
 Frame estratti: ${result.report.frames.length}
 Trascrizione: ${result.report.transcription.status}
@@ -738,6 +1016,42 @@ async function main() {
         rl.prompt();
         return;
       }
+      if (input === "/roadmap") {
+        const status = writeFinalSystemStatus(root);
+        const msg = statusMarkdown(status);
+        console.log(`\n${msg}\n`);
+        appendText(transcriptPath, `\n## Roadmap Status\n\n${msg}\n`);
+        rl.prompt();
+        return;
+      }
+      if (input === "/video-engines") {
+        const msg = videoEngineRegistryMarkdown(detectVideoEngines());
+        console.log(`\n${msg}\n`);
+        appendText(transcriptPath, `\n## Video Engines\n\n${msg}\n`);
+        rl.prompt();
+        return;
+      }
+      if (input === "/copilot") {
+        const plan = buildComfyUiCopilotPlan(workspaceRoot);
+        const dir = path.join(workspaceRoot, "creative");
+        ensureDir(dir);
+        const jsonPath = path.join(dir, "comfyui-copilot-plan.json");
+        const mdPath = path.join(dir, "comfyui-copilot-plan.md");
+        writeText(jsonPath, `${JSON.stringify(plan, null, 2)}\n`);
+        writeText(mdPath, comfyUiCopilotPlanMarkdown(plan));
+        const msg = `ComfyUI-Copilot handoff pronto.
+
+Status: ${plan.status}
+File:
+- ${path.relative(root, mdPath)}
+- ${path.relative(root, jsonPath)}
+
+Usa la sezione "Handoff Prompt" dentro Copilot. Il core resta no-cost/local-first e draft-only.`;
+        console.log(`\n${msg}\n`);
+        appendText(transcriptPath, `\n## ComfyUI-Copilot Handoff\n\n${msg}\n`);
+        rl.prompt();
+        return;
+      }
       if (input === "/clear") {
         history = [];
         attachments = [];
@@ -758,6 +1072,40 @@ async function main() {
         const result = analyzeVideoAsset({ workspaceRoot, sourcePath: rawPath || null });
         console.log(`\n${summarizeVideoRun(result)}\n`);
         appendText(transcriptPath, `\n## Video Analysis\n\n${summarizeVideoRun(result)}\n`);
+        rl.prompt();
+        return;
+      }
+      if (input.startsWith("/pixelle ")) {
+        const request = input.slice("/pixelle ".length).trim();
+        const result = writePixelleHandoff({ workspaceRoot, request });
+        const msg = `Pixelle-Video handoff creato.
+
+File:
+- ${path.relative(root, result.mdPath)}
+- ${path.relative(root, result.jsonPath)}
+
+Questo non esegue Pixelle da solo: prepara il contratto pulito per un checkout/service separato e poi importa l'MP4 generato come artifact da approvare.`;
+        console.log(`\n${msg}\n`);
+        appendText(transcriptPath, `\n## Pixelle Handoff\n\n${msg}\n`);
+        rl.prompt();
+        return;
+      }
+      if (input.startsWith("/publish-dry-run ")) {
+        const parts = input.slice("/publish-dry-run ".length).trim().split(/\s+/);
+        const artifactId = parts[0];
+        const platformIndex = parts.indexOf("--platform");
+        const platform = platformIndex >= 0 ? parts[platformIndex + 1] || "instagram" : "instagram";
+        const report = buildPublishingDryRun({ workspaceRoot, artifactId, platform });
+        const reportPaths = writePublishingDryRun({ workspaceRoot, report });
+        const msg = `Publishing dry-run: ${report.status}
+
+Report: ${path.relative(root, reportPaths.mdPath)}
+Blockers: ${report.blockers.length}
+Warnings: ${report.warnings.length}
+
+Nessuna pubblicazione eseguita.`;
+        console.log(`\n${msg}\n`);
+        appendText(transcriptPath, `\n## Publishing Dry Run\n\n${msg}\n`);
         rl.prompt();
         return;
       }
@@ -784,6 +1132,23 @@ async function main() {
         });
         console.log(`\n${summary}\n`);
         appendText(transcriptPath, `\n## Creative Workflow\n\n${summary}\n`);
+        processing = false;
+        rl.prompt();
+        return;
+      }
+      if (input.startsWith("/execute-plan ")) {
+        processing = true;
+        const request = input.slice("/execute-plan ".length).trim();
+        console.log("\n  Task-plan executor avviato — consensus + creative workflow\n");
+        const result = await runTaskPlanFromChat({ workspace, workspaceRoot, input: request, model });
+        const msg = `Task plan eseguito.
+
+Plan: ${path.relative(root, result.planPath)}
+Consensus: ${path.relative(root, result.consensus.runRoot)}
+
+${result.creativeSummary}`;
+        console.log(`\n${msg}\n`);
+        appendText(transcriptPath, `\n## Task Plan Execution\n\n${msg}\n`);
         processing = false;
         rl.prompt();
         return;
@@ -828,6 +1193,33 @@ async function main() {
         rl.prompt();
         return;
       }
+      if (input.startsWith("/consensus ")) {
+        const request = input.slice("/consensus ".length).trim();
+        processing = true;
+        console.log("\n  Consensus orchestrator avviato — candidati, giudici, sintesi\n");
+        try {
+          const result = await runConsensusOrchestration({ root, workspace, request, model, timeoutMs: 240000 });
+          const msg = `Consensus completato.
+
+Run: ${path.relative(root, result.runRoot)}
+Artifact: ${result.artifact.id} (${result.artifact.status})
+Mode: ${result.report.judge.mode}
+
+Leggi:
+- ${path.relative(root, path.join(result.runRoot, "consensus.md"))}
+
+Niente pubblicazione automatica: richiede review umana.`;
+          console.log(`\n${msg}\n`);
+          appendText(transcriptPath, `\n## Consensus Orchestration\n\n${msg}\n`);
+          history.push({ role: "user", content: input });
+          history.push({ role: "assistant", content: msg });
+        } catch (err) {
+          console.log(`Errore consensus: ${err.message}`);
+        }
+        processing = false;
+        rl.prompt();
+        return;
+      }
       if (input === "/where") {
         console.log(`Factory workspace: ${workspaceRoot}`);
         console.log(`Client workspace: ${clientWorkspaceRoot}`);
@@ -852,9 +1244,34 @@ async function main() {
         rl.prompt();
         return;
       }
+      if (input.startsWith("/comfyui ")) {
+        const prompt = input.slice("/comfyui ".length).trim();
+        processing = true;
+        console.log("Generando immagine con ComfyUI locale...");
+        try {
+          const result = await generateComfyUiImageFromPrompt({ workspaceRoot, prompt, preset: "square" });
+          const msg = `Immagine ComfyUI salvata:
+  Workspace: ${result.outputPath}
+  Report: ${path.relative(root, result.reportPath)}
+  Prompt ID: ${result.promptId}
+  Artifact: ${result.artifact.id} (${result.artifact.status})`;
+          console.log(`\n${msg}\n`);
+          appendText(transcriptPath, `\n## ComfyUI Image Generated\n\n${msg}\n`);
+        } catch (err) {
+          console.log(`Errore ComfyUI: ${err.message}`);
+          console.log(`Setup richiesto: esporta un workflow API JSON da ComfyUI e avvia la chat con SMM_COMFYUI_WORKFLOW=/path/workflow.json`);
+        }
+        processing = false;
+        rl.prompt();
+        return;
+      }
 
       processing = true;
       console.log("thinking...");
+      const naturalRoute = routeNaturalLanguage(input);
+      writeText(path.join(workspaceRoot, "operations/nlu-router-latest.json"), `${JSON.stringify(naturalRoute, null, 2)}\n`);
+      writeText(path.join(workspaceRoot, "operations/nlu-router-latest.md"), routeReportMarkdown(naturalRoute));
+      appendText(transcriptPath, `\n## Natural Language Router\n\n${routeReportMarkdown(naturalRoute)}\n`);
       const naturalPaths = [...new Set([
         ...extractFilePaths(input),
         ...(extractVideoPath(input) ? [extractVideoPath(input)] : [])
@@ -878,19 +1295,26 @@ async function main() {
         console.log(`\n${ingested.summary}\n`);
         appendText(transcriptPath, `\n## Natural Link Analysis\n\n${ingested.summary}\n`);
       }
-      const intent = detectContentIntent(input);
+      const intent = intentFromRoute(naturalRoute);
       let teamRunSummary = "";
-      const wantsImage = wantsDirectImageGeneration(input) || (intent && intent.type === "image");
+      const wantsImage = routeWantsDirectImageGeneration(naturalRoute) || (intent && intent.type === "image");
+      const autoVisual = routeNeedsAutoVisual(naturalRoute);
 
       if (wantsImage) {
         try {
-          const imgResult = await generateImageFromChat({ workspaceRoot, input, preset: "square" });
-          const desktopNote = imgResult.desktopPath ? `\n  Desktop: ${imgResult.desktopPath}` : "";
-          const msg = `Immagine generata e salvata:\n  Workspace: ${imgResult.outputPath}${desktopNote}\n  Dimensioni: ${imgResult.width}x${imgResult.height} — ${(imgResult.sizeBytes / 1024).toFixed(0)} KB\n\nAprila dal Desktop → cartella smm-images`;
-          console.log(`\n${msg}\n`);
-          appendText(transcriptPath, `\n## Image Generated\n\n${msg}\n`);
+          const imgResult = await generateImageFromChat({ workspaceRoot, input, model, preset: visualPresetForIntent(input, intent) });
+          const msg = imageGenerationMessage(imgResult);
+          let outputMsg = msg;
+          if (routeNeedsAutoVisual(naturalRoute)) {
+            const renderResult = renderStaticPostFromChat({ workspaceRoot, input, sourceRun: `chat-static-${timestampId()}` });
+            const renderMsg = staticRenderMessage(renderResult);
+            outputMsg = `${msg}\n\n${renderMsg}`;
+            appendText(transcriptPath, `\n## Static Post Rendered\n\n${renderMsg}\n`);
+          }
+          console.log(`\n${outputMsg}\n`);
+          appendText(transcriptPath, `\n## Image Generated\n\n${outputMsg}\n`);
           history.push({ role: "user", content: input });
-          history.push({ role: "assistant", content: msg });
+          history.push({ role: "assistant", content: outputMsg });
           processing = false;
           rl.prompt();
           return;
@@ -898,18 +1322,48 @@ async function main() {
           console.log(`  Generazione immagine fallita: ${err.message}`);
           console.log(`  Riprova con: /generate <descrizione in inglese>`);
         }
-      } else if (wantsCreativeOrchestration(input)) {
+      } else if (routeUsesCreativeWorkflow(naturalRoute)) {
         const creativeRunSummary = await runCreativeFromChat({ workspace, workspaceRoot, input, model });
         console.log(`\n${creativeRunSummary}\n`);
         appendText(transcriptPath, `\n## Creative Workflow\n\n${creativeRunSummary}\n`);
+        teamRunSummary = creativeRunSummary;
       } else if (intent && /gener|crea|fammi|prepara|scrivi|build|make|produce/i.test(input)) {
         activeAgent = intent.agent || activeAgent;
         const teamRun = await runAgentTeam({ workspace, input, intent, model });
         teamRunSummary = summarizeTeamRun(teamRun);
+        if (autoVisual) {
+          try {
+            console.log("  visual-generation — starting");
+            const visualInput = `${input}\n\nGenera anche il visual principale del post. Usa il link/brand della richiesta come contesto se diverso dal workspace. Non mettere testo leggibile dentro l'immagine.`;
+            const imgResult = await generateImageFromChat({
+              workspaceRoot,
+              input: visualInput,
+              model,
+              preset: visualPresetForIntent(input, intent)
+            });
+            const imageMsg = imageGenerationMessage(imgResult);
+            const renderResult = renderStaticPostFromChat({ workspaceRoot, input, sourceRun: `chat-static-${timestampId()}` });
+            const renderMsg = staticRenderMessage(renderResult);
+            teamRunSummary = `${teamRunSummary}\n\n${imageMsg}\n\n${renderMsg}`;
+            appendText(transcriptPath, `\n## Auto Visual Generated\n\n${imageMsg}\n`);
+            appendText(transcriptPath, `\n## Static Post Rendered\n\n${renderMsg}\n`);
+          } catch (err) {
+            const failMsg = `Visual automatico non generato: ${err.message}\nPrompt/handoff salvato se disponibile in creative/image-prompt-engineer-latest.md.`;
+            teamRunSummary = `${teamRunSummary}\n\n${failMsg}`;
+            appendText(transcriptPath, `\n## Auto Visual Failed\n\n${failMsg}\n`);
+          }
+        }
         console.log(`\n${teamRunSummary}\n`);
         appendText(transcriptPath, `\n## Agent Team Run\n\n${teamRunSummary}\n`);
       }
-      const prompt = buildChatPrompt({ workspaceRoot, activeAgent, history, attachments, userMessage: input });
+      if (teamRunSummary) {
+        history.push({ role: "user", content: input });
+        history.push({ role: "assistant", content: teamRunSummary });
+        processing = false;
+        rl.prompt();
+        return;
+      }
+      const prompt = buildChatPrompt({ workspace, workspaceRoot, activeAgent, history, attachments, userMessage: input });
       const output = await runOllamaGenerate({ model, prompt, timeoutMs: 180000 });
       const audit = auditContentPolicy(output);
 
@@ -937,7 +1391,20 @@ async function main() {
   });
 }
 
-main().catch((error) => {
-  console.error(error.stack || error.message);
-  process.exit(1);
-});
+if (require.main === module) {
+  main().catch((error) => {
+    console.error(error.stack || error.message);
+    process.exit(1);
+  });
+}
+
+module.exports = {
+  detectContentIntent,
+  renderStaticPostFromChat,
+  staticRenderMessage,
+  shouldAutoGenerateVisual,
+  wantsCreativeOrchestration,
+  wantsDirectImageGeneration,
+  visualPresetForIntent,
+  routeNaturalLanguage
+};

@@ -1,0 +1,62 @@
+{
+  "generatedAt": "2026-05-27T04:11:17.403Z",
+  "status": "template-contracts-ready",
+  "note": "These are template contracts for exported ComfyUI API workflows. The user still provides the actual workflow JSON because model filenames and nodes differ per machine.",
+  "templates": [
+    {
+      "id": "reel-cover-9x16",
+      "purpose": "High-energy vertical reel cover",
+      "preset": "reel",
+      "expectedAspectRatio": "9:16",
+      "positiveNodeRole": "main visual prompt",
+      "negativeNodeRole": "quality/safety negative prompt",
+      "bestFor": [
+        "instagram",
+        "facebook",
+        "x"
+      ],
+      "promptGuidance": "Keep the visual text-free, with strong subject/background separation and space for external overlay."
+    },
+    {
+      "id": "carousel-cover-4x5",
+      "purpose": "Instagram/LinkedIn carousel cover background",
+      "preset": "cover",
+      "expectedAspectRatio": "4:5",
+      "positiveNodeRole": "editorial cover prompt",
+      "negativeNodeRole": "bad anatomy, unreadable text, logos",
+      "bestFor": [
+        "instagram",
+        "linkedin",
+        "facebook"
+      ],
+      "promptGuidance": "Use clean negative space for typography that will be added outside the model."
+    },
+    {
+      "id": "square-social-1x1",
+      "purpose": "General square post visual",
+      "preset": "square",
+      "expectedAspectRatio": "1:1",
+      "positiveNodeRole": "social post prompt",
+      "negativeNodeRole": "watermark, logo, broken text",
+      "bestFor": [
+        "instagram",
+        "facebook",
+        "x"
+      ],
+      "promptGuidance": "Prefer simple composition and avoid visual clutter."
+    },
+    {
+      "id": "story-background-9x16",
+      "purpose": "Story background with center-safe copy area",
+      "preset": "story",
+      "expectedAspectRatio": "9:16",
+      "positiveNodeRole": "story background prompt",
+      "negativeNodeRole": "text, watermark, third-party logo",
+      "bestFor": [
+        "instagram",
+        "facebook"
+      ],
+      "promptGuidance": "Leave the middle third clean for overlays, poll stickers, or CTA."
+    }
+  ]
+}

@@ -1,9 +1,13 @@
 const fs = require("fs");
 const path = require("path");
-const { ingestAssetDirectory } = require("../workspace-runner/asset-library");
+const { ingestAssetDirectory, writeAssetLibraryMarkdown } = require("../workspace-runner/asset-library");
 const { buildTrendReport, reportMarkdown } = require("../trend-intel/research-engine");
 const { collectLiveTrends, writeLiveTrendReport } = require("../trend-intel/live-collector");
 const { buildComfyUiPlan, comfyUiPlanMarkdown } = require("../image-workflow/comfyui-plan");
+const {
+  buildComfyUiCopilotPlan,
+  comfyUiCopilotPlanMarkdown
+} = require("../image-workflow/comfyui-copilot-plan");
 const {
   buildReelIntelligence,
   findDefaultAsset,
@@ -15,12 +19,13 @@ const {
   writeRecipe
 } = require("../video-intel/edit-recipe");
 const { buildCapCutPlan, writeCapCutPlan } = require("../video-intel/capcut-plan");
+const { buildVideoEnginePlan, videoEnginePlanMarkdown } = require("../video-intel/video-engine-plan");
 const {
   evaluateCreativePerformance,
   writePerformanceReview
 } = require("../review-loop/performance-reviewer");
 const { buildPublishingPackage, publishingPackageMarkdown } = require("../publishing/export-package");
-const { runTeamOrchestration } = require("./team-orchestrator");
+const { runAdaptiveTeamOrchestration } = require("../orchestration/adaptive-orchestrator");
 
 function ensureDir(dirPath) {
   fs.mkdirSync(dirPath, { recursive: true });
@@ -63,15 +68,15 @@ function inferCreativeType(request) {
 
 function selectedStepsForType(type) {
   if (type === "reel") {
-    return ["research", "platform", "strategy", "video", "copy", "persona", "qa", "publishing"];
+    return ["research", "platform", "strategy", "video", "capcut", "copy", "persona", "qa", "platform-adapt", "publishing"];
   }
   if (type === "image") {
-    return ["research", "platform", "strategy", "visuals", "copy", "persona", "qa"];
+    return ["research", "platform", "strategy", "visuals", "copy", "persona", "qa", "platform-adapt"];
   }
   if (type === "reddit" || type === "x") {
     return ["research", "platform", "strategy", "copy", "persona", "qa"];
   }
-  return ["research", "platform", "strategy", "copy", "persona", "qa", "publishing"];
+  return ["research", "platform", "strategy", "copy", "persona", "qa", "platform-adapt", "publishing"];
 }
 
 function writeTrendPlan({ root, workspaceRoot }) {
@@ -98,6 +103,16 @@ function writeImagePlan(workspaceRoot) {
   const plan = buildComfyUiPlan(workspaceRoot);
   writeJson(path.join(workspaceRoot, "creative/comfyui-plan.json"), plan);
   writeText(path.join(workspaceRoot, "creative/comfyui-plan.md"), comfyUiPlanMarkdown(plan));
+  const copilotPlan = buildComfyUiCopilotPlan(workspaceRoot);
+  writeJson(path.join(workspaceRoot, "creative/comfyui-copilot-plan.json"), copilotPlan);
+  writeText(path.join(workspaceRoot, "creative/comfyui-copilot-plan.md"), comfyUiCopilotPlanMarkdown(copilotPlan));
+  return { plan, copilotPlan };
+}
+
+function writeVideoEnginePlan(workspaceRoot) {
+  const plan = buildVideoEnginePlan(workspaceRoot);
+  writeJson(path.join(workspaceRoot, "creative/video-engine-plan.json"), plan);
+  writeText(path.join(workspaceRoot, "creative/video-engine-plan.md"), videoEnginePlanMarkdown(plan));
   return plan;
 }
 
@@ -153,6 +168,7 @@ ${request}
 
   if (sourceDir) {
     const assetReport = ingestAssetDirectory({ workspaceRoot, sourceDir, sourceLabel });
+    writeAssetLibraryMarkdown(workspaceRoot, assetReport);
     summary.steps.push({ id: "asset-library", status: "completed", imported: assetReport.imported.length, rejected: assetReport.rejected.length });
   }
 
@@ -165,8 +181,9 @@ ${request}
     summary.steps.push({ id: "live-trends", status: "completed", items: liveTrendReport.items.length, failures: liveTrendReport.failures.length });
   }
 
-  const imagePlan = writeImagePlan(workspaceRoot);
-  summary.steps.push({ id: "image-plan", status: imagePlan.status });
+  const imagePlans = writeImagePlan(workspaceRoot);
+  summary.steps.push({ id: "image-plan", status: imagePlans.plan.status });
+  summary.steps.push({ id: "comfyui-copilot-plan", status: imagePlans.copilotPlan.status });
 
   const video = maybeWriteVideoPlans({ workspaceRoot, preview });
   if (video) {
@@ -178,32 +195,38 @@ ${request}
   } else {
     summary.steps.push({ id: "video-editing", status: "skipped_no_video_asset" });
   }
+  const videoEnginePlan = writeVideoEnginePlan(workspaceRoot);
+  summary.steps.push({ id: "video-engine-plan", status: videoEnginePlan.status });
 
   const type = inferCreativeType(request);
   const count = countRequested(request);
   const teamRuns = [];
   if (executeTeam) {
     for (let index = 1; index <= count; index += 1) {
-      const team = await runTeamOrchestration({
+      const team = await runAdaptiveTeamOrchestration({
         root,
         workspace,
         request: count > 1 ? `${request}\n\nVariant ${index}/${count}: make this distinct in hook, angle, and platform framing.` : request,
         type,
         steps: selectedStepsForType(type),
         model,
-        timeoutMs: 180000,
-        apply: true
+        timeoutMs: 120000,
+        apply: true,
+        maxRevisions: 1
       });
       teamRuns.push({
         index,
         status: team.result.status,
         target: team.result.target,
         teamRun: path.relative(workspaceRoot, team.teamRoot),
-        workflowRun: path.relative(workspaceRoot, team.workflowRoot)
+        workflowRun: path.relative(workspaceRoot, team.workflowRoot),
+        agentSteps: team.result.agentSteps,
+        blackboard: team.result.blackboard || null,
+        orchestrationReport: path.relative(workspaceRoot, path.join(team.teamRoot, "orchestration-report.md"))
       });
     }
   }
-  summary.steps.push({ id: "agent-team", status: executeTeam ? "completed" : "skipped", type, count, teamRuns });
+  summary.steps.push({ id: "adaptive-agent-team", status: executeTeam ? "completed" : "skipped", type, count, teamRuns });
 
   const performance = evaluateCreativePerformance(workspaceRoot);
   const performancePaths = writePerformanceReview(workspaceRoot, performance);

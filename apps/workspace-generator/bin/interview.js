@@ -7,6 +7,7 @@ const { workspacePaths } = require('../../../packages/workspace-runner/workspace
 const readline = require("readline");
 const { spawnSync } = require("child_process");
 const { applyTemplate, buildBriefFromAnswers } = require("../../../packages/interview-engine/brief");
+const { writeNextCommandFiles } = require("../../../packages/workspace-runner/next-commands");
 
 const root = path.resolve(__dirname, "../../..");
 
@@ -167,10 +168,16 @@ async function main() {
   console.log(`Brief salvato: ${path.relative(root, briefPath)}`);
   console.log(`Intervista salvata: ${path.relative(root, interviewDir)}`);
   console.log(`Workspace: workspaces/generated-projects/${slug}`);
-  if (!args.includes("--bootstrap") && !args.includes("--full")) {
-    console.log(`Per completare tutto ora: npm run workspace:bootstrap ${slug}`);
-    console.log(`Chat: npm run workspace:chat ${slug} -- --model qwen2.5:14b`);
-  }
+  const next = writeNextCommandFiles({
+    root,
+    workspace: slug,
+    state: args.includes("--bootstrap") || args.includes("--full") ? "chat" : "needs-bootstrap"
+  });
+  console.log("");
+  console.log(next.markdown);
+  console.log("");
+  console.log(`Next command file: ${path.relative(root, next.generatedNextCommands)}`);
+  console.log(`Continue script: ${path.relative(root, next.generatedContinueScript)}`);
 }
 
 main().catch((error) => {

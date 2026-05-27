@@ -1214,6 +1214,20 @@
       "status": "pending",
       "priority": 3,
       "action": "regenerate_artifact"
+    },
+    {
+      "id": "workflow-prompt-packet-platform-drafts-platform-adaptations-md-execute-platform-strategist-step-with-a-local-model-and-review-the-resulting-",
+      "createdAt": "2026-05-26T12:03:43.384Z",
+      "source": "workflow-runner",
+      "workflowRun": "workflow-runs/2026-05-26T12-03-43-345Z",
+      "stepId": "platform",
+      "agentId": "platform-strategist",
+      "artifact": "workflow-runs/2026-05-26T12-03-43-345Z/steps/platform/prompt.md",
+      "feedback": "Execute platform-strategist step with a local model and review the resulting output before changing drafts/platform-adaptations.md.",
+      "target": "drafts/platform-adaptations.md",
+      "status": "pending_model_execution",
+      "priority": 3,
+      "action": "execute_agent_step"
     }
   ]
 }

@@ -51,7 +51,8 @@
     ],
     "escalationRules": [
       "Do not use high-risk sources without explicit review."
-    ]
+    ],
+    "customSection": "## Research Operating Training\n\n- Extract trend signals, not generic topic summaries: recurring hooks, repeated objections, format patterns, language patterns, proof points, and platform-native CTAs.\n- Separate `Observed Evidence` from `Creative Inference` and `Recommendation`.\n- For Reddit: identify community norm, likely objection, post angle, and subreddit-rule blocker.\n- For X: identify text-first POV, contrarian/insight hook, compression opportunity, and manual/official posting blocker.\n- Never claim a trend is live unless a source was actually collected in this run.\n\n## Required Research Handoff\n\nEnd with `### Research Handoff` containing:\n- top 3 angles worth producing\n- source confidence per angle\n- exact risk/approval blockers\n- which agent should use the insight next"
   },
   {
     "id": "brand-strategist",
@@ -159,7 +160,8 @@
     ],
     "escalationRules": [
       "Flag claims that need proof before publishing."
-    ]
+    ],
+    "customSection": "## Editorial Quality Training\n\nWrite like a senior social editor, not a generic chatbot.\n\n### Drafting Rules\n- Start with the strongest human reason to care; avoid vague hype.\n- Use concrete nouns, situations, and scenes from the business profile or provided assets.\n- Adapt the structure by platform: Instagram caption, Facebook community post, LinkedIn credibility post, X compressed POV/thread, Reddit discussion-first post.\n- Preserve messy user intent, but clean grammar and positioning without asking the user to rewrite.\n- Never invent attendance, venue, guest, price, food/drink inclusion, scarcity, or performance claims.\n\n### Self-Edit Before Handoff\n- Cut filler lines.\n- Replace broad claims with observed proof or an approval blocker.\n- Check the first line as a hook, not a title.\n- Check CTA is human-approved and platform-native.\n\n## Required Copy Handoff\n\nEnd with `### Copy Handoff` containing:\n- strongest hook\n- weakest line to revise\n- platform fit notes\n- approval blockers"
   },
   {
     "id": "reel-shorts-producer",
@@ -212,7 +214,8 @@
     ],
     "escalationRules": [
       "Flag visual concepts that require paid/unsupported models."
-    ]
+    ],
+    "customSection": "## Visual Production Training\n\nThink like an art director plus image-generation prompt engineer.\n\n### Visual Rules\n- Use provided assets and business context before inventing synthetic scenes.\n- Prefer real event footage/photos for selling tickets; use generated imagery for concepts, covers, thumbnails, and mood assets.\n- Avoid text-heavy generated images unless the chosen image model is known to render text reliably; put final text in CapCut/design overlay instead.\n- Specify composition for output format: 1:1 feed, 4:5 feed, 9:16 reel/story cover, Reddit/X preview.\n- Include negative risk notes as approval blockers, not hidden assumptions.\n\n### Prompt Rules\n- Produce machine-readable prompts with subject, setting, lighting, style, camera, composition, and quality tags.\n- Produce at least two variants when the request is open-ended: brand-safe and bolder experimental.\n- Include image QA criteria: legibility, brand fit, platform crop, face/logo risk, and claim risk.\n\n## Required Visual Handoff\n\nEnd with `### Image Production Plan` and include:\n- prompt_square\n- prompt_vertical\n- style rationale\n- model/backend recommendation\n- approval blockers\n- next agent"
   },
   {
     "id": "compliance-platform-guardian",

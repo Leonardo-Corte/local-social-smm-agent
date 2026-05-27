@@ -65,6 +65,97 @@
     "nextStep": "Inspect dependency files and design a small adapter boundary."
   },
   {
+    "id": "capcut-cli",
+    "repo": "renezander030/capcut-cli",
+    "category": "capcut-draft-cli",
+    "license": "MIT",
+    "risk": "vendored-code-audited",
+    "stars": 26,
+    "lastPush": "2026-05-25T14:36:12Z",
+    "classification": "vendor-allowed",
+    "boundary": "Vendored code is allowed only for the named repo path and must retain its license, attribution, and isolated adapter boundary.",
+    "reason": "A written vendor decision exists for this specific dependency.",
+    "nextStep": "Extract product/architecture lessons without code reuse."
+  },
+  {
+    "id": "openmontage",
+    "repo": "calesthio/OpenMontage",
+    "category": "agentic-video-production",
+    "license": "AGPL-3.0",
+    "risk": "license-boundary-runtime-complexity",
+    "stars": 3980,
+    "lastPush": "2026-05-07T12:12:36Z",
+    "classification": "reference-only",
+    "boundary": "Study architecture and product patterns only. Do not copy/vend code into this repo.",
+    "reason": "AGPL boundary requires careful separation.",
+    "nextStep": "Extract product/architecture lessons without code reuse."
+  },
+  {
+    "id": "comfyui-copilot",
+    "repo": "AIDC-AI/ComfyUI-Copilot",
+    "category": "visual-workflow-copilot",
+    "license": "MIT",
+    "risk": "dependency-complexity",
+    "stars": 5197,
+    "lastPush": "2026-04-07T04:23:08Z",
+    "classification": "adapter",
+    "boundary": "Eligible for adapter or clean-room pattern reuse after file-level code audit.",
+    "reason": "Permissive license, still requires dependency/security review.",
+    "nextStep": "Inspect dependency files and design a small adapter boundary."
+  },
+  {
+    "id": "pixelle-video",
+    "repo": "AIDC-AI/Pixelle-Video",
+    "category": "video-generation-editing-engine",
+    "license": "Apache-2.0",
+    "risk": "high-runtime-complexity",
+    "stars": 19947,
+    "lastPush": "2026-05-18T07:13:46Z",
+    "classification": "adapter",
+    "boundary": "Eligible for adapter or clean-room pattern reuse after file-level code audit.",
+    "reason": "Permissive license, still requires dependency/security review.",
+    "nextStep": "Inspect dependency files and design a small adapter boundary."
+  },
+  {
+    "id": "massgen",
+    "repo": "massgen/MassGen",
+    "category": "multi-agent-orchestration",
+    "license": "Apache-2.0",
+    "risk": "framework-migration-cost",
+    "stars": 1038,
+    "lastPush": "2026-05-26T02:19:53Z",
+    "classification": "adapter",
+    "boundary": "Eligible for adapter or clean-room pattern reuse after file-level code audit.",
+    "reason": "Permissive license, still requires dependency/security review.",
+    "nextStep": "Inspect dependency files and design a small adapter boundary."
+  },
+  {
+    "id": "lightagent",
+    "repo": "wanxingai/LightAgent",
+    "category": "agent-framework",
+    "license": "Apache-2.0",
+    "risk": "framework-migration-cost",
+    "stars": 997,
+    "lastPush": "2026-05-26T17:43:57Z",
+    "classification": "adapter",
+    "boundary": "Eligible for adapter or clean-room pattern reuse after file-level code audit.",
+    "reason": "Permissive license, still requires dependency/security review.",
+    "nextStep": "Inspect dependency files and design a small adapter boundary."
+  },
+  {
+    "id": "localai",
+    "repo": "mudler/LocalAI",
+    "category": "local-model-runtime",
+    "license": "MIT",
+    "risk": "operational-complexity",
+    "stars": 46476,
+    "lastPush": "2026-05-26T16:40:45Z",
+    "classification": "adapter",
+    "boundary": "Eligible for adapter or clean-room pattern reuse after file-level code audit.",
+    "reason": "Permissive license, still requires dependency/security review.",
+    "nextStep": "Inspect dependency files and design a small adapter boundary."
+  },
+  {
     "id": "tinytroupe",
     "repo": "microsoft/TinyTroupe",
     "category": "persona-simulation",
@@ -115,24 +206,5 @@
     "boundary": "Reference only for risk awareness. Do not integrate account automation.",
     "reason": "Account-facing bot behavior conflicts with project guardrails.",
     "nextStep": "Keep blocked and document risk."
-  },
-  {
-    "id": "capcut-cli",
-    "repo": "renezander030/capcut-cli",
-    "category": "capcut-editing",
-    "license": "MIT",
-    "risk": "low",
-    "stars": 24,
-    "lastPush": "2026-05-01T00:00:00Z",
-    "classification": "vendor-allowed",
-    "boundary": "Vendored at vendor/capcut-cli. Called only via spawnSync from packages/capcut-agent. Zero runtime npm dependencies. No account-facing automation.",
-    "reason": "MIT license, zero runtime deps, Node.js 18+ (same stack), pure local draft manipulation with no network calls.",
-    "nextStep": "Keep vendored. Rebuild via npm run build inside vendor/capcut-cli when upstream releases."
-  },
-  {
-    "id": "vendor-container",
-    "repo": "local/vendor",
-    "classification": "vendor-allowed",
-    "reason": "The vendor/ directory is a container for explicitly approved external repos. Each sub-repo must have its own vendor-allowed decision."
   }
 ]

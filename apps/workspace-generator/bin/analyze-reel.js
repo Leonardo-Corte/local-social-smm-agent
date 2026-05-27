@@ -8,6 +8,10 @@ const {
   findDefaultAsset,
   writeReelIntelligence
 } = require("../../../packages/video-intel/reel-intelligence");
+const {
+  buildVideoQualityReport,
+  writeVideoQualityReport
+} = require("../../../packages/video-intel/video-quality-report");
 
 const root = path.resolve(__dirname, "../../..");
 
@@ -36,11 +40,14 @@ function main() {
 
   const report = buildReelIntelligence({ workspaceRoot, assetPath, transcribe: args.includes("--transcribe") });
   const paths = writeReelIntelligence({ workspaceRoot, report });
+  const quality = buildVideoQualityReport({ reelReport: report });
+  const qualityPaths = writeVideoQualityReport({ workspaceRoot, report: quality });
 
   console.log(`Reel intelligence ready for ${workspace}`);
   console.log(`Asset: ${path.relative(root, report.asset.absolutePath)}`);
   console.log(`Report: ${path.relative(root, paths.mdPath)}`);
   console.log(`Latest: ${path.relative(root, paths.latestPath)}`);
+  console.log(`Quality: ${path.relative(root, qualityPaths.mdPath)} (${quality.status}, ${quality.averageScore}/100)`);
   console.log(`Frames: ${report.frames.length}`);
   console.log(`Transcription: ${report.transcription.status}`);
 }

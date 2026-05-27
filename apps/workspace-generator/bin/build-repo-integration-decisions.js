@@ -15,6 +15,13 @@ function readJson(filePath, fallback) {
 function decisionFor(candidate, metadata) {
   const license = metadata?.license || metadata?.detectedLicense || candidate.expectedLicense || "unknown";
   const risk = candidate.risk || "unknown";
+  if (candidate.initialDecision === "vendor-allowed") {
+    return {
+      classification: "vendor-allowed",
+      boundary: "Vendored code is allowed only for the named repo path and must retain its license, attribution, and isolated adapter boundary.",
+      reason: "A written vendor decision exists for this specific dependency."
+    };
+  }
   if (/GramAddict/i.test(candidate.repo) || risk.includes("account-tos")) {
     return {
       classification: "do-not-use",
@@ -88,12 +95,15 @@ function main() {
   const metadataByRepo = new Map(metadata.map((item) => [String(item.repo || item.full_name || "").toLowerCase(), item]));
   const rows = candidates.map((candidate) => {
     const meta = metadataByRepo.get(candidate.repo.toLowerCase()) || {};
-    const decision = decisionFor(candidate, meta);
+    const resolvedLicense = meta.detectedLicense && meta.detectedLicense !== "NOASSERTION"
+      ? meta.detectedLicense
+      : candidate.expectedLicense || meta.license || "unknown";
+    const decision = decisionFor(candidate, { ...meta, detectedLicense: resolvedLicense });
     return {
       id: candidate.id,
       repo: candidate.repo,
       category: candidate.category,
-      license: meta.license || meta.detectedLicense || candidate.expectedLicense || "unknown",
+      license: resolvedLicense,
       risk: candidate.risk,
       stars: meta.stars,
       lastPush: meta.pushed_at || meta.pushedAt || meta.lastPush,

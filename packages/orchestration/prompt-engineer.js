@@ -9,6 +9,7 @@ Structure: [SUBJECT] + [SETTING/ENVIRONMENT] + [LIGHTING] + [STYLE] + [MOOD] + [
 Rules:
 - Comma-separated descriptors, NO full sentences
 - Be extremely specific and visual — describe what you SEE, not what you FEEL
+- Every launch image needs a clear focal subject, product/category cue, and visual metaphor; never output only a background.
 - Adjectives first: "vibrant colorful balloons" not "balloons that are colorful and vibrant"
 - Style modifiers go at the end: "cinematic lighting, 4K, ultra-detailed, photorealistic"
 - Avoid negatives — describe what IS there, not what isn't
@@ -51,6 +52,13 @@ ${request}
 ## Intent del contenuto
 ${intent} (Instagram post/visual content)
 
+## Regole anti-output generico
+- Non generare solo "neon city", "futuristic cityscape", "futuristic tech interface" o sfondi cyberpunk generici.
+- Se è un lancio, il prompt deve contenere: soggetto centrale, metafora del prodotto, categoria, audience cue, spazio sicuro per headline da aggiungere in editor.
+- Per prodotti voice/agentic/developer: includi waveform, terminale, tool calls, task checklist, command logs, execution pipeline, non solo città futuristica.
+- Non usare loghi o marchi di terzi dentro l'immagine. Se il brief cita un competitor, rappresenta il contrasto come metafora astratta.
+- Non chiedere testo leggibile dentro l'immagine generata; la typography va aggiunta dopo in editor.
+
 ---
 
 Trasforma questo brief in prompt ottimizzati per la generazione di immagini. Segui ESATTAMENTE il formato richiesto.`;
@@ -83,7 +91,7 @@ function fallbackPromptFromBrief(creativeBrief, request) {
     const base = [title, ...steps].join(", ");
     return `${base}, Instagram post, vibrant colors, photorealistic, high quality, 4K, no text overlay`;
   }
-  return `${request}, Instagram post, vibrant colors, photorealistic, high quality, 4K`;
+  return `${request}, clear central product metaphor, strong focal subject, platform-safe negative space for headline overlay, audience-specific visual cues, no readable text inside generated image, no third-party logos, high contrast launch poster, professional social campaign visual, high quality, 4K`;
 }
 
 async function runPromptEngineer({ creativeBrief, request, intent, model, timeoutMs = 60000, onProgress }) {

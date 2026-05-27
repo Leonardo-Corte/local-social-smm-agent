@@ -51,6 +51,29 @@ function hasNonSystemFiles(dirPath) {
   return false;
 }
 
+function isAllowedVendorRoot(dirPath, relative, vendorAllowed) {
+  const parts = relative.split(path.sep);
+  if (parts.length !== 1 || !blockedDirs.includes(parts[0])) {
+    return false;
+  }
+  const allowedNames = [...vendorAllowed].map((repo) => repo.split("/").pop());
+  const entries = fs.readdirSync(dirPath, { withFileTypes: true })
+    .filter((entry) => entry.name !== ".DS_Store");
+  if (entries.length === 0) {
+    return true;
+  }
+  return entries.every((entry) => {
+    if (!entry.isDirectory()) {
+      return false;
+    }
+    const childPath = path.join(dirPath, entry.name);
+    if (!hasNonSystemFiles(childPath)) {
+      return true;
+    }
+    return allowedNames.includes(entry.name.toLowerCase());
+  });
+}
+
 function main() {
   const decisions = readJson(decisionPath, []);
   const vendorAllowed = new Set(
@@ -66,6 +89,9 @@ function main() {
       return false;
     }
     if (!hasNonSystemFiles(dirPath)) {
+      return false;
+    }
+    if (isAllowedVendorRoot(dirPath, relative, vendorAllowed)) {
       return false;
     }
     const lowered = relative.toLowerCase();

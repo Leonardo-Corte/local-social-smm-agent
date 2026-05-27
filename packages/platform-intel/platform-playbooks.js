@@ -30,7 +30,7 @@ function normalizePlatform(value) {
   if (/^(x|twitter|twitter\/x|x\/twitter)$/.test(text)) {
     return "x";
   }
-  if (/^(reddit|subreddit|reddits)$/.test(text)) {
+  if (/^(reddit|redit|reditt|subreddit|subreddits|reddits)$/.test(text)) {
     return "reddit";
   }
   return text.replace(/\s+/g, "-");

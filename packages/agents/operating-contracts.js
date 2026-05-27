@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const { trainingPackMarkdown } = require("./training-packs");
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, "utf8"));
@@ -59,6 +60,8 @@ ${JSON.stringify(schemaFor(agent), null, 2)}
 
 ### Stop Condition
 The agent stops when its output file/draft is specific enough for the next agent or human reviewer, and all blockers are listed instead of hidden.
+
+${trainingPackMarkdown(agent.id)}
 `).join("\n")}
 `;
 }

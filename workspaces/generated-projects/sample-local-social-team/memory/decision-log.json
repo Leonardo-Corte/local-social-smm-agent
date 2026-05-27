@@ -95,6 +95,592 @@
       "metadata": {
         "loop": 2
       }
+    },
+    {
+      "entryId": "7cfe14a57c43d605",
+      "timestamp": "2026-05-26T13:10:01.167Z",
+      "runId": "2026-05-26T13-09-05-798Z",
+      "step": "research",
+      "agent": "market-researcher",
+      "type": "routing_decision",
+      "content": "Executed step research (initial) — status: completed",
+      "metadata": {
+        "elapsed": "55.1",
+        "revisionPass": false,
+        "error": null
+      }
+    },
+    {
+      "entryId": "c979ec816a03e76c",
+      "timestamp": "2026-05-26T13:10:59.894Z",
+      "runId": "2026-05-26T13-09-05-798Z",
+      "step": "strategy",
+      "agent": "brand-strategist",
+      "type": "routing_decision",
+      "content": "Executed step strategy (initial) — status: completed",
+      "metadata": {
+        "elapsed": "58.7",
+        "revisionPass": false,
+        "error": null
+      }
+    },
+    {
+      "entryId": "5a6b7e2c0e86685d",
+      "timestamp": "2026-05-26T13:11:57.784Z",
+      "runId": "2026-05-26T13-09-05-798Z",
+      "step": "copy",
+      "agent": "copywriter",
+      "type": "routing_decision",
+      "content": "Executed step copy (initial) — status: completed",
+      "metadata": {
+        "elapsed": "57.9",
+        "revisionPass": false,
+        "error": null
+      }
+    },
+    {
+      "entryId": "fa9a00c18f36f256",
+      "timestamp": "2026-05-26T13:14:07.041Z",
+      "runId": "2026-05-26T13-09-05-798Z",
+      "step": "persona",
+      "agent": "persona-simulator",
+      "type": "routing_decision",
+      "content": "Executed step persona (initial) — status: completed",
+      "metadata": {
+        "elapsed": "129.2",
+        "revisionPass": false,
+        "error": null
+      }
+    },
+    {
+      "entryId": "8db24d5b53b3e95a",
+      "timestamp": "2026-05-26T13:21:04.228Z",
+      "runId": "2026-05-26T13-09-05-798Z",
+      "step": "platform-adapt",
+      "agent": "platform-adapter",
+      "type": "routing_decision",
+      "content": "Executed step platform-adapt (initial) — status: completed",
+      "metadata": {
+        "elapsed": "417.2",
+        "revisionPass": false,
+        "error": null
+      }
+    },
+    {
+      "entryId": "eb12cb32b3f08477",
+      "timestamp": "2026-05-26T13:23:05.567Z",
+      "runId": "2026-05-26T13-09-05-798Z",
+      "step": "qa",
+      "agent": "critic-qa",
+      "type": "routing_decision",
+      "content": "Executed step qa (initial) — status: completed",
+      "metadata": {
+        "elapsed": "121.3",
+        "revisionPass": false,
+        "error": null
+      }
+    },
+    {
+      "entryId": "0ebdc294dc7e0b9e",
+      "timestamp": "2026-05-26T13:26:24.572Z",
+      "runId": "2026-05-26T13-09-05-798Z",
+      "step": "copy",
+      "agent": "copywriter",
+      "type": "routing_decision",
+      "content": "Executed step copy (revision) — status: completed",
+      "metadata": {
+        "elapsed": "199.0",
+        "revisionPass": true,
+        "error": null
+      }
+    },
+    {
+      "entryId": "fdcb4fb7a6915d99",
+      "timestamp": "2026-05-26T13:43:10.493Z",
+      "runId": "2026-05-26T13-40-16-958Z",
+      "step": "research",
+      "agent": "market-researcher",
+      "type": "routing_decision",
+      "content": "Executed step research (initial) — status: completed",
+      "metadata": {
+        "elapsed": "173.4",
+        "revisionPass": false,
+        "error": null
+      }
+    },
+    {
+      "entryId": "cc138f03b4975802",
+      "timestamp": "2026-05-26T13:44:05.629Z",
+      "runId": "2026-05-26T13-42-14-567Z",
+      "step": "research",
+      "agent": "market-researcher",
+      "type": "routing_decision",
+      "content": "Executed step research (initial) — status: completed",
+      "metadata": {
+        "elapsed": "111.0",
+        "revisionPass": false,
+        "error": null
+      }
+    },
+    {
+      "entryId": "bc2118b457c6897d",
+      "timestamp": "2026-05-26T13:45:02.646Z",
+      "runId": "2026-05-26T13-40-16-958Z",
+      "step": "strategy",
+      "agent": "brand-strategist",
+      "type": "routing_decision",
+      "content": "Executed step strategy (initial) — status: completed",
+      "metadata": {
+        "elapsed": "112.1",
+        "revisionPass": false,
+        "error": null
+      }
+    },
+    {
+      "entryId": "ca827bc4a98acde9",
+      "timestamp": "2026-05-26T13:46:00.743Z",
+      "runId": "2026-05-26T13-42-14-567Z",
+      "step": "strategy",
+      "agent": "brand-strategist",
+      "type": "routing_decision",
+      "content": "Executed step strategy (initial) — status: completed",
+      "metadata": {
+        "elapsed": "115.1",
+        "revisionPass": false,
+        "error": null
+      }
+    },
+    {
+      "entryId": "c20b2caa8e746f16",
+      "timestamp": "2026-05-26T13:47:03.463Z",
+      "runId": "2026-05-26T13-40-16-958Z",
+      "step": "copy",
+      "agent": "copywriter",
+      "type": "routing_decision",
+      "content": "Executed step copy (initial) — status: completed",
+      "metadata": {
+        "elapsed": "120.8",
+        "revisionPass": false,
+        "error": null
+      }
+    },
+    {
+      "entryId": "c51130486586cf23",
+      "timestamp": "2026-05-26T13:48:05.557Z",
+      "runId": "2026-05-26T13-42-14-567Z",
+      "step": "copy",
+      "agent": "copywriter",
+      "type": "routing_decision",
+      "content": "Executed step copy (initial) — status: completed",
+      "metadata": {
+        "elapsed": "124.8",
+        "revisionPass": false,
+        "error": null
+      }
+    },
+    {
+      "entryId": "a805a8cd887deb3f",
+      "timestamp": "2026-05-26T13:49:08.061Z",
+      "runId": "2026-05-26T13-40-16-958Z",
+      "step": "persona",
+      "agent": "persona-simulator",
+      "type": "routing_decision",
+      "content": "Executed step persona (initial) — status: completed",
+      "metadata": {
+        "elapsed": "124.6",
+        "revisionPass": false,
+        "error": null
+      }
+    },
+    {
+      "entryId": "1f730802a1621d2a",
+      "timestamp": "2026-05-26T13:50:10.163Z",
+      "runId": "2026-05-26T13-42-14-567Z",
+      "step": "persona",
+      "agent": "persona-simulator",
+      "type": "routing_decision",
+      "content": "Executed step persona (initial) — status: completed",
+      "metadata": {
+        "elapsed": "124.6",
+        "revisionPass": false,
+        "error": null
+      }
+    },
+    {
+      "entryId": "6265993430fccee9",
+      "timestamp": "2026-05-26T13:51:43.873Z",
+      "runId": "2026-05-26T13-40-16-958Z",
+      "step": "platform-adapt",
+      "agent": "platform-adapter",
+      "type": "routing_decision",
+      "content": "Executed step platform-adapt (initial) — status: completed",
+      "metadata": {
+        "elapsed": "155.8",
+        "revisionPass": false,
+        "error": null
+      }
+    },
+    {
+      "entryId": "ab7d5841b70d254d",
+      "timestamp": "2026-05-26T13:51:58.712Z",
+      "runId": "2026-05-26T13-42-14-567Z",
+      "step": "platform-adapt",
+      "agent": "platform-adapter",
+      "type": "routing_decision",
+      "content": "Executed step platform-adapt (initial) — status: completed",
+      "metadata": {
+        "elapsed": "108.5",
+        "revisionPass": false,
+        "error": null
+      }
+    },
+    {
+      "entryId": "b9bf062e799fd64b",
+      "timestamp": "2026-05-26T13:52:59.125Z",
+      "runId": "2026-05-26T13-40-16-958Z",
+      "step": "qa",
+      "agent": "critic-qa",
+      "type": "routing_decision",
+      "content": "Executed step qa (initial) — status: completed",
+      "metadata": {
+        "elapsed": "75.2",
+        "revisionPass": false,
+        "error": null
+      }
+    },
+    {
+      "entryId": "9a56ea114a47d824",
+      "timestamp": "2026-05-26T13:54:01.221Z",
+      "runId": "2026-05-26T13-42-14-567Z",
+      "step": "qa",
+      "agent": "critic-qa",
+      "type": "routing_decision",
+      "content": "Executed step qa (initial) — status: completed",
+      "metadata": {
+        "elapsed": "122.5",
+        "revisionPass": false,
+        "error": null
+      }
+    },
+    {
+      "entryId": "b2abca81a61b4f21",
+      "timestamp": "2026-05-26T13:55:00.794Z",
+      "runId": "2026-05-26T13-40-16-958Z",
+      "step": "copy",
+      "agent": "copywriter",
+      "type": "routing_decision",
+      "content": "Executed step copy (revision) — status: completed",
+      "metadata": {
+        "elapsed": "121.7",
+        "revisionPass": true,
+        "error": null
+      }
+    },
+    {
+      "entryId": "08ff247e4a4ebb1a",
+      "timestamp": "2026-05-26T13:56:02.045Z",
+      "runId": "2026-05-26T13-42-14-567Z",
+      "step": "copy",
+      "agent": "copywriter",
+      "type": "routing_decision",
+      "content": "Executed step copy (revision) — status: completed",
+      "metadata": {
+        "elapsed": "120.8",
+        "revisionPass": true,
+        "error": null
+      }
+    },
+    {
+      "entryId": "160e2d3a7f502380",
+      "timestamp": "2026-05-26T14:23:29.661Z",
+      "runId": "2026-05-26T14-21-28-290Z",
+      "step": "research",
+      "agent": "market-researcher",
+      "type": "routing_decision",
+      "content": "Executed step research (initial) — status: completed",
+      "metadata": {
+        "elapsed": "121.3",
+        "revisionPass": false,
+        "error": null
+      }
+    },
+    {
+      "entryId": "25ce481b939607dd",
+      "timestamp": "2026-05-26T14:24:32.464Z",
+      "runId": "2026-05-26T14-22-52-028Z",
+      "step": "research",
+      "agent": "market-researcher",
+      "type": "routing_decision",
+      "content": "Executed step research (initial) — status: completed",
+      "metadata": {
+        "elapsed": "100.4",
+        "revisionPass": false,
+        "error": null
+      }
+    },
+    {
+      "entryId": "e59e454f4b6f3a31",
+      "timestamp": "2026-05-26T14:25:18.501Z",
+      "runId": "2026-05-26T14-21-28-290Z",
+      "step": "strategy",
+      "agent": "brand-strategist",
+      "type": "routing_decision",
+      "content": "Executed step strategy (initial) — status: completed",
+      "metadata": {
+        "elapsed": "108.8",
+        "revisionPass": false,
+        "error": null
+      }
+    },
+    {
+      "entryId": "c54c28bdddb371cd",
+      "timestamp": "2026-05-26T14:26:18.643Z",
+      "runId": "2026-05-26T14-22-52-028Z",
+      "step": "strategy",
+      "agent": "brand-strategist",
+      "type": "routing_decision",
+      "content": "Executed step strategy (initial) — status: completed",
+      "metadata": {
+        "elapsed": "106.2",
+        "revisionPass": false,
+        "error": null
+      }
+    },
+    {
+      "entryId": "a50bd648b5bce474",
+      "timestamp": "2026-05-26T14:27:09.720Z",
+      "runId": "2026-05-26T14-21-28-290Z",
+      "step": "copy",
+      "agent": "copywriter",
+      "type": "routing_decision",
+      "content": "Executed step copy (initial) — status: completed",
+      "metadata": {
+        "elapsed": "111.2",
+        "revisionPass": false,
+        "error": null
+      }
+    },
+    {
+      "entryId": "a6bc24f4162a3adb",
+      "timestamp": "2026-05-26T14:28:11.785Z",
+      "runId": "2026-05-26T14-22-52-028Z",
+      "step": "copy",
+      "agent": "copywriter",
+      "type": "routing_decision",
+      "content": "Executed step copy (initial) — status: completed",
+      "metadata": {
+        "elapsed": "113.1",
+        "revisionPass": false,
+        "error": null
+      }
+    },
+    {
+      "entryId": "560522275efbc5e8",
+      "timestamp": "2026-05-26T14:29:33.506Z",
+      "runId": "2026-05-26T14-21-28-290Z",
+      "step": "persona",
+      "agent": "persona-simulator",
+      "type": "routing_decision",
+      "content": "Executed step persona (initial) — status: completed",
+      "metadata": {
+        "elapsed": "143.8",
+        "revisionPass": false,
+        "error": null
+      }
+    },
+    {
+      "entryId": "587b87c11c3c264f",
+      "timestamp": "2026-05-26T14:30:38.320Z",
+      "runId": "2026-05-26T14-22-52-028Z",
+      "step": "persona",
+      "agent": "persona-simulator",
+      "type": "routing_decision",
+      "content": "Executed step persona (initial) — status: completed",
+      "metadata": {
+        "elapsed": "146.5",
+        "revisionPass": false,
+        "error": null
+      }
+    },
+    {
+      "entryId": "2a5900ce15c5fe39",
+      "timestamp": "2026-05-26T14:32:21.948Z",
+      "runId": "2026-05-26T14-21-28-290Z",
+      "step": "platform-adapt",
+      "agent": "platform-adapter",
+      "type": "routing_decision",
+      "content": "Executed step platform-adapt (initial) — status: completed",
+      "metadata": {
+        "elapsed": "168.4",
+        "revisionPass": false,
+        "error": null
+      }
+    },
+    {
+      "entryId": "da5771fc522f5cc5",
+      "timestamp": "2026-05-26T14:32:30.121Z",
+      "runId": "2026-05-26T14-22-52-028Z",
+      "step": "platform-adapt",
+      "agent": "platform-adapter",
+      "type": "routing_decision",
+      "content": "Executed step platform-adapt (initial) — status: completed",
+      "metadata": {
+        "elapsed": "111.8",
+        "revisionPass": false,
+        "error": null
+      }
+    },
+    {
+      "entryId": "b1fd458c54e477a1",
+      "timestamp": "2026-05-26T14:33:39.319Z",
+      "runId": "2026-05-26T14-21-28-290Z",
+      "step": "qa",
+      "agent": "critic-qa",
+      "type": "routing_decision",
+      "content": "Executed step qa (initial) — status: completed",
+      "metadata": {
+        "elapsed": "77.4",
+        "revisionPass": false,
+        "error": null
+      }
+    },
+    {
+      "entryId": "27c4016b8b43935d",
+      "timestamp": "2026-05-26T14:34:46.298Z",
+      "runId": "2026-05-26T14-22-52-028Z",
+      "step": "qa",
+      "agent": "critic-qa",
+      "type": "routing_decision",
+      "content": "Executed step qa (initial) — status: completed",
+      "metadata": {
+        "elapsed": "136.2",
+        "revisionPass": false,
+        "error": null
+      }
+    },
+    {
+      "entryId": "fa2ecb33601c0731",
+      "timestamp": "2026-05-26T14:35:50.649Z",
+      "runId": "2026-05-26T14-21-28-290Z",
+      "step": "copy",
+      "agent": "copywriter",
+      "type": "routing_decision",
+      "content": "Executed step copy (revision) — status: completed",
+      "metadata": {
+        "elapsed": "131.3",
+        "revisionPass": true,
+        "error": null
+      }
+    },
+    {
+      "entryId": "efeb3567b314c90e",
+      "timestamp": "2026-05-26T14:36:58.677Z",
+      "runId": "2026-05-26T14-22-52-028Z",
+      "step": "copy",
+      "agent": "copywriter",
+      "type": "routing_decision",
+      "content": "Executed step copy (revision) — status: completed",
+      "metadata": {
+        "elapsed": "132.4",
+        "revisionPass": true,
+        "error": null
+      }
+    },
+    {
+      "entryId": "e696dee2680afe4f",
+      "timestamp": "2026-05-26T20:52:07.066Z",
+      "runId": "2026-05-26T20-49-37-829Z",
+      "step": "research",
+      "agent": "market-researcher",
+      "type": "routing_decision",
+      "content": "Executed step research (initial) — status: fallback_template",
+      "metadata": {
+        "elapsed": "149.2",
+        "revisionPass": false,
+        "error": "This operation was aborted"
+      }
+    },
+    {
+      "entryId": "10d56df3e5f6bfa1",
+      "timestamp": "2026-05-26T20:55:07.193Z",
+      "runId": "2026-05-26T20-49-37-829Z",
+      "step": "platform",
+      "agent": "platform-strategist",
+      "type": "routing_decision",
+      "content": "Executed step platform (initial) — status: fallback_template",
+      "metadata": {
+        "elapsed": "180.1",
+        "revisionPass": false,
+        "error": "This operation was aborted"
+      }
+    },
+    {
+      "entryId": "443f43bf2dade5ce",
+      "timestamp": "2026-05-26T20:57:58.103Z",
+      "runId": "2026-05-26T20-49-37-829Z",
+      "step": "strategy",
+      "agent": "brand-strategist",
+      "type": "routing_decision",
+      "content": "Executed step strategy (initial) — status: fallback_template",
+      "metadata": {
+        "elapsed": "170.9",
+        "revisionPass": false,
+        "error": "This operation was aborted"
+      }
+    },
+    {
+      "entryId": "71aad916a5cf5aa3",
+      "timestamp": "2026-05-26T21:12:05.878Z",
+      "runId": "2026-05-26T20-49-37-829Z",
+      "step": "copy",
+      "agent": "copywriter",
+      "type": "routing_decision",
+      "content": "Executed step copy (initial) — status: fallback_template",
+      "metadata": {
+        "elapsed": "847.6",
+        "revisionPass": false,
+        "error": "This operation was aborted"
+      }
+    },
+    {
+      "entryId": "428c441ebe5fc8c4",
+      "timestamp": "2026-05-26T21:27:33.267Z",
+      "runId": "2026-05-26T20-49-37-829Z",
+      "step": "persona",
+      "agent": "persona-simulator",
+      "type": "routing_decision",
+      "content": "Executed step persona (initial) — status: fallback_template",
+      "metadata": {
+        "elapsed": "927.4",
+        "revisionPass": false,
+        "error": "This operation was aborted"
+      }
+    },
+    {
+      "entryId": "3710e030e72ac8f2",
+      "timestamp": "2026-05-26T21:45:09.435Z",
+      "runId": "2026-05-26T20-49-37-829Z",
+      "step": "qa",
+      "agent": "critic-qa",
+      "type": "routing_decision",
+      "content": "Executed step qa (initial) — status: fallback_template",
+      "metadata": {
+        "elapsed": "1056.2",
+        "revisionPass": false,
+        "error": "This operation was aborted"
+      }
+    },
+    {
+      "entryId": "52dbfdad4b9741b2",
+      "timestamp": "2026-05-26T21:45:09.437Z",
+      "runId": "2026-05-26T20-49-37-829Z",
+      "step": "qa",
+      "agent": null,
+      "type": "routing_decision",
+      "content": "QA loop 1: no revisions needed, proceeding to synthesis",
+      "metadata": {
+        "loop": 1
+      }
     }
   ]
 }

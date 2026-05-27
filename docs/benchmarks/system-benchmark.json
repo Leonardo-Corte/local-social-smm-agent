@@ -1,0 +1,118 @@
+{
+  "version": "0.1.0",
+  "generatedAt": "2026-05-27T04:50:07.217Z",
+  "workspaceRoot": "/Users/corte/Documents/Codex/2026-05-22/fammi-un-deep-interwie-per-questo/workspaces/generated-projects/sample-local-social-team",
+  "status": "passed",
+  "metrics": [
+    {
+      "id": "model-routing-speed",
+      "label": "Local model routing control-plane speed",
+      "status": "passed",
+      "elapsedMs": 1529,
+      "output": {
+        "profile": "apple-silicon-pro",
+        "backends": [
+          {
+            "id": "ollama",
+            "available": true
+          },
+          {
+            "id": "mlx",
+            "available": false
+          },
+          {
+            "id": "llama.cpp",
+            "available": false
+          },
+          {
+            "id": "vllm",
+            "available": false
+          },
+          {
+            "id": "comfyui",
+            "available": false
+          },
+          {
+            "id": "nvidia-smi",
+            "available": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "image-quality-scorecard",
+      "label": "Image QA and brand-fit scorecard",
+      "status": "passed",
+      "elapsedMs": 7,
+      "output": {
+        "status": "review_with_warnings",
+        "brandFit": "aligned",
+        "platformFit": "preferred"
+      }
+    },
+    {
+      "id": "video-analysis-scorecard",
+      "label": "Video analysis scorecard control-plane",
+      "status": "passed",
+      "elapsedMs": 0,
+      "output": {
+        "status": "strong",
+        "averageScore": 100,
+        "platformScores": [
+          {
+            "platform": "instagram",
+            "score": 100
+          },
+          {
+            "platform": "facebook",
+            "score": 100
+          },
+          {
+            "platform": "linkedin",
+            "score": 100
+          },
+          {
+            "platform": "x",
+            "score": 100
+          },
+          {
+            "platform": "reddit",
+            "score": 100
+          }
+        ]
+      }
+    },
+    {
+      "id": "creative-output-quality",
+      "label": "Creative output quality scorecard",
+      "status": "passed",
+      "elapsedMs": 2,
+      "output": {
+        "status": "weak_needs_rework",
+        "percentage": 49,
+        "nextActions": 3
+      }
+    },
+    {
+      "id": "consensus-overhead",
+      "label": "Consensus quality benchmark",
+      "status": "passed",
+      "elapsedMs": 0,
+      "output": {
+        "status": "passed",
+        "cases": 2,
+        "averageDelta": 22
+      }
+    }
+  ],
+  "heavyMedia": {
+    "realImageGeneration": "not configured in fast benchmark; set SMM_COMFYUI_WORKFLOW for real ComfyUI timing",
+    "realVideoGeneration": "not configured in fast benchmark; set SMM_PIXELLE_URL for real Pixelle timing",
+    "realVideoAnalysis": "run `npm run video:intel <workspace> -- /path/video.mp4` for ffprobe/ffmpeg timing on an actual asset"
+  },
+  "guardrails": [
+    "Fast benchmark measures control-plane reliability and scorecard latency without forcing huge local model/media jobs.",
+    "Real model speed is measured by npm run models:benchmark.",
+    "Real image/video generation remains opt-in because it depends on local hardware and installed engines."
+  ]
+}

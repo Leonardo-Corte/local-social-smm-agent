@@ -1,12 +1,12 @@
 # Current User Request
 
-Created at: 2026-05-25T23:19:24.059Z
+Created at: 2026-05-26T20:49:37.829Z
 
-Intent: reel
+Intent: post
 
-Target: drafts/reels.md
+Target: drafts/posts.md
 
-Requested steps: strategy, video, capcut, qa
+Requested steps: research, platform, strategy, copy, persona, qa
 
 ## User Request
-generami un reel Instagram per questo sistema AI locale: mostra come si creano contenuti professionali senza API a pagamento, tutto gira sul Mac con Ollama, zero abbonamenti, approvazione umana prima della pubblicazione. Tono: pratico, sharp, credibile. Nessun claim inventato.
+ciao allora ora creami il post per instagrm per l annoncio di GIGI il nuovo assitente vocale AI che vuole sostituire siri anlizzati anceh tutto il sitoweb per capire meglio tonon come momunichiamo e tutto https://killsiri.xyz/

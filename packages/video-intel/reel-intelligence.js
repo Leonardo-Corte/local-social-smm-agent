@@ -134,6 +134,60 @@ function runKeyframeAnalysis(filePath) {
   };
 }
 
+function runShotQualityAnalysis(filePath) {
+  const signal = runCommand("ffmpeg", [
+    "-hide_banner",
+    "-i", filePath,
+    "-vf", "fps=1,signalstats,metadata=print:file=-",
+    "-frames:v", "12",
+    "-an",
+    "-f", "null",
+    "-"
+  ], { maxBuffer: 30 * 1024 * 1024 });
+  const text = `${signal.stdout || ""}\n${signal.stderr || ""}`;
+  const yavg = [...text.matchAll(/lavfi\.signalstats\.YAVG=([-\d.]+)/g)].map((match) => Number(match[1])).filter(Number.isFinite);
+  const satavg = [...text.matchAll(/lavfi\.signalstats\.SATAVG=([-\d.]+)/g)].map((match) => Number(match[1])).filter(Number.isFinite);
+  const avg = (values) => values.length ? values.reduce((sum, value) => sum + value, 0) / values.length : null;
+  const brightness = avg(yavg);
+  const saturation = avg(satavg);
+  const warnings = [];
+  if (brightness !== null && brightness < 45) {
+    warnings.push("Sampled frames look dark; consider exposure/brightness correction.");
+  }
+  if (brightness !== null && brightness > 220) {
+    warnings.push("Sampled frames look very bright; check highlights and white balance.");
+  }
+  if (saturation !== null && saturation < 25) {
+    warnings.push("Sampled frames look low-saturation; consider color correction if the brand needs energy.");
+  }
+  const blur = runCommand("ffmpeg", [
+    "-hide_banner",
+    "-i", filePath,
+    "-vf", "fps=1,blurdetect",
+    "-frames:v", "12",
+    "-an",
+    "-f", "null",
+    "-"
+  ], { maxBuffer: 30 * 1024 * 1024 });
+  const blurText = blur.stderr || "";
+  const blurValues = [...blurText.matchAll(/blur=([-\d.]+)/g)].map((match) => Number(match[1])).filter(Number.isFinite);
+  const blurScore = avg(blurValues);
+  if (blur.status !== 0) {
+    warnings.push("Blur analysis unavailable in this ffmpeg build; manual sharpness review required.");
+  } else if (blurScore !== null && blurScore > 0.8) {
+    warnings.push("Blur analysis suggests soft footage; inspect key frames before publishing.");
+  }
+  return {
+    ok: signal.status === 0,
+    sampledFrames: yavg.length,
+    brightnessAvg: brightness,
+    saturationAvg: saturation,
+    blurAvailable: blur.status === 0,
+    blurScore,
+    warnings
+  };
+}
+
 function transcriptionStatus() {
   const candidates = [
     { command: "whisper", label: "openai-whisper CLI" },
@@ -287,6 +341,13 @@ function recommendations(summary) {
   return notes.length > 0 ? notes : ["Technical checks look usable; focus critique on story, hook, and proof safety."];
 }
 
+function shotQualityRecommendations(shotQuality) {
+  if (!shotQuality || !Array.isArray(shotQuality.warnings) || shotQuality.warnings.length === 0) {
+    return ["Frame quality needs manual creative review, but no automatic brightness/saturation blocker was detected."];
+  }
+  return shotQuality.warnings;
+}
+
 function reportMarkdown(report) {
   const relFrames = report.frames.map((framePath) => path.relative(report.workspaceRoot, framePath));
   return `# Reel Intelligence Report
@@ -333,6 +394,13 @@ ${report.transcription.transcript}
 ## Sound Direction
 ${report.soundNotes.map((note) => `- ${note}`).join("\n")}
 
+## Shot Quality Signals
+- Sampled frames: ${report.shotQuality.sampledFrames}
+- Brightness avg: ${report.shotQuality.brightnessAvg === null ? "unknown" : report.shotQuality.brightnessAvg.toFixed(1)}
+- Saturation avg: ${report.shotQuality.saturationAvg === null ? "unknown" : report.shotQuality.saturationAvg.toFixed(1)}
+- Blur analysis: ${report.shotQuality.blurAvailable ? `available${report.shotQuality.blurScore === null ? "" : ` (${report.shotQuality.blurScore.toFixed(2)})`}` : "unavailable"}
+${shotQualityRecommendations(report.shotQuality).map((note) => `- ${note}`).join("\n")}
+
 ## Editing Recommendations
 ${report.recommendations.map((note) => `- ${note}`).join("\n")}
 
@@ -360,6 +428,7 @@ function buildReelIntelligence({ workspaceRoot, assetPath, transcribe = false })
   const probe = probeVideo(absoluteAssetPath);
   const audio = runAudioAnalysis(absoluteAssetPath);
   const keyframes = runKeyframeAnalysis(absoluteAssetPath);
+  const shotQuality = runShotQualityAnalysis(absoluteAssetPath);
   const summary = technicalSummary({ probe, keyframes, audio });
   const framesResult = extractFrames({ filePath: absoluteAssetPath, framesDir, duration: summary.duration });
   const transcription = transcribe
@@ -386,6 +455,7 @@ function buildReelIntelligence({ workspaceRoot, assetPath, transcribe = false })
     },
     summary,
     frames: framesResult.frames,
+    shotQuality,
     transcription,
     soundNotes,
     recommendations: recommendations(summary),
@@ -393,7 +463,8 @@ function buildReelIntelligence({ workspaceRoot, assetPath, transcribe = false })
       probe,
       framesExtractionOk: framesResult.ok,
       audioAnalysisOk: audio.ok,
-      keyframeAnalysisOk: keyframes.ok
+      keyframeAnalysisOk: keyframes.ok,
+      shotQualityAnalysisOk: shotQuality.ok
     }
   };
   return report;

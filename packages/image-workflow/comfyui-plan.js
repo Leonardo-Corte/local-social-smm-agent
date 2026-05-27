@@ -127,6 +127,7 @@ function buildComfyUiPlan(workspaceRoot) {
     requiredHumanApproval: true,
     automaticPublishEnabled: false,
     workflowNotes: [
+      "Real local generation is available through `npm run comfyui:run <workspace> -- --workflow /path/api-workflow.json --prompt \"...\"` when ComfyUI is running.",
       "Use local image generation only after exact model/workflow license checks.",
       "Do not generate or publish platform assets without human approval.",
       "Prefer text-light layouts unless the selected image model is proven reliable with text.",
@@ -181,4 +182,4 @@ ${plan.sourceContext.visualBriefs}
 `;
 }
 
-module.exports = { buildComfyUiPlan, comfyUiPlanMarkdown };
+module.exports = { buildComfyUiPlan, comfyUiPlanMarkdown, detectComfyUiInstall, promptTemplates };

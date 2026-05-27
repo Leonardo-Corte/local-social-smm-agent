@@ -93,6 +93,29 @@ function compactStepTask(step, type) {
   return tasks[step] || `Handle this ${type} request within the workspace rules.`;
 }
 
+function projectNameFromBusinessProfile(business) {
+  const match = String(business || "").match(/^Project:\s*(.+)$/mi);
+  return match ? match[1].trim() : null;
+}
+
+function requestScopeGuard({ business, request, linkIntel }) {
+  const projectName = projectNameFromBusinessProfile(business);
+  const requestText = String(request || "").toLowerCase();
+  const projectMentioned = projectName && requestText.includes(projectName.toLowerCase());
+  const hasExternalUrl = /https?:\/\//i.test(request || "");
+  const linkTitle = (String(linkIntel || "").match(/Title:\s*(.+)/i) || [])[1] || "";
+  const externalBrandLikely = hasExternalUrl || (linkTitle && (!projectName || !linkTitle.toLowerCase().includes(projectName.toLowerCase())));
+  if (externalBrandLikely && !projectMentioned) {
+    return `The current request appears to be about an external product, brand, or URL rather than the workspace business itself.
+
+- Treat the user's request and Link Intelligence as the primary campaign/product context.
+- Use the workspace business profile only for safety rules, approval posture, and operating style.
+- Do not force the workspace niche, audience, events, tickets, venues, food/drinks, or networking positioning into the artifact unless the user explicitly asks for it.
+- Approval blockers must match the requested product/link. Do not include event-date, venue, ticket, or attendance blockers for non-event/product content.`;
+  }
+  return `The current request appears to belong to the workspace business. Use the business profile as the primary brand context while still following the user's exact request.`;
+}
+
 function compactAgentPrompt({ workspaceRoot, request, type, target, step, previousHandoffs }) {
   const agentId = agentByStep[step] || step;
   const agent = readText(path.join(workspaceRoot, "agents", `${agentId}.md`), "");
@@ -103,6 +126,7 @@ function compactAgentPrompt({ workspaceRoot, request, type, target, step, previo
   const imageIntel = readText(path.join(workspaceRoot, "assets/analysis/image-intelligence-latest.md"), "").slice(0, 5000);
   const reelIntel = readText(path.join(workspaceRoot, "assets/analysis/reel-intelligence-latest.md"), "").slice(0, 5000);
   const linkIntel = readText(path.join(workspaceRoot, "sources/link-intelligence-latest.md"), "").slice(0, 5000);
+  const scopeGuard = requestScopeGuard({ business, request, linkIntel });
   const targetContent = readText(path.join(workspaceRoot, target), "").slice(0, 5000);
   return `# Compact Agent Step
 
@@ -125,6 +149,9 @@ ${compactStepTask(step, type)}
 
 ## Business Profile
 ${business}
+
+## Request Scope Guard
+${scopeGuard}
 
 ## Current Request File
 ${currentRequest}
@@ -207,9 +234,9 @@ Use the previous handoff context below and keep the artifact concise, proof-awar
 ${previousHandoffs || "No previous handoffs."}
 
 ## Approval Blockers
-- Confirm event details before publishing.
-- Confirm ticket inclusions before mentioning food/drinks.
-- Confirm any attendance, venue, guest, or partnership claim before use.
+- Confirm factual claims before publishing.
+- Confirm the destination link, offer, and product positioning before publishing.
+- Confirm any attendance, venue, guest, partnership, pricing, or inclusion claim only when the request is actually about an event.
 
 ## Agent Handoff
 The next agent should keep the request focused, avoid invented numbers or status claims, and verify the final draft against content policy.
@@ -269,6 +296,8 @@ function synthesisPrompt({ workspaceRoot, request, type, target, workflowRoot, c
   const business = readText(path.join(workspaceRoot, "business/business.md"), "");
   const policy = readText(path.join(workspaceRoot, "policy/publishing-policy.json"), "");
   const platformPlaybooks = readText(path.join(workspaceRoot, "platforms/platform-playbooks.md"), "");
+  const linkIntel = readText(path.join(workspaceRoot, "sources/link-intelligence-latest.md"), "");
+  const scopeGuard = requestScopeGuard({ business, request, linkIntel });
   const currentTarget = readText(path.join(workspaceRoot, target), "");
   const outputs = compactOutputs.length > 0 ? compactOutputs : collectStepOutputs(workflowRoot);
   return `# Final Social Team Synthesis
@@ -289,6 +318,9 @@ ${target}
 ## Business Profile
 ${business}
 
+## Request Scope Guard
+${scopeGuard}
+
 ## Publishing Policy
 \`\`\`json
 ${policy}
@@ -308,7 +340,7 @@ ${item.output}
 ## Required Final Artifact Rules
 - Write only the target artifact content, not commentary.
 - Use the user's request as the concrete brief.
-- Keep it specific to the business profile.
+- Follow the Request Scope Guard. If the user/link is about a different product or brand, do not force the workspace business niche into the final artifact.
 - If facts are missing, include a short "Approval Blockers" section instead of inventing.
 - No automatic publishing language.
 - No DM/comment/like/follow/reply/vote automation.
@@ -608,4 +640,4 @@ Human approval required: yes
   return { result, workflowRoot: workflow.workflowRoot, teamRoot, finalArtifact: normalized };
 }
 
-module.exports = { runTeamOrchestration, targetForIntent };
+module.exports = { requestScopeGuard, runTeamOrchestration, targetForIntent };

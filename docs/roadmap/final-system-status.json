@@ -1,0 +1,178 @@
+{
+  "generatedAt": "2026-05-27T17:26:45.925Z",
+  "planPath": "/Users/corte/Documents/Codex/2026-05-22/fammi-un-deep-interwie-per-questo/docs/roadmap/final-agentic-smm-system-task-plan.md",
+  "matrixPath": "/Users/corte/Documents/Codex/2026-05-22/fammi-un-deep-interwie-per-questo/docs/roadmap/integration-risk-matrix.json",
+  "status": "in_progress",
+  "totalDone": 65,
+  "totalTasks": 65,
+  "percent": 100,
+  "phases": [
+    {
+      "title": "Phase 1 - Master Task Plan And Repo Audit Lock",
+      "done": 5,
+      "total": 5,
+      "percent": 100,
+      "next": null
+    },
+    {
+      "title": "Phase 2 - Real Local Image Generation With ComfyUI",
+      "done": 11,
+      "total": 11,
+      "percent": 100,
+      "next": null
+    },
+    {
+      "title": "Phase 3 - Deep Video Analysis",
+      "done": 7,
+      "total": 7,
+      "percent": 100,
+      "next": null
+    },
+    {
+      "title": "Phase 4 - Video Creation And Editing Engine",
+      "done": 7,
+      "total": 7,
+      "percent": 100,
+      "next": null
+    },
+    {
+      "title": "Phase 5 - Live Trend Research",
+      "done": 5,
+      "total": 5,
+      "percent": 100,
+      "next": null
+    },
+    {
+      "title": "Phase 6 - MassGen-Style Agent Collaboration",
+      "done": 5,
+      "total": 5,
+      "percent": 100,
+      "next": null
+    },
+    {
+      "title": "Phase 7 - Drive/Folder Asset Ingestion",
+      "done": 6,
+      "total": 6,
+      "percent": 100,
+      "next": null
+    },
+    {
+      "title": "Phase 8 - Human-Approved Publishing With Official APIs",
+      "done": 6,
+      "total": 6,
+      "percent": 100,
+      "next": null
+    },
+    {
+      "title": "Phase 9 - Unified Chat Orchestration",
+      "done": 6,
+      "total": 6,
+      "percent": 100,
+      "next": null
+    },
+    {
+      "title": "Phase 10 - Benchmark, Hardening, And Professionalization",
+      "done": 7,
+      "total": 7,
+      "percent": 100,
+      "next": null
+    }
+  ],
+  "activeCreativePlan": {
+    "planPath": "/Users/corte/Documents/Codex/2026-05-22/fammi-un-deep-interwie-per-questo/.omx/plans/prd-creative-intelligence-engine-2026-05-27.md",
+    "status": "in_progress",
+    "next": "Goal 5: connect the static renderer into the natural-language chat mission flow so a request like \"creami un post Instagram da questa immagine/link\" automatically routes through research, copy, visual QA, static render, PNG export, artifact registry, and human approval."
+  },
+  "integrations": [
+    {
+      "id": "comfyui",
+      "name": "ComfyUI",
+      "role": "local image/video/audio workflow backend",
+      "licenseBoundary": "external local service",
+      "licenseRisk": "medium",
+      "setupWeight": "medium",
+      "hardwareDemand": "medium-to-high",
+      "defaultEnabled": false,
+      "fallback": "visual briefs and prompt reports",
+      "decision": "use through API adapter"
+    },
+    {
+      "id": "comfyui-copilot",
+      "name": "ComfyUI-Copilot",
+      "role": "ComfyUI workflow generation and debugging assistant",
+      "licenseBoundary": "optional MIT custom node inside user's ComfyUI install",
+      "licenseRisk": "low",
+      "setupWeight": "medium",
+      "hardwareDemand": "same as ComfyUI",
+      "defaultEnabled": false,
+      "fallback": "our local prompt engineer and workflow templates",
+      "decision": "optional setup plan, not core dependency"
+    },
+    {
+      "id": "pixelle-video",
+      "name": "Pixelle-Video",
+      "role": "topic/script/assets/tts/bgm to MP4 short-video engine",
+      "licenseBoundary": "separate optional Apache-2.0 checkout/service",
+      "licenseRisk": "low",
+      "setupWeight": "high",
+      "hardwareDemand": "high",
+      "defaultEnabled": false,
+      "fallback": "CapCut plan plus local preview/edit recipe",
+      "decision": "adapter spike with mocked test first"
+    },
+    {
+      "id": "openmontage",
+      "name": "OpenMontage",
+      "role": "agentic video production reference architecture",
+      "licenseBoundary": "AGPL separate service or clean-room ideas only",
+      "licenseRisk": "high",
+      "setupWeight": "high",
+      "hardwareDemand": "high",
+      "defaultEnabled": false,
+      "fallback": "our clean-room video QA and stage manifest",
+      "decision": "do not vendor"
+    },
+    {
+      "id": "massgen",
+      "name": "MassGen",
+      "role": "multi-agent consensus pattern",
+      "licenseBoundary": "pattern/reference; clean-room implementation",
+      "licenseRisk": "low",
+      "setupWeight": "low",
+      "hardwareDemand": "model-dependent",
+      "defaultEnabled": true,
+      "fallback": "existing adaptive orchestrator",
+      "decision": "implement native consensus mode"
+    },
+    {
+      "id": "meta-api",
+      "name": "Meta Graph/API Publishing",
+      "role": "official assisted publishing after approval",
+      "licenseBoundary": "official API, credentials in env only",
+      "licenseRisk": "medium",
+      "setupWeight": "high",
+      "hardwareDemand": "low",
+      "defaultEnabled": false,
+      "fallback": "manual publishing package",
+      "decision": "dry-run/readiness before any live adapter"
+    },
+    {
+      "id": "x-reddit-research",
+      "name": "X and Reddit trend research",
+      "role": "public trend/context intelligence",
+      "licenseBoundary": "public/manual/official API only",
+      "licenseRisk": "medium",
+      "setupWeight": "medium",
+      "hardwareDemand": "low",
+      "defaultEnabled": true,
+      "fallback": "manual source links and cached source snapshots",
+      "decision": "research only; no account actions"
+    }
+  ],
+  "nextCriticalTasks": [
+    {
+      "phase": "Creative Intelligence Engine",
+      "task": "Goal 5: connect the static renderer into the natural-language chat mission flow so a request like \"creami un post Instagram da questa immagine/link\" automatically routes through research, copy, visual QA, static render, PNG export, artifact registry, and human approval."
+    }
+  ]
+}

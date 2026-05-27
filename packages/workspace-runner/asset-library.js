@@ -28,6 +28,7 @@ function readAssetLibrary(workspaceRoot) {
     updatedAt: new Date().toISOString(),
     sources: [],
     assets: [],
+    queue: [],
     rejected: []
   });
 }
@@ -40,6 +41,7 @@ function writeAssetLibrary(workspaceRoot, library) {
     updatedAt: new Date().toISOString(),
     sources: Array.isArray(library.sources) ? library.sources : [],
     assets: Array.isArray(library.assets) ? library.assets : [],
+    queue: Array.isArray(library.queue) ? library.queue : [],
     rejected: Array.isArray(library.rejected) ? library.rejected : []
   }, null, 2)}\n`);
 }
@@ -143,6 +145,7 @@ function ingestAssetDirectory({ workspaceRoot, sourceDir, sourceLabel = "local-f
     ...library,
     sources: [...(library.sources || []), sourceRecord],
     assets: mergeAssets(library.assets || [], importedAssets),
+    queue: mergeQueue(library.queue || [], buildAssetQueue(importedAssets)),
     rejected: [...(library.rejected || []), ...rejected]
   };
   writeAssetLibrary(workspaceRoot, next);
@@ -152,6 +155,34 @@ function ingestAssetDirectory({ workspaceRoot, sourceDir, sourceLabel = "local-f
     rejected,
     library: next
   };
+}
+
+function buildAssetQueue(assets) {
+  return assets.map((asset) => {
+    const tasks = {
+      image: ["image-intelligence", "visual-selection", "post-or-carousel-ideas"],
+      video: ["reel-intelligence", "video-quality-report", "reel-script-and-edit-plan"],
+      text: ["context-summary", "claim-extraction", "content-angle-ideas"]
+    }[asset.kind] || ["manual-review"];
+    return {
+      id: `${asset.id}-queue`,
+      assetId: asset.id,
+      workspacePath: asset.workspacePath,
+      kind: asset.kind,
+      status: "pending_analysis",
+      tasks,
+      createdAt: new Date().toISOString(),
+      notes: "Process this queue item before using the asset in publishable drafts."
+    };
+  });
+}
+
+function mergeQueue(existingQueue, newQueue) {
+  const byId = new Map(existingQueue.map((item) => [item.id, item]));
+  for (const item of newQueue) {
+    byId.set(item.id, { ...(byId.get(item.id) || {}), ...item });
+  }
+  return [...byId.values()].sort((a, b) => a.workspacePath.localeCompare(b.workspacePath));
 }
 
 function assetLibraryMarkdown(report) {
@@ -171,6 +202,9 @@ ${report.imported.map((asset) => `- \`${asset.workspacePath}\` (${asset.kind}, $
 ## Rejected Files
 ${report.rejected.map((item) => `- \`${item.path}\`: ${item.reason}`).join("\n") || "- None."}
 
+## Analysis Queue
+${(report.library.queue || []).map((item) => `- \`${item.workspacePath}\` -> ${item.tasks.join(", ")} (${item.status})`).join("\n") || "- None."}
+
 ## Agent Usage
 - \`visual-director\`: select images for post/carousel/thumbnail concepts.
 - \`reel-shorts-producer\`: select videos and plan cuts.
@@ -187,10 +221,67 @@ function writeAssetLibraryMarkdown(workspaceRoot, report) {
   return filePath;
 }
 
+function writeAssetWatchManifest({ workspaceRoot, sourceDir, sourceLabel = "local-folder", intervalSeconds = 300 }) {
+  const absoluteSourceDir = path.resolve(process.cwd(), sourceDir);
+  if (!fs.existsSync(absoluteSourceDir) || !fs.statSync(absoluteSourceDir).isDirectory()) {
+    throw new Error(`Watch directory not found: ${sourceDir}`);
+  }
+  const manifest = {
+    version: "0.1.0",
+    generatedAt: new Date().toISOString(),
+    mode: "local-watch-plan",
+    sourceLabel,
+    sourceDir: absoluteSourceDir,
+    intervalSeconds,
+    automaticPublishingEnabled: false,
+    humanApprovalRequired: true,
+    command: `npm run assets:ingest <workspace> -- --dir "${absoluteSourceDir}" --label "${sourceLabel}"`,
+    notes: [
+      "This is a safe local-folder watch manifest, not a background daemon.",
+      "Use it to schedule or manually repeat ingestion for Drive-synced folders.",
+      "Every imported asset remains needs_human_review."
+    ]
+  };
+  const outDir = resolveInside(workspaceRoot, "assets");
+  ensureDir(outDir);
+  const jsonPath = path.join(outDir, "asset-watch-manifest.json");
+  const mdPath = path.join(outDir, "asset-watch-manifest.md");
+  fs.writeFileSync(jsonPath, `${JSON.stringify(manifest, null, 2)}\n`);
+  fs.writeFileSync(mdPath, assetWatchMarkdown(manifest));
+  return { manifest, jsonPath, mdPath };
+}
+
+function assetWatchMarkdown(manifest) {
+  return `# Asset Watch Manifest
+
+Mode: ${manifest.mode}
+
+Source: \`${manifest.sourceDir}\`
+
+Label: ${manifest.sourceLabel}
+
+Interval: ${manifest.intervalSeconds}s
+
+Automatic publishing: disabled
+
+Human approval required: yes
+
+## Command
+\`\`\`bash
+${manifest.command}
+\`\`\`
+
+## Notes
+${manifest.notes.map((item) => `- ${item}`).join("\n")}
+`;
+}
+
 module.exports = {
   LIBRARY_RELATIVE_PATH,
   assetLibraryMarkdown,
+  buildAssetQueue,
   ingestAssetDirectory,
   readAssetLibrary,
+  writeAssetWatchManifest,
   writeAssetLibraryMarkdown
 };

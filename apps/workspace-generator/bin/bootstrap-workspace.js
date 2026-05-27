@@ -4,6 +4,7 @@ const { spawnSync } = require("child_process");
 const path = require("path");
 
 const { workspacePaths } = require('../../../packages/workspace-runner/workspace-paths');
+const { writeNextCommandFiles } = require("../../../packages/workspace-runner/next-commands");
 
 const root = path.resolve(__dirname, "../../..");
 
@@ -42,6 +43,12 @@ function main() {
   console.log(`Workspace bootstrap complete: workspaces/generated-projects/${workspace}`);
   console.log(`Clean client workspace: workspaces/client-workspaces/${workspace}`);
   console.log(`Start file: workspaces/client-workspaces/${workspace}/START_HERE.md`);
+  const next = writeNextCommandFiles({ root, workspace, state: "chat" });
+  console.log("");
+  console.log(next.markdown);
+  console.log("");
+  console.log(`Next command file: ${path.relative(root, next.generatedNextCommands)}`);
+  console.log(`Continue script: ${path.relative(root, next.generatedContinueScript)}`);
 }
 
 main();

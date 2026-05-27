@@ -1,3 +1,5 @@
+const { normalizePlatforms } = require("../platform-intel/platform-playbooks");
+
 function normalizeList(value) {
   if (Array.isArray(value)) {
     return value.map((item) => String(item).trim()).filter(Boolean);
@@ -44,7 +46,7 @@ function normalizeBrief(raw) {
     primaryGoal30Days: String(raw.primaryGoal30Days || "").trim(),
     offer: String(raw.offer || "").trim(),
     tone: normalizeTone(raw.tone),
-    platforms: normalizeList(raw.platforms),
+    platforms: normalizePlatforms(normalizeList(raw.platforms)),
     constraints: normalizeConstraints(raw.constraints),
     availableAssets: normalizeList(raw.availableAssets),
     approvalPolicy: String(raw.approvalPolicy || "human-approved").trim(),

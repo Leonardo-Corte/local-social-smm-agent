@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "generatedAt": "2026-05-25T20:25:32.111Z",
+  "generatedAt": "2026-05-26T19:05:03.605Z",
   "noCostPolicy": "software-only no-cost; quality depends on local hardware and installed backends",
   "profile": {
     "id": "apple-silicon-pro",

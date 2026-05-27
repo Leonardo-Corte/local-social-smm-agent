@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "updatedAt": "2026-05-25T23:57:05.049Z",
+  "updatedAt": "2026-05-26T21:45:09.441Z",
   "artifacts": [
     {
       "id": "42c483fb81aaeb40",
@@ -226,6 +226,995 @@
       },
       "createdAt": "2026-05-25T23:57:05.049Z",
       "updatedAt": "2026-05-25T23:57:05.049Z"
+    },
+    {
+      "id": "b8a3de34d6b8e492",
+      "path": "team-runs/2026-05-26T01-28-23-834Z/result.json",
+      "type": "team-run-result",
+      "intent": "image",
+      "platform": null,
+      "sourceRun": "2026-05-26T01-28-23-834Z",
+      "sourceAgent": "social-team-orchestrator",
+      "appliedTarget": null,
+      "status": "rejected",
+      "requiredHumanApproval": true,
+      "automaticPublishEnabled": false,
+      "approval": null,
+      "metadata": {
+        "request": "creami un immagine ceh raffigura la casa di con i palloncini ceh predne il volo falla in stile di quel film",
+        "target": "creative/visual-briefs.md",
+        "synthesisError": "This operation was aborted",
+        "retryCommand": "npm run team:run sample-local-social-team -- --type image --request \"creami un immagine ceh raffigura la casa di con i palloncini ceh predne il volo falla in stile di quel film\" --steps strategy,visuals,qa --model qwen2.5-coder:14b --timeout-ms 240000"
+      },
+      "createdAt": "2026-05-26T01:35:16.478Z",
+      "updatedAt": "2026-05-26T01:35:16.485Z"
+    },
+    {
+      "id": "d6a362ad8eebb754",
+      "path": "team-runs/2026-05-26T01-29-32-895Z/result.json",
+      "type": "team-run-result",
+      "intent": "image",
+      "platform": null,
+      "sourceRun": "2026-05-26T01-29-32-895Z",
+      "sourceAgent": "social-team-orchestrator",
+      "appliedTarget": null,
+      "status": "rejected",
+      "requiredHumanApproval": true,
+      "automaticPublishEnabled": false,
+      "approval": null,
+      "metadata": {
+        "request": "creami un immagine ceh raffigura la casa di con i palloncini ceh predne il volo falla in stile di quel film",
+        "target": "creative/visual-briefs.md",
+        "synthesisError": "This operation was aborted",
+        "retryCommand": "npm run team:run sample-local-social-team -- --type image --request \"creami un immagine ceh raffigura la casa di con i palloncini ceh predne il volo falla in stile di quel film\" --steps strategy,visuals,qa --model qwen2.5-coder:14b --timeout-ms 240000"
+      },
+      "createdAt": "2026-05-26T01:36:01.111Z",
+      "updatedAt": "2026-05-26T01:36:01.111Z"
+    },
+    {
+      "id": "852e4e47b718256c",
+      "path": "team-runs/2026-05-26T01-30-39-397Z/result.json",
+      "type": "team-run-result",
+      "intent": "image",
+      "platform": null,
+      "sourceRun": "2026-05-26T01-30-39-397Z",
+      "sourceAgent": "social-team-orchestrator",
+      "appliedTarget": null,
+      "status": "rejected",
+      "requiredHumanApproval": true,
+      "automaticPublishEnabled": false,
+      "approval": null,
+      "metadata": {
+        "request": "creami un immagine ceh raffigura la casa di con i palloncini ceh predne il volo falla in stile di quel film",
+        "target": "creative/visual-briefs.md",
+        "synthesisError": "This operation was aborted",
+        "retryCommand": "npm run team:run sample-local-social-team -- --type image --request \"creami un immagine ceh raffigura la casa di con i palloncini ceh predne il volo falla in stile di quel film\" --steps strategy,visuals,qa --model qwen2.5-coder:14b --timeout-ms 240000"
+      },
+      "createdAt": "2026-05-26T01:38:39.543Z",
+      "updatedAt": "2026-05-26T01:38:39.547Z"
+    },
+    {
+      "id": "837f7e0054631922",
+      "path": "team-runs/2026-05-26T10-44-22-188Z/final-artifact.md",
+      "type": "team-final-artifact",
+      "intent": "image",
+      "platform": null,
+      "sourceRun": "2026-05-26T10-44-22-188Z",
+      "sourceAgent": "social-team-orchestrator",
+      "appliedTarget": null,
+      "status": "rejected",
+      "requiredHumanApproval": true,
+      "automaticPublishEnabled": false,
+      "approval": null,
+      "metadata": {
+        "request": "crea un'immagine di una casa con palloncini in stile Up",
+        "target": "creative/visual-briefs.md",
+        "contentPolicyStatus": "blocked_needs_revision",
+        "agentSteps": {
+          "completed": 3,
+          "fallback": 0,
+          "total": 3
+        },
+        "workflowRun": "workflow-runs/2026-05-26T10-44-22-190Z",
+        "teamRun": "team-runs/2026-05-26T10-44-22-188Z",
+        "applied": false
+      },
+      "createdAt": "2026-05-26T10:50:16.817Z",
+      "updatedAt": "2026-05-26T10:50:16.820Z"
+    },
+    {
+      "id": "d450278979d1a76a",
+      "path": "team-runs/2026-05-26T12-00-19-929Z/final-artifact.md",
+      "type": "team-final-artifact",
+      "intent": "image",
+      "platform": null,
+      "sourceRun": "2026-05-26T12-00-19-929Z",
+      "sourceAgent": "social-team-orchestrator",
+      "appliedTarget": null,
+      "status": "rejected",
+      "requiredHumanApproval": true,
+      "automaticPublishEnabled": false,
+      "approval": null,
+      "metadata": {
+        "request": "crea un'immagine di una casa con palloncini in stile Up",
+        "target": "creative/visual-briefs.md",
+        "contentPolicyStatus": "blocked_needs_revision",
+        "agentSteps": {
+          "completed": 3,
+          "fallback": 0,
+          "total": 3
+        },
+        "workflowRun": "workflow-runs/2026-05-26T12-00-19-931Z",
+        "teamRun": "team-runs/2026-05-26T12-00-19-929Z",
+        "applied": false
+      },
+      "createdAt": "2026-05-26T12:06:40.490Z",
+      "updatedAt": "2026-05-26T12:06:40.492Z"
+    },
+    {
+      "id": "c73900cc9b2a99c5",
+      "path": "team-runs/2026-05-26T12-03-43-343Z/final-artifact.md",
+      "type": "team-final-artifact",
+      "intent": "post",
+      "platform": null,
+      "sourceRun": "2026-05-26T12-03-43-343Z",
+      "sourceAgent": "social-team-orchestrator",
+      "appliedTarget": null,
+      "status": "needs_human_review",
+      "requiredHumanApproval": true,
+      "automaticPublishEnabled": false,
+      "approval": null,
+      "metadata": {
+        "request": "creami un immagine di un post promozioanle con la casa di UP con tutti i pallaloncini di vari colori e la cas ceh vola e poi una scritta con scritto L'unica AI ceh davvero mette le ali alla tua giornata qurstpo sar un post publiciatio di instagram capito segui tutti i trand tenedenze di desing e la comeicazione perfetta invoca tutti i vari agenti",
+        "target": "drafts/posts.md",
+        "contentPolicyStatus": "passed",
+        "agentSteps": {
+          "completed": 6,
+          "fallback": 0,
+          "total": 6
+        },
+        "workflowRun": "workflow-runs/2026-05-26T12-03-43-345Z",
+        "teamRun": "team-runs/2026-05-26T12-03-43-343Z",
+        "applied": true
+      },
+      "createdAt": "2026-05-26T12:17:07.272Z",
+      "updatedAt": "2026-05-26T12:17:07.277Z"
+    },
+    {
+      "id": "1b7fff44212f7a73",
+      "path": "drafts/posts.md",
+      "type": "applied-draft",
+      "intent": "post",
+      "platform": null,
+      "sourceRun": "2026-05-26T12-03-43-343Z",
+      "sourceAgent": "social-team-orchestrator",
+      "appliedTarget": "drafts/posts.md",
+      "status": "needs_human_review",
+      "requiredHumanApproval": true,
+      "automaticPublishEnabled": false,
+      "approval": null,
+      "metadata": {
+        "request": "creami un immagine di un post promozioanle con la casa di UP con tutti i pallaloncini di vari colori e la cas ceh vola e poi una scritta con scritto L'unica AI ceh davvero mette le ali alla tua giornata qurstpo sar un post publiciatio di instagram capito segui tutti i trand tenedenze di desing e la comeicazione perfetta invoca tutti i vari agenti",
+        "sourceArtifact": "team-runs/2026-05-26T12-03-43-343Z/final-artifact.md",
+        "backup": "review/orchestrator-backups/2026-05-26T12-03-43-343Z/drafts__posts.md"
+      },
+      "createdAt": "2026-05-26T12:17:07.278Z",
+      "updatedAt": "2026-05-26T12:17:07.278Z"
+    },
+    {
+      "id": "e452f6ab5ea5262a",
+      "path": "team-runs/2026-05-26T12-07-42-568Z/final-artifact.md",
+      "type": "team-final-artifact",
+      "intent": "post",
+      "platform": null,
+      "sourceRun": "2026-05-26T12-07-42-568Z",
+      "sourceAgent": "social-team-orchestrator",
+      "appliedTarget": null,
+      "status": "needs_human_review",
+      "requiredHumanApproval": true,
+      "automaticPublishEnabled": false,
+      "approval": null,
+      "metadata": {
+        "request": "creami un immagine di un post promozioanle con la casa di UP con tutti i pallaloncini di vari colori e la cas ceh vola e poi una scritta con scritto L'unica AI ceh davvero mette le ali alla tua giornata qurstpo sar un post publiciatio di instagram capito segui tutti i trand tenedenze di desing e la comeicazione perfetta invoca tutti i vari agenti",
+        "target": "drafts/posts.md",
+        "contentPolicyStatus": "review_warnings",
+        "agentSteps": {
+          "completed": 6,
+          "fallback": 0,
+          "total": 6
+        },
+        "workflowRun": "workflow-runs/2026-05-26T12-07-42-571Z",
+        "teamRun": "team-runs/2026-05-26T12-07-42-568Z",
+        "applied": true
+      },
+      "createdAt": "2026-05-26T12:19:40.221Z",
+      "updatedAt": "2026-05-26T12:19:40.222Z"
+    },
+    {
+      "id": "eeb38f64f6c8d2f5",
+      "path": "drafts/posts.md",
+      "type": "applied-draft",
+      "intent": "post",
+      "platform": null,
+      "sourceRun": "2026-05-26T12-07-42-568Z",
+      "sourceAgent": "social-team-orchestrator",
+      "appliedTarget": "drafts/posts.md",
+      "status": "needs_human_review",
+      "requiredHumanApproval": true,
+      "automaticPublishEnabled": false,
+      "approval": null,
+      "metadata": {
+        "request": "creami un immagine di un post promozioanle con la casa di UP con tutti i pallaloncini di vari colori e la cas ceh vola e poi una scritta con scritto L'unica AI ceh davvero mette le ali alla tua giornata qurstpo sar un post publiciatio di instagram capito segui tutti i trand tenedenze di desing e la comeicazione perfetta invoca tutti i vari agenti",
+        "sourceArtifact": "team-runs/2026-05-26T12-07-42-568Z/final-artifact.md",
+        "backup": "review/orchestrator-backups/2026-05-26T12-07-42-568Z/drafts__posts.md"
+      },
+      "createdAt": "2026-05-26T12:19:40.223Z",
+      "updatedAt": "2026-05-26T12:19:40.223Z"
+    },
+    {
+      "id": "718f3463b8a0667c",
+      "path": "creative/images/square-1x1-2026-05-26-12-27.png",
+      "type": "image",
+      "intent": "square",
+      "platform": "instagram",
+      "sourceRun": "pollinations-1779798462513",
+      "sourceAgent": "image-gen",
+      "appliedTarget": null,
+      "status": "needs_human_review",
+      "requiredHumanApproval": true,
+      "automaticPublishEnabled": false,
+      "approval": null,
+      "metadata": {
+        "prompt": "house flying with colorful balloons Pixar UP style, vibrant colors, promotional Instagram post",
+        "width": 1080,
+        "height": 1080,
+        "preset": "square",
+        "label": "square-1x1",
+        "model": "flux",
+        "url": "https://image.pollinations.ai/prompt/house%20flying%20with%20colorful%20balloons%20Pixar%20UP%20style%2C%20vibrant%20colors%2C%20promotional%20Instagram%20post?width=1080&height=1080&nologo=true&model=flux",
+        "desktopPath": "/Users/corte/Desktop/smm-images/square-1x1-2026-05-26-12-27.png"
+      },
+      "createdAt": "2026-05-26T12:27:42.514Z",
+      "updatedAt": "2026-05-26T12:27:42.515Z"
+    },
+    {
+      "id": "257ecd6f99559e5f",
+      "path": "creative/images/square-1x1-2026-05-26-12-28.png",
+      "type": "image",
+      "intent": "square",
+      "platform": "instagram",
+      "sourceRun": "pollinations-1779798492766",
+      "sourceAgent": "image-gen",
+      "appliedTarget": null,
+      "status": "needs_human_review",
+      "requiredHumanApproval": true,
+      "automaticPublishEnabled": false,
+      "approval": null,
+      "metadata": {
+        "prompt": "house flying with colorful balloons Pixar UP style, vibrant colors, promotional Instagram post",
+        "width": 1080,
+        "height": 1080,
+        "preset": "square",
+        "label": "square-1x1",
+        "model": "flux",
+        "url": "https://image.pollinations.ai/prompt/house%20flying%20with%20colorful%20balloons%20Pixar%20UP%20style%2C%20vibrant%20colors%2C%20promotional%20Instagram%20post?width=1080&height=1080&nologo=true&model=flux",
+        "desktopPath": "/Users/corte/Desktop/smm-images/square-1x1-2026-05-26-12-28.png"
+      },
+      "createdAt": "2026-05-26T12:28:12.767Z",
+      "updatedAt": "2026-05-26T12:28:12.767Z"
+    },
+    {
+      "id": "95b210c15bf7b765",
+      "path": "creative/images/square-1x1-2026-05-26-12-39.png",
+      "type": "image",
+      "intent": "square",
+      "platform": "instagram",
+      "sourceRun": "pollinations-1779799164003",
+      "sourceAgent": "image-gen",
+      "appliedTarget": null,
+      "status": "needs_human_review",
+      "requiredHumanApproval": true,
+      "automaticPublishEnabled": false,
+      "approval": null,
+      "metadata": {
+        "prompt": "generemi un immagine che sia un robot con le ali con una frase editata bene scon scritto L'unica AI che ti Mette le ALI, professional digital illustration, high quality, high detail, vibrant colors, p",
+        "width": 1080,
+        "height": 1080,
+        "preset": "square",
+        "label": "square-1x1",
+        "model": "flux",
+        "url": "https://image.pollinations.ai/prompt/generemi%20un%20immagine%20che%20sia%20un%20robot%20con%20le%20ali%20con%20una%20frase%20editata%20bene%20scon%20scritto%20L'unica%20AI%20che%20ti%20Mette%20le%20ALI%2C%20professional%20digital%20illustration%2C%20high%20quality%2C%20high%20detail%2C%20vibrant%20colors%2C%20professional%20quality%2C%20no%20watermark?width=1080&height=1080&nologo=true&model=flux",
+        "desktopPath": "/Users/corte/Desktop/smm-images/square-1x1-2026-05-26-12-39.png"
+      },
+      "createdAt": "2026-05-26T12:39:24.004Z",
+      "updatedAt": "2026-05-26T12:39:24.004Z"
+    },
+    {
+      "id": "438ae71d6d3697e8",
+      "path": "team-runs/2026-05-26T12-50-18-445Z/final-artifact.md",
+      "type": "team-final-artifact",
+      "intent": "post",
+      "platform": null,
+      "sourceRun": "2026-05-26T12-50-18-445Z",
+      "sourceAgent": "social-team-orchestrator",
+      "appliedTarget": null,
+      "status": "needs_human_review",
+      "requiredHumanApproval": true,
+      "automaticPublishEnabled": false,
+      "approval": null,
+      "metadata": {
+        "request": "/team crea un post Instagram promozionale con la casa di UP con palloncini colorati, scritta \"L'unica AI che mette le ali alla tua giornata\"",
+        "target": "drafts/posts.md",
+        "contentPolicyStatus": "review_warnings",
+        "agentSteps": {
+          "completed": 6,
+          "fallback": 0,
+          "total": 6
+        },
+        "workflowRun": "workflow-runs/2026-05-26T12-50-18-446Z",
+        "teamRun": "team-runs/2026-05-26T12-50-18-445Z",
+        "applied": true
+      },
+      "createdAt": "2026-05-26T12:59:51.671Z",
+      "updatedAt": "2026-05-26T12:59:51.676Z"
+    },
+    {
+      "id": "7ee2f45580f32d1b",
+      "path": "drafts/posts.md",
+      "type": "applied-draft",
+      "intent": "post",
+      "platform": null,
+      "sourceRun": "2026-05-26T12-50-18-445Z",
+      "sourceAgent": "social-team-orchestrator",
+      "appliedTarget": "drafts/posts.md",
+      "status": "needs_human_review",
+      "requiredHumanApproval": true,
+      "automaticPublishEnabled": false,
+      "approval": null,
+      "metadata": {
+        "request": "/team crea un post Instagram promozionale con la casa di UP con palloncini colorati, scritta \"L'unica AI che mette le ali alla tua giornata\"",
+        "sourceArtifact": "team-runs/2026-05-26T12-50-18-445Z/final-artifact.md",
+        "backup": "review/orchestrator-backups/2026-05-26T12-50-18-445Z/drafts__posts.md"
+      },
+      "createdAt": "2026-05-26T12:59:51.685Z",
+      "updatedAt": "2026-05-26T12:59:51.685Z"
+    },
+    {
+      "id": "b9d096644e56d576",
+      "path": "drafts/platform-adaptations.md",
+      "type": "platform-adaptations",
+      "intent": "multi-platform",
+      "platform": null,
+      "sourceRun": "2026-05-26T13-09-05-798Z",
+      "sourceAgent": "platform-adapter",
+      "appliedTarget": null,
+      "status": "needs_human_review",
+      "requiredHumanApproval": true,
+      "automaticPublishEnabled": false,
+      "approval": null,
+      "metadata": {
+        "platforms": [
+          "instagram",
+          "x",
+          "facebook",
+          "reddit",
+          "linkedin"
+        ],
+        "errors": 0,
+        "withinLimit": 4
+      },
+      "createdAt": "2026-05-26T13:21:04.181Z",
+      "updatedAt": "2026-05-26T13:21:04.193Z"
+    },
+    {
+      "id": "9b91182c2e1c3c3f",
+      "path": "team-runs/2026-05-26T13-09-05-798Z/final-artifact.md",
+      "type": "adaptive-team-final-artifact",
+      "intent": "post",
+      "platform": null,
+      "sourceRun": "2026-05-26T13-09-05-798Z",
+      "sourceAgent": "adaptive-orchestrator",
+      "appliedTarget": null,
+      "status": "needs_human_review",
+      "requiredHumanApproval": true,
+      "automaticPublishEnabled": false,
+      "approval": null,
+      "metadata": {
+        "request": "crea un post Instagram promozionale con la casa di UP con palloncini colorati, scritta \"L'unica AI che mette le ali alla tua giornata\"\n\n## Creative Brief dal brainstorming del team\n### Top Ideas (3-5)\n\n**TOP IDEA: Sfondo Galattico con UP**\nProposta da: @visual-director  \nSupportata da: @brand-strategist, @copywriter  \nPerché funziona: Questa idea cattura l'essenza di libertà e avventura in modo poetico ed evocativo. Il tema galattico associa la soluzione AI all'esplorazione e all'incredibile possibilità che porta con sé.\nCome si esegue:\n1. Disegnare una versione stilizzata della casa di UP sospesa in un cielo notturno stellato.\n2. Incorporare palloncini colorati intorno alla casa, facendo sembrare che volano come comete.\n3. Aggiungere effetti visivi (come nebbia galattica) per renderlo più suggestivo e coinvolgente.\n4. Includere l'effetto visivo di ali che si formano intorno alla casa di UP.\n\n**TOP IDEA: Palloncini Colorati e AI**\nProposta da: @market-researcher  \nSupportata da: @brand-strategist, @persona-simulator  \nPerché funziona: Questa idea è interattiva ed estremamente coinvolgente, utilizzando un concetto visivo potente che associa direttamente l'AI alla libertà e all'avventura.\nCome si esegue:\n1. Creare un'animazione di palloncini colorati che si muovono nell'aria come ali intorno a una versione stilizzata della casa di UP.\n2. Includere effetti speciali che trasformano i palloncini in forme di ali intorno alla casa.\n3. Utilizzare hashtag come #InnovazioneSenzaSottoscrizioni e #AIperPiccoleImprese per promuovere la libertà e l'utilità della soluzione AI.\n\n**TOP IDEA: Svolazzante Saluto**\nProposta da: @persona-simulator  \nSupportata da: @brand-strategist, @copywriter  \nPerché funziona: Questo approccio visivo è semplice ma efficace nel rispecchiare il messaggio centrale del brand in modo scherzoso e divertente.\nCome si esegue:\n1. Aggiungere ali virtuali a personaggi nella composizione della casa di UP.\n2. Utilizzare una didascalia leggera come \"Lascia che l'AI ti porti in volo sopra le tue giornate\".\n\n### Creative Brief\n\n**Concept Centrale**: Creare un contenuto visivo coinvolgente e poetico che associa la nostra soluzione AI alla liber",
+        "target": "drafts/posts.md",
+        "contentPolicyStatus": "review_warnings",
+        "agentSteps": {
+          "completed": 7,
+          "fallback": 0,
+          "total": 6,
+          "revisionLoops": 1
+        },
+        "workflowRun": "workflow-runs/2026-05-26T13-09-05-875Z",
+        "teamRun": "team-runs/2026-05-26T13-09-05-798Z",
+        "applied": true,
+        "blackboard": {
+          "totalEntries": 49,
+          "decisions": 18,
+          "risks": 18,
+          "blockers": 0,
+          "revisionRequests": 6
+        }
+      },
+      "createdAt": "2026-05-26T13:32:15.036Z",
+      "updatedAt": "2026-05-26T13:32:15.037Z"
+    },
+    {
+      "id": "3e68785153fad887",
+      "path": "drafts/posts.md",
+      "type": "applied-draft",
+      "intent": "post",
+      "platform": null,
+      "sourceRun": "2026-05-26T13-09-05-798Z",
+      "sourceAgent": "adaptive-orchestrator",
+      "appliedTarget": "drafts/posts.md",
+      "status": "needs_human_review",
+      "requiredHumanApproval": true,
+      "automaticPublishEnabled": false,
+      "approval": null,
+      "metadata": {
+        "request": "crea un post Instagram promozionale con la casa di UP con palloncini colorati, scritta \"L'unica AI che mette le ali alla tua giornata\"\n\n## Creative Brief dal brainstorming del team\n### Top Ideas (3-5)\n\n**TOP IDEA: Sfondo Galattico con UP**\nProposta da: @visual-director  \nSupportata da: @brand-strategist, @copywriter  \nPerché funziona: Questa idea cattura l'essenza di libertà e avventura in modo poetico ed evocativo. Il tema galattico associa la soluzione AI all'esplorazione e all'incredibile possibilità che porta con sé.\nCome si esegue:\n1. Disegnare una versione stilizzata della casa di UP sospesa in un cielo notturno stellato.\n2. Incorporare palloncini colorati intorno alla casa, facendo sembrare che volano come comete.\n3. Aggiungere effetti visivi (come nebbia galattica) per renderlo più suggestivo e coinvolgente.\n4. Includere l'effetto visivo di ali che si formano intorno alla casa di UP.\n\n**TOP IDEA: Palloncini Colorati e AI**\nProposta da: @market-researcher  \nSupportata da: @brand-strategist, @persona-simulator  \nPerché funziona: Questa idea è interattiva ed estremamente coinvolgente, utilizzando un concetto visivo potente che associa direttamente l'AI alla libertà e all'avventura.\nCome si esegue:\n1. Creare un'animazione di palloncini colorati che si muovono nell'aria come ali intorno a una versione stilizzata della casa di UP.\n2. Includere effetti speciali che trasformano i palloncini in forme di ali intorno alla casa.\n3. Utilizzare hashtag come #InnovazioneSenzaSottoscrizioni e #AIperPiccoleImprese per promuovere la libertà e l'utilità della soluzione AI.\n\n**TOP IDEA: Svolazzante Saluto**\nProposta da: @persona-simulator  \nSupportata da: @brand-strategist, @copywriter  \nPerché funziona: Questo approccio visivo è semplice ma efficace nel rispecchiare il messaggio centrale del brand in modo scherzoso e divertente.\nCome si esegue:\n1. Aggiungere ali virtuali a personaggi nella composizione della casa di UP.\n2. Utilizzare una didascalia leggera come \"Lascia che l'AI ti porti in volo sopra le tue giornate\".\n\n### Creative Brief\n\n**Concept Centrale**: Creare un contenuto visivo coinvolgente e poetico che associa la nostra soluzione AI alla liber",
+        "sourceArtifact": "team-runs/2026-05-26T13-09-05-798Z/final-artifact.md",
+        "backup": "review/orchestrator-backups/2026-05-26T13-09-05-798Z/drafts__posts.md"
+      },
+      "createdAt": "2026-05-26T13:32:15.038Z",
+      "updatedAt": "2026-05-26T13:32:15.038Z"
+    },
+    {
+      "id": "45057c5767a071bd",
+      "path": "mega-runs/2026-05-26T12-51-35-018Z/creative-brief.md",
+      "type": "mega-orchestration",
+      "intent": "post",
+      "platform": null,
+      "sourceRun": "2026-05-26T12-51-35-018Z",
+      "sourceAgent": "mega-orchestrator",
+      "appliedTarget": null,
+      "status": "needs_human_review",
+      "requiredHumanApproval": true,
+      "automaticPublishEnabled": false,
+      "approval": null,
+      "metadata": {
+        "request": "crea un post Instagram promozionale con la casa di UP con palloncini colorati, scritta \"L'unica AI che mette le ali alla tua giornata\"",
+        "agents": [
+          "brand-strategist",
+          "copywriter",
+          "visual-director",
+          "market-researcher",
+          "persona-simulator",
+          "critic-qa"
+        ],
+        "brainstormMessages": 13,
+        "creativeBriefLength": 3637,
+        "executionStatus": "applied_needs_human_review"
+      },
+      "createdAt": "2026-05-26T13:32:15.039Z",
+      "updatedAt": "2026-05-26T13:32:15.039Z"
+    },
+    {
+      "id": "e2d006a3d3acd32e",
+      "path": "creative/images/square-1x1-2026-05-26-13-40.png",
+      "type": "image",
+      "intent": "square",
+      "platform": "instagram",
+      "sourceRun": "pollinations-1779802832364",
+      "sourceAgent": "image-gen",
+      "appliedTarget": null,
+      "status": "needs_human_review",
+      "requiredHumanApproval": true,
+      "automaticPublishEnabled": false,
+      "approval": null,
+      "metadata": {
+        "prompt": "Sfondo Galattico con UP, Disegnare una versione stilizzata della casa di UP sospesa in un cielo notturno stellato., Incorporare palloncini colorati intorno alla casa, facendo sembrare che volano come ",
+        "width": 1080,
+        "height": 1080,
+        "preset": "square",
+        "label": "square-1x1",
+        "model": "flux",
+        "url": "https://image.pollinations.ai/prompt/Sfondo%20Galattico%20con%20UP%2C%20Disegnare%20una%20versione%20stilizzata%20della%20casa%20di%20UP%20sospesa%20in%20un%20cielo%20notturno%20stellato.%2C%20Incorporare%20palloncini%20colorati%20intorno%20alla%20casa%2C%20facendo%20sembrare%20che%20volano%20come%20comete.%2C%20Aggiungere%20effetti%20visivi%20(come%20nebbia%20galattica)%20per%20renderlo%20pi%C3%B9%20suggestivo%20e%20coinvolgente.%2C%20Creare%20un%20contenuto%20visivo%20coinvolgente%20e%20poetico%20che%20associa%20la%20nostra%20soluzione%20AI%20alla%20libert%C3%A0%20di%20esplorazione%20e%20avventura%2C%20utilizzando%20temi%20galattici%20o%20di%20palloncini%20colorati%20per%20evocare%20sensazion%2C%20Instagram%20post%2C%20vibrant%20colors%2C%20photorealistic%2C%20high%20quality%2C%204K%2C%20no%20text%20overlay?width=1080&height=1080&nologo=true&model=flux",
+        "desktopPath": "/Users/corte/Desktop/smm-images/square-1x1-2026-05-26-13-40.png"
+      },
+      "createdAt": "2026-05-26T13:40:32.365Z",
+      "updatedAt": "2026-05-26T13:40:32.365Z"
+    },
+    {
+      "id": "cff96facca52c99a",
+      "path": "drafts/platform-adaptations.md",
+      "type": "platform-adaptations",
+      "intent": "multi-platform",
+      "platform": null,
+      "sourceRun": "2026-05-26T13-40-16-958Z",
+      "sourceAgent": "platform-adapter",
+      "appliedTarget": null,
+      "status": "needs_human_review",
+      "requiredHumanApproval": true,
+      "automaticPublishEnabled": false,
+      "approval": null,
+      "metadata": {
+        "platforms": [
+          "instagram",
+          "x",
+          "facebook",
+          "reddit",
+          "linkedin"
+        ],
+        "errors": 0,
+        "withinLimit": 4
+      },
+      "createdAt": "2026-05-26T13:51:43.865Z",
+      "updatedAt": "2026-05-26T13:51:43.866Z"
+    },
+    {
+      "id": "075c04affc156169",
+      "path": "drafts/platform-adaptations.md",
+      "type": "platform-adaptations",
+      "intent": "multi-platform",
+      "platform": null,
+      "sourceRun": "2026-05-26T13-42-14-567Z",
+      "sourceAgent": "platform-adapter",
+      "appliedTarget": null,
+      "status": "needs_human_review",
+      "requiredHumanApproval": true,
+      "automaticPublishEnabled": false,
+      "approval": null,
+      "metadata": {
+        "platforms": [
+          "instagram",
+          "x",
+          "facebook",
+          "reddit",
+          "linkedin"
+        ],
+        "errors": 0,
+        "withinLimit": 4
+      },
+      "createdAt": "2026-05-26T13:51:58.707Z",
+      "updatedAt": "2026-05-26T13:51:58.707Z"
+    },
+    {
+      "id": "0f32d82b8679afe5",
+      "path": "team-runs/2026-05-26T13-40-16-958Z/final-artifact.md",
+      "type": "adaptive-team-final-artifact",
+      "intent": "post",
+      "platform": null,
+      "sourceRun": "2026-05-26T13-40-16-958Z",
+      "sourceAgent": "adaptive-orchestrator",
+      "appliedTarget": null,
+      "status": "needs_human_review",
+      "requiredHumanApproval": true,
+      "automaticPublishEnabled": false,
+      "approval": null,
+      "metadata": {
+        "request": "crea un post Instagram promozionale con la casa di UP con palloncini colorati, scritta \"L'unica AI che mette le ali alla tua giornata\"\n\n## Creative Brief dal brainstorming del team\n### 1. Top Ideas (3-5)\n\n**TOP IDEA: Ballo dei Palloncini AI**\nProposta da: Visual-director\nSupportata da: Brand-strategist, Persona-simulator, Market-researcher\n\nPerché funziona:\nL'idea del ballo dei palloncini AI è immediatamente coinvolgente e allegro. I palloncini colorati danzano attorno alla casa di UP creando un'atmosfera di libertà e volo, in perfetta sintonia con il messaggio promozionale \"L'unica AI che mette le ali alla tua giornata\". La combinazione di movimento e colore rende l'immagine visivamente accattivante e riconoscibile.\n\nCome si esegue:\n1. **Progettare l’Immagine:** Creare un disegno 3D o animato della casa di UP con palloncini colorati danzanti attorno.\n2. **Incorporare il Messaggio:** Integrare \"L'unica AI che mette le ali alla tua giornata\" in modo accattivante tra i palloncini, rendendo evidente ma non invasivo.\n3. **Sviluppare l'Animazione (Facoltativo):** Se possibile, creare un breve video animato dove i palloncini danzano attorno alla casa e il messaggio appare in vari punti durante la coreografia.\n\n---\n\n**TOP IDEA: Concorso di Personalizzazione**\nProposta da: Persona-simulator\nSupportata da: Brand-strategist, Critic-qa\n\nPerché funziona:\nIl concorso di personalizzazione promuove l’interazione del pubblico con il messaggio e incoraggia la creatività personale. Ogni partecipante personalizza \"L'unica AI che mette le ali alla tua giornata\" in modo unico, creando buzz organico e coinvolgimento.\n\nCome si esegue:\n1. **Promuovere il Concorso:** Sviluppare una campagna Instagram Stories invitando gli utenti a personalizzare la frase.\n2. **Taggare e Hashtag:** Incentivare i partecipanti a utilizzare un tag specifico (#MettilaNellaTuaGiornata) e a pubblicare il loro risultato sulle storie di Instagram.\n3. **Premio per i Vincitori:** Assegnare premi, come accesso gratuito ai tool di personalizzazione avanzati, per incoraggiare la partecipazione.\n\n---\n\n**TOP IDEA: Interattività Integrata**\nProposta da: Critic-qa\nSupportata da: Brand-strategist, Marke",
+        "target": "drafts/posts.md",
+        "contentPolicyStatus": "review_warnings",
+        "agentSteps": {
+          "completed": 7,
+          "fallback": 0,
+          "total": 6,
+          "revisionLoops": 1
+        },
+        "workflowRun": "workflow-runs/2026-05-26T13-40-16-988Z",
+        "teamRun": "team-runs/2026-05-26T13-40-16-958Z",
+        "applied": true,
+        "blackboard": {
+          "totalEntries": 53,
+          "decisions": 15,
+          "risks": 19,
+          "blockers": 6,
+          "revisionRequests": 6
+        }
+      },
+      "createdAt": "2026-05-26T13:57:57.274Z",
+      "updatedAt": "2026-05-26T13:57:57.275Z"
+    },
+    {
+      "id": "76a54c1c6c30a028",
+      "path": "drafts/posts.md",
+      "type": "applied-draft",
+      "intent": "post",
+      "platform": null,
+      "sourceRun": "2026-05-26T13-40-16-958Z",
+      "sourceAgent": "adaptive-orchestrator",
+      "appliedTarget": "drafts/posts.md",
+      "status": "needs_human_review",
+      "requiredHumanApproval": true,
+      "automaticPublishEnabled": false,
+      "approval": null,
+      "metadata": {
+        "request": "crea un post Instagram promozionale con la casa di UP con palloncini colorati, scritta \"L'unica AI che mette le ali alla tua giornata\"\n\n## Creative Brief dal brainstorming del team\n### 1. Top Ideas (3-5)\n\n**TOP IDEA: Ballo dei Palloncini AI**\nProposta da: Visual-director\nSupportata da: Brand-strategist, Persona-simulator, Market-researcher\n\nPerché funziona:\nL'idea del ballo dei palloncini AI è immediatamente coinvolgente e allegro. I palloncini colorati danzano attorno alla casa di UP creando un'atmosfera di libertà e volo, in perfetta sintonia con il messaggio promozionale \"L'unica AI che mette le ali alla tua giornata\". La combinazione di movimento e colore rende l'immagine visivamente accattivante e riconoscibile.\n\nCome si esegue:\n1. **Progettare l’Immagine:** Creare un disegno 3D o animato della casa di UP con palloncini colorati danzanti attorno.\n2. **Incorporare il Messaggio:** Integrare \"L'unica AI che mette le ali alla tua giornata\" in modo accattivante tra i palloncini, rendendo evidente ma non invasivo.\n3. **Sviluppare l'Animazione (Facoltativo):** Se possibile, creare un breve video animato dove i palloncini danzano attorno alla casa e il messaggio appare in vari punti durante la coreografia.\n\n---\n\n**TOP IDEA: Concorso di Personalizzazione**\nProposta da: Persona-simulator\nSupportata da: Brand-strategist, Critic-qa\n\nPerché funziona:\nIl concorso di personalizzazione promuove l’interazione del pubblico con il messaggio e incoraggia la creatività personale. Ogni partecipante personalizza \"L'unica AI che mette le ali alla tua giornata\" in modo unico, creando buzz organico e coinvolgimento.\n\nCome si esegue:\n1. **Promuovere il Concorso:** Sviluppare una campagna Instagram Stories invitando gli utenti a personalizzare la frase.\n2. **Taggare e Hashtag:** Incentivare i partecipanti a utilizzare un tag specifico (#MettilaNellaTuaGiornata) e a pubblicare il loro risultato sulle storie di Instagram.\n3. **Premio per i Vincitori:** Assegnare premi, come accesso gratuito ai tool di personalizzazione avanzati, per incoraggiare la partecipazione.\n\n---\n\n**TOP IDEA: Interattività Integrata**\nProposta da: Critic-qa\nSupportata da: Brand-strategist, Marke",
+        "sourceArtifact": "team-runs/2026-05-26T13-40-16-958Z/final-artifact.md",
+        "backup": "review/orchestrator-backups/2026-05-26T13-40-16-958Z/drafts__posts.md"
+      },
+      "createdAt": "2026-05-26T13:57:57.276Z",
+      "updatedAt": "2026-05-26T13:57:57.276Z"
+    },
+    {
+      "id": "6ebbfd30a667a248",
+      "path": "mega-runs/2026-05-26T13-11-33-798Z/creative-brief.md",
+      "type": "mega-orchestration",
+      "intent": "post",
+      "platform": null,
+      "sourceRun": "2026-05-26T13-11-33-798Z",
+      "sourceAgent": "mega-orchestrator",
+      "appliedTarget": null,
+      "status": "needs_human_review",
+      "requiredHumanApproval": true,
+      "automaticPublishEnabled": false,
+      "approval": null,
+      "metadata": {
+        "request": "crea un post Instagram promozionale con la casa di UP con palloncini colorati, scritta \"L'unica AI che mette le ali alla tua giornata\"",
+        "agents": [
+          "brand-strategist",
+          "copywriter",
+          "visual-director",
+          "market-researcher",
+          "persona-simulator",
+          "critic-qa"
+        ],
+        "brainstormMessages": 13,
+        "creativeBriefLength": 4438,
+        "executionStatus": "applied_needs_human_review"
+      },
+      "createdAt": "2026-05-26T13:57:57.281Z",
+      "updatedAt": "2026-05-26T13:57:57.281Z"
+    },
+    {
+      "id": "b2b2cc725f5dfea4",
+      "path": "team-runs/2026-05-26T13-42-14-567Z/final-artifact.md",
+      "type": "adaptive-team-final-artifact",
+      "intent": "post",
+      "platform": null,
+      "sourceRun": "2026-05-26T13-42-14-567Z",
+      "sourceAgent": "adaptive-orchestrator",
+      "appliedTarget": null,
+      "status": "needs_human_review",
+      "requiredHumanApproval": true,
+      "automaticPublishEnabled": false,
+      "approval": null,
+      "metadata": {
+        "request": "crea un post Instagram promozionale con la casa di UP con palloncini colorati, scritta \"L'unica AI che mette le ali alla tua giornata\"\n\n## Creative Brief dal brainstorming del team\n### 1. Top Ideas (3-5)\n\n#### TOP IDEA: Colore e Sfida (Versione Potenziata)\n**Proposta da:** Copywriter  \n**Supportata da:** Brand Strategist, Persona Simulator, Visual Director  \n**Perché funziona:** Promuove l'interazione diretta con i seguenti della marca e crea un senso di comunità intorno ai successi quotidiani dei creatori. La sfida quotidiana coinvolge gli utenti in modo profondo e costante.\n\n**Come si esegue:**\n1. **Sviluppo delle domande interattive:** Il Copywriter svilupperà una serie di domande tematiche che guidano i follower nella creazione del loro contenuto.\n2. **Condivisione dei contenuti generati dai seguenti:** I follower risponderanno alle domande quotidiani con foto che rappresentano la loro riflessione, utilizzando #MettilaInVolo come hashtag di riconoscimento.\n3. **Visualizzazione delle risposte:** Il Visual Director creerà una serie di immagini che mostreranno le migliori risposte dei seguenti e le condividerà sulla piattaforma Instagram.\n\n---\n\n#### TOP IDEA: AI Balloons in Motion\n**Proposta da:** Market Researcher  \n**Supportata da:** Brand Strategist, Persona Simulator, Visual Director  \n**Perché funziona:** Un GIF animato è una forma di contenuto dinamico che attira l'attenzione e aumenta la percezione di freschezza ed eccitazione associata all'AI.\n\n**Come si esegue:**\n1. **Creazione del GIF:** Il Visual Director creerà un GIF animato con palloncini colorati intorno alla casa di UP, che si muovono e danzano per attirare l'attenzione.\n2. **Inserimento dei messaggi:** Al centro del GIF, scriveremo la frase promozionale \"L'unica AI che mette le ali alla tua giornata\".\n3. **Aggiunta elementi interattivi:** Il Persona Simulator proporrà un breve testo interattivo all'interno del GIF che suggerisce ai follower di scorrere verso il basso per scoprire come registrare le loro idee o successi utilizzando la nostra AI.\n\n---\n\n#### TOP IDEA: Ai Metà del Cielo\n**Proposta da:** Critic-QA  \n**Supportata da:** Brand Strategist, Persona Simulator, Visual Di",
+        "target": "drafts/posts.md",
+        "contentPolicyStatus": "review_warnings",
+        "agentSteps": {
+          "completed": 7,
+          "fallback": 0,
+          "total": 6,
+          "revisionLoops": 1
+        },
+        "workflowRun": "workflow-runs/2026-05-26T13-42-14-575Z",
+        "teamRun": "team-runs/2026-05-26T13-42-14-567Z",
+        "applied": true,
+        "blackboard": {
+          "totalEntries": 43,
+          "decisions": 18,
+          "risks": 6,
+          "blockers": 6,
+          "revisionRequests": 6
+        }
+      },
+      "createdAt": "2026-05-26T13:58:44.225Z",
+      "updatedAt": "2026-05-26T13:58:44.227Z"
+    },
+    {
+      "id": "3aa01b71716ca782",
+      "path": "drafts/posts.md",
+      "type": "applied-draft",
+      "intent": "post",
+      "platform": null,
+      "sourceRun": "2026-05-26T13-42-14-567Z",
+      "sourceAgent": "adaptive-orchestrator",
+      "appliedTarget": "drafts/posts.md",
+      "status": "needs_human_review",
+      "requiredHumanApproval": true,
+      "automaticPublishEnabled": false,
+      "approval": null,
+      "metadata": {
+        "request": "crea un post Instagram promozionale con la casa di UP con palloncini colorati, scritta \"L'unica AI che mette le ali alla tua giornata\"\n\n## Creative Brief dal brainstorming del team\n### 1. Top Ideas (3-5)\n\n#### TOP IDEA: Colore e Sfida (Versione Potenziata)\n**Proposta da:** Copywriter  \n**Supportata da:** Brand Strategist, Persona Simulator, Visual Director  \n**Perché funziona:** Promuove l'interazione diretta con i seguenti della marca e crea un senso di comunità intorno ai successi quotidiani dei creatori. La sfida quotidiana coinvolge gli utenti in modo profondo e costante.\n\n**Come si esegue:**\n1. **Sviluppo delle domande interattive:** Il Copywriter svilupperà una serie di domande tematiche che guidano i follower nella creazione del loro contenuto.\n2. **Condivisione dei contenuti generati dai seguenti:** I follower risponderanno alle domande quotidiani con foto che rappresentano la loro riflessione, utilizzando #MettilaInVolo come hashtag di riconoscimento.\n3. **Visualizzazione delle risposte:** Il Visual Director creerà una serie di immagini che mostreranno le migliori risposte dei seguenti e le condividerà sulla piattaforma Instagram.\n\n---\n\n#### TOP IDEA: AI Balloons in Motion\n**Proposta da:** Market Researcher  \n**Supportata da:** Brand Strategist, Persona Simulator, Visual Director  \n**Perché funziona:** Un GIF animato è una forma di contenuto dinamico che attira l'attenzione e aumenta la percezione di freschezza ed eccitazione associata all'AI.\n\n**Come si esegue:**\n1. **Creazione del GIF:** Il Visual Director creerà un GIF animato con palloncini colorati intorno alla casa di UP, che si muovono e danzano per attirare l'attenzione.\n2. **Inserimento dei messaggi:** Al centro del GIF, scriveremo la frase promozionale \"L'unica AI che mette le ali alla tua giornata\".\n3. **Aggiunta elementi interattivi:** Il Persona Simulator proporrà un breve testo interattivo all'interno del GIF che suggerisce ai follower di scorrere verso il basso per scoprire come registrare le loro idee o successi utilizzando la nostra AI.\n\n---\n\n#### TOP IDEA: Ai Metà del Cielo\n**Proposta da:** Critic-QA  \n**Supportata da:** Brand Strategist, Persona Simulator, Visual Di",
+        "sourceArtifact": "team-runs/2026-05-26T13-42-14-567Z/final-artifact.md",
+        "backup": "review/orchestrator-backups/2026-05-26T13-42-14-567Z/drafts__posts.md"
+      },
+      "createdAt": "2026-05-26T13:58:44.232Z",
+      "updatedAt": "2026-05-26T13:58:44.232Z"
+    },
+    {
+      "id": "9d20d1e29ea14eec",
+      "path": "mega-runs/2026-05-26T13-11-35-836Z/creative-brief.md",
+      "type": "mega-orchestration",
+      "intent": "post",
+      "platform": null,
+      "sourceRun": "2026-05-26T13-11-35-836Z",
+      "sourceAgent": "mega-orchestrator",
+      "appliedTarget": null,
+      "status": "needs_human_review",
+      "requiredHumanApproval": true,
+      "automaticPublishEnabled": false,
+      "approval": null,
+      "metadata": {
+        "request": "crea un post Instagram promozionale con la casa di UP con palloncini colorati, scritta \"L'unica AI che mette le ali alla tua giornata\"",
+        "agents": [
+          "brand-strategist",
+          "copywriter",
+          "visual-director",
+          "market-researcher",
+          "persona-simulator",
+          "critic-qa"
+        ],
+        "brainstormMessages": 13,
+        "creativeBriefLength": 4778,
+        "executionStatus": "applied_needs_human_review"
+      },
+      "createdAt": "2026-05-26T13:58:44.233Z",
+      "updatedAt": "2026-05-26T13:58:44.233Z"
+    },
+    {
+      "id": "3a83c2adc484b885",
+      "path": "creative/images/instagram-cover-9x16-2026-05-26-14-21.png",
+      "type": "image",
+      "intent": "cover",
+      "platform": "instagram",
+      "sourceRun": "pollinations-1779805288283",
+      "sourceAgent": "image-gen",
+      "appliedTarget": null,
+      "status": "needs_human_review",
+      "requiredHumanApproval": true,
+      "automaticPublishEnabled": false,
+      "approval": null,
+      "metadata": {
+        "prompt": "Ballo dei Palloncini AI, Creare un video animato dove la casa di UP danza tra i palloncini colorati, con ogni palloncino contenente un slogan motivazionale o una funzionalità dell'AI., Aggiungere icon",
+        "width": 1080,
+        "height": 1920,
+        "preset": "cover",
+        "label": "instagram-cover-9x16",
+        "model": "flux",
+        "url": "https://image.pollinations.ai/prompt/Ballo%20dei%20Palloncini%20AI%2C%20Creare%20un%20video%20animato%20dove%20la%20casa%20di%20UP%20danza%20tra%20i%20palloncini%20colorati%2C%20con%20ogni%20palloncino%20contenente%20un%20slogan%20motivazionale%20o%20una%20funzionalit%C3%A0%20dell'AI.%2C%20Aggiungere%20icone%20digitali%20e%20simboli%20tecnologici%20che%20rappresentano%20le%20capacit%C3%A0%20specifiche%20della%20nostra%20AI%20(risparmio%20di%20tempo%2C%20riduzione%20dei%20costi).%2C%20Includere%20nella%20descrizione%20del%20post%20un%20messaggio%20come%20%22Lascia%20che%20l'AI%20ti%20aiuti%20a%20danzare%20tra%20i%20confini%20tradizionali%20della%20creazione%20di%20contenuti.%22%2C%20vertical%209%3A16%20Instagram%20Story%20cover%2C%20vibrant%20colors%2C%20photorealistic%2C%20high%20quality%2C%204K%2C%20no%20text%20overlay?width=1080&height=1920&nologo=true&model=flux",
+        "desktopPath": "/Users/corte/Desktop/smm-images/instagram-cover-9x16-2026-05-26-14-21.png"
+      },
+      "createdAt": "2026-05-26T14:21:28.285Z",
+      "updatedAt": "2026-05-26T14:21:28.288Z"
+    },
+    {
+      "id": "4f6f1d89fd2aa5f7",
+      "path": "drafts/platform-adaptations.md",
+      "type": "platform-adaptations",
+      "intent": "multi-platform",
+      "platform": null,
+      "sourceRun": "2026-05-26T14-21-28-290Z",
+      "sourceAgent": "platform-adapter",
+      "appliedTarget": null,
+      "status": "needs_human_review",
+      "requiredHumanApproval": true,
+      "automaticPublishEnabled": false,
+      "approval": null,
+      "metadata": {
+        "platforms": [
+          "instagram",
+          "x",
+          "facebook",
+          "reddit",
+          "linkedin"
+        ],
+        "errors": 0,
+        "withinLimit": 4
+      },
+      "createdAt": "2026-05-26T14:32:21.943Z",
+      "updatedAt": "2026-05-26T14:32:21.943Z"
+    },
+    {
+      "id": "e2290573a4018642",
+      "path": "drafts/platform-adaptations.md",
+      "type": "platform-adaptations",
+      "intent": "multi-platform",
+      "platform": null,
+      "sourceRun": "2026-05-26T14-22-52-028Z",
+      "sourceAgent": "platform-adapter",
+      "appliedTarget": null,
+      "status": "needs_human_review",
+      "requiredHumanApproval": true,
+      "automaticPublishEnabled": false,
+      "approval": null,
+      "metadata": {
+        "platforms": [
+          "instagram",
+          "x",
+          "facebook",
+          "reddit",
+          "linkedin"
+        ],
+        "errors": 0,
+        "withinLimit": 4
+      },
+      "createdAt": "2026-05-26T14:32:30.119Z",
+      "updatedAt": "2026-05-26T14:32:30.119Z"
+    },
+    {
+      "id": "435a872915c85491",
+      "path": "team-runs/2026-05-26T14-22-52-028Z/final-artifact.md",
+      "type": "adaptive-team-final-artifact",
+      "intent": "post",
+      "platform": null,
+      "sourceRun": "2026-05-26T14-22-52-028Z",
+      "sourceAgent": "adaptive-orchestrator",
+      "appliedTarget": null,
+      "status": "needs_human_review",
+      "requiredHumanApproval": true,
+      "automaticPublishEnabled": false,
+      "approval": null,
+      "metadata": {
+        "request": "crea un post Instagram promozionale con la casa di UP con palloncini colorati, scritta \"L'unica AI che mette le ali alla tua giornata\"\n\n## Creative Brief dal brainstorming del team\n### Top Ideas (3-5)\n\n**TOP IDEA: Ballo dei Palloncini AI**\nProposta da: visual-director\nSupportata da: copywriter, market-researcher, persona-simulator\nPerché funziona: Cattura l'attenzione con un concetto visivamente coinvolgente che combina movimento e allegria. Rafforza il messaggio della libertà creativa offerta dall'AI.\nCome si esegue:\n1. Creare una serie di video animati di 15 secondi dove la casa di UP è circondata da palloncini colorati che danzano con la musica, simili a un ballo in maschera.\n2. Integrare il logo dell'AI e piccoli accenni visivi alle funzionalità del prodotto all'interno della sequenza animata.\n3. Concludere ogni video con il testo \"L'unica AI che mette le ali alla tua giornata\", seguito da un invito a interagire.\n\n**TOP IDEA: Il Viaggio di UP con AI**\nProposta da: copywriter\nSupportata da: visual-director, market-researcher, persona-simulator\nPerché funziona: Utilizza metafore efficaci per spiegare i benefici dell'AI in modo chiaro e attraente.\nCome si esegue:\n1. Creare un video animato della casa di UP che attraversa le nuvole con palloncini colorati, simbolizzanti strumenti AI specifici.\n2. Aggiungere didascalie concise per ogni strumento rappresentato nel viaggio.\n3. Concludere il video con una frase conclusiva come \"Volare più alto grazie all'intelligenza artificiale\".\n\n**TOP IDEA: 30 Giorni di Metamorfosi**\nProposta da: brand-strategist\nSupportata da: copywriter, market-researcher\nPerché funziona: Offre un approccio educativo e coinvolgente che mostra il valore a lungo termine dell'AI.\nCome si esegue:\n1. Lancia una serie di 30 post Instagram con immagini della casa di UP decorata con palloncini colorati, ciascuno presentando un beneficio specifico dell'AI per piccole imprese e creatori.\n2. Crea contest social media correlati al tema giornaliero.\n\n### Creative Brief\n**Concept Centrale:** Utilizzare metafore visive creative basate sulla casa di UP con palloncini colorati per mostrare come l'intelligenza artificiale possa migliorare la v",
+        "target": "drafts/posts.md",
+        "contentPolicyStatus": "review_warnings",
+        "agentSteps": {
+          "completed": 7,
+          "fallback": 0,
+          "total": 6,
+          "revisionLoops": 1
+        },
+        "workflowRun": "workflow-runs/2026-05-26T14-22-52-033Z",
+        "teamRun": "team-runs/2026-05-26T14-22-52-028Z",
+        "applied": true,
+        "blackboard": {
+          "totalEntries": 39,
+          "decisions": 13,
+          "risks": 13,
+          "blockers": 0,
+          "revisionRequests": 6
+        }
+      },
+      "createdAt": "2026-05-26T14:38:25.577Z",
+      "updatedAt": "2026-05-26T14:38:25.579Z"
+    },
+    {
+      "id": "a565621605dfb565",
+      "path": "drafts/posts.md",
+      "type": "applied-draft",
+      "intent": "post",
+      "platform": null,
+      "sourceRun": "2026-05-26T14-22-52-028Z",
+      "sourceAgent": "adaptive-orchestrator",
+      "appliedTarget": "drafts/posts.md",
+      "status": "needs_human_review",
+      "requiredHumanApproval": true,
+      "automaticPublishEnabled": false,
+      "approval": null,
+      "metadata": {
+        "request": "crea un post Instagram promozionale con la casa di UP con palloncini colorati, scritta \"L'unica AI che mette le ali alla tua giornata\"\n\n## Creative Brief dal brainstorming del team\n### Top Ideas (3-5)\n\n**TOP IDEA: Ballo dei Palloncini AI**\nProposta da: visual-director\nSupportata da: copywriter, market-researcher, persona-simulator\nPerché funziona: Cattura l'attenzione con un concetto visivamente coinvolgente che combina movimento e allegria. Rafforza il messaggio della libertà creativa offerta dall'AI.\nCome si esegue:\n1. Creare una serie di video animati di 15 secondi dove la casa di UP è circondata da palloncini colorati che danzano con la musica, simili a un ballo in maschera.\n2. Integrare il logo dell'AI e piccoli accenni visivi alle funzionalità del prodotto all'interno della sequenza animata.\n3. Concludere ogni video con il testo \"L'unica AI che mette le ali alla tua giornata\", seguito da un invito a interagire.\n\n**TOP IDEA: Il Viaggio di UP con AI**\nProposta da: copywriter\nSupportata da: visual-director, market-researcher, persona-simulator\nPerché funziona: Utilizza metafore efficaci per spiegare i benefici dell'AI in modo chiaro e attraente.\nCome si esegue:\n1. Creare un video animato della casa di UP che attraversa le nuvole con palloncini colorati, simbolizzanti strumenti AI specifici.\n2. Aggiungere didascalie concise per ogni strumento rappresentato nel viaggio.\n3. Concludere il video con una frase conclusiva come \"Volare più alto grazie all'intelligenza artificiale\".\n\n**TOP IDEA: 30 Giorni di Metamorfosi**\nProposta da: brand-strategist\nSupportata da: copywriter, market-researcher\nPerché funziona: Offre un approccio educativo e coinvolgente che mostra il valore a lungo termine dell'AI.\nCome si esegue:\n1. Lancia una serie di 30 post Instagram con immagini della casa di UP decorata con palloncini colorati, ciascuno presentando un beneficio specifico dell'AI per piccole imprese e creatori.\n2. Crea contest social media correlati al tema giornaliero.\n\n### Creative Brief\n**Concept Centrale:** Utilizzare metafore visive creative basate sulla casa di UP con palloncini colorati per mostrare come l'intelligenza artificiale possa migliorare la v",
+        "sourceArtifact": "team-runs/2026-05-26T14-22-52-028Z/final-artifact.md",
+        "backup": "review/orchestrator-backups/2026-05-26T14-22-52-028Z/drafts__posts.md"
+      },
+      "createdAt": "2026-05-26T14:38:25.582Z",
+      "updatedAt": "2026-05-26T14:38:25.582Z"
+    },
+    {
+      "id": "ab7df7bb8cfa01da",
+      "path": "mega-runs/2026-05-26T13-53-28-035Z/creative-brief.md",
+      "type": "mega-orchestration",
+      "intent": "post",
+      "platform": null,
+      "sourceRun": "2026-05-26T13-53-28-035Z",
+      "sourceAgent": "mega-orchestrator",
+      "appliedTarget": null,
+      "status": "needs_human_review",
+      "requiredHumanApproval": true,
+      "automaticPublishEnabled": false,
+      "approval": null,
+      "metadata": {
+        "request": "crea un post Instagram promozionale con la casa di UP con palloncini colorati, scritta \"L'unica AI che mette le ali alla tua giornata\"",
+        "agents": [
+          "brand-strategist",
+          "copywriter",
+          "visual-director",
+          "market-researcher",
+          "persona-simulator",
+          "critic-qa"
+        ],
+        "brainstormMessages": 17,
+        "creativeBriefLength": 3269,
+        "generatedImages": [],
+        "promptStyle": "illustrated",
+        "executionStatus": "applied_needs_human_review"
+      },
+      "createdAt": "2026-05-26T14:38:25.586Z",
+      "updatedAt": "2026-05-26T14:38:25.586Z"
+    },
+    {
+      "id": "0744e8f55579698d",
+      "path": "team-runs/2026-05-26T14-21-28-290Z/final-artifact.md",
+      "type": "adaptive-team-final-artifact",
+      "intent": "post",
+      "platform": null,
+      "sourceRun": "2026-05-26T14-21-28-290Z",
+      "sourceAgent": "adaptive-orchestrator",
+      "appliedTarget": null,
+      "status": "rejected",
+      "requiredHumanApproval": true,
+      "automaticPublishEnabled": false,
+      "approval": null,
+      "metadata": {
+        "request": "crea un post Instagram promozionale con la casa di UP con palloncini colorati, scritta \"L'unica AI che mette le ali alla tua giornata\"\n\n## Creative Brief dal brainstorming del team\n### Top Ideas (3-5)\n\n**TOP IDEA: Ballo dei Palloncini AI**\nProposta da: copywriter\nSupportata da: visual-director, persona-simulator, critic-qa\nPerché funziona: Questa idea combina l'elemento visivo del ballo dei palloncini con un messaggio di libertà e creatività che risuona bene col pubblico target.\nCome si esegue:\n1. Creare un video animato dove la casa di UP danza tra i palloncini colorati, con ogni palloncino contenente un slogan motivazionale o una funzionalità dell'AI.\n2. Aggiungere icone digitali e simboli tecnologici che rappresentano le capacità specifiche della nostra AI (risparmio di tempo, riduzione dei costi).\n3. Includere nella descrizione del post un messaggio come \"Lascia che l'AI ti aiuti a danzare tra i confini tradizionali della creazione di contenuti.\"\n\n**TOP IDEA: Immersione AI**\nProposta da: visual-director\nSupportata da: brand-strategist, market-researcher, critic-qa\nPerché funziona: Questa idea offre un'immagine unica e memorabile che fonde il mondo di UP con elementi tecnologici.\nCome si esegue:\n1. Creare una composizione dove la casa di UP è in primo piano, circondata da palloncini colorati che fluttuano liberamente attorno a essa.\n2. Integrate icone digitali (schermi da computer, smartphone) nell'immagine come se fossero parte del mondo magico di UP.\n3. Aggiungere una figura simbolica (ad esempio un'aquila gigante) che sembra portare l'edificio alto nel cielo con le sue ali, simboleggiando il potere della nostra AI.\n\n**TOP IDEA: La Scala delle Idee**\nProposta da: critic-qa\nSupportata da: brand-strategist, market-researcher, persona-simulator\nPerché funziona: Questa idea offre un modo visivamente coinvolgente per mostrare come il nostro AI può aiutare gli utenti a raggiungere i loro obiettivi.\nCome si esegue:\n1. Disegnare una scala fatta di palloncini colorati su cui l'utente può salire per raggiungere la casa di UP in alto.\n2. Ogni gradino rappresenta un passo verso il successo, con le ali della casa che sembrano trasferirsi alle spalle d",
+        "target": "drafts/posts.md",
+        "contentPolicyStatus": "blocked_needs_revision",
+        "agentSteps": {
+          "completed": 7,
+          "fallback": 0,
+          "total": 6,
+          "revisionLoops": 1
+        },
+        "workflowRun": "workflow-runs/2026-05-26T14-21-28-294Z",
+        "teamRun": "team-runs/2026-05-26T14-21-28-290Z",
+        "applied": false,
+        "blackboard": {
+          "totalEntries": 37,
+          "decisions": 12,
+          "risks": 12,
+          "blockers": 0,
+          "revisionRequests": 6
+        }
+      },
+      "createdAt": "2026-05-26T14:38:47.608Z",
+      "updatedAt": "2026-05-26T14:38:47.609Z"
+    },
+    {
+      "id": "bbe270a5f93000c8",
+      "path": "mega-runs/2026-05-26T13-53-24-026Z/creative-brief.md",
+      "type": "mega-orchestration",
+      "intent": "post",
+      "platform": null,
+      "sourceRun": "2026-05-26T13-53-24-026Z",
+      "sourceAgent": "mega-orchestrator",
+      "appliedTarget": null,
+      "status": "needs_human_review",
+      "requiredHumanApproval": true,
+      "automaticPublishEnabled": false,
+      "approval": null,
+      "metadata": {
+        "request": "crea un post Instagram promozionale con la casa di UP con palloncini colorati, scritta \"L'unica AI che mette le ali alla tua giornata\"",
+        "agents": [
+          "brand-strategist",
+          "copywriter",
+          "visual-director",
+          "market-researcher",
+          "persona-simulator",
+          "critic-qa"
+        ],
+        "brainstormMessages": 17,
+        "creativeBriefLength": 4088,
+        "generatedImages": [
+          {
+            "type": "cover",
+            "path": "/Users/corte/Documents/Codex/2026-05-22/fammi-un-deep-interwie-per-questo/workspaces/generated-projects/sample-local-social-team/creative/images/instagram-cover-9x16-2026-05-26-14-21.png",
+            "desktopPath": "/Users/corte/Desktop/smm-images/instagram-cover-9x16-2026-05-26-14-21.png"
+          }
+        ],
+        "promptStyle": "photorealistic",
+        "executionStatus": "blocked_by_content_policy"
+      },
+      "createdAt": "2026-05-26T14:38:47.611Z",
+      "updatedAt": "2026-05-26T14:38:47.611Z"
+    },
+    {
+      "id": "32ae4c0c8b333221",
+      "path": "team-runs/2026-05-26T20-49-37-829Z/result.json",
+      "type": "adaptive-team-run-result",
+      "intent": "post",
+      "platform": null,
+      "sourceRun": "2026-05-26T20-49-37-829Z",
+      "sourceAgent": "adaptive-orchestrator",
+      "appliedTarget": null,
+      "status": "rejected",
+      "requiredHumanApproval": true,
+      "automaticPublishEnabled": false,
+      "approval": null,
+      "metadata": {
+        "request": "ciao allora ora creami il post per instagrm per l annoncio di GIGI il nuovo assitente vocale AI che vuole sostituire siri anlizzati anceh tutto il sitoweb per capire meglio tonon come momunichiamo e tutto https://killsiri.xyz/",
+        "target": "drafts/posts.md",
+        "synthesisError": "All adaptive agent steps fell back before final synthesis."
+      },
+      "createdAt": "2026-05-26T21:45:09.440Z",
+      "updatedAt": "2026-05-26T21:45:09.441Z"
     }
   ]
 }

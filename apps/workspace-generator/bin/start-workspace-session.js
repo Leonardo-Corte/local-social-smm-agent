@@ -4,6 +4,7 @@ const fs = require("fs");
 const path = require("path");
 
 const { workspacePaths } = require('../../../packages/workspace-runner/workspace-paths');
+const { formatNextCommands, writeNextCommandFiles } = require("../../../packages/workspace-runner/next-commands");
 
 const root = path.resolve(__dirname, "../../..");
 
@@ -21,17 +22,19 @@ function main() {
     process.exit(1);
   }
 
+  const next = writeNextCommandFiles({ root, workspace, state: "chat" });
   console.log(`Workspace: ${workspace}`);
   console.log("");
-  console.log("1. Start the workspace AI chat:");
-  console.log(`   npm run workspace:chat ${workspace} -- --model qwen2.5:14b`);
+  console.log(formatNextCommands({ root, workspace, state: "chat" }));
   console.log("");
-  console.log("2. Work folder:");
-  console.log(`   ${client}`);
+  console.log("Work folder:");
+  console.log(`  ${client}`);
+  console.log("");
+  console.log(`Next command file: ${path.relative(root, next.generatedNextCommands)}`);
+  console.log(`Continue script: ${path.relative(root, next.generatedContinueScript)}`);
   console.log("");
   console.log("Suggested first chat:");
-  console.log("   /agent critic-qa");
-  console.log("   Dimmi cosa manca prima di produrre contenuti per questo progetto.");
+  console.log("  Dimmi cosa manca prima di produrre contenuti per questo progetto.");
 }
 
 main();

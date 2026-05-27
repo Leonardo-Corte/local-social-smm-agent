@@ -1,6 +1,6 @@
 # Repo Integration Decisions
 
-Generated at: 2026-05-24T15:51:19.276Z
+Generated at: 2026-05-27T04:37:12.652Z
 
 ## Rules
 - Do not copy or vendor external code without a written license decision.
@@ -16,6 +16,13 @@ Generated at: 2026-05-24T15:51:19.276Z
 | [gitroomhq/postiz-app](https://github.com/gitroomhq/postiz-app) | AGPL-3.0 | social-scheduler | reference-only | Study architecture and product patterns only. Do not copy/vend code into this repo. |
 | [trypost-it/trypost](https://github.com/trypost-it/trypost) | AGPL-3.0 | social-scheduler-api | reference-only | Study architecture and product patterns only. Do not copy/vend code into this repo. |
 | [langchain-ai/social-media-agent](https://github.com/langchain-ai/social-media-agent) | MIT | human-in-loop-agent | adapter | Eligible for adapter or clean-room pattern reuse after file-level code audit. |
+| [renezander030/capcut-cli](https://github.com/renezander030/capcut-cli) | MIT | capcut-draft-cli | vendor-allowed | Vendored code is allowed only for the named repo path and must retain its license, attribution, and isolated adapter boundary. |
+| [calesthio/OpenMontage](https://github.com/calesthio/OpenMontage) | AGPL-3.0 | agentic-video-production | reference-only | Study architecture and product patterns only. Do not copy/vend code into this repo. |
+| [AIDC-AI/ComfyUI-Copilot](https://github.com/AIDC-AI/ComfyUI-Copilot) | MIT | visual-workflow-copilot | adapter | Eligible for adapter or clean-room pattern reuse after file-level code audit. |
+| [AIDC-AI/Pixelle-Video](https://github.com/AIDC-AI/Pixelle-Video) | Apache-2.0 | video-generation-editing-engine | adapter | Eligible for adapter or clean-room pattern reuse after file-level code audit. |
+| [massgen/MassGen](https://github.com/massgen/MassGen) | Apache-2.0 | multi-agent-orchestration | adapter | Eligible for adapter or clean-room pattern reuse after file-level code audit. |
+| [wanxingai/LightAgent](https://github.com/wanxingai/LightAgent) | Apache-2.0 | agent-framework | adapter | Eligible for adapter or clean-room pattern reuse after file-level code audit. |
+| [mudler/LocalAI](https://github.com/mudler/LocalAI) | MIT | local-model-runtime | adapter | Eligible for adapter or clean-room pattern reuse after file-level code audit. |
 | [microsoft/TinyTroupe](https://github.com/microsoft/TinyTroupe) | MIT | persona-simulation | adapter | Eligible for adapter or clean-room pattern reuse after file-level code audit. |
 | [idiap/sdialog](https://github.com/idiap/sdialog) | MIT | persona-dialog-simulation | adapter | Eligible for adapter or clean-room pattern reuse after file-level code audit. |
 | [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) | GPL-3.0 | visual-generation | adapter | Use as an optional separate local service/process with license notes; do not embed copied code. |
@@ -77,6 +84,90 @@ Generated at: 2026-05-24T15:51:19.276Z
 - Risk: dependency-cost
 - Stars: 2582
 - Last push: 2026-05-19T21:52:52Z
+- Classification: adapter
+- Boundary: Eligible for adapter or clean-room pattern reuse after file-level code audit.
+- Reason: Permissive license, still requires dependency/security review.
+- Integration next step: Inspect dependency files and design a small adapter boundary.
+
+### renezander030/capcut-cli
+- Candidate ID: capcut-cli
+- Category: capcut-draft-cli
+- License: MIT
+- Risk: vendored-code-audited
+- Stars: 26
+- Last push: 2026-05-25T14:36:12Z
+- Classification: vendor-allowed
+- Boundary: Vendored code is allowed only for the named repo path and must retain its license, attribution, and isolated adapter boundary.
+- Reason: A written vendor decision exists for this specific dependency.
+- Integration next step: Extract product/architecture lessons without code reuse.
+
+### calesthio/OpenMontage
+- Candidate ID: openmontage
+- Category: agentic-video-production
+- License: AGPL-3.0
+- Risk: license-boundary-runtime-complexity
+- Stars: 3980
+- Last push: 2026-05-07T12:12:36Z
+- Classification: reference-only
+- Boundary: Study architecture and product patterns only. Do not copy/vend code into this repo.
+- Reason: AGPL boundary requires careful separation.
+- Integration next step: Extract product/architecture lessons without code reuse.
+
+### AIDC-AI/ComfyUI-Copilot
+- Candidate ID: comfyui-copilot
+- Category: visual-workflow-copilot
+- License: MIT
+- Risk: dependency-complexity
+- Stars: 5197
+- Last push: 2026-04-07T04:23:08Z
+- Classification: adapter
+- Boundary: Eligible for adapter or clean-room pattern reuse after file-level code audit.
+- Reason: Permissive license, still requires dependency/security review.
+- Integration next step: Inspect dependency files and design a small adapter boundary.
+
+### AIDC-AI/Pixelle-Video
+- Candidate ID: pixelle-video
+- Category: video-generation-editing-engine
+- License: Apache-2.0
+- Risk: high-runtime-complexity
+- Stars: 19947
+- Last push: 2026-05-18T07:13:46Z
+- Classification: adapter
+- Boundary: Eligible for adapter or clean-room pattern reuse after file-level code audit.
+- Reason: Permissive license, still requires dependency/security review.
+- Integration next step: Inspect dependency files and design a small adapter boundary.
+
+### massgen/MassGen
+- Candidate ID: massgen
+- Category: multi-agent-orchestration
+- License: Apache-2.0
+- Risk: framework-migration-cost
+- Stars: 1038
+- Last push: 2026-05-26T02:19:53Z
+- Classification: adapter
+- Boundary: Eligible for adapter or clean-room pattern reuse after file-level code audit.
+- Reason: Permissive license, still requires dependency/security review.
+- Integration next step: Inspect dependency files and design a small adapter boundary.
+
+### wanxingai/LightAgent
+- Candidate ID: lightagent
+- Category: agent-framework
+- License: Apache-2.0
+- Risk: framework-migration-cost
+- Stars: 997
+- Last push: 2026-05-26T17:43:57Z
+- Classification: adapter
+- Boundary: Eligible for adapter or clean-room pattern reuse after file-level code audit.
+- Reason: Permissive license, still requires dependency/security review.
+- Integration next step: Inspect dependency files and design a small adapter boundary.
+
+### mudler/LocalAI
+- Candidate ID: localai
+- Category: local-model-runtime
+- License: MIT
+- Risk: operational-complexity
+- Stars: 46476
+- Last push: 2026-05-26T16:40:45Z
 - Classification: adapter
 - Boundary: Eligible for adapter or clean-room pattern reuse after file-level code audit.
 - Reason: Permissive license, still requires dependency/security review.

@@ -60,11 +60,16 @@ async function main() {
 
     assert.strictEqual(run.summary.status, "needs_human_review");
     assert.ok(fs.existsSync(path.join(workspaceRoot, "assets/asset-library.json")));
+    assert.ok(fs.existsSync(path.join(workspaceRoot, "assets/asset-library.md")));
     assert.ok(fs.existsSync(path.join(workspaceRoot, "research/trend-report.md")));
     assert.ok(fs.existsSync(path.join(workspaceRoot, "creative/comfyui-plan.md")));
+    assert.ok(fs.existsSync(path.join(workspaceRoot, "creative/comfyui-copilot-plan.md")));
+    assert.ok(fs.existsSync(path.join(workspaceRoot, "creative/video-engine-plan.md")));
     assert.ok(fs.existsSync(path.join(workspaceRoot, "review/creative-performance-review.md")));
     assert.ok(fs.existsSync(path.join(workspaceRoot, "publishing/export-package.md")));
-    assert.ok(run.summary.steps.some((step) => step.id === "agent-team" && step.status === "skipped"));
+    assert.ok(run.summary.steps.some((step) => step.id === "comfyui-copilot-plan"));
+    assert.ok(run.summary.steps.some((step) => step.id === "video-engine-plan"));
+    assert.ok(run.summary.steps.some((step) => step.id === "adaptive-agent-team" && step.status === "skipped"));
 
     console.log("creative workflow ok");
   } finally {

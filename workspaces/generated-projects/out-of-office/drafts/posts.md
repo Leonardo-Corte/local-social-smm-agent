@@ -1,19 +1,23 @@
-# Draft Posts
+### Draft Post for Instagram
 
-## Post 1: The Room
-Hook: Networking in New York should not feel like a conference lobby.
+**Hook:** Smart connections start with smarter assistants.
 
-Body: Out Of Office is built for people who want useful professional connections without losing the social energy of a good night out. The promise is simple: a curated room, interesting people, food and drinks when confirmed for the event, and a setting that makes starting conversations easier.
+**Body:**
+Introducing GIGI, the new AI assistant designed for corporate professionals in New York City. GIGI isn't just another voice command tool; it's your digital clone, understanding context, planning tasks, and handling permissions seamlessly. Join the movement towards more intelligent, efficient interactions at [Link to website](https://killsiri.xyz/).
 
-CTA: Join the community or grab a ticket for the next confirmed event.
+**CTA:** Elevate your professional game with smarter connections. Learn how GIGI can transform your daily routine.
 
-Safety note: Confirm event date, venue, ticket inclusions, and link before publishing.
+---
 
-## Post 2: Venue Angle
-Hook: A strong event is not just traffic. It is the right room.
+### Approval Blockers
+- Confirm event date, venue, ticket inclusions, and link before publishing.
+- Verify that the claims about GIGI's capabilities are accurate and consistent with the provided website information (https://killsiri.xyz/).
+- Ensure any visual elements align with the content of the caption and Instagram’s vertical format requirements.
 
-Body: For New York venues, Out Of Office can position events around qualified professional attendance, social energy, and food and drink spend. Any attendance number or venue result must be verified before it becomes a public claim.
+### Agent Handoff for Next Step
+Target: **visual-director**
+Instructions: Adapt the network visualization image to fit Instagram's vertical format and ensure it aligns with the content of the caption, focusing on representing interconnectedness and networking within a professional setting. The image should complement the idea of smarter connections in a New York context.
 
-CTA: Ask about hosting a future Out Of Office night.
+---
 
-Safety note: Do not publish attendance claims unless a human confirms the exact proof.
+This draft maintains alignment with Out Of Office’s brand tone and messaging while introducing GIGI in a way that resonates with corporate professionals in New York City.

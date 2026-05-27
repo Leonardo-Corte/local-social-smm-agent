@@ -7,7 +7,8 @@ const path = require("path");
 const {
   ingestAssetDirectory,
   readAssetLibrary,
-  writeAssetLibraryMarkdown
+  writeAssetLibraryMarkdown,
+  writeAssetWatchManifest
 } = require("../../../packages/workspace-runner/asset-library");
 const { readArtifactRegistry } = require("../../../packages/publishing/artifact-registry");
 
@@ -35,15 +36,19 @@ function main() {
       maxDepth: 3
     });
     const mdPath = writeAssetLibraryMarkdown(workspaceRoot, report);
+    const watch = writeAssetWatchManifest({ workspaceRoot, sourceDir, sourceLabel: "drive-test" });
 
     assert.strictEqual(report.imported.length, 3);
     assert.ok(report.rejected.some((item) => item.path.endsWith(".env")));
     assert.ok(report.rejected.some((item) => item.path.endsWith("script.sh")));
     assert.ok(fs.existsSync(mdPath));
+    assert.ok(fs.existsSync(watch.mdPath));
 
     const library = readAssetLibrary(workspaceRoot);
     assert.strictEqual(library.assets.length, 3);
+    assert.strictEqual(library.queue.length, 3);
     assert.ok(library.assets.every((asset) => asset.workspacePath.startsWith("assets/raw/")));
+    assert.ok(library.queue.some((item) => item.tasks.includes("reel-intelligence")));
 
     const registry = readArtifactRegistry(workspaceRoot);
     assert.strictEqual(registry.artifacts.length, 3);

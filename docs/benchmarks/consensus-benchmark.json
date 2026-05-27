@@ -1,0 +1,26 @@
+{
+  "generatedAt": "2026-05-27T04:28:39.750Z",
+  "status": "passed",
+  "cases": [
+    {
+      "id": "networking-reel",
+      "request": "Create a reel for a premium NYC networking event.",
+      "oldScore": 58,
+      "consensusScore": 80,
+      "delta": 22,
+      "winner": "consensus"
+    },
+    {
+      "id": "reddit-post",
+      "request": "Create a Reddit-safe discussion post about networking in NYC.",
+      "oldScore": 58,
+      "consensusScore": 80,
+      "delta": 22,
+      "winner": "consensus"
+    }
+  ],
+  "notes": [
+    "This is a deterministic heuristic benchmark, not a replacement for human quality review.",
+    "Use it to catch regressions in basic output structure: hook, CTA, platform fit, approval risks."
+  ]
+}

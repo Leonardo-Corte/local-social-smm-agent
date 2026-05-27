@@ -99,6 +99,29 @@ function compactStepTask(step, type) {
   return tasks[step] || `Handle this ${type} request within the workspace rules.`;
 }
 
+function projectNameFromBusinessProfile(business) {
+  const match = String(business || "").match(/^Project:\s*(.+)$/mi);
+  return match ? match[1].trim() : null;
+}
+
+function requestScopeGuard({ business, request, linkIntel }) {
+  const projectName = projectNameFromBusinessProfile(business);
+  const requestText = String(request || "").toLowerCase();
+  const projectMentioned = projectName && requestText.includes(projectName.toLowerCase());
+  const hasExternalUrl = /https?:\/\//i.test(request || "");
+  const linkTitle = (String(linkIntel || "").match(/Title:\s*(.+)/i) || [])[1] || "";
+  const externalBrandLikely = hasExternalUrl || (linkTitle && (!projectName || !linkTitle.toLowerCase().includes(projectName.toLowerCase())));
+  if (externalBrandLikely && !projectMentioned) {
+    return `The current request appears to be about an external product, brand, or URL rather than the workspace business itself.
+
+- Treat the user's request and Link Intelligence as the primary campaign/product context.
+- Use the workspace business profile only for safety rules, approval posture, and operating style.
+- Do not force the workspace niche, audience, events, tickets, venues, food/drinks, or networking positioning into the artifact unless the user explicitly asks for it.
+- Approval blockers must match the requested product/link. Do not include event-date, venue, ticket, or attendance blockers for non-event/product content.`;
+  }
+  return `The current request appears to belong to the workspace business. Use the business profile as the primary brand context while still following the user's exact request.`;
+}
+
 const STRUCTURED_OUTPUT_INSTRUCTIONS = `
 ## Structured Output Required
 After your main response, add these sections EXACTLY as shown:
@@ -126,6 +149,7 @@ function buildStepPrompt({ workspaceRoot, request, type, target, step, previousH
   const imageIntel = readText(path.join(workspaceRoot, "assets/analysis/image-intelligence-latest.md")).slice(0, 5000);
   const reelIntel = readText(path.join(workspaceRoot, "assets/analysis/reel-intelligence-latest.md")).slice(0, 5000);
   const linkIntel = readText(path.join(workspaceRoot, "sources/link-intelligence-latest.md")).slice(0, 5000);
+  const scopeGuard = requestScopeGuard({ business, request, linkIntel });
   const targetContent = readText(path.join(workspaceRoot, target)).slice(0, 5000);
   const capcutPlan = step === "capcut"
     ? readText(path.join(workspaceRoot, "creative/capcut-plan.json")).slice(0, 3000)
@@ -156,6 +180,9 @@ ${compactStepTask(step, type)}
 ${revisionBlock}
 ## Business Profile
 ${business}
+
+## Request Scope Guard
+${scopeGuard}
 
 ## Current Request File
 ${currentRequest}
@@ -220,7 +247,8 @@ ${compactStepTask(step, type)}
 ${previousHandoffs || "No previous handoffs."}
 
 ## Approval Blockers
-- Confirm event details before publishing.
+- Confirm factual claims before publishing.
+- Confirm the destination link, offer, and product positioning before publishing.
 
 ## Agent Handoff
 Next agent: keep focused, avoid invented claims.
@@ -318,6 +346,8 @@ function synthesisPrompt({ workspaceRoot, request, type, target, outputs }) {
   const business = readText(path.join(workspaceRoot, "business/business.md"));
   const policy = readText(path.join(workspaceRoot, "policy/publishing-policy.json"));
   const platformPlaybooks = readText(path.join(workspaceRoot, "platforms/platform-playbooks.md"));
+  const linkIntel = readText(path.join(workspaceRoot, "sources/link-intelligence-latest.md"));
+  const scopeGuard = requestScopeGuard({ business, request, linkIntel });
   const currentTarget = readText(path.join(workspaceRoot, target));
 
   return `# Final Social Team Synthesis
@@ -335,6 +365,9 @@ ${target}
 
 ## Business Profile
 ${business}
+
+## Request Scope Guard
+${scopeGuard}
 
 ## Publishing Policy
 \`\`\`json
@@ -355,7 +388,7 @@ ${item.output}
 ## Required Final Artifact Rules
 - Write only the target artifact content, not commentary.
 - Use the user's request as the concrete brief.
-- Keep it specific to the business profile.
+- Follow the Request Scope Guard. If the user/link is about a different product or brand, do not force the workspace business niche into the final artifact.
 - If facts are missing, include a short "Approval Blockers" section instead of inventing.
 - No automatic publishing language.
 - No DM/comment/like/follow/reply/vote automation.
@@ -496,10 +529,11 @@ async function runAdaptiveTeam({
     if (step === "platform-adapt") {
       try {
         const finalDraft = readText(path.join(workspaceRoot, target));
+        const producedDraft = outputs.map((o) => o.output).join("\n\n").slice(0, 5000);
         const businessCtx = readText(path.join(workspaceRoot, "business", "business.md"));
         const adaptResult = await runPlatformAdapter({
           workspaceRoot,
-          draft: finalDraft || outputs.map((o) => o.output).join("\n\n").slice(0, 4000),
+          draft: producedDraft || finalDraft,
           businessContext: businessCtx,
           model,
           timeoutMs,
@@ -718,6 +752,54 @@ ${request}
 
   const boardSummary = getRunSummary(workspaceRoot, runId);
 
+  if (chainResult.completedSteps === 0) {
+    const result = {
+      version: "0.1.0",
+      runId,
+      generatedAt: new Date().toISOString(),
+      workspace: paths.workspace,
+      request,
+      type,
+      target,
+      model,
+      workflowRun: path.relative(workspaceRoot, workflow.workflowRoot),
+      teamRun: path.relative(workspaceRoot, teamRoot),
+      status: "failed_needs_model_run",
+      failedStep: "agent-chain",
+      synthesisError: "All adaptive agent steps fell back before final synthesis.",
+      agentSteps: { completed: chainResult.completedSteps, fallback: chainResult.fallbackSteps, total: chainResult.totalSteps, revisionLoops: chainResult.revisionLoops },
+      requiredHumanApproval: true,
+      automaticPublishEnabled: false,
+      blackboard: {
+        totalEntries: boardSummary.totalEntries,
+        decisions: boardSummary.decisions.length,
+        risks: boardSummary.risks.length,
+        blockers: boardSummary.blockers.length,
+        revisionRequests: boardSummary.revision_requests.length
+      }
+    };
+    const orchestrationReport = buildOrchestrationReport({
+      runId,
+      workspaceRoot,
+      stepLog: chainResult.stepLog,
+      revisionLog: chainResult.revisionLog,
+      summary: boardSummary,
+      remainingBlockers: boardSummary.blockers
+    });
+    writeText(path.join(teamRoot, "result.json"), `${JSON.stringify(result, null, 2)}\n`);
+    writeText(path.join(teamRoot, "orchestration-report.md"), orchestrationReport);
+    registerArtifact(workspaceRoot, {
+      path: path.relative(workspaceRoot, path.join(teamRoot, "result.json")),
+      type: "adaptive-team-run-result",
+      intent: type,
+      sourceRun: runId,
+      sourceAgent: "adaptive-orchestrator",
+      status: "rejected",
+      metadata: { request, target, synthesisError: result.synthesisError }
+    });
+    return { result, workflowRoot: workflow.workflowRoot, teamRoot, finalArtifact: null };
+  }
+
   const synth = synthesisPrompt({
     workspaceRoot,
     request,
@@ -908,4 +990,4 @@ ${request}
   return { result, workflowRoot: workflow.workflowRoot, teamRoot, finalArtifact: normalized };
 }
 
-module.exports = { runAdaptiveTeamOrchestration, targetForIntent };
+module.exports = { requestScopeGuard, runAdaptiveTeamOrchestration, targetForIntent };

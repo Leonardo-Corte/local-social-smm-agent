@@ -33,7 +33,9 @@ ${modelRoutingMarkdown(report)}
 ## Recommended Setup
 - Text backend: ${ollama && ollama.available ? `Ollama detected${textModel ? `, selected ${textModel}` : ""}` : "Install/start Ollama or configure llama.cpp/MLX."}
 - Vision backend: ${visionModel ? `ready with ${visionModel}` : `missing; install with \`${visionInstall.command}\``}
-- Image backend: ${comfy && comfy.available ? "ComfyUI detected" : "ComfyUI not detected; keep image generation as visual briefs until installed."}
+- Image backend: ${comfy && comfy.available ? "ComfyUI detected; use exported API workflow JSON with `npm run comfyui:run`." : "ComfyUI not detected; keep image generation as visual briefs until installed."}
+- ComfyUI-Copilot: optional MIT custom node for workflow generation/debugging; install inside ComfyUI only if you want visual workflow assistance.
+- Pixelle-Video: optional Apache-2.0 separate video engine candidate; use later as a separate adapter, not as a required core dependency.
 - Exact model weights must be chosen after license and hardware checks.
 
 ## Recommended Local Pulls For This Machine
@@ -51,6 +53,7 @@ ${visionModel ? `# Vision model already available: ${visionModel}` : visionInsta
 \`\`\`bash
 npm run models:route sample-local-social-team
 npm run workflow:run sample-local-social-team -- --execute
+npm run comfyui:run sample-local-social-team -- --health
 npm run quality:gate sample-local-social-team
 \`\`\`
 `;

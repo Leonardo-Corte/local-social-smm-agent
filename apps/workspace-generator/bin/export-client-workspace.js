@@ -3,6 +3,7 @@
 const fs = require("fs");
 const path = require("path");
 const { workspacePaths } = require("../../../packages/workspace-runner/workspace-paths");
+const { formatNextCommands } = require("../../../packages/workspace-runner/next-commands");
 
 const root = path.resolve(__dirname, "../../..");
 
@@ -62,6 +63,10 @@ npm run workspace:chat ${workspace} -- --model qwen2.5:14b
 \`\`\`
 
 This opens the terminal chat for this specific project. You can talk naturally, and the system routes work to the social media agents behind the scenes.
+
+## Exact Next Commands
+
+${formatNextCommands({ root, workspace, state: "chat" })}
 
 Suggested first requests:
 
@@ -208,6 +213,8 @@ function main() {
     refreshCommand: `npm run workspace:bootstrap ${workspace}`
   }, null, 2)}\n`);
 
+  writeFile(path.join(clientWorkspaceRoot, "NEXT_COMMANDS.md"), `${formatNextCommands({ root, workspace, state: "chat" })}\n`);
+
   writeFile(path.join(clientWorkspaceRoot, "commands/refresh-from-factory.sh"), `#!/usr/bin/env bash
 set -euo pipefail
 cd "${root}"
@@ -218,6 +225,16 @@ writeFile(path.join(clientWorkspaceRoot, "commands/open-chat.sh"), `#!/usr/bin/e
 set -euo pipefail
 cd "${root}"
 npm run workspace:chat ${workspace} -- --model qwen2.5:14b
+`);
+  writeFile(path.join(clientWorkspaceRoot, "commands/continue.sh"), `#!/usr/bin/env bash
+set -euo pipefail
+cd "${root}"
+npm run workspace:chat ${workspace} -- --model qwen2.5:14b
+`);
+  writeFile(path.join(clientWorkspaceRoot, "commands/rebuild.sh"), `#!/usr/bin/env bash
+set -euo pipefail
+cd "${root}"
+npm run workspace:bootstrap ${workspace}
 `);
   writeFile(path.join(clientWorkspaceRoot, "commands/analyze-video.sh"), `#!/usr/bin/env bash
 set -euo pipefail
@@ -233,6 +250,8 @@ npm run video:preview ${workspace}
 
   fs.chmodSync(path.join(clientWorkspaceRoot, "commands/refresh-from-factory.sh"), 0o755);
   fs.chmodSync(path.join(clientWorkspaceRoot, "commands/open-chat.sh"), 0o755);
+  fs.chmodSync(path.join(clientWorkspaceRoot, "commands/continue.sh"), 0o755);
+  fs.chmodSync(path.join(clientWorkspaceRoot, "commands/rebuild.sh"), 0o755);
   fs.chmodSync(path.join(clientWorkspaceRoot, "commands/analyze-video.sh"), 0o755);
 
   console.log(`Client workspace ready: ${path.relative(root, clientWorkspaceRoot)}`);

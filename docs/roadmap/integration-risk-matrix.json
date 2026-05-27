@@ -1,0 +1,90 @@
+{
+  "version": "0.1.0",
+  "generatedAt": "2026-05-26",
+  "integrations": [
+    {
+      "id": "comfyui",
+      "name": "ComfyUI",
+      "role": "local image/video/audio workflow backend",
+      "licenseBoundary": "external local service",
+      "licenseRisk": "medium",
+      "setupWeight": "medium",
+      "hardwareDemand": "medium-to-high",
+      "defaultEnabled": false,
+      "fallback": "visual briefs and prompt reports",
+      "decision": "use through API adapter"
+    },
+    {
+      "id": "comfyui-copilot",
+      "name": "ComfyUI-Copilot",
+      "role": "ComfyUI workflow generation and debugging assistant",
+      "licenseBoundary": "optional MIT custom node inside user's ComfyUI install",
+      "licenseRisk": "low",
+      "setupWeight": "medium",
+      "hardwareDemand": "same as ComfyUI",
+      "defaultEnabled": false,
+      "fallback": "our local prompt engineer and workflow templates",
+      "decision": "optional setup plan, not core dependency"
+    },
+    {
+      "id": "pixelle-video",
+      "name": "Pixelle-Video",
+      "role": "topic/script/assets/tts/bgm to MP4 short-video engine",
+      "licenseBoundary": "separate optional Apache-2.0 checkout/service",
+      "licenseRisk": "low",
+      "setupWeight": "high",
+      "hardwareDemand": "high",
+      "defaultEnabled": false,
+      "fallback": "CapCut plan plus local preview/edit recipe",
+      "decision": "adapter spike with mocked test first"
+    },
+    {
+      "id": "openmontage",
+      "name": "OpenMontage",
+      "role": "agentic video production reference architecture",
+      "licenseBoundary": "AGPL separate service or clean-room ideas only",
+      "licenseRisk": "high",
+      "setupWeight": "high",
+      "hardwareDemand": "high",
+      "defaultEnabled": false,
+      "fallback": "our clean-room video QA and stage manifest",
+      "decision": "do not vendor"
+    },
+    {
+      "id": "massgen",
+      "name": "MassGen",
+      "role": "multi-agent consensus pattern",
+      "licenseBoundary": "pattern/reference; clean-room implementation",
+      "licenseRisk": "low",
+      "setupWeight": "low",
+      "hardwareDemand": "model-dependent",
+      "defaultEnabled": true,
+      "fallback": "existing adaptive orchestrator",
+      "decision": "implement native consensus mode"
+    },
+    {
+      "id": "meta-api",
+      "name": "Meta Graph/API Publishing",
+      "role": "official assisted publishing after approval",
+      "licenseBoundary": "official API, credentials in env only",
+      "licenseRisk": "medium",
+      "setupWeight": "high",
+      "hardwareDemand": "low",
+      "defaultEnabled": false,
+      "fallback": "manual publishing package",
+      "decision": "dry-run/readiness before any live adapter"
+    },
+    {
+      "id": "x-reddit-research",
+      "name": "X and Reddit trend research",
+      "role": "public trend/context intelligence",
+      "licenseBoundary": "public/manual/official API only",
+      "licenseRisk": "medium",
+      "setupWeight": "medium",
+      "hardwareDemand": "low",
+      "defaultEnabled": true,
+      "fallback": "manual source links and cached source snapshots",
+      "decision": "research only; no account actions"
+    }
+  ]
+}

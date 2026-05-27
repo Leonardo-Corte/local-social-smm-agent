@@ -1,0 +1,12 @@
+{
+  "version": "0.1.0",
+  "generatedAt": "2026-05-27T04:37:12.419Z",
+  "status": "no_video_artifacts",
+  "candidates": [],
+  "winner": null,
+  "guardrails": [
+    "This comparison does not publish anything.",
+    "AGPL/OpenMontage-style evaluation remains a clean-room report unless a separate service is explicitly configured.",
+    "A human must watch the final MP4 before approval."
+  ]
+}

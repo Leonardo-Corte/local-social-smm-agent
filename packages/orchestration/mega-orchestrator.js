@@ -178,6 +178,7 @@ async function runMegaOrchestration({
     reflectionsContext,
     onProgress: ({ phase, agent: agentId }) => {
       const labels = {
+        council: "Fast council — team completo in un solo pass",
         diverge: "Round 1 — idee",
         react: "Round 2 — reazioni",
         dialogue: "Round 2.5 — dialogo diretto",
@@ -307,6 +308,7 @@ function buildSummaryMarkdown({ runId, request, intent, agents, taskPlan, room, 
     ``,
     `## Intent: ${intent}`,
     `Agenti: ${agents.map((a) => a.label).join(", ")}`,
+    `Modalita brainstorm: ${brainstormResult.mode || "full"}`,
     ``,
     `## Brainstorm`,
     `- Round 1 (Diverge): ${room.getMessages({ round: 1 }).length} messaggi`,

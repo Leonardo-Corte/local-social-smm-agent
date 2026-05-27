@@ -26,6 +26,14 @@
       "refreshCadence": "weekly"
     },
     {
+      "id": "reddit-json-search",
+      "name": "Reddit public JSON search",
+      "risk": "medium",
+      "method": "public JSON endpoints with low rate, cache, and no account actions",
+      "allowedUse": "directional audience questions, objections, phrasing, recurring concerns",
+      "refreshCadence": "per research run"
+    },
+    {
       "id": "reddit-subreddit-rules",
       "name": "Reddit subreddit rules manual review",
       "risk": "medium",
@@ -40,6 +48,30 @@
       "method": "human/manual public search review only; no login automation or account actions",
       "allowedUse": "text hooks, timely topics, conversation style, thread formats",
       "refreshCadence": "manual"
+    },
+    {
+      "id": "x-official-api-optional",
+      "name": "X official API optional research",
+      "risk": "high",
+      "method": "official API only if user explicitly configures credentials; no engagement actions",
+      "allowedUse": "read-only trend/context research where permitted by plan and policy",
+      "refreshCadence": "manual/explicit"
+    },
+    {
+      "id": "meta-ad-library-public",
+      "name": "Meta Ad Library public review",
+      "risk": "medium",
+      "method": "public/manual or approved API research",
+      "allowedUse": "ad angle inspiration, compliance patterns, competitor offer framing",
+      "refreshCadence": "weekly"
+    },
+    {
+      "id": "luma-event-pages",
+      "name": "Lu.ma public event pages",
+      "risk": "low",
+      "method": "user-provided public event URLs or manual research",
+      "allowedUse": "event positioning, title patterns, agenda/context checks",
+      "refreshCadence": "per event"
     },
     {
       "id": "tiktok-creative-center",

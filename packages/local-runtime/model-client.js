@@ -2,6 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const { spawnSync } = require("child_process");
 const { auditContentPolicy, policyReportMarkdown } = require("../review-loop/content-policy");
+const { trainingPackMarkdown } = require("../agents/training-packs");
 
 function ensureDir(dirPath) {
   fs.mkdirSync(dirPath, { recursive: true });
@@ -18,6 +19,32 @@ function writeText(filePath, content) {
 
 function timestampId() {
   return new Date().toISOString().replace(/[:.]/g, "-");
+}
+
+function envNumber(name, fallback) {
+  const value = Number(process.env[name]);
+  return Number.isFinite(value) && value > 0 ? value : fallback;
+}
+
+function contextWindowForPrompt(prompt) {
+  const override = envNumber("SMM_OLLAMA_NUM_CTX", 0) || envNumber("OLLAMA_NUM_CTX", 0);
+  if (override) {
+    return override;
+  }
+  const estimatedTokens = Math.ceil(String(prompt || "").length / 4);
+  if (estimatedTokens > 6500) return 12288;
+  if (estimatedTokens > 3500) return 8192;
+  return 4096;
+}
+
+function defaultOllamaOptions(prompt, overrides = {}) {
+  return Object.assign({
+    num_ctx: contextWindowForPrompt(prompt),
+    num_predict: envNumber("SMM_OLLAMA_NUM_PREDICT", 1400),
+    temperature: 0.45,
+    top_p: 0.9,
+    repeat_penalty: 1.08
+  }, overrides || {});
 }
 
 function listOllamaModelsFromApi() {
@@ -188,6 +215,9 @@ You are running inside a no-paid-API, human-approved IG/FB content workspace.
 ## Agent
 ${readText(agentPath)}
 
+## Specialist Memory Layer
+${trainingPackMarkdown(agentId) || "No specialist training pack is registered for this agent yet."}
+
 ## Project Brief
 \`\`\`json
 ${projectBrief}
@@ -232,7 +262,7 @@ ${handoffContext || "No previous handoffs for this run."}
 `;
 }
 
-async function runOllamaGenerate({ model, prompt, timeoutMs = 180000 }) {
+async function runOllamaGenerate({ model, prompt, timeoutMs = 180000, options = null }) {
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), timeoutMs);
   let response;
@@ -240,7 +270,13 @@ async function runOllamaGenerate({ model, prompt, timeoutMs = 180000 }) {
     response = await fetch("http://127.0.0.1:11434/api/generate", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ model, prompt, stream: false }),
+      body: JSON.stringify({
+        model,
+        prompt,
+        stream: false,
+        keep_alive: process.env.SMM_OLLAMA_KEEP_ALIVE || "10m",
+        options: defaultOllamaOptions(prompt, options)
+      }),
       signal: controller.signal
     });
   } finally {
@@ -255,7 +291,7 @@ async function runOllamaGenerate({ model, prompt, timeoutMs = 180000 }) {
   return payload.response || "";
 }
 
-async function runOllamaVisionGenerate({ model, prompt, imagePaths = [], timeoutMs = 180000 }) {
+async function runOllamaVisionGenerate({ model, prompt, imagePaths = [], timeoutMs = 180000, options = null }) {
   const images = imagePaths.map((imagePath) => fs.readFileSync(imagePath, "base64"));
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), timeoutMs);
@@ -264,7 +300,14 @@ async function runOllamaVisionGenerate({ model, prompt, imagePaths = [], timeout
     response = await fetch("http://127.0.0.1:11434/api/generate", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ model, prompt, images, stream: false }),
+      body: JSON.stringify({
+        model,
+        prompt,
+        images,
+        stream: false,
+        keep_alive: process.env.SMM_OLLAMA_KEEP_ALIVE || "10m",
+        options: defaultOllamaOptions(prompt, Object.assign({ num_predict: 900 }, options || {}))
+      }),
       signal: controller.signal
     });
   } finally {
@@ -327,6 +370,7 @@ module.exports = {
   chooseOllamaModelForTask,
   chooseOllamaVisionModel,
   recommendedOllamaVisionInstall,
+  defaultOllamaOptions,
   listOllamaModels,
   listOllamaModelsFromApi,
   listOllamaModelsFromManifestStore,

@@ -9,6 +9,6 @@
   "riskyAutomationEnabled": false,
   "requiredHumanApproval": true,
   "agentCount": 13,
-  "lastWorkflowRun": "workflow-runs/2026-05-25T20-37-06-129Z",
+  "lastWorkflowRun": "workflow-runs/2026-05-27T04-50-43-444Z",
   "lastWorkflowStatus": "needs-human-review"
 }

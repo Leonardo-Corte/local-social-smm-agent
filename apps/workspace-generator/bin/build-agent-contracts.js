@@ -5,6 +5,7 @@ const path = require("path");
 
 const { workspacePaths } = require('../../../packages/workspace-runner/workspace-paths');
 const { buildOperatingContracts } = require("../../../packages/agents/operating-contracts");
+const { trainingPackMarkdown } = require("../../../packages/agents/training-packs");
 
 const root = path.resolve(__dirname, "../../..");
 
@@ -39,7 +40,8 @@ ${agent.qualityChecks.map((item) => `- ${item}`).join("\n")}
 
 ## Escalation Rules
 ${agent.escalationRules.map((item) => `- ${item}`).join("\n")}
-${agent.customSection ? `\n${agent.customSection}` : ""}`;
+${agent.customSection ? `\n${agent.customSection}` : ""}
+${trainingPackMarkdown(agent.id) ? `\n${trainingPackMarkdown(agent.id)}` : ""}`;
 }
 
 function syncAgentFiles(workspaceRoot) {

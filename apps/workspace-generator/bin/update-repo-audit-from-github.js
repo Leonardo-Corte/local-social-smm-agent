@@ -2,6 +2,7 @@
 
 const fs = require("fs");
 const path = require("path");
+const https = require("https");
 
 const root = path.resolve(__dirname, "../../..");
 const candidates = JSON.parse(fs.readFileSync(path.join(root, "packages/repo-auditor/candidates.json"), "utf8"));
@@ -23,6 +24,41 @@ function readMetadata(candidate) {
   return value;
 }
 
+function fetchMetadata(candidate) {
+  return new Promise((resolve) => {
+    const request = https.get(`https://api.github.com/repos/${candidate.repo}`, {
+      headers: {
+        "User-Agent": "local-social-smm-agent-repo-audit",
+        "Accept": "application/vnd.github+json"
+      },
+      timeout: 8000
+    }, (response) => {
+      let body = "";
+      response.on("data", (chunk) => {
+        body += chunk;
+      });
+      response.on("end", () => {
+        try {
+          const payload = JSON.parse(body);
+          if (response.statusCode === 200) {
+            fs.mkdirSync(apiDir, { recursive: true });
+            fs.writeFileSync(fileFor(candidate), `${JSON.stringify(payload, null, 2)}\n`);
+          }
+          resolve(payload);
+        } catch (error) {
+          resolve({ message: error.message });
+        }
+      });
+    });
+    request.on("error", (error) => {
+      resolve({ message: error.message });
+    });
+    request.on("timeout", () => {
+      request.destroy(new Error("GitHub metadata request timed out"));
+    });
+  });
+}
+
 function chooseDecision(candidate, metadata) {
   if (candidate.risk.includes("high")) {
     return "experimental/reference only";
@@ -30,7 +66,8 @@ function chooseDecision(candidate, metadata) {
   if (candidate.risk.includes("license-boundary")) {
     return "separate module or reference";
   }
-  const license = metadata && metadata.license && metadata.license.spdx_id;
+  const rawLicense = metadata && metadata.license && metadata.license.spdx_id;
+  const license = rawLicense && rawLicense !== "NOASSERTION" ? rawLicense : candidate.expectedLicense;
   if (license === "MIT" || license === "Apache-2.0" || license === "BSD-2-Clause" || license === "BSD-3-Clause") {
     return "eligible after code audit";
   }
@@ -40,10 +77,13 @@ function chooseDecision(candidate, metadata) {
   return candidate.initialDecision;
 }
 
-const rows = candidates.map((candidate) => {
-  const metadata = readMetadata(candidate);
-  const license = metadata && metadata.license ? metadata.license.spdx_id : candidate.expectedLicense;
-  return {
+async function main() {
+const rows = [];
+for (const candidate of candidates) {
+  const metadata = readMetadata(candidate) || await fetchMetadata(candidate);
+  const rawLicense = metadata && metadata.license ? metadata.license.spdx_id : null;
+  const license = rawLicense && rawLicense !== "NOASSERTION" ? rawLicense : candidate.expectedLicense;
+  rows.push({
     id: candidate.id,
     repo: candidate.repo,
     category: candidate.category,
@@ -59,8 +99,8 @@ const rows = candidates.map((candidate) => {
     auditStatus: metadata ? "metadata-downloaded" : "metadata-missing",
     htmlUrl: metadata && metadata.html_url ? metadata.html_url : `https://github.com/${candidate.repo}`,
     why: candidate.why
-  };
-});
+  });
+}
 
 const markdown = `# GitHub Metadata Repo Audit
 
@@ -79,3 +119,9 @@ ${rows.map((row) => `| [${row.repo}](${row.htmlUrl}) | ${row.detectedLicense} | 
 fs.writeFileSync(path.join(root, "docs/research/github-metadata-audit.json"), `${JSON.stringify(rows, null, 2)}\n`);
 fs.writeFileSync(path.join(root, "docs/research/github-metadata-audit.md"), markdown);
 console.log(`Updated GitHub metadata audit for ${rows.length} candidates`);
+}
+
+main().catch((error) => {
+  console.error(error.message);
+  process.exit(1);
+});

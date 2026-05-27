@@ -85,14 +85,16 @@ Policy: software-only no-cost; quality depends on local hardware and installed b
 
 
 ## Recommended Setup
-- Text backend: Ollama detected, selected qwen2.5vl:7b
+- Text backend: Ollama detected, selected qwen2.5:14b
 - Vision backend: ready with qwen2.5vl:7b
 - Image backend: ComfyUI not detected; keep image generation as visual briefs until installed.
+- ComfyUI-Copilot: optional MIT custom node for workflow generation/debugging; install inside ComfyUI only if you want visual workflow assistance.
+- Pixelle-Video: optional Apache-2.0 separate video engine candidate; use later as a separate adapter, not as a required core dependency.
 - Exact model weights must be chosen after license and hardware checks.
 
 ## Recommended Local Pulls For This Machine
 ```bash
-# Text model already available: qwen2.5vl:7b
+# Text model already available: qwen2.5:14b
 # Vision model already available: qwen2.5vl:7b
 ```
 
@@ -105,5 +107,6 @@ Policy: software-only no-cost; quality depends on local hardware and installed b
 ```bash
 npm run models:route sample-local-social-team
 npm run workflow:run sample-local-social-team -- --execute
+npm run comfyui:run sample-local-social-team -- --health
 npm run quality:gate sample-local-social-team
 ```

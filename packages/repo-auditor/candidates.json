@@ -50,6 +50,76 @@
     "why": "Human-in-the-loop social generation flow patterns."
   },
   {
+    "id": "capcut-cli",
+    "repo": "renezander030/capcut-cli",
+    "category": "capcut-draft-cli",
+    "expectedLicense": "MIT",
+    "costPosture": "local",
+    "risk": "vendored-code-audited",
+    "initialDecision": "vendor-allowed",
+    "why": "Already vendored under vendor/capcut-cli as a local-only CapCut draft CLI. MIT license is present in vendor/capcut-cli/LICENSE; keep isolated and tracked."
+  },
+  {
+    "id": "openmontage",
+    "repo": "calesthio/OpenMontage",
+    "category": "agentic-video-production",
+    "expectedLicense": "AGPL-3.0",
+    "costPosture": "self-host/local with optional paid providers",
+    "risk": "license-boundary-runtime-complexity",
+    "initialDecision": "reference-only",
+    "why": "Strong agentic video production architecture, pipeline manifests, Remotion composition, FFmpeg validation, and media sourcing ideas; AGPL and provider-heavy runtime mean do not vendor into core."
+  },
+  {
+    "id": "comfyui-copilot",
+    "repo": "AIDC-AI/ComfyUI-Copilot",
+    "category": "visual-workflow-copilot",
+    "expectedLicense": "MIT",
+    "costPosture": "local/model-dependent",
+    "risk": "dependency-complexity",
+    "initialDecision": "optional-adapter-or-reference",
+    "why": "Natural-language ComfyUI workflow generation, debugging, parameter tuning, and local-environment awareness fit the visual director roadmap."
+  },
+  {
+    "id": "pixelle-video",
+    "repo": "AIDC-AI/Pixelle-Video",
+    "category": "video-generation-editing-engine",
+    "expectedLicense": "Apache-2.0",
+    "costPosture": "local-heavy",
+    "risk": "high-runtime-complexity",
+    "initialDecision": "reference-only",
+    "why": "Large automated short-video engine with useful architecture signals, but too heavy to replace the current chat-first SMM core on Apple Silicon without a focused adapter spike."
+  },
+  {
+    "id": "massgen",
+    "repo": "massgen/MassGen",
+    "category": "multi-agent-orchestration",
+    "expectedLicense": "Apache-2.0",
+    "costPosture": "model-dependent",
+    "risk": "framework-migration-cost",
+    "initialDecision": "reference-pattern-only",
+    "why": "Strong Apache-2.0 terminal multi-agent scaling and collaboration patterns. Use ideas for blackboard/council improvements before considering a Python runtime migration."
+  },
+  {
+    "id": "lightagent",
+    "repo": "wanxingai/LightAgent",
+    "category": "agent-framework",
+    "expectedLicense": "Apache-2.0",
+    "costPosture": "model-dependent",
+    "risk": "framework-migration-cost",
+    "initialDecision": "reference-pattern-only",
+    "why": "Lightweight skills, memory, MCP, and OpenAI-compatible streaming patterns are useful, but adopting the Python framework would duplicate the existing Node workspace runtime."
+  },
+  {
+    "id": "localai",
+    "repo": "mudler/LocalAI",
+    "category": "local-model-runtime",
+    "expectedLicense": "MIT",
+    "costPosture": "local",
+    "risk": "operational-complexity",
+    "initialDecision": "optional-runtime-adapter-later",
+    "why": "Powerful OpenAI-compatible local runtime for LLM, vision, audio, image, and video backends; keep Ollama default and add LocalAI only as an optional backend."
+  },
+  {
     "id": "tinytroupe",
     "repo": "microsoft/TinyTroupe",
     "category": "persona-simulation",
